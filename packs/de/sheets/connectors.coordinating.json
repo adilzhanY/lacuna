@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "connectors.coordinating",
   "language": "de",
   "items": [
     {
@@ -7,502 +7,480 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Ich bleibe heute zu Hause,"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "denn"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": "ich bin krank."
         }
       ],
-      "hint": "ich"
+      "hint": "reason"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Er wollte anrufen,"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "aber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "sein Handy war leer."
         }
       ],
-      "hint": "du"
+      "hint": "contrast"
     },
     {
       "n": 3,
       "segments": [
         {
           "type": "text",
-          "text": "Der Chef sucht"
+          "text": "Wir fahren nicht mit dem Auto,"
         },
         {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "sondern"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "mit dem Zug."
         }
       ],
-      "hint": "er"
+      "hint": "not this, but that"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Möchtest du bleiben"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "oder"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": "lieber gehen?"
         }
       ],
-      "hint": "sie, singular"
+      "hint": "choice"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "Sie kocht"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "und"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "er deckt den Tisch."
         }
       ],
-      "hint": "es"
+      "hint": "adding"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Ich kaufe keinen Kuchen,"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "sondern"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "Brot."
         }
       ],
-      "hint": "ich"
+      "hint": "not this, but that"
     },
     {
       "n": 7,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Wir müssen uns beeilen,"
         },
         {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "denn"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "der Zug fährt gleich."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "reason"
     },
     {
       "n": 8,
       "segments": [
         {
           "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
+          "text": "Das Zimmer ist klein,"
         },
         {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "aber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "sehr hell."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "contrast"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Ruf mich an"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "oder"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "schreib mir eine Nachricht."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "choice"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Er arbeitet viel,"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "aber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": "er verdient wenig."
         }
       ],
-      "hint": "er"
+      "hint": "contrast"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Ich mag den Job,"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "denn"
           ],
           "tags": [
-            "case:dative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "die Kollegen sind nett."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "reason"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Sie ist nicht müde,"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "sondern"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "einfach gelangweilt."
         }
       ],
-      "hint": "du"
+      "hint": "not this, but that"
     },
     {
       "n": 13,
       "segments": [
         {
           "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
+          "text": "Wir gehen ins Kino"
         },
         {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "und"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "essen danach eine Pizza."
         }
       ],
-      "hint": "das Paket"
+      "hint": "adding"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Nimm eine Jacke mit,"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "denn"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "es wird kalt."
         }
       ],
-      "hint": "ich"
+      "hint": "reason"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Ich habe angerufen,"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "aber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "niemand ist rangegangen."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "contrast"
     },
     {
       "n": 16,
       "segments": [
         {
           "type": "text",
-          "text": "Der Hund ist müde. Lass"
+          "text": "Kommst du mit"
         },
         {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "oder"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "bleibst du hier?"
         }
       ],
-      "hint": "der Hund"
+      "hint": "choice"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Das ist nicht mein Fehler,"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "sondern"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "deiner."
         }
       ],
-      "hint": "er"
+      "hint": "not this, but that"
     },
     {
       "n": 18,
       "segments": [
         {
           "type": "text",
-          "text": "Entschuldigung, darf ich"
+          "text": "Er lernt Deutsch"
         },
         {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "und"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": "arbeitet nebenbei."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "adding"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Wir bleiben zu Hause,"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "denn"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "das Wetter ist schlecht."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "reason"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Sie hat viel Geld,"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "aber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:coordinating_conjunction"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "sie ist nicht glücklich."
         }
       ],
-      "hint": "du"
+      "hint": "contrast"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "adverbs.praepositionaladverbien",
   "language": "de",
   "items": [
     {
@@ -7,142 +7,16 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Wir sprechen über die Miete. Was denkst du"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "darüber"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "bitte anrufen?"
-        }
-      ],
-      "hint": "ich"
-    },
-    {
-      "n": 2,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Ich habe"
-        },
-        {
-          "type": "blank",
-          "id": "2a",
-          "accept": [
-            "dich"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "gestern gesehen."
-        }
-      ],
-      "hint": "du"
-    },
-    {
-      "n": 3,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Der Chef sucht"
-        },
-        {
-          "type": "blank",
-          "id": "3a",
-          "accept": [
-            "ihn"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "hint": "er"
-    },
-    {
-      "n": 4,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Ich kenne"
-        },
-        {
-          "type": "blank",
-          "id": "4a",
-          "accept": [
-            "sie"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "schon lange."
-        }
-      ],
-      "hint": "sie, singular"
-    },
-    {
-      "n": 5,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Das Buch ist gut, ich lese"
-        },
-        {
-          "type": "blank",
-          "id": "5a",
-          "accept": [
-            "es"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "gerade."
-        }
-      ],
-      "hint": "es"
-    },
-    {
-      "n": 6,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Wartest du auf"
-        },
-        {
-          "type": "blank",
-          "id": "6a",
-          "accept": [
-            "mich"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:prepositional_adverb"
           ]
         },
         {
@@ -150,326 +24,23 @@
           "text": "?"
         }
       ],
-      "hint": "ich"
+      "hint": "über + it"
     },
     {
-      "n": 7,
+      "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Ich warte auf die Antwort. Ich warte schon seit Tagen"
         },
         {
           "type": "blank",
-          "id": "7a",
+          "id": "2a",
           "accept": [
-            "Sie"
+            "darauf"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "morgen an, Herr Wagner."
-        }
-      ],
-      "hint": "Sie, formal"
-    },
-    {
-      "n": 8,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
-        },
-        {
-          "type": "blank",
-          "id": "8a",
-          "accept": [
-            "sie"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "so nicht."
-        }
-      ],
-      "hint": "die Suppe"
-    },
-    {
-      "n": 9,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
-        },
-        {
-          "type": "blank",
-          "id": "9a",
-          "accept": [
-            "ihn"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "gesehen?"
-        }
-      ],
-      "hint": "der Schlüssel"
-    },
-    {
-      "n": 10,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Sie liebt"
-        },
-        {
-          "type": "blank",
-          "id": "10a",
-          "accept": [
-            "ihn"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "sehr."
-        }
-      ],
-      "hint": "er"
-    },
-    {
-      "n": 11,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
-        },
-        {
-          "type": "blank",
-          "id": "11a",
-          "accept": [
-            "ihr"
-          ],
-          "tags": [
-            "case:dative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "kurz helfen?"
-        }
-      ],
-      "hint": "sie, dative"
-    },
-    {
-      "n": 12,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Ich verstehe"
-        },
-        {
-          "type": "blank",
-          "id": "12a",
-          "accept": [
-            "dich"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "leider nicht."
-        }
-      ],
-      "hint": "du"
-    },
-    {
-      "n": 13,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
-        },
-        {
-          "type": "blank",
-          "id": "13a",
-          "accept": [
-            "es"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "rein?"
-        }
-      ],
-      "hint": "das Paket"
-    },
-    {
-      "n": 14,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Wer holt"
-        },
-        {
-          "type": "blank",
-          "id": "14a",
-          "accept": [
-            "mich"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "vom Bahnhof ab?"
-        }
-      ],
-      "hint": "ich"
-    },
-    {
-      "n": 15,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Ich sehe"
-        },
-        {
-          "type": "blank",
-          "id": "15a",
-          "accept": [
-            "sie"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "jeden Morgen im Bus."
-        }
-      ],
-      "hint": "sie, singular"
-    },
-    {
-      "n": 16,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Der Hund ist müde. Lass"
-        },
-        {
-          "type": "blank",
-          "id": "16a",
-          "accept": [
-            "ihn"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "schlafen."
-        }
-      ],
-      "hint": "der Hund"
-    },
-    {
-      "n": 17,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Ich frage"
-        },
-        {
-          "type": "blank",
-          "id": "17a",
-          "accept": [
-            "ihn"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "später, wenn er da ist."
-        }
-      ],
-      "hint": "er"
-    },
-    {
-      "n": 18,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Entschuldigung, darf ich"
-        },
-        {
-          "type": "blank",
-          "id": "18a",
-          "accept": [
-            "Sie"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "etwas fragen?"
-        }
-      ],
-      "hint": "Sie, formal"
-    },
-    {
-      "n": 19,
-      "segments": [
-        {
-          "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
-        },
-        {
-          "type": "blank",
-          "id": "19a",
-          "accept": [
-            "sie"
-          ],
-          "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:prepositional_adverb"
           ]
         },
         {
@@ -477,32 +48,442 @@
           "text": "."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "auf + it"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie fährt mit dem Rad."
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Damit"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kommt sie schneller an."
+        }
+      ],
+      "hint": "mit + it"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat kein Geld."
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "Deswegen",
+            "Deshalb"
+          ],
+          "tags": [
+            "form:conjunctional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kann er nicht mitkommen."
+        }
+      ],
+      "hint": "reason"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Paket ist gekommen. Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "dafür"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "unterschrieben?"
+        }
+      ],
+      "hint": "für + it"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben über den Umzug geredet. Ich weiß nichts"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "davon"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "von + it"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Termin ist am Montag. Denk bitte"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "daran"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "an + it"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat eine neue Stelle. Sie freut sich sehr"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "darüber"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "über + it"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich brauche einen Stift. Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "dafür"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "einen?"
+        }
+      ],
+      "hint": "für + it"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er redet nur über Fußball. Ich habe genug"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "davon"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "von + it"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Prüfung ist morgen. Ich bereite mich"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "darauf"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "vor."
+        }
+      ],
+      "hint": "auf + it"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat ein Auto gekauft."
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Damit"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "war sie lange nicht zufrieden."
+        }
+      ],
+      "hint": "mit + it"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist ein großes Problem. Wir müssen"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "darüber"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sprechen."
+        }
+      ],
+      "hint": "über + it"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er wohnt neben der Schule."
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Deshalb",
+            "Deswegen"
+          ],
+          "tags": [
+            "form:conjunctional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "geht er zu Fuß."
+        }
+      ],
+      "hint": "reason"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe die Karten bestellt. Ich warte noch"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "darauf"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "auf + it"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es gibt einen neuen Plan. Was hältst du"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "davon"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "von + it"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder haben Angst vor Hunden. Sie sprechen oft"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "darüber"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "über + it"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat mir geholfen. Ich danke ihm sehr"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "dafür"
+          ],
+          "tags": [
+            "form:prepositional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "für + it"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir brauchen mehr Zeit."
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Deshalb",
+            "Deswegen"
+          ],
+          "tags": [
+            "form:conjunctional_adverb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kommen wir später an."
+        }
+      ],
+      "hint": "reason"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Sie denkt oft an den Urlaub. Sie träumt jede Nacht"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "davon"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:prepositional_adverb"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "."
         }
       ],
-      "hint": "du"
+      "hint": "von + it"
     }
   ]
 }

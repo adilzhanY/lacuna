@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "connectors.konjunktionaladverbien",
   "language": "de",
   "items": [
     {
@@ -7,502 +7,510 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Es hat geregnet,"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "deshalb",
+            "deswegen",
+            "darum"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": "sind wir zu Hause geblieben."
         }
       ],
-      "hint": "ich"
+      "hint": "reason, verb after it"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Er hatte keine Zeit,"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "trotzdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "hat er uns geholfen."
         }
       ],
-      "hint": "du"
+      "hint": "in spite of that"
     },
     {
       "n": 3,
       "segments": [
         {
           "type": "text",
-          "text": "Der Chef sucht"
+          "text": "Die Wohnung ist teuer,"
         },
         {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "allerdings"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "liegt sie sehr zentral."
         }
       ],
-      "hint": "er"
+      "hint": "restriction"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Wir haben gegessen,"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "danach"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": "sind wir spazieren gegangen."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "afterwards"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "Sie lernt Deutsch,"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "außerdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "lernt sie Spanisch."
         }
       ],
-      "hint": "es"
+      "hint": "in addition"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Der Zug fiel aus,"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "deshalb",
+            "deswegen",
+            "darum"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "kam ich zu spät."
         }
       ],
-      "hint": "ich"
+      "hint": "reason"
     },
     {
       "n": 7,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Ich war müde,"
         },
         {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "trotzdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "bin ich mitgekommen."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "in spite of that"
     },
     {
       "n": 8,
       "segments": [
         {
           "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
+          "text": "Zuerst rufen wir an,"
         },
         {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "danach"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "fahren wir hin."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "afterwards"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Das Hotel war laut,"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "allerdings"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "war es billig."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "restriction"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Er hat viel gearbeitet,"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "deshalb",
+            "deswegen",
+            "darum"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": "ist er sehr müde."
         }
       ],
-      "hint": "er"
+      "hint": "reason"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Die Firma zahlt gut,"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "außerdem"
           ],
           "tags": [
-            "case:dative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "bietet sie flexible Zeiten."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "in addition"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Es war spät,"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "trotzdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "sind wir noch ausgegangen."
         }
       ],
-      "hint": "du"
+      "hint": "in spite of that"
     },
     {
       "n": 13,
       "segments": [
         {
           "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
+          "text": "Wir haben die Wohnung besichtigt,"
         },
         {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "danach"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "haben wir zugesagt."
         }
       ],
-      "hint": "das Paket"
+      "hint": "afterwards"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Ich habe kein Auto,"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "deshalb",
+            "deswegen",
+            "darum"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "fahre ich mit dem Rad."
         }
       ],
-      "hint": "ich"
+      "hint": "reason"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Der Kurs ist gut,"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "allerdings"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "ist er ziemlich teuer."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "restriction"
     },
     {
       "n": 16,
       "segments": [
         {
           "type": "text",
-          "text": "Der Hund ist müde. Lass"
+          "text": "Sie hat den Job bekommen,"
         },
         {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "deshalb",
+            "deswegen",
+            "darum"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "zieht sie nach Köln."
         }
       ],
-      "hint": "der Hund"
+      "hint": "reason"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Wir kennen die Stadt nicht,"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "trotzdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "finden wir alles."
         }
       ],
-      "hint": "er"
+      "hint": "in spite of that"
     },
     {
       "n": 18,
       "segments": [
         {
           "type": "text",
-          "text": "Entschuldigung, darf ich"
+          "text": "Er spricht Englisch,"
         },
         {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "außerdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": "spricht er Französisch."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "in addition"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Ich habe die Rechnung bezahlt,"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "danach"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "habe ich sie abgeheftet."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "afterwards"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Das Wetter war schlecht,"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "trotzdem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:conjunctional_adverb",
+            "word_order:verb_second"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "hatten wir viel Spaß."
         }
       ],
-      "hint": "du"
+      "hint": "in spite of that"
     }
   ]
 }

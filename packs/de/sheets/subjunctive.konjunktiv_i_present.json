@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "subjunctive.konjunktiv_i_present",
   "language": "de",
   "items": [
     {
@@ -7,502 +7,483 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Er sagt, er"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": "krank."
         }
       ],
-      "hint": "ich"
+      "hint": "sein, er, indirect"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Sie sagt, sie"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "habe"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "keine Zeit."
         }
       ],
-      "hint": "du"
+      "hint": "haben, sie, indirect"
     },
     {
       "n": 3,
       "segments": [
         {
           "type": "text",
-          "text": "Der Chef sucht"
+          "text": "Der Chef meint, das Projekt"
         },
         {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "fertig."
         }
       ],
-      "hint": "er"
+      "hint": "sein, es"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Er behauptet, er"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "habe"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": "nichts davon gewusst."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "haben, er"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "Die Zeitung schreibt, der Zug"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "komme"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "später."
         }
       ],
-      "hint": "es"
+      "hint": "kommen, er"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Sie erzählt, ihr Sohn"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "wohne"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "in Berlin."
         }
       ],
-      "hint": "ich"
+      "hint": "wohnen, er"
     },
     {
       "n": 7,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Man sagt, das Wetter"
         },
         {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "werde"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "morgen besser."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "werden, es"
     },
     {
       "n": 8,
       "segments": [
         {
           "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
+          "text": "Er sagt, er"
         },
         {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "arbeite"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "jeden Tag zwei Stunden."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "arbeiten, er"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Die Ärztin meint, ich"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "solle"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "mehr schlafen."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "sollen, ich"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Sie sagt, sie"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "rufe"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": "uns morgen an."
         }
       ],
-      "hint": "er"
+      "hint": "anrufen, sie"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Der Bericht sagt, die Preise"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "seien"
           ],
           "tags": [
-            "case:dative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i",
+            "number:plural"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "gestiegen."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "sein, sie, pl"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Er erklärt, das"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "kein Problem."
         }
       ],
-      "hint": "du"
+      "hint": "sein, es"
     },
     {
       "n": 13,
       "segments": [
         {
           "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
+          "text": "Sie schreibt, sie"
         },
         {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "komme"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "nächste Woche zurück."
         }
       ],
-      "hint": "das Paket"
+      "hint": "kommen, sie"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Der Kollege sagt, er"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "habe"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "den Termin vergessen."
         }
       ],
-      "hint": "ich"
+      "hint": "haben, er"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Man behauptet, er"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "sehr reich."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "sein, er"
     },
     {
       "n": 16,
       "segments": [
         {
           "type": "text",
-          "text": "Der Hund ist müde. Lass"
+          "text": "Sie meint, das"
         },
         {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "zu teuer."
         }
       ],
-      "hint": "der Hund"
+      "hint": "sein, es"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Er sagt, er"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "spreche"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "kein Deutsch."
         }
       ],
-      "hint": "er"
+      "hint": "sprechen, er"
     },
     {
       "n": 18,
       "segments": [
         {
           "type": "text",
-          "text": "Entschuldigung, darf ich"
+          "text": "Die Nachricht sagt, die Straße"
         },
         {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "sei"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": "gesperrt."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "sein, sie"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Sie erzählt, ihre Eltern"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "wohnten",
+            "würden wohnen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i",
+            "number:plural"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "in Bremen."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "wohnen, sie, pl"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Er sagt, er"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "müsse"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_i"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "morgen früher gehen."
         }
       ],
-      "hint": "du"
+      "hint": "müssen, er"
     }
   ]
 }

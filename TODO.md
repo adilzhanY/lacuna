@@ -28,6 +28,7 @@ Ticked items are done and committed.
 ## 2. Language pack
 
 - [x] `packs/de/topics.toml`, 43 topics across A1, A2, B1, with teaching order
+- [x] A seed sheet for every one of the 43 topics, 860 sentences, 900 blanks
 - [x] Pack loader that fails to start the server on a malformed or unknown topic id
 - [ ] Per topic: a short rule summary shown next to the sheet
 - [ ] Per topic: generation hints, the everyday German situations that fit it

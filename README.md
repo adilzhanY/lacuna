@@ -10,9 +10,11 @@ Read `INFO.md` for the decisions behind it and `TODO.md` for what is still missi
 
 ## Status
 
-Early. The full loop works end to end: open a topic, answer twenty blanks, get graded,
-watch the topic get rescheduled. Sheets are still hand written fixtures, since generation
-is not wired up yet.
+Early, but usable. The full loop works end to end: open a topic, answer twenty blanks,
+get graded, watch the topic get rescheduled, and check the dashboard.
+
+All 43 topics in the German pack ship with a sheet, 860 sentences and 900 blanks in
+total. They are hand written fixtures for now; generation will replace them.
 
 ## Running it
 

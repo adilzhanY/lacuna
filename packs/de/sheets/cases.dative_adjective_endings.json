@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "cases.dative_adjective_endings",
   "language": "de",
   "items": [
     {
@@ -7,502 +7,504 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Ich fahre mit dem"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "neuen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": "Auto."
         }
       ],
-      "hint": "ich"
+      "hint": "neu, n dat"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Sie wohnt in einer"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "kleinen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "Wohnung."
         }
       ],
-      "hint": "du"
+      "hint": "klein, f dat"
     },
     {
       "n": 3,
       "segments": [
         {
           "type": "text",
-          "text": "Der Chef sucht"
+          "text": "Wir sprechen mit dem"
         },
         {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "neuen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "Chef."
         }
       ],
-      "hint": "er"
+      "hint": "neu, m dat"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Er hilft der"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "alten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": "Frau von nebenan."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "alt, f dat"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "Das Buch gehört dem"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "kleinen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "Kind."
         }
       ],
-      "hint": "es"
+      "hint": "klein, n dat"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Ich komme aus einem"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "ruhigen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "Dorf."
         }
       ],
-      "hint": "ich"
+      "hint": "ruhig, n dat"
     },
     {
       "n": 7,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Sie arbeitet bei einer"
         },
         {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "großen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "Firma."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "groß, f dat"
     },
     {
       "n": 8,
       "segments": [
         {
           "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
+          "text": "Wir fahren mit den"
         },
         {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "netten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective",
+            "number:plural"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "Kollegen."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "nett, pl dat"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Nach dem"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "langen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "Tag will ich nur schlafen."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "lang, m dat"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Er sitzt auf dem"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "bequemen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": "Stuhl."
         }
       ],
-      "hint": "er"
+      "hint": "bequem, m dat"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Ich habe mit einem"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "jungen"
           ],
           "tags": [
             "case:dative",
-            "form:personal_pronoun"
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "Arzt gesprochen."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "jung, m dat"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Bei"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "schlechtem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective",
+            "declension:strong"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "Wetter bleiben wir drinnen."
         }
       ],
-      "hint": "du"
+      "hint": "schlecht, no article"
     },
     {
       "n": 13,
       "segments": [
         {
           "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
+          "text": "Sie spielt mit den"
         },
         {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "anderen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective",
+            "number:plural"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "Kindern."
         }
       ],
-      "hint": "das Paket"
+      "hint": "ander, pl dat"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Wir wohnen in dem"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "gelben"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "Haus dort."
         }
       ],
-      "hint": "ich"
+      "hint": "gelb, n dat"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Nach der"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "langen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "Reise war ich müde."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "lang, f dat"
     },
     {
       "n": 16,
       "segments": [
         {
           "type": "text",
-          "text": "Der Hund ist müde. Lass"
+          "text": "Ich fahre lieber mit der"
         },
         {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "schnellen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "Bahn."
         }
       ],
-      "hint": "der Hund"
+      "hint": "schnell, f dat"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Er hat es dem"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "neugierigen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "Nachbarn erzählt."
         }
       ],
-      "hint": "er"
+      "hint": "neugierig, m dat"
     },
     {
       "n": 18,
       "segments": [
         {
           "type": "text",
-          "text": "Entschuldigung, darf ich"
+          "text": "Aus dem"
         },
         {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "großen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": "Fenster sieht man den Park."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "groß, n dat"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Seit dem"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "letzten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "Umzug schlafe ich schlecht."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "letzt, m dat"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Mit"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "starkem"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "case:dative",
+            "declension:adjective",
+            "declension:strong"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "Kaffee wache ich schneller auf."
         }
       ],
-      "hint": "du"
+      "hint": "stark, no article"
     }
   ]
 }

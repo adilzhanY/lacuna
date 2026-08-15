@@ -1,508 +1,466 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "verbs_present.nominalization",
   "language": "de",
   "items": [
     {
       "n": 1,
       "segments": [
         {
-          "type": "text",
-          "text": "Kannst du"
-        },
-        {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "Das"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": "Lesen entspannt mich am meisten."
         }
       ],
-      "hint": "ich"
+      "hint": "lesen as a noun"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Beim"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "Kochen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "höre ich immer Musik."
         }
       ],
-      "hint": "du"
+      "hint": "kochen as a noun"
     },
     {
       "n": 3,
       "segments": [
         {
-          "type": "text",
-          "text": "Der Chef sucht"
-        },
-        {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "Das"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "Rauchen ist hier verboten."
         }
       ],
-      "hint": "er"
+      "hint": "rauchen as a noun"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Zum"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "Lernen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": "brauche ich zwei Stunden."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "lernen as a noun"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "Nach dem"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "Essen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "gehen wir spazieren."
         }
       ],
-      "hint": "es"
+      "hint": "essen as a noun"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Das"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "Parken"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "von Fahrrädern ist hier nicht erlaubt."
         }
       ],
-      "hint": "ich"
+      "hint": "parken as a noun"
     },
     {
       "n": 7,
       "segments": [
         {
           "type": "text",
-          "text": "Ich rufe"
+          "text": "Beim"
         },
         {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "Einkaufen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "habe ich meinen Schlüssel verloren."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "einkaufen as a noun"
     },
     {
       "n": 8,
       "segments": [
         {
-          "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
-        },
-        {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "Das"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "Warten macht mich nervös."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "warten as a noun"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Zum"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "Schwimmen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "ist es zu kalt draußen."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "schwimmen as a noun"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Das laute"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "Reden"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": "der Nachbarn stört mich."
         }
       ],
-      "hint": "er"
+      "hint": "reden as a noun"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Nach dem"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "Aufstehen"
           ],
           "tags": [
-            "case:dative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "fühle ich mich besser."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "aufstehen as a noun"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Beim"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "Fahren"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "muss man vorsichtig sein."
         }
       ],
-      "hint": "du"
+      "hint": "fahren as a noun"
     },
     {
       "n": 13,
       "segments": [
         {
-          "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
-        },
-        {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "Das"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "Schreiben fällt mir schwer."
         }
       ],
-      "hint": "das Paket"
+      "hint": "schreiben as a noun"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Zum"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "Wandern"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "nehme ich immer einen Rucksack mit."
         }
       ],
-      "hint": "ich"
+      "hint": "wandern as a noun"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Das"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "Duschen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "dauert bei mir zehn Minuten."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "duschen as a noun"
     },
     {
       "n": 16,
       "segments": [
         {
           "type": "text",
-          "text": "Der Hund ist müde. Lass"
+          "text": "Beim"
         },
         {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "Essen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "spricht man nicht."
         }
       ],
-      "hint": "der Hund"
+      "hint": "essen as a noun"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Nach dem"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "Umziehen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "war ich völlig müde."
         }
       ],
-      "hint": "er"
+      "hint": "umziehen as a noun"
     },
     {
       "n": 18,
       "segments": [
         {
-          "type": "text",
-          "text": "Entschuldigung, darf ich"
-        },
-        {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "Das"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": "Fotografieren ist im Museum verboten."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "fotografieren as a noun"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Zum"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "Mitnehmen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "brauchst du keine Karte."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "mitnehmen as a noun"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Das frühe"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "Aufstehen"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:nominalization"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "fällt mir jeden Tag schwer."
         }
       ],
-      "hint": "du"
+      "hint": "aufstehen as a noun"
     }
   ]
 }

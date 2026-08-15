@@ -1,5 +1,5 @@
 {
-  "topic_id": "pronouns.accusative_singular",
+  "topic_id": "subjunctive.konjunktiv_ii_present",
   "language": "de",
   "items": [
     {
@@ -7,502 +7,464 @@
       "segments": [
         {
           "type": "text",
-          "text": "Kannst du"
+          "text": "Wenn ich Zeit"
         },
         {
           "type": "blank",
           "id": "1a",
           "accept": [
-            "mich"
+            "hätte"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "bitte anrufen?"
+          "text": ", würde ich mitkommen."
         }
       ],
-      "hint": "ich"
+      "hint": "haben, ich"
     },
     {
       "n": 2,
       "segments": [
         {
           "type": "text",
-          "text": "Ich habe"
+          "text": "Ich"
         },
         {
           "type": "blank",
           "id": "2a",
           "accept": [
-            "dich"
+            "hätte"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "gestern gesehen."
+          "text": "gern noch einen Kaffee."
         }
       ],
-      "hint": "du"
+      "hint": "polite request"
     },
     {
       "n": 3,
       "segments": [
         {
-          "type": "text",
-          "text": "Der Chef sucht"
-        },
-        {
           "type": "blank",
           "id": "3a",
           "accept": [
-            "ihn"
+            "Könnten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "Sie mir bitte helfen?"
         }
       ],
-      "hint": "er"
+      "hint": "können, Sie, polite"
     },
     {
       "n": 4,
       "segments": [
         {
           "type": "text",
-          "text": "Ich kenne"
+          "text": "Wenn ich du"
         },
         {
           "type": "blank",
           "id": "4a",
           "accept": [
-            "sie"
+            "wäre"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "schon lange."
+          "text": ", würde ich absagen."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "sein, ich"
     },
     {
       "n": 5,
       "segments": [
         {
           "type": "text",
-          "text": "Das Buch ist gut, ich lese"
+          "text": "An deiner Stelle"
         },
         {
           "type": "blank",
           "id": "5a",
           "accept": [
-            "es"
+            "würde"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "gerade."
+          "text": "ich zum Arzt gehen."
         }
       ],
-      "hint": "es"
+      "hint": "würden, ich"
     },
     {
       "n": 6,
       "segments": [
         {
           "type": "text",
-          "text": "Wartest du auf"
+          "text": "Er"
         },
         {
           "type": "blank",
           "id": "6a",
           "accept": [
-            "mich"
+            "sollte"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "?"
+          "text": "eigentlich mehr lernen."
         }
       ],
-      "hint": "ich"
+      "hint": "sollen, er"
     },
     {
       "n": 7,
       "segments": [
         {
-          "type": "text",
-          "text": "Ich rufe"
-        },
-        {
           "type": "blank",
           "id": "7a",
           "accept": [
-            "Sie"
+            "Könntest"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "morgen an, Herr Wagner."
+          "text": "du mir kurz helfen?"
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "können, du"
     },
     {
       "n": 8,
       "segments": [
         {
           "type": "text",
-          "text": "Die Suppe ist kalt. Ich mag"
+          "text": "Es"
         },
         {
           "type": "blank",
           "id": "8a",
           "accept": [
-            "sie"
+            "wäre"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "so nicht."
+          "text": "schön, wenn du kommen könntest."
         }
       ],
-      "hint": "die Suppe"
+      "hint": "sein, es"
     },
     {
       "n": 9,
       "segments": [
         {
           "type": "text",
-          "text": "Der Schlüssel ist weg. Hast du"
+          "text": "Wir"
         },
         {
           "type": "blank",
           "id": "9a",
           "accept": [
-            "ihn"
+            "hätten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "gesehen?"
+          "text": "gern ein Zimmer für zwei Nächte."
         }
       ],
-      "hint": "der Schlüssel"
+      "hint": "haben, wir, polite"
     },
     {
       "n": 10,
       "segments": [
         {
           "type": "text",
-          "text": "Sie liebt"
+          "text": "Wenn wir mehr Geld"
         },
         {
           "type": "blank",
           "id": "10a",
           "accept": [
-            "ihn"
+            "hätten"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "sehr."
+          "text": ", würden wir umziehen."
         }
       ],
-      "hint": "er"
+      "hint": "haben, wir"
     },
     {
       "n": 11,
       "segments": [
         {
           "type": "text",
-          "text": "Meine Kollegin braucht Hilfe. Kannst du"
+          "text": "Sie"
         },
         {
           "type": "blank",
           "id": "11a",
           "accept": [
-            "ihr"
+            "würde"
           ],
           "tags": [
-            "case:dative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "kurz helfen?"
+          "text": "das anders machen."
         }
       ],
-      "hint": "sie, dative"
+      "hint": "würden, sie"
     },
     {
       "n": 12,
       "segments": [
         {
           "type": "text",
-          "text": "Ich verstehe"
+          "text": "Ich"
         },
         {
           "type": "blank",
           "id": "12a",
           "accept": [
-            "dich"
+            "müsste"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "leider nicht."
+          "text": "eigentlich noch arbeiten müssen."
         }
       ],
-      "hint": "du"
+      "hint": "müssen, ich"
     },
     {
       "n": 13,
       "segments": [
         {
-          "type": "text",
-          "text": "Das Paket kommt heute. Bringst du"
-        },
-        {
           "type": "blank",
           "id": "13a",
           "accept": [
-            "es"
+            "Würdet"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "rein?"
+          "text": "ihr auch mitkommen wollen?"
         }
       ],
-      "hint": "das Paket"
+      "hint": "würden, ihr"
     },
     {
       "n": 14,
       "segments": [
         {
           "type": "text",
-          "text": "Wer holt"
+          "text": "Ohne dich"
         },
         {
           "type": "blank",
           "id": "14a",
           "accept": [
-            "mich"
+            "wäre"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "vom Bahnhof ab?"
+          "text": "das nicht möglich gewesen."
         }
       ],
-      "hint": "ich"
+      "hint": "sein, es"
     },
     {
       "n": 15,
       "segments": [
         {
           "type": "text",
-          "text": "Ich sehe"
+          "text": "Er"
         },
         {
           "type": "blank",
           "id": "15a",
           "accept": [
-            "sie"
+            "würde"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "jeden Morgen im Bus."
+          "text": "das nie sagen."
         }
       ],
-      "hint": "sie, singular"
+      "hint": "würden, er"
     },
     {
       "n": 16,
       "segments": [
         {
-          "type": "text",
-          "text": "Der Hund ist müde. Lass"
-        },
-        {
           "type": "blank",
           "id": "16a",
           "accept": [
-            "ihn"
+            "Würde"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "schlafen."
+          "text": "es Ihnen am Montag passen?"
         }
       ],
-      "hint": "der Hund"
+      "hint": "würden, es, polite"
     },
     {
       "n": 17,
       "segments": [
         {
           "type": "text",
-          "text": "Ich frage"
+          "text": "Ich"
         },
         {
           "type": "blank",
           "id": "17a",
           "accept": [
-            "ihn"
+            "würde"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "später, wenn er da ist."
+          "text": "lieber zu Hause bleiben."
         }
       ],
-      "hint": "er"
+      "hint": "würden, ich"
     },
     {
       "n": 18,
       "segments": [
         {
           "type": "text",
-          "text": "Entschuldigung, darf ich"
+          "text": "Wenn das Wetter besser"
         },
         {
           "type": "blank",
           "id": "18a",
           "accept": [
-            "Sie"
+            "wäre"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun",
-            "form:formal"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "etwas fragen?"
+          "text": ", gingen wir raus."
         }
       ],
-      "hint": "Sie, formal"
+      "hint": "sein, es"
     },
     {
       "n": 19,
       "segments": [
         {
           "type": "text",
-          "text": "Die Wohnung gefällt uns. Wir nehmen"
+          "text": "Du"
         },
         {
           "type": "blank",
           "id": "19a",
           "accept": [
-            "sie"
+            "solltest"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "."
+          "text": "dich mal ausruhen."
         }
       ],
-      "hint": "die Wohnung"
+      "hint": "sollen, du"
     },
     {
       "n": 20,
       "segments": [
         {
           "type": "text",
-          "text": "Ohne"
+          "text": "Wir"
         },
         {
           "type": "blank",
           "id": "20a",
           "accept": [
-            "dich"
+            "wären"
           ],
           "tags": [
-            "case:accusative",
-            "form:personal_pronoun"
+            "form:konjunktiv_ii"
           ]
         },
         {
           "type": "text",
-          "text": "gehe ich nicht."
+          "text": "gern früher gekommen."
         }
       ],
-      "hint": "du"
+      "hint": "sein, wir"
     }
   ]
 }
