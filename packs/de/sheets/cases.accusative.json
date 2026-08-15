@@ -1,0 +1,506 @@
+{
+  "topic_id": "cases.accusative",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich sehe"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mann dort nicht."
+        }
+      ],
+      "hint": "der Mann"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir nehmen"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bus um neun."
+        }
+      ],
+      "hint": "der Bus"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kennst du"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Weg zum Markt?"
+        }
+      ],
+      "hint": "der Weg"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie liest"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeitung jeden Morgen."
+        }
+      ],
+      "hint": "die Zeitung"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schlüssel verloren."
+        }
+      ],
+      "hint": "der Schlüssel"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er sucht"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahnhof."
+        }
+      ],
+      "hint": "der Bahnhof"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fenster zumachen?"
+        }
+      ],
+      "hint": "das Fenster"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich brauche"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Rechnung noch heute."
+        }
+      ],
+      "hint": "die Rechnung"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir besuchen morgen"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zoo."
+        }
+      ],
+      "hint": "der Zoo"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie ruft"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arzt an."
+        }
+      ],
+      "hint": "der Arzt"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich möchte"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer sehen."
+        }
+      ],
+      "hint": "das Zimmer"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Trinkst du"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee noch?"
+        }
+      ],
+      "hint": "der Kaffee"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin schon abgesagt."
+        }
+      ],
+      "hint": "der Termin"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir warten auf"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zug nach Kiel."
+        }
+      ],
+      "hint": "der Zug"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie kauft sich"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mantel."
+        }
+      ],
+      "hint": "ein Mantel"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich schreibe"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brief an meinen Vermieter."
+        }
+      ],
+      "hint": "ein Brief"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stift für mich?"
+        }
+      ],
+      "hint": "ein Stift"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch für vier Personen reserviert."
+        }
+      ],
+      "hint": "ein Tisch"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er isst jeden Tag"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apfel."
+        }
+      ],
+      "hint": "ein Apfel"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich nehme"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Salat, bitte."
+        }
+      ],
+      "hint": "ein Salat"
+    }
+  ]
+}

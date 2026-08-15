@@ -1,0 +1,509 @@
+{
+  "topic_id": "cases.dative",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich gebe"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kind einen Apfel."
+        }
+      ],
+      "hint": "das Kind"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hilft"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarin im Garten."
+        }
+      ],
+      "hint": "die Nachbarin"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Buch gehört"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lehrer."
+        }
+      ],
+      "hint": "der Lehrer"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir schreiben"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Firma eine E-Mail."
+        }
+      ],
+      "hint": "die Firma"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er zeigt"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Touristen einen kurzen Weg."
+        }
+      ],
+      "hint": "die Touristen, pl"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Essen schmeckt"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kindern gut."
+        }
+      ],
+      "hint": "die Kinder, pl"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich danke"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arzt für seine Hilfe."
+        }
+      ],
+      "hint": "der Arzt"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Gehört das Fahrrad"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frau dort?"
+        }
+      ],
+      "hint": "die Frau"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie gibt"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hund Wasser."
+        }
+      ],
+      "hint": "der Hund"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich schicke"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kollegen die Datei."
+        }
+      ],
+      "hint": "der Kollege"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das gefällt"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Chef bestimmt nicht."
+        }
+      ],
+      "hint": "der Chef"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hilft"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "alten Mann über die Straße."
+        }
+      ],
+      "hint": "der Mann"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir bringen"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Gästen etwas zu trinken."
+        }
+      ],
+      "hint": "die Gäste, pl"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich glaube"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bericht nicht."
+        }
+      ],
+      "hint": "der Bericht"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie antwortet"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vermieter noch heute."
+        }
+      ],
+      "hint": "der Vermieter"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Kleid steht"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "meiner"
+          ],
+          "tags": [
+            "case:dative",
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schwester gut."
+        }
+      ],
+      "hint": "meine Schwester"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "einem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Freund geholfen."
+        }
+      ],
+      "hint": "ein Freund"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie erzählt"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "einer"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kollegin von der Reise."
+        }
+      ],
+      "hint": "eine Kollegin"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er gibt"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kellner das Geld."
+        }
+      ],
+      "hint": "der Kellner"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Wetter gefällt"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "mir"
+          ],
+          "tags": [
+            "case:dative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht."
+        }
+      ],
+      "hint": "ich"
+    }
+  ]
+}

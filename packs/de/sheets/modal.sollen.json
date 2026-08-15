@@ -1,0 +1,462 @@
+{
+  "topic_id": "modal.sollen",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mehr Wasser trinken, sagt der Arzt."
+        }
+      ],
+      "hint": "sollen, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich dir helfen?"
+        }
+      ],
+      "hint": "sollen, ich"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Du"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "sollst"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "weniger arbeiten."
+        }
+      ],
+      "hint": "sollen, du"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um zehn im Büro sein."
+        }
+      ],
+      "hint": "sollen, er"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "sollen"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Formular ausfüllen."
+        }
+      ],
+      "hint": "sollen, wir"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "Sollt"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr auch zur Besprechung kommen?"
+        }
+      ],
+      "hint": "sollen, ihr"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "sollen"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht so viel fernsehen."
+        }
+      ],
+      "hint": "sollen, sie"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich mitbringen?"
+        }
+      ],
+      "hint": "sollen, ich"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Sollen"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wir uns um sieben treffen?"
+        }
+      ],
+      "hint": "sollen, wir"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sich bei der Firma melden."
+        }
+      ],
+      "hint": "sollen, sie"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Du"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "sollst"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das dem Chef sagen."
+        }
+      ],
+      "hint": "sollen, du"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich das Fenster aufmachen?"
+        }
+      ],
+      "hint": "sollen, ich"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "sollen"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "hier nicht parken."
+        }
+      ],
+      "hint": "sollen, wir"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen zum Zahnarzt."
+        }
+      ],
+      "hint": "sollen, er"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "Sollst"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du nicht eigentlich lernen?"
+        }
+      ],
+      "hint": "sollen, du"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Man"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "vor dem Essen die Hände waschen."
+        }
+      ],
+      "hint": "sollen, man"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "sollt"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "pünktlich sein."
+        }
+      ],
+      "hint": "sollen, ihr"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wann"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich anrufen?"
+        }
+      ],
+      "hint": "sollen, ich"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Gäste"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "sollen"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sich bitte anmelden."
+        }
+      ],
+      "hint": "sollen, sie"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Soll"
+          ],
+          "tags": [
+            "form:modal_sollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich dir die Adresse schicken?"
+        }
+      ],
+      "hint": "sollen, ich"
+    }
+  ]
+}

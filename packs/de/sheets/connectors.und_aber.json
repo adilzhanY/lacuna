@@ -1,0 +1,486 @@
+{
+  "topic_id": "connectors.und_aber",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich trinke Kaffee"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "esse ein Brötchen."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Wohnung ist schön,"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sie ist zu teuer."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren nach Berlin"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bleiben drei Tage."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er wollte kommen,"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "er wurde krank."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich lerne Deutsch"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Englisch."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Essen war gut,"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu salzig."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie arbeitet in Köln"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wohnt in Bonn."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe Zeit,"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine Lust."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Möchtest du Tee"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "oder"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee?"
+        }
+      ],
+      "hint": "choice"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir können ins Kino gehen"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "oder"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu Hause bleiben."
+        }
+      ],
+      "hint": "choice"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Zug war voll,"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich habe einen Platz gefunden."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich stehe auf"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mache Kaffee."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kommst du mit"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "oder"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bleibst du hier?"
+        }
+      ],
+      "hint": "choice"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Zimmer ist klein,"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "es ist sehr hell."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Frau"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich fahren morgen weg."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich rufe an,"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "niemand geht ran."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir kaufen Brot"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "und"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Milch."
+        }
+      ],
+      "hint": "adding"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er spricht Deutsch,"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht sehr gut."
+        }
+      ],
+      "hint": "contrast"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nimmst du den Bus"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "oder"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Fahrrad?"
+        }
+      ],
+      "hint": "choice"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich bin müde,"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "aber"
+          ],
+          "tags": [
+            "form:conjunction"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich gehe trotzdem mit."
+        }
+      ],
+      "hint": "contrast"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "topic_id": "verbs_present.regular",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "komme"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "aus Kasachstan."
+        }
+      ],
+      "hint": "kommen, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "wohnst"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du?"
+        }
+      ],
+      "hint": "wohnen, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "studiert"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Informatik in München."
+        }
+      ],
+      "hint": "studieren, er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "lernen"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Tag Deutsch."
+        }
+      ],
+      "hint": "lernen, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Arbeitet"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr am Wochenende?"
+        }
+      ],
+      "hint": "arbeiten, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "wohnen"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "in einem kleinen Dorf."
+        }
+      ],
+      "hint": "wohnen, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "höre"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gern Musik."
+        }
+      ],
+      "hint": "hören, ich"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Gehst"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du oft ins Kino?"
+        }
+      ],
+      "hint": "gehen, du"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "arbeitet"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bei einer Bank."
+        }
+      ],
+      "hint": "arbeiten, sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "frühstücken"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um sieben Uhr."
+        }
+      ],
+      "hint": "frühstücken, wir"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "kostet"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das?"
+        }
+      ],
+      "hint": "kosten, es"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "schicke"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "dir morgen eine E-Mail."
+        }
+      ],
+      "hint": "schicken, ich"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Unterricht"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "beginnt"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um neun."
+        }
+      ],
+      "hint": "beginnen, er"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Rufen"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie mich bitte später an."
+        }
+      ],
+      "hint": "anrufen, Sie"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "sprecht"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr schnell."
+        }
+      ],
+      "hint": "sprechen, ihr"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "putzt"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "seine Wohnung jeden Samstag."
+        }
+      ],
+      "hint": "putzen, er"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "fahren"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "am Freitag nach Hamburg."
+        }
+      ],
+      "hint": "fahren, wir"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "glaube"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das nicht."
+        }
+      ],
+      "hint": "glauben, ich"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Liest"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gern Bücher?"
+        }
+      ],
+      "hint": "lesen, du"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "trinkt"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihren Kaffee ohne Zucker."
+        }
+      ],
+      "hint": "trinken, sie"
+    }
+  ]
+}

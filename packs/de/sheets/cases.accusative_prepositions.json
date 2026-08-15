@@ -1,0 +1,526 @@
+{
+  "topic_id": "cases.accusative_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe ein Geschenk für"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "meinen"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vater gekauft."
+        }
+      ],
+      "hint": "für, mein Vater"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir gehen durch"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_durch"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Park zum Bahnhof."
+        }
+      ],
+      "hint": "durch, der Park"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie kommt ohne"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "ihren"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_ohne"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mann."
+        }
+      ],
+      "hint": "ohne, ihr Mann"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus fährt um"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_um"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Marktplatz herum."
+        }
+      ],
+      "hint": "um, der Marktplatz"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Paket ist für"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarin."
+        }
+      ],
+      "hint": "für, die Nachbarin"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich bin gegen"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_gegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vorschlag."
+        }
+      ],
+      "hint": "gegen, der Vorschlag"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren durch"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_durch"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tunnel."
+        }
+      ],
+      "hint": "durch, der Tunnel"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ohne"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "deinen"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_ohne"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pass kommst du nicht rein."
+        }
+      ],
+      "hint": "ohne, dein Pass"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Zimmer ist für"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kinder."
+        }
+      ],
+      "hint": "für, die Kinder"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er läuft gegen"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_gegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wind."
+        }
+      ],
+      "hint": "gegen, der Wind"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir treffen uns um"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_um"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ecke."
+        }
+      ],
+      "hint": "um, die Ecke"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich mache das für"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", nicht für ihn."
+        }
+      ],
+      "hint": "für, du"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie geht ohne"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_ohne"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ins Kino."
+        }
+      ],
+      "hint": "ohne, ich"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Weg führt durch"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_durch"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wald."
+        }
+      ],
+      "hint": "durch, der Wald"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Danke für"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hilfe!"
+        }
+      ],
+      "hint": "für, die Hilfe"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Auto fährt gegen"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_gegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Baum."
+        }
+      ],
+      "hint": "gegen, der Baum"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir sitzen um"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_um"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch."
+        }
+      ],
+      "hint": "um, der Tisch"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ohne"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_ohne"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin geht es leider nicht."
+        }
+      ],
+      "hint": "ohne, ein Termin"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe etwas für"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_fuer"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mitgebracht."
+        }
+      ],
+      "hint": "für, ihr"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie läuft durch"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "case:accusative",
+            "trigger:preposition",
+            "trigger:preposition_durch"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stadt."
+        }
+      ],
+      "hint": "durch, die Stadt"
+    }
+  ]
+}

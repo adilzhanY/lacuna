@@ -1,0 +1,506 @@
+{
+  "topic_id": "pronouns.reflexive_accusative",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich wasche"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Morgen."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie fühlst du"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute?"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er freut"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "auf den Urlaub."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir treffen"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um sieben am Bahnhof."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Setzt"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bitte hin!"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder ziehen"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "allein an."
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich interessiere"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "für Musik."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie erinnert"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht an den Namen."
+        }
+      ],
+      "hint": "sie"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Beeil"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", der Bus kommt gleich!"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir unterhalten"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gern über Politik."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er ärgert"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "über den Chef."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Setz"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu mir, hier ist Platz."
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich muss"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch duschen."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Freut ihr"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "auch auf das Wochenende?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie bewirbt"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bei einer großen Firma."
+        }
+      ],
+      "hint": "sie"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lange nicht gesehen."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "beim Sport verletzt."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich ruhe"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kurz aus."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie schreibt man das? Ich schreibe"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "mir"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das lieber auf."
+        }
+      ],
+      "hint": "ich, dative"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Gäste fühlen"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "sich"
+          ],
+          "tags": [
+            "form:reflexive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "hier wohl."
+        }
+      ],
+      "hint": "sie, pl"
+    }
+  ]
+}

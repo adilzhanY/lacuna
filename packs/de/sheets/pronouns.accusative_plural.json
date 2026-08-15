@@ -1,0 +1,524 @@
+{
+  "topic_id": "pronouns.accusative_plural",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen abholen?"
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern im Park gesehen."
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder sind draußen. Ich rufe"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "rein."
+        }
+      ],
+      "hint": "die Kinder"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wartet auf"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", wir kommen gleich!"
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern kommen heute. Ich hole"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ab."
+        }
+      ],
+      "hint": "meine Eltern"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wer bringt"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nach Hause?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Schuhe sind neu. Ich trage"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zum ersten Mal."
+        }
+      ],
+      "hint": "die Schuhe"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Frau Berger, ich rufe"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "später an."
+        }
+      ],
+      "hint": "Sie, formal"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kennst du"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "beide schon?"
+        }
+      ],
+      "hint": "die zwei"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ohne"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "macht das keinen Spaß."
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er besucht"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Sommer."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Blumen sind schön. Ich stelle"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "auf den Tisch."
+        }
+      ],
+      "hint": "die Blumen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wann treffen wir"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wieder?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Nachbarn stören"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jede Nacht."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht vergessen, versprochen."
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Fotos sind fertig. Willst du"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehen?"
+        }
+      ],
+      "hint": "die Fotos"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus nimmt"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "uns"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bis zum Markt mit."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "euch"
+          ],
+          "tags": [
+            "case:dative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "eine Nachricht geschickt."
+        }
+      ],
+      "hint": "ihr, dative"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Kollegen? Ja, ich sehe"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Tag."
+        }
+      ],
+      "hint": "meine Kollegen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Bitte lassen"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mich vorbei."
+        }
+      ],
+      "hint": "Sie, formal"
+    }
+  ]
+}

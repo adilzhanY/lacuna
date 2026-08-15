@@ -1,0 +1,486 @@
+{
+  "topic_id": "adverbs.frequency",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich gehe"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "oft"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ins Fitnessstudio, dreimal pro Woche."
+        }
+      ],
+      "hint": "often"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er trinkt"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "nie"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Alkohol, kein einziges Glas."
+        }
+      ],
+      "hint": "never"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir essen"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "immer"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zusammen, jeden Abend."
+        }
+      ],
+      "hint": "always"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie kommt"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "selten"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu spät, vielleicht einmal im Monat."
+        }
+      ],
+      "hint": "rarely"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich koche"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "manchmal"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", aber nicht jeden Tag."
+        }
+      ],
+      "hint": "sometimes"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus ist"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "meistens"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "pünktlich, nur selten zu spät."
+        }
+      ],
+      "hint": "mostly"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "immer"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeit am Wochenende."
+        }
+      ],
+      "hint": "always"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er ruft"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "selten"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "an, nur zum Geburtstag."
+        }
+      ],
+      "hint": "rarely"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "manchmal"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nach Hamburg, zweimal im Jahr."
+        }
+      ],
+      "hint": "sometimes"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich frühstücke"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "normalerweise"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um sieben."
+        }
+      ],
+      "hint": "normally"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie geht"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "immer"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu Fuß zur Arbeit."
+        }
+      ],
+      "hint": "always"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich war"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "nie"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "in Österreich, noch nicht einmal."
+        }
+      ],
+      "hint": "never"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir sehen uns"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "oft"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", fast jeden Tag."
+        }
+      ],
+      "hint": "often"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er kommt"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "immer"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu spät, das ist normal bei ihm."
+        }
+      ],
+      "hint": "always"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich lese"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "meistens"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "vor dem Schlafen."
+        }
+      ],
+      "hint": "mostly"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie isst"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "nie"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fleisch, sie ist Vegetarierin."
+        }
+      ],
+      "hint": "never"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir gehen"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "selten"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ins Theater, vielleicht zweimal im Jahr."
+        }
+      ],
+      "hint": "rarely"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich nehme"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "normalerweise"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den Bus, aber heute nicht."
+        }
+      ],
+      "hint": "normally"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hilft mir"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "oft"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", wenn ich frage."
+        }
+      ],
+      "hint": "often"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das passiert"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "manchmal"
+          ],
+          "tags": [
+            "form:adverb_frequency"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", aber nicht heute."
+        }
+      ],
+      "hint": "sometimes"
+    }
+  ]
+}

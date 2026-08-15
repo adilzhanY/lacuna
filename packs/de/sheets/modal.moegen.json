@@ -1,0 +1,462 @@
+{
+  "topic_id": "modal.moegen",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "mag"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keinen Fisch."
+        }
+      ],
+      "hint": "mögen, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Magst"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du Kaffee oder Tee?"
+        }
+      ],
+      "hint": "mögen, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "mag"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "seine neue Arbeit sehr."
+        }
+      ],
+      "hint": "mögen, er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "mögen"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Wetter hier nicht."
+        }
+      ],
+      "hint": "mögen, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Mögt"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr klassische Musik?"
+        }
+      ],
+      "hint": "mögen, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "mögen"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine Milch."
+        }
+      ],
+      "hint": "mögen, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "möchte"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gern ein Glas Wasser."
+        }
+      ],
+      "hint": "möchten, ich, polite"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Möchten"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie noch einen Kaffee?"
+        }
+      ],
+      "hint": "möchten, Sie"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "möchte"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lieber zu Hause bleiben."
+        }
+      ],
+      "hint": "möchten, sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "möchten"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwei Karten für heute Abend."
+        }
+      ],
+      "hint": "möchten, wir"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "möchtest"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du trinken?"
+        }
+      ],
+      "hint": "möchten, du"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "mag"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "diesen Film überhaupt nicht."
+        }
+      ],
+      "hint": "mögen, ich"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Möchtest"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du mit ins Schwimmbad?"
+        }
+      ],
+      "hint": "möchten, du"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "mag"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lieber Tee als Kaffee."
+        }
+      ],
+      "hint": "mögen, er"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Frau"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "mag"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine großen Städte."
+        }
+      ],
+      "hint": "mögen, sie"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "mögen"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den Sommer sehr."
+        }
+      ],
+      "hint": "mögen, wir"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "möchte"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bitte die Rechnung."
+        }
+      ],
+      "hint": "möchten, ich"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Möchtet"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr noch etwas essen?"
+        }
+      ],
+      "hint": "möchten, ihr"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "mögen"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den neuen Lehrer."
+        }
+      ],
+      "hint": "mögen, sie"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Magst"
+          ],
+          "tags": [
+            "form:modal_moegen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du das wirklich nicht?"
+        }
+      ],
+      "hint": "mögen, du"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "topic_id": "pronouns.sie_sie_sie",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Guten Tag, wie heißen"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "a stranger at the counter"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mama, wo bist"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:informal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "your mother"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Frau Berger, haben"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kurz Zeit?"
+        }
+      ],
+      "hint": "your landlady"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Schwester ist Ärztin."
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "arbeitet in Köln."
+        }
+      ],
+      "hint": "she"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern kommen morgen."
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bleiben eine Woche."
+        }
+      ],
+      "hint": "they"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hallo Jonas, kommst"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:informal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mit?"
+        }
+      ],
+      "hint": "a friend"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Entschuldigung, können"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mir helfen?"
+        }
+      ],
+      "hint": "a stranger"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kinder, seid"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "ihr"
+          ],
+          "tags": [
+            "form:informal",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fertig?"
+        }
+      ],
+      "hint": "two children"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Herr Doktor, wann kann ich"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sprechen?"
+        }
+      ],
+      "hint": "the doctor"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Kollegin ist neu. Kennst du"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schon?"
+        }
+      ],
+      "hint": "her"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Liebe Oma, ich schreibe"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "dir"
+          ],
+          "tags": [
+            "form:informal",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "aus Berlin."
+        }
+      ],
+      "hint": "grandmother, close"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sehr geehrte Frau Wagner, ich schreibe"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Ihnen"
+          ],
+          "tags": [
+            "form:formal",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wegen der Wohnung."
+        }
+      ],
+      "hint": "a formal letter"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Nachbarn sind laut."
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "feiern jedes Wochenende."
+        }
+      ],
+      "hint": "they"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Herr Klein, wo arbeiten"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jetzt?"
+        }
+      ],
+      "hint": "a colleague you address formally"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Papa, kannst"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:informal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mich abholen?"
+        }
+      ],
+      "hint": "your father"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Chefin ruft an."
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "will mich sprechen."
+        }
+      ],
+      "hint": "she"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie war"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Ihre"
+          ],
+          "tags": [
+            "form:formal",
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Reise, Frau Berger?"
+        }
+      ],
+      "hint": "her trip, formal"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie war"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "deine"
+          ],
+          "tags": [
+            "form:informal",
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Reise, Lena?"
+        }
+      ],
+      "hint": "her trip, informal"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Freunde, wollt"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "ihr"
+          ],
+          "tags": [
+            "form:informal",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch bleiben?"
+        }
+      ],
+      "hint": "friends"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Kellner kommt."
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Er"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bringt die Karte."
+        }
+      ],
+      "hint": "he"
+    }
+  ]
+}

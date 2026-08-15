@@ -1,0 +1,508 @@
+{
+  "topic_id": "pronouns.accusative_singular",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bitte anrufen?"
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern gesehen."
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Chef sucht"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "ihn"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich kenne"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schon lange."
+        }
+      ],
+      "hint": "sie, singular"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Buch ist gut, ich lese"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "es"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gerade."
+        }
+      ],
+      "hint": "es"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wartest du auf"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich rufe"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen an, Herr Wagner."
+        }
+      ],
+      "hint": "Sie, formal"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Suppe ist kalt. Ich mag"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "so nicht."
+        }
+      ],
+      "hint": "die Suppe"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Schlüssel ist weg. Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "ihn"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gesehen?"
+        }
+      ],
+      "hint": "der Schlüssel"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie liebt"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "ihn"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "ihr"
+          ],
+          "tags": [
+            "case:dative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kurz helfen? Nein, warte auf mich."
+        }
+      ],
+      "hint": "sie, dative"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich verstehe"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "leider nicht."
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Paket kommt heute. Bringst du"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "es"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "rein?"
+        }
+      ],
+      "hint": "das Paket"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wer holt"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "mich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "vom Bahnhof ab?"
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich sehe"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Morgen im Bus."
+        }
+      ],
+      "hint": "sie, singular"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Hund ist müde. Lass"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "ihn"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schlafen."
+        }
+      ],
+      "hint": "der Hund"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich frage"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "ihn"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "später, wenn er da ist."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Entschuldigung, darf ich"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun",
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "etwas fragen?"
+        }
+      ],
+      "hint": "Sie, formal"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Wohnung gefällt uns. Wir nehmen"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "sie"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "die Wohnung"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ohne"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "dich"
+          ],
+          "tags": [
+            "case:accusative",
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gehe ich nicht."
+        }
+      ],
+      "hint": "du"
+    }
+  ]
+}

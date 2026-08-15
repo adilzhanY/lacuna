@@ -1,0 +1,470 @@
+{
+  "topic_id": "modal.wollen",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute früh schlafen gehen."
+        }
+      ],
+      "hint": "wollen, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Willst"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du mitkommen?"
+        }
+      ],
+      "hint": "wollen, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nächstes Jahr nach Berlin ziehen."
+        }
+      ],
+      "hint": "wollen, er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "am Samstag grillen."
+        }
+      ],
+      "hint": "wollen, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Wollt"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr wirklich schon gehen?"
+        }
+      ],
+      "hint": "wollen, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "eine Reise nach Italien machen."
+        }
+      ],
+      "hint": "wollen, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "willst"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du am Wochenende machen?"
+        }
+      ],
+      "hint": "wollen, du"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ärztin werden."
+        }
+      ],
+      "hint": "wollen, sie"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das nicht noch einmal erklären."
+        }
+      ],
+      "hint": "wollen, ich"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie einen Termin vereinbaren?"
+        }
+      ],
+      "hint": "wollen, Sie"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "unsere Wohnung renovieren."
+        }
+      ],
+      "hint": "wollen, wir"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kein Fleisch mehr essen."
+        }
+      ],
+      "hint": "wollen, er"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Willst"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du wirklich zu Fuß gehen?"
+        }
+      ],
+      "hint": "wollen, du"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch nicht ins Bett."
+        }
+      ],
+      "hint": "wollen, sie"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen mit dir sprechen."
+        }
+      ],
+      "hint": "wollen, ich"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wohin"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "wollt"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr im Urlaub fahren?"
+        }
+      ],
+      "hint": "wollen, ihr"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ein neues Auto kaufen."
+        }
+      ],
+      "hint": "wollen, sie"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "wollen"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute Abend ins Konzert."
+        }
+      ],
+      "hint": "wollen, wir"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nichts davon hören."
+        }
+      ],
+      "hint": "wollen, er"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "will"
+          ],
+          "tags": [
+            "form:modal_wollen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sie eigentlich von mir?"
+        }
+      ],
+      "hint": "wollen, sie"
+    }
+  ]
+}

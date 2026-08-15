@@ -1,0 +1,466 @@
+{
+  "topic_id": "modal.muessen",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen früh aufstehen."
+        }
+      ],
+      "hint": "müssen, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Musst"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du wirklich schon gehen?"
+        }
+      ],
+      "hint": "müssen, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "die Rechnung bis Freitag bezahlen."
+        }
+      ],
+      "hint": "müssen, er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch einkaufen."
+        }
+      ],
+      "hint": "müssen, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Müsst"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr am Samstag arbeiten?"
+        }
+      ],
+      "hint": "müssen, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um acht im Bett sein."
+        }
+      ],
+      "hint": "müssen, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zum Arzt, mir geht es schlecht."
+        }
+      ],
+      "hint": "müssen, ich"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie das Formular heute abgeben?"
+        }
+      ],
+      "hint": "müssen, Sie"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch für die Prüfung lernen."
+        }
+      ],
+      "hint": "müssen, sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "leider absagen."
+        }
+      ],
+      "hint": "müssen, wir"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Du"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "musst"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das nicht machen, wenn du nicht willst."
+        }
+      ],
+      "hint": "müssen, du"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Tag eine Stunde fahren."
+        }
+      ],
+      "hint": "müssen, er"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch die Wohnung putzen."
+        }
+      ],
+      "hint": "müssen, ich"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wir wirklich so früh los?"
+        }
+      ],
+      "hint": "müssen, wir"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Schwester"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "viel arbeiten."
+        }
+      ],
+      "hint": "müssen, sie"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "müsst"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Zimmer bis zehn Uhr verlassen."
+        }
+      ],
+      "hint": "müssen, ihr"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mich beeilen."
+        }
+      ],
+      "hint": "müssen, ich"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Musst"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du deinen Pass mitbringen?"
+        }
+      ],
+      "hint": "müssen, du"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "müssen"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "am Bahnhof umsteigen."
+        }
+      ],
+      "hint": "müssen, wir"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "muss"
+          ],
+          "tags": [
+            "form:modal_muessen"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den Termin leider verschieben."
+        }
+      ],
+      "hint": "müssen, er"
+    }
+  ]
+}
