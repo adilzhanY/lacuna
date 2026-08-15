@@ -10,7 +10,7 @@ Ticked items are done and committed.
 - [x] Wire `ts-rs` so Rust structs export TypeScript types into `web/`
 - [x] Dev setup: Next dev server proxies `/api` to the Rust server
 - [ ] Release setup: `rust-embed` bundles the Next static export into the binary
-- [ ] `.gitignore`, `README.md`, licence (MIT or Apache 2.0, pick one before the first push)
+- [x] `.gitignore`, `README.md`, MIT licence
 
 ## 1. Data model and database
 
