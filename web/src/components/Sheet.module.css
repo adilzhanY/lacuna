@@ -1,0 +1,240 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.breadcrumb {
+  margin: 0 0 26px;
+}
+
+.counter {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 3px 9px;
+}
+
+/* ---------------------------------------------------------------- items */
+
+.item {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px dotted var(--rule);
+}
+
+.n {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+}
+
+.sentence {
+  font-family: var(--serif);
+  font-size: 17.5px;
+  line-height: 2.15;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px;
+  min-width: 0;
+}
+
+.hint {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--blue);
+}
+
+/* ---------------------------------------------------------------- blanks */
+
+.blankWrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+/*
+ * Every blank is the same width whatever the answer is, so its size never
+ * leaks how long the word should be.
+ */
+.blank {
+  font-family: var(--serif);
+  font-size: 17.5px;
+  width: 7.5ch;
+  padding: 0 4px 2px;
+  text-align: center;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 1.5px solid var(--ink);
+  outline: none;
+}
+
+.blank:focus {
+  border-bottom-color: var(--blue);
+  background: rgba(39, 69, 111, 0.06);
+}
+
+.blank:disabled {
+  cursor: default;
+}
+
+.blank.ok {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+.blank.note {
+  color: var(--green);
+  border-bottom-color: var(--gold);
+}
+
+.blank.no {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* The correct form appears under the blank, never in a summary at the bottom. */
+.correction {
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--red);
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.correction em {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.noteText {
+  color: var(--muted);
+}
+
+.accept {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 1px 5px;
+  margin-top: 3px;
+}
+
+.accept:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ---------------------------------------------------------------- actions */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.button {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 3px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--sheet);
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--ink);
+}
+
+.keys {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- result */
+
+.result {
+  margin: 30px 0 0;
+  padding: 18px 20px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.score {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resultLine {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.ratings {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.rating {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--muted);
+}
+
+.rating.chosen {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--sheet);
+}
+
+.error {
+  color: var(--red);
+  font-size: 13px;
+}

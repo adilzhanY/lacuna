@@ -1,69 +1,65 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+import Shell from "@/components/Shell";
+import { api, type Level, type TopicView } from "@/lib/api";
 import styles from "./page.module.css";
 
+const LEVELS: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
 export default function Home() {
+  const [topics, setTopics] = useState<TopicView[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    api.topics().then(setTopics).catch((e: Error) => setError(e.message));
+  }, []);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <Shell>
+      <h2 className={styles.title}>The curriculum</h2>
+      <p className={styles.intro}>
+        Every topic in the German pack, in the order it should be taught. A topic with a
+        sheet can be opened now. The rest are waiting on generation.
+      </p>
+
+      {error && <p className={styles.error}>{error}</p>}
+      {!topics && !error && <p className="label">Loading topics</p>}
+
+      {LEVELS.map((level) => {
+        const inLevel = topics?.filter((t) => t.cefr === level) ?? [];
+        if (inLevel.length === 0) return null;
+        return (
+          <section key={level} className={styles.level}>
+            <div className={styles.levelHead}>
+              <h3 className={styles.levelName}>{level}</h3>
+              <span className="label">{inLevel.length} topics</span>
+            </div>
+            {inLevel.map((topic) => (
+              <div key={topic.id} className={styles.row}>
+                <span className={styles.rowTitle}>
+                  {topic.has_sheet ? (
+                    <Link href={`/sheet/${topic.id}`} className={styles.ready}>
+                      {topic.title}
+                    </Link>
+                  ) : (
+                    topic.title
+                  )}
+                  <small>{topic.goal}</small>
+                </span>
+                {topic.is_due && topic.has_sheet && <span className={styles.badge}>due</span>}
+                <span className={styles.state}>
+                  {topic.reps === 0
+                    ? "not studied"
+                    : `${topic.reps} reviews${topic.due ? `, due ${topic.due}` : ""}`}
+                </span>
+              </div>
+            ))}
+          </section>
+        );
+      })}
+    </Shell>
   );
 }
