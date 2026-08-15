@@ -1,0 +1,27 @@
+# rust
+/server/target/
+**/*.rs.bk
+
+# node / next
+node_modules/
+/web/.next/
+/web/out/
+/web/next-env.d.ts
+.turbo/
+
+# local data and secrets
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.env.local
+
+# lavish review artifacts
+.lavish/
+
+# editors and os
+.DS_Store
+.idea/
+.vscode/
+*.swp

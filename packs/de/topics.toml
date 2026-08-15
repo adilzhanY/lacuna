@@ -1,0 +1,382 @@
+# lacuna German pack: topic tree
+#
+# cefr    = level as labelled in the source curriculum (Busuu)
+# stage   = suggested teaching order inside that level, which is not always the
+#           same as the source order (see the notes at the bottom)
+# status  = "new" when the topic has never been studied yet
+
+# =============================================================== A1
+
+[[topic]]
+id = "articles.definite"
+cefr = "A1"
+stage = 1
+category = "Articles"
+title = "Definite articles"
+goal = "Practice the definite articles der, die and das"
+
+[[topic]]
+id = "pronouns.personal"
+cefr = "A1"
+stage = 2
+category = "Pronouns"
+title = "Personal pronouns"
+goal = "Use words like ich, du, sie"
+
+[[topic]]
+id = "verbs_present.sein"
+cefr = "A1"
+stage = 3
+category = "Verbs: present"
+title = "The verb sein"
+goal = "Practice using the verb sein"
+
+[[topic]]
+id = "verbs_present.haben"
+cefr = "A1"
+stage = 4
+category = "Verbs: present"
+title = "The verb haben"
+goal = "Practice using the verb haben"
+
+[[topic]]
+id = "verbs_present.regular"
+cefr = "A1"
+stage = 5
+category = "Verbs: present"
+title = "Regular verbs in the Präsens"
+goal = "Use kommen, wohnen, studieren"
+
+[[topic]]
+id = "discourse.sentence_structure"
+cefr = "A1"
+stage = 6
+category = "Discourse, sentence, and phrase types"
+title = "Basic German sentence structure"
+goal = "Understand basic concepts of sentence word order"
+
+[[topic]]
+id = "articles.definite_indefinite"
+cefr = "A1"
+stage = 7
+category = "Articles"
+title = "Definite and indefinite articles"
+goal = "Learn when to use der vs ein"
+
+[[topic]]
+id = "verbs_present.irregular"
+cefr = "A1"
+stage = 8
+category = "Verbs: present"
+title = "Irregular verbs in the Präsens"
+goal = "Use irregular verbs such as sein, haben and fahren"
+
+[[topic]]
+id = "discourse.questions"
+cefr = "A1"
+stage = 9
+category = "Discourse, sentence, and phrase types"
+title = "Asking questions"
+goal = "Learn how to ask questions"
+
+[[topic]]
+id = "negation.kein"
+cefr = "A1"
+stage = 10
+category = "The negative"
+title = "Negation with kein"
+goal = "Practice forming negative sentences"
+
+[[topic]]
+id = "negation.nicht"
+cefr = "A1"
+stage = 11
+category = "The negative"
+title = "Negation with nicht"
+goal = "Practice forming negative sentences"
+
+[[topic]]
+id = "pronouns.possessive"
+cefr = "A1"
+stage = 12
+category = "Pronouns"
+title = "Possessive adjectives"
+goal = "Use words like mein and meine"
+
+[[topic]]
+id = "cases.accusative_basics"
+cefr = "A1"
+stage = 13
+category = "Cases"
+title = "Accusative case (basics)"
+goal = "Practice using einen, eine, ein"
+
+[[topic]]
+id = "cases.accusative"
+cefr = "A1"
+stage = 14
+category = "Cases"
+title = "Accusative case"
+goal = "Practice using den and einen"
+
+[[topic]]
+id = "pronouns.accusative_singular"
+cefr = "A1"
+stage = 15
+category = "Pronouns"
+title = "Accusative pronouns (singular)"
+goal = "Practice using personal pronouns in the accusative"
+
+[[topic]]
+id = "pronouns.accusative_plural"
+cefr = "A1"
+stage = 16
+category = "Pronouns"
+title = "Accusative pronouns (plural)"
+goal = "Practice using personal pronouns in the accusative"
+
+[[topic]]
+id = "cases.accusative_prepositions"
+cefr = "A1"
+stage = 17
+category = "Cases"
+title = "Accusative prepositions"
+goal = "Learn prepositions that need to be followed by the accusative case"
+
+[[topic]]
+id = "modal.moegen"
+cefr = "A1"
+stage = 18
+category = "Verbs: modal"
+title = "The verb mögen"
+goal = "Practice expressing likes and preferences"
+
+[[topic]]
+id = "modal.wollen"
+cefr = "A1"
+stage = 19
+category = "Verbs: modal"
+title = "The verb wollen"
+goal = "Practice saying what you want to do"
+
+[[topic]]
+id = "modal.muessen"
+cefr = "A1"
+stage = 20
+category = "Verbs: modal"
+title = "The verb müssen"
+goal = "Practice saying what you must do"
+
+[[topic]]
+id = "modal.sollen"
+cefr = "A1"
+stage = 21
+category = "Verbs: modal"
+title = "The verb sollen"
+goal = "Practice saying what you are supposed to or should do"
+
+[[topic]]
+id = "cases.dative"
+cefr = "A1"
+stage = 22
+category = "Cases"
+title = "Dative case"
+goal = "Practice when to use the dative"
+
+[[topic]]
+id = "cases.dative_prepositions"
+cefr = "A1"
+stage = 23
+category = "Cases"
+title = "Dative prepositions"
+goal = "Learn prepositions that need to be followed by the dative case"
+
+[[topic]]
+id = "pronouns.reflexive_accusative"
+cefr = "A1"
+stage = 24
+category = "Pronouns"
+title = "Reflexive pronouns (accusative)"
+goal = "Practice using accusative reflexive pronouns"
+
+[[topic]]
+id = "pronouns.sie_sie_sie"
+cefr = "A1"
+stage = 25
+category = "Pronouns"
+title = "sie, sie, Sie"
+goal = "Practice formal and informal speech"
+
+[[topic]]
+id = "adverbs.frequency"
+cefr = "A1"
+stage = 26
+category = "Adverbs"
+title = "Adverbs of frequency"
+goal = "Learn how to use words like oft, nie and selten"
+
+[[topic]]
+id = "connectors.und_aber"
+cefr = "A1"
+stage = 27
+category = "Connectors"
+title = "Conjunctions: und and aber"
+goal = "Understand and use conjunctions"
+
+# =============================================================== A2
+
+[[topic]]
+id = "verbs_past.praeteritum_sein"
+cefr = "A2"
+stage = 1
+category = "Verbs: past tenses"
+title = "Präteritum (sein)"
+goal = "Use sein in the past tense"
+
+[[topic]]
+id = "verbs_past.praeteritum_haben"
+cefr = "A2"
+stage = 2
+category = "Verbs: past tenses"
+title = "Präteritum (haben)"
+goal = "Use haben in the past tense"
+
+[[topic]]
+id = "verbs_past.perfekt_haben"
+cefr = "A2"
+stage = 3
+category = "Verbs: past tenses"
+title = "Perfekt (haben)"
+goal = "Practice the Perfekt with haben"
+
+[[topic]]
+id = "verbs_past.perfekt_sein"
+cefr = "A2"
+stage = 4
+category = "Verbs: past tenses"
+title = "Perfekt (sein)"
+goal = "Practice the Perfekt with sein"
+
+[[topic]]
+id = "verbs_past.perfekt_irregular"
+cefr = "A2"
+stage = 5
+category = "Verbs: past tenses"
+title = "Perfekt (irregular forms)"
+goal = "Practice the Perfekt with irregular verbs"
+
+[[topic]]
+id = "cases.dual_prepositions"
+cefr = "A2"
+stage = 6
+category = "Cases"
+title = "Dual case prepositions"
+goal = "Learn how to use dual case prepositions"
+
+[[topic]]
+id = "cases.verbs_with_cases"
+cefr = "A2"
+stage = 7
+category = "Cases"
+title = "Verbs and grammatical cases"
+goal = "Learn verbs that take dative and accusative"
+
+[[topic]]
+id = "adjectives.after_definite"
+cefr = "A2"
+stage = 8
+category = "Adjectives"
+title = "Adjective endings after definite articles"
+goal = "Practice German adjective declension and endings"
+
+[[topic]]
+id = "adjectives.after_indefinite"
+cefr = "A2"
+stage = 9
+category = "Adjectives"
+title = "Adjective endings after indefinite articles"
+goal = "Practice German adjective declension and endings"
+
+# =============================================================== B1
+
+[[topic]]
+id = "connectors.coordinating"
+cefr = "B1"
+stage = 1
+category = "Connectors"
+title = "Coordinating conjunctions"
+goal = "Produce more complex sentences using coordinating conjunctions"
+
+[[topic]]
+id = "cases.dative_adjective_endings"
+cefr = "B1"
+stage = 2
+category = "Cases"
+title = "Dative adjective endings"
+goal = "Practice adjective endings in the dative case"
+
+[[topic]]
+id = "adverbs.praepositionaladverbien"
+cefr = "B1"
+stage = 3
+category = "Adverbs"
+title = "Präpositionaladverbien"
+goal = "Avoid repetition using da- compounds"
+status = "new"
+
+[[topic]]
+id = "connectors.konjunktionaladverbien"
+cefr = "B1"
+stage = 4
+category = "Connectors"
+title = "Konjunktionaladverbien"
+goal = "Use Konjunktionaladverbien to connect sentences"
+status = "new"
+
+[[topic]]
+id = "verbs_present.nominalization"
+cefr = "B1"
+stage = 5
+category = "Verbs: present"
+title = "Nominalization of verbs"
+goal = "Turn verbs into nouns for concise sentences"
+status = "new"
+
+[[topic]]
+id = "subjunctive.konjunktiv_ii_present"
+cefr = "B1"
+stage = 6
+category = "Verbs: subjunctive"
+title = "Konjunktiv II: Present"
+goal = "Use the Konjunktiv II in the present tense"
+
+[[topic]]
+id = "subjunctive.konjunktiv_i_present"
+cefr = "B1"
+stage = 7
+category = "Verbs: subjunctive"
+title = "Konjunktiv I: Present"
+goal = "Practice using the Konjunktiv I in the present tense"
+status = "new"
+
+# =============================================================== notes
+#
+# B2, C1 and C2 are empty. The source curriculum stops at B1. Missing for the
+# higher levels: Genitiv, Relativsätze, Passiv, Konjunktiv II past, Futur I and
+# II, Präteritum of regular and irregular verbs in general, indirect speech,
+# Partizipialkonstruktionen, Nominalstil.
+#
+# Where the stage order differs from the source order and why:
+#
+# 1. sein and haben come before the past tenses, since Perfekt is built from
+#    them. That is already true across levels here.
+# 2. Adjective endings after definite articles come before endings after
+#    indefinite articles. The source has it the other way round, but the weak
+#    declension after der/die/das has only two endings to learn, so it is the
+#    easier entry point.
+# 3. cases.dative_adjective_endings is labelled B1 in the source while the other
+#    two adjective ending topics are A2. It really belongs immediately after
+#    them. The cefr label is kept as given, but the topic should be scheduled
+#    right after adjectives.after_indefinite.
+# 4. connectors.coordinating is labelled B1 but is closer to A2 in difficulty,
+#    and it directly extends connectors.und_aber from A1.
