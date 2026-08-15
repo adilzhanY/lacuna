@@ -1,0 +1,510 @@
+{
+  "topic_id": "cases.dative_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich fahre mit"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_mit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bus zur Arbeit."
+        }
+      ],
+      "hint": "der Bus"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nach"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_nach"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arbeit gehe ich einkaufen."
+        }
+      ],
+      "hint": "die Arbeit"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Bäckerei liegt gegenüber"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_gegenueber"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahnhof."
+        }
+      ],
+      "hint": "der Bahnhof"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich komme gerade aus"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_aus"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apotheke."
+        }
+      ],
+      "hint": "die Apotheke"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir wohnen seit"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "einem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_seit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Jahr in Leipzig."
+        }
+      ],
+      "hint": "ein Jahr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich fahre"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "zum",
+            "zu dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_zu"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arzt."
+        }
+      ],
+      "hint": "zu + der Arzt"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie kommt gerade"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "vom",
+            "von dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_von"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bürgeramt."
+        }
+      ],
+      "hint": "von + das Bürgeramt"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir waren gestern"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "beim",
+            "bei dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_bei"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zahnarzt."
+        }
+      ],
+      "hint": "bei + der Zahnarzt"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich fahre lieber mit"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_mit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Straßenbahn."
+        }
+      ],
+      "hint": "die Straßenbahn"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Post ist gegenüber"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_gegenueber"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kirche."
+        }
+      ],
+      "hint": "die Kirche"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Außer"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_ausser"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Chef sind alle im Urlaub."
+        }
+      ],
+      "hint": "der Chef"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich komme aus"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "einem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_aus"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dorf bei Bremen."
+        }
+      ],
+      "hint": "ein Dorf"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Seit"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_seit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Umzug bin ich müde."
+        }
+      ],
+      "hint": "der Umzug"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nach"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_nach"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Essen trinken wir Kaffee."
+        }
+      ],
+      "hint": "das Essen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren mit"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_mit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kindern nach Hamburg."
+        }
+      ],
+      "hint": "die Kinder"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe das Paket bei"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_bei"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarin abgegeben."
+        }
+      ],
+      "hint": "die Nachbarin"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Fährst du"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "zur",
+            "zu der"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_zu"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Uni?"
+        }
+      ],
+      "hint": "zu + die Uni"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich spreche mit"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_mit"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Vermieter über die Wohnung."
+        }
+      ],
+      "hint": "der Vermieter"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nach"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_nach"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin rufe ich dich an."
+        }
+      ],
+      "hint": "der Termin"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir kommen gerade aus"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "case:dative",
+            "trigger:preposition_aus"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kino."
+        }
+      ],
+      "hint": "das Kino"
+    }
+  ]
+}

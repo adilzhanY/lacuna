@@ -357,6 +357,34 @@ mod tests {
     }
 
     #[test]
+    fn every_shipped_seed_sheet_is_valid() {
+        let packs = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../packs");
+        let pack = crate::pack::Pack::load(&packs, "de").unwrap();
+        let dir = packs.join("de").join("sheets");
+        let mut checked = 0;
+        for entry in std::fs::read_dir(&dir).expect("packs/de/sheets must exist") {
+            let path = entry.unwrap().path();
+            if path.extension().and_then(|e| e.to_str()) != Some("json") {
+                continue;
+            }
+            let raw = std::fs::read_to_string(&path).unwrap();
+            let sheet: Sheet = serde_json::from_str(&raw)
+                .unwrap_or_else(|e| panic!("{} is not a sheet: {e}", path.display()));
+            sheet
+                .validate()
+                .unwrap_or_else(|e| panic!("{} is invalid: {e}", path.display()));
+            assert!(
+                pack.topic(&sheet.topic_id).is_some(),
+                "{} points at unknown topic `{}`",
+                path.display(),
+                sheet.topic_id
+            );
+            checked += 1;
+        }
+        assert!(checked > 0, "no seed sheets found in {}", dir.display());
+    }
+
+    #[test]
     fn also_accept_extends_the_list_once() {
         let mut s = sheet();
         assert!(s.accept_also("1a", "ankam"));

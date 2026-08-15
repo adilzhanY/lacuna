@@ -76,5 +76,8 @@ at the bottom of that file in the same edit.
 
 - No em dashes or en dashes anywhere, including code comments and commit messages.
 - Commit messages are one short line, no body, no attribution or co-author trailers.
+- **Commit and push after every finished feature.** A feature is done when it builds,
+  its tests pass, and it is committed and pushed. Do not batch several features into
+  one commit, and do not leave finished work sitting uncommitted.
 - Grading and normalisation logic gets unit tests. That is where the bugs will be.
 - Prefer quality, simplicity and long term maintainability over development speed.
