@@ -1,0 +1,470 @@
+{
+  "topic_id": "verbs_past.praeteritum_sein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Gestern"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich den ganzen Tag zu Hause."
+        }
+      ],
+      "hint": "sein, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Warst"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du schon einmal in Wien?"
+        }
+      ],
+      "hint": "sein, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Wetter"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "letzte Woche sehr schön."
+        }
+      ],
+      "hint": "sein, es"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um acht Uhr am Bahnhof."
+        }
+      ],
+      "hint": "sein, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Wart"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr gestern auf der Party?"
+        }
+      ],
+      "hint": "sein, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwei Wochen in Spanien."
+        }
+      ],
+      "hint": "sein, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Film"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "leider ziemlich langweilig."
+        }
+      ],
+      "hint": "sein, er"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "als Kind oft krank."
+        }
+      ],
+      "hint": "sein, ich"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie schon einmal hier, Frau Berger?"
+        }
+      ],
+      "hint": "sein, Sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr müde nach der Schule."
+        }
+      ],
+      "hint": "sein, sie"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "niemand im Büro."
+        }
+      ],
+      "hint": "sein, es"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "warst"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gestern Abend?"
+        }
+      ],
+      "hint": "sein, du"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "früher Nachbarn."
+        }
+      ],
+      "hint": "sein, wir"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Termin"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um zehn, nicht um elf."
+        }
+      ],
+      "hint": "sein, er"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "wart"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "damals noch sehr jung."
+        }
+      ],
+      "hint": "sein, ihr"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch nie in Italien."
+        }
+      ],
+      "hint": "sein, ich"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Prüfung"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schwerer als gedacht."
+        }
+      ],
+      "hint": "sein, sie"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "War"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das dein Bruder am Telefon?"
+        }
+      ],
+      "hint": "sein, es"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Kollegen"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "waren"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr freundlich zu mir."
+        }
+      ],
+      "hint": "sein, sie"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "war"
+          ],
+          "tags": [
+            "form:praeteritum_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "froh, dass du gekommen bist."
+        }
+      ],
+      "hint": "sein, ich"
+    }
+  ]
+}

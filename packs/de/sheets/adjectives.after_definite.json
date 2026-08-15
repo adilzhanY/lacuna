@@ -1,0 +1,519 @@
+{
+  "topic_id": "adjectives.after_definite",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "alte"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mann wohnt neben uns."
+        }
+      ],
+      "hint": "alt, m nom"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "neue"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung ist teuer."
+        }
+      ],
+      "hint": "neu, f nom"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "rote"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto steht draußen."
+        }
+      ],
+      "hint": "rot, n nom"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich kenne den"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "jungen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lehrer."
+        }
+      ],
+      "hint": "jung, m acc"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir nehmen die"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "kurze"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Straße."
+        }
+      ],
+      "hint": "kurz, f acc"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich mag das"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "frische"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brot dort."
+        }
+      ],
+      "hint": "frisch, n acc"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "kleinen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kinder spielen draußen."
+        }
+      ],
+      "hint": "klein, pl nom"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er arbeitet in dem"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "großen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Büro."
+        }
+      ],
+      "hint": "groß, n dat"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich fahre mit der"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "neuen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahn."
+        }
+      ],
+      "hint": "neu, f dat"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das gehört dem"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "netten"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarn."
+        }
+      ],
+      "hint": "nett, m dat"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "starke"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee schmeckt besser."
+        }
+      ],
+      "hint": "stark, m nom"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "warme"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Suppe war zu salzig."
+        }
+      ],
+      "hint": "warm, f nom"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich suche das"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "blaue"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Buch."
+        }
+      ],
+      "hint": "blau, n acc"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir wohnen in der"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "alten"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stadt."
+        }
+      ],
+      "hint": "alt, f dat"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "große"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer kostet mehr."
+        }
+      ],
+      "hint": "groß, n nom"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kennst du den"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "kürzeren"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Weg?"
+        }
+      ],
+      "hint": "kürzer, m acc"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "anderen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Leute warten schon."
+        }
+      ],
+      "hint": "ander, pl nom"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe mit dem"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "jungen"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arzt gesprochen."
+        }
+      ],
+      "hint": "jung, m dat"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "schlechte"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wetter macht mich müde."
+        }
+      ],
+      "hint": "schlecht, n nom"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie liest die"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "heutige"
+          ],
+          "tags": [
+            "declension:weak",
+            "trigger:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeitung."
+        }
+      ],
+      "hint": "heutig, f acc"
+    }
+  ]
+}

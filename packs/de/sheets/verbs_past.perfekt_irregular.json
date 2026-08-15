@@ -1,0 +1,486 @@
+{
+  "topic_id": "verbs_past.perfekt_irregular",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe das Buch schon"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "gelesen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du meine Nachricht"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "bekommen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "bekommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat den ganzen Kuchen"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "gegessen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben zwei Stunden"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "geschlafen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat mir die Wahrheit"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "gesagt"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "sagen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Habt ihr den Film schon"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "gesehen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "sehen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe zu viel Kaffee"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "getrunken"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat mir hundert Euro"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "gegeben"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben lange darüber"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "gesprochen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe den Schlüssel"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "verloren"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat das Fenster"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "geschlossen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "schließen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du den Brief schon"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "geschrieben"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben viel Geld"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "ausgegeben"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "ausgeben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat den Bus"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "genommen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe nichts davon"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "gewusst"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie haben uns sehr"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "geholfen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Habt ihr das Fenster"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "aufgemacht"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "aufmachen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe meinen Freund am Bahnhof"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "getroffen"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "treffen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Hund hat die ganze Nacht"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "gebellt"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "bellen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben die Prüfung"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "bestanden"
+          ],
+          "tags": [
+            "form:participle_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "bestehen"
+    }
+  ]
+}

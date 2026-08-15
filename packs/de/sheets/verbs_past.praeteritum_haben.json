@@ -1,0 +1,466 @@
+{
+  "topic_id": "verbs_past.praeteritum_haben",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern keine Zeit."
+        }
+      ],
+      "hint": "haben, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Hattest"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gestern Besuch?"
+        }
+      ],
+      "hint": "haben, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "als Kind einen Hund."
+        }
+      ],
+      "hint": "haben, er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "hatten"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "letztes Jahr wenig Urlaub."
+        }
+      ],
+      "hint": "haben, wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Hattet"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr gestern Unterricht?"
+        }
+      ],
+      "hint": "haben, ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "hatten"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "früher ein kleines Geschäft."
+        }
+      ],
+      "hint": "haben, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Zug"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwei Stunden Verspätung."
+        }
+      ],
+      "hint": "haben, er"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern Kopfschmerzen."
+        }
+      ],
+      "hint": "haben, ich"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Hatten"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie einen guten Flug?"
+        }
+      ],
+      "hint": "haben, Sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine Lust auf Kino."
+        }
+      ],
+      "hint": "haben, sie"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "hatten"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "damals kein Auto."
+        }
+      ],
+      "hint": "haben, wir"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Hattest"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du den Schlüssel dabei?"
+        }
+      ],
+      "hint": "haben, du"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern über dreißig Grad."
+        }
+      ],
+      "hint": "haben, es"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Schwester"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "letzte Woche Geburtstag."
+        }
+      ],
+      "hint": "haben, sie"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "hattet"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wirklich Glück."
+        }
+      ],
+      "hint": "haben, ihr"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine Ahnung davon."
+        }
+      ],
+      "hint": "haben, ich"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Firma"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "damals nur fünf Mitarbeiter."
+        }
+      ],
+      "hint": "haben, sie"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "hatten"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern viel zu tun."
+        }
+      ],
+      "hint": "haben, wir"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "hatte"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch nie so ein Problem."
+        }
+      ],
+      "hint": "haben, er"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Hattet"
+          ],
+          "tags": [
+            "form:praeteritum_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr genug zu essen?"
+        }
+      ],
+      "hint": "haben, ihr"
+    }
+  ]
+}

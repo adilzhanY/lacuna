@@ -1,0 +1,508 @@
+{
+  "topic_id": "cases.dual_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mein Buch liegt auf"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch."
+        }
+      ],
+      "hint": "wo? der Tisch"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich lege mein Buch auf"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch."
+        }
+      ],
+      "hint": "wohin? der Tisch"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir sitzen in"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Küche."
+        }
+      ],
+      "hint": "wo? die Küche"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir gehen in"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Küche."
+        }
+      ],
+      "hint": "wohin? die Küche"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ein Bild hängt an"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wand."
+        }
+      ],
+      "hint": "wo? die Wand"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hängt ein Bild an"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wand."
+        }
+      ],
+      "hint": "wohin? die Wand"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Zwei Kinder spielen vor"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Haus."
+        }
+      ],
+      "hint": "wo? das Haus"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Stell dein Fahrrad bitte vor"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Haus."
+        }
+      ],
+      "hint": "wohin? das Haus"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ein Hund schläft unter"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch."
+        }
+      ],
+      "hint": "wo? der Tisch"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Katze läuft unter"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bett."
+        }
+      ],
+      "hint": "wohin? das Bett"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir warten zwischen"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "beiden Häusern."
+        }
+      ],
+      "hint": "wo? die Häuser"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich gehe heute in"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "das",
+            "ins"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kino."
+        }
+      ],
+      "hint": "wohin? das Kino"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie arbeitet in"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "dem",
+            "einem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Büro im ersten Stock."
+        }
+      ],
+      "hint": "wo? das Büro"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Leg deinen Schlüssel neben"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tür."
+        }
+      ],
+      "hint": "wohin? die Tür"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mein Schlüssel liegt neben"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tür."
+        }
+      ],
+      "hint": "wo? die Tür"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren an"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "See."
+        }
+      ],
+      "hint": "wohin? der See"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir sind an"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "See."
+        }
+      ],
+      "hint": "wo? der See"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mein Auto steht hinter"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Haus."
+        }
+      ],
+      "hint": "wo? das Haus"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Fahr bitte hinter"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Haus."
+        }
+      ],
+      "hint": "wohin? das Haus"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Über"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "trigger:two_way_preposition",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tür hängt eine Uhr."
+        }
+      ],
+      "hint": "wo? die Tür"
+    }
+  ]
+}

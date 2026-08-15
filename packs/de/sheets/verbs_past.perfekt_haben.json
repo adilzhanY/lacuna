@@ -1,0 +1,770 @@
+{
+  "topic_id": "verbs_past.perfekt_haben",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern lange"
+        },
+        {
+          "type": "blank",
+          "id": "1b",
+          "accept": [
+            "gearbeitet"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Hast"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du schon"
+        },
+        {
+          "type": "blank",
+          "id": "2b",
+          "accept": [
+            "gegessen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mir eine E-Mail"
+        },
+        {
+          "type": "blank",
+          "id": "3b",
+          "accept": [
+            "geschrieben"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den ganzen Abend"
+        },
+        {
+          "type": "blank",
+          "id": "4b",
+          "accept": [
+            "geredet"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "reden"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Habt"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr die Rechnung schon"
+        },
+        {
+          "type": "blank",
+          "id": "5b",
+          "accept": [
+            "bezahlt"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "bezahlen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ein Haus"
+        },
+        {
+          "type": "blank",
+          "id": "6b",
+          "accept": [
+            "gekauft"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den Bus"
+        },
+        {
+          "type": "blank",
+          "id": "7b",
+          "accept": [
+            "verpasst"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "verpassen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern viel"
+        },
+        {
+          "type": "blank",
+          "id": "8b",
+          "accept": [
+            "gelernt"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "lernen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie den Termin"
+        },
+        {
+          "type": "blank",
+          "id": "9b",
+          "accept": [
+            "vergessen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "die Wohnung selbst"
+        },
+        {
+          "type": "blank",
+          "id": "10b",
+          "accept": [
+            "renoviert"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "renovieren"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "dich dreimal"
+        },
+        {
+          "type": "blank",
+          "id": "11b",
+          "accept": [
+            "angerufen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "hast"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du am Wochenende"
+        },
+        {
+          "type": "blank",
+          "id": "12b",
+          "accept": [
+            "gemacht"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Fenster"
+        },
+        {
+          "type": "blank",
+          "id": "13b",
+          "accept": [
+            "zugemacht"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "zumachen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lange auf dich"
+        },
+        {
+          "type": "blank",
+          "id": "14b",
+          "accept": [
+            "gewartet"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mir sehr"
+        },
+        {
+          "type": "blank",
+          "id": "15b",
+          "accept": [
+            "geholfen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Buch schon"
+        },
+        {
+          "type": "blank",
+          "id": "16b",
+          "accept": [
+            "gelesen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Habt"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr die Karten"
+        },
+        {
+          "type": "blank",
+          "id": "17b",
+          "accept": [
+            "bestellt"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Kellner"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "uns die Karte"
+        },
+        {
+          "type": "blank",
+          "id": "18b",
+          "accept": [
+            "gebracht"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "bringen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern Pizza"
+        },
+        {
+          "type": "blank",
+          "id": "19b",
+          "accept": [
+            "gegessen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "meinen Pass zu Hause"
+        },
+        {
+          "type": "blank",
+          "id": "20b",
+          "accept": [
+            "gelassen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "lassen"
+    }
+  ]
+}

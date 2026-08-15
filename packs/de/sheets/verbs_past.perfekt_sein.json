@@ -1,0 +1,774 @@
+{
+  "topic_id": "verbs_past.perfekt_sein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern nach Hamburg"
+        },
+        {
+          "type": "blank",
+          "id": "1b",
+          "accept": [
+            "gefahren"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Bist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gut nach Hause"
+        },
+        {
+          "type": "blank",
+          "id": "2b",
+          "accept": [
+            "gekommen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um sechs Uhr"
+        },
+        {
+          "type": "blank",
+          "id": "3b",
+          "accept": [
+            "aufgestanden"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "aufstehen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu Fuß zum Markt"
+        },
+        {
+          "type": "blank",
+          "id": "4b",
+          "accept": [
+            "gegangen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Seid"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr mit dem Zug"
+        },
+        {
+          "type": "blank",
+          "id": "5b",
+          "accept": [
+            "gereist"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "reisen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Freunde"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "letzte Woche"
+        },
+        {
+          "type": "blank",
+          "id": "6b",
+          "accept": [
+            "umgezogen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "umziehen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Paket"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute"
+        },
+        {
+          "type": "blank",
+          "id": "7b",
+          "accept": [
+            "angekommen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern früh"
+        },
+        {
+          "type": "blank",
+          "id": "8b",
+          "accept": [
+            "eingeschlafen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "einschlafen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch nie mit dem Flugzeug"
+        },
+        {
+          "type": "blank",
+          "id": "9b",
+          "accept": [
+            "geflogen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "fliegen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwei Jahre in Wien"
+        },
+        {
+          "type": "blank",
+          "id": "10b",
+          "accept": [
+            "geblieben"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "spät nach Hause"
+        },
+        {
+          "type": "blank",
+          "id": "11b",
+          "accept": [
+            "gefahren"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "pünktlich"
+        },
+        {
+          "type": "blank",
+          "id": "12b",
+          "accept": [
+            "abgefahren"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "abfahren"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "im Sommer nach Italien"
+        },
+        {
+          "type": "blank",
+          "id": "13b",
+          "accept": [
+            "geflogen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "fliegen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Bist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gestern schwimmen"
+        },
+        {
+          "type": "blank",
+          "id": "14b",
+          "accept": [
+            "gegangen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Oma"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "letztes Jahr"
+        },
+        {
+          "type": "blank",
+          "id": "15b",
+          "accept": [
+            "gestorben"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "sterben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "an der Ecke"
+        },
+        {
+          "type": "blank",
+          "id": "16b",
+          "accept": [
+            "ausgestiegen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "aussteigen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr schnell"
+        },
+        {
+          "type": "blank",
+          "id": "17b",
+          "accept": [
+            "gelaufen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "laufen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "dann"
+        },
+        {
+          "type": "blank",
+          "id": "18b",
+          "accept": [
+            "passiert"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "passieren"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "seid"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu spät"
+        },
+        {
+          "type": "blank",
+          "id": "19b",
+          "accept": [
+            "gekommen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:perfekt",
+            "trigger:auxiliary_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gestern nicht"
+        },
+        {
+          "type": "blank",
+          "id": "20b",
+          "accept": [
+            "ausgegangen"
+          ],
+          "tags": [
+            "form:participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "ausgehen"
+    }
+  ]
+}

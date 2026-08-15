@@ -1,0 +1,519 @@
+{
+  "topic_id": "adjectives.after_indefinite",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist ein"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "schönes"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Haus."
+        }
+      ],
+      "hint": "schön, n nom"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er ist ein"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "netter"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mann."
+        }
+      ],
+      "hint": "nett, m nom"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat eine"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "leise"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stimme."
+        }
+      ],
+      "hint": "leise, f nom"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich suche einen"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "neuen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Job."
+        }
+      ],
+      "hint": "neu, m acc"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben ein"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "großes"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer bekommen."
+        }
+      ],
+      "hint": "groß, n acc"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie trinkt eine"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "heiße"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tasse Tee."
+        }
+      ],
+      "hint": "heiß, f acc"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich wohne in einer"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "kleinen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung."
+        }
+      ],
+      "hint": "klein, f dat"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er fährt mit einem"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "alten"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto."
+        }
+      ],
+      "hint": "alt, n dat"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist eine"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "gute"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Idee."
+        }
+      ],
+      "hint": "gut, f nom"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir suchen einen"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "freien"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tisch für vier."
+        }
+      ],
+      "hint": "frei, m acc"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat ein"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "blaues"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kleid gekauft."
+        }
+      ],
+      "hint": "blau, n acc"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe einen"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "langen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tag gehabt."
+        }
+      ],
+      "hint": "lang, m acc"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist ein"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "großes"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Problem."
+        }
+      ],
+      "hint": "groß, n nom"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er arbeitet bei einer"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "deutschen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Firma."
+        }
+      ],
+      "hint": "deutsch, f dat"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir hatten einen"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "schönen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Abend."
+        }
+      ],
+      "hint": "schön, m acc"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie ist eine"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "gute"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ärztin."
+        }
+      ],
+      "hint": "gut, f nom"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich brauche ein"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "sauberes"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Handtuch."
+        }
+      ],
+      "hint": "sauber, n acc"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das war ein"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "langweiliger"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Film."
+        }
+      ],
+      "hint": "langweilig, m nom"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat mir eine"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "schwere"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frage gestellt."
+        }
+      ],
+      "hint": "schwer, f acc"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir wohnen in einem"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "ruhigen"
+          ],
+          "tags": [
+            "declension:mixed",
+            "trigger:indefinite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Dorf."
+        }
+      ],
+      "hint": "ruhig, n dat"
+    }
+  ]
+}

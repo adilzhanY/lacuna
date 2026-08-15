@@ -1,0 +1,506 @@
+{
+  "topic_id": "cases.verbs_with_cases",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich helfe"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarn beim Umzug."
+        }
+      ],
+      "hint": "helfen + dative"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir danken"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kollegen für die Hilfe."
+        }
+      ],
+      "hint": "danken + dative"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Kleid gefällt"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "meiner"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schwester."
+        }
+      ],
+      "hint": "gefallen + dative"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich sehe"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahnhof von hier."
+        }
+      ],
+      "hint": "sehen + accusative"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie besucht"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "ihre"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Großmutter jeden Sonntag."
+        }
+      ],
+      "hint": "besuchen + accusative"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Mantel gehört"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mann dort."
+        }
+      ],
+      "hint": "gehören + dative"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich glaube"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Politiker kein Wort."
+        }
+      ],
+      "hint": "glauben + dative"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir treffen"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "unsere"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Freunde am Bahnhof."
+        }
+      ],
+      "hint": "treffen + accusative"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Essen schmeckt"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kindern nicht."
+        }
+      ],
+      "hint": "schmecken + dative"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er antwortet"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lehrerin sofort."
+        }
+      ],
+      "hint": "antworten + dative"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich frage"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kollegen nach dem Weg."
+        }
+      ],
+      "hint": "fragen + accusative"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie gibt"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kind einen Apfel."
+        }
+      ],
+      "hint": "geben + dative and accusative"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir brauchen"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "neuen Drucker."
+        }
+      ],
+      "hint": "brauchen + accusative"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das passiert"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "mir"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "oft."
+        }
+      ],
+      "hint": "passieren + dative"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich kenne"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frau von der Arbeit."
+        }
+      ],
+      "hint": "kennen + accusative"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er zeigt"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Gästen die Wohnung."
+        }
+      ],
+      "hint": "zeigen + dative"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Jacke steht"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "dir"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gut."
+        }
+      ],
+      "hint": "stehen + dative"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir suchen"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung in Leipzig."
+        }
+      ],
+      "hint": "suchen + accusative"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Buch gehört"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "ihm"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": ", nicht mir."
+        }
+      ],
+      "hint": "gehören + dative"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich verstehe"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "trigger:verb_case",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frage nicht."
+        }
+      ],
+      "hint": "verstehen + accusative"
+    }
+  ]
+}
