@@ -1,0 +1,474 @@
+{
+  "topic_id": "articles.definite",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo ist"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahnhof?"
+        }
+      ],
+      "hint": "Bahnhof, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie viel kostet"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "gender:neuter",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brot?"
+        }
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung liegt im dritten Stock."
+        }
+      ],
+      "hint": "Wohnung, f"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ist"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Supermarkt heute offen?"
+        }
+      ],
+      "hint": "Supermarkt, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich nehme"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bus um acht Uhr."
+        }
+      ],
+      "hint": "Bus, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "number:plural",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kinder spielen im Hof."
+        }
+      ],
+      "hint": "Kinder, pl"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kennst du"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frau dort?"
+        }
+      ],
+      "hint": "Frau, f"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Das"
+          ],
+          "tags": [
+            "gender:neuter",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fenster ist offen."
+        }
+      ],
+      "hint": "Fenster, n"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo finde ich"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apotheke?"
+        }
+      ],
+      "hint": "Apotheke, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Der"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zug hat zehn Minuten Verspätung."
+        }
+      ],
+      "hint": "Zug, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich suche"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schlüssel."
+        }
+      ],
+      "hint": "Schlüssel, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Rechnung liegt auf dem Tisch."
+        }
+      ],
+      "hint": "Rechnung, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie heißt"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Straße hier?"
+        }
+      ],
+      "hint": "Straße, f"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Das"
+          ],
+          "tags": [
+            "gender:neuter",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto steht vor dem Haus."
+        }
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich möchte"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "gender:neuter",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer sehen."
+        }
+      ],
+      "hint": "Zimmer, n"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "number:plural",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarn sind sehr freundlich."
+        }
+      ],
+      "hint": "Nachbarn, pl"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "das"
+          ],
+          "tags": [
+            "gender:neuter",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fenster zumachen?"
+        }
+      ],
+      "hint": "Fenster, n"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Der"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arzt kommt gleich."
+        }
+      ],
+      "hint": "Arzt, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo ist"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "gender:feminine",
+            "case:nominative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Toilette, bitte?"
+        }
+      ],
+      "hint": "Toilette, f"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich bezahle"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "gender:masculine",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee."
+        }
+      ],
+      "hint": "Kaffee, m"
+    }
+  ]
+}

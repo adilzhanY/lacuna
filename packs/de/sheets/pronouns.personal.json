@@ -1,0 +1,454 @@
+{
+  "topic_id": "pronouns.personal",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "Ich"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heiße Lena und komme aus Bremen."
+        }
+      ],
+      "hint": "the speaker"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Woher kommst"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "a friend"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Er"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "arbeitet bei einer Bank."
+        }
+      ],
+      "hint": "Thomas"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wohnt seit zwei Jahren in Wien."
+        }
+      ],
+      "hint": "Maria"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie geht es"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "dir",
+            "Ihnen"
+          ],
+          "tags": [
+            "form:personal_pronoun",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "?"
+        }
+      ],
+      "hint": "to you"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "Wir"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sind heute Abend zu Hause."
+        }
+      ],
+      "hint": "my family and me"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Habt"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "ihr"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schon gegessen?"
+        }
+      ],
+      "hint": "you, more than one friend"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kommen morgen aus Hamburg."
+        }
+      ],
+      "hint": "my parents"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Buch ist neu."
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Es"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kostet zwölf Euro."
+        }
+      ],
+      "hint": "das Buch"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus kommt gleich."
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Er"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fährt bis zum Markt."
+        }
+      ],
+      "hint": "der Bus"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Suppe ist heiß."
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schmeckt sehr gut."
+        }
+      ],
+      "hint": "die Suppe"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mir helfen?"
+        }
+      ],
+      "hint": "a friend"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Entschuldigung, sprechen"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun",
+            "form:formal"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Englisch?"
+        }
+      ],
+      "hint": "a stranger"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Ich"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "habe leider keine Zeit."
+        }
+      ],
+      "hint": "the speaker"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "Wir"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "spielen am Samstag Fußball."
+        }
+      ],
+      "hint": "my team and me"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo wohnt"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "er",
+            "sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jetzt?"
+        }
+      ],
+      "hint": "Stefan"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sind Studenten aus Polen."
+        }
+      ],
+      "hint": "those two"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ruf mich an, wenn"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "du"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeit hast."
+        }
+      ],
+      "hint": "a friend"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder sind müde."
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Sie"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gehen jetzt ins Bett."
+        }
+      ],
+      "hint": "die Kinder"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Ich"
+          ],
+          "tags": [
+            "form:personal_pronoun"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "freue mich auf das Wochenende."
+        }
+      ],
+      "hint": "the speaker"
+    }
+  ]
+}

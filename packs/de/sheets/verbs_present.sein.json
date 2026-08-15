@@ -1,0 +1,474 @@
+{
+  "topic_id": "verbs_present.sein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "müde."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Du"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "bist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr freundlich."
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mein Nachbar."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um acht Uhr da."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "seid"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schon fertig, oder?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Kinder"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "im Garten."
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "Bist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du aus Berlin?"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Wetter"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute schlecht."
+        }
+      ],
+      "hint": "es"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "die Toiletten?"
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Student und arbeite nebenbei."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "Sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie Frau Wagner?"
+        }
+      ],
+      "hint": "Sie, formal"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Eltern"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "in Urlaub."
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "schon spät."
+        }
+      ],
+      "hint": "es"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "sind"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr froh darüber."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "Seid"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr am Wochenende zu Hause?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Kaffee"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch heiß."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "bin"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "nicht sicher."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Du"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "bist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wirklich zu schnell gefahren."
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Schwester"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ärztin."
+        }
+      ],
+      "hint": "sie"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Bäckerei"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "form:present_sein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sonntags zu."
+        }
+      ],
+      "hint": "sie"
+    }
+  ]
+}

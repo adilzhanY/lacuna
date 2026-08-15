@@ -1,0 +1,492 @@
+{
+  "topic_id": "negation.nicht",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich komme heute"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "whole sentence"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das verstehe ich"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "whole sentence"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Laden ist heute"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_adjective"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "offen."
+        }
+      ],
+      "hint": "before the adjective"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie wohnt"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "in Berlin, sondern in Potsdam."
+        }
+      ],
+      "hint": "before the place"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir fahren am Sonntag"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "end of sentence"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich kann dich"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "hören."
+        }
+      ],
+      "hint": "before the verb at the end"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Wetter ist"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "besonders gut."
+        }
+      ],
+      "hint": "before the adjective"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat mich"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "angerufen."
+        }
+      ],
+      "hint": "before the participle"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich mag Kaffee"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "end of sentence"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie arbeitet"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mehr bei der Post."
+        }
+      ],
+      "hint": "before mehr"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mein Schlüssel."
+        }
+      ],
+      "hint": "before a defined thing"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir sind gestern"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zu Hause gewesen."
+        }
+      ],
+      "hint": "before the place"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe die Rechnung"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bezahlt."
+        }
+      ],
+      "hint": "before the participle"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Zug fährt heute"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "hint": "end of sentence"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie will"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mitkommen."
+        }
+      ],
+      "hint": "before the infinitive"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Buch ist"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "interessant."
+        }
+      ],
+      "hint": "before the adjective"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich kenne ihn"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gut."
+        }
+      ],
+      "hint": "before the adverb"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir treffen uns"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "am Bahnhof."
+        }
+      ],
+      "hint": "before the place"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er kommt"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "aus Österreich."
+        }
+      ],
+      "hint": "before the origin"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe heute"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "nicht"
+          ],
+          "tags": [
+            "form:negation_nicht",
+            "word_order:before_participle"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gearbeitet."
+        }
+      ],
+      "hint": "before the participle"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "topic_id": "negation.kein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe heute"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeit."
+        }
+      ],
+      "hint": "Zeit, f"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben leider"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer mehr frei."
+        }
+      ],
+      "hint": "Zimmer, n"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bruder."
+        }
+      ],
+      "hint": "Bruder, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Problem."
+        }
+      ],
+      "hint": "Problem, n"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie trinkt"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Milch."
+        }
+      ],
+      "hint": "Milch, f"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hunger."
+        }
+      ],
+      "hint": "Hunger, m"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hier gibt es"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Supermarkt."
+        }
+      ],
+      "hint": "Supermarkt, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir brauchen"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hilfe, danke."
+        }
+      ],
+      "hint": "Hilfe, f"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto."
+        }
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich möchte"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zucker im Kaffee."
+        }
+      ],
+      "hint": "Zucker, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie haben"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "number:plural"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kinder."
+        }
+      ],
+      "hint": "Kinder, pl"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gute Idee."
+        }
+      ],
+      "hint": "Idee, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Geld dabei."
+        }
+      ],
+      "hint": "Geld, n"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "In der Wohnung gibt es"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Balkon."
+        }
+      ],
+      "hint": "Balkon, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin heute."
+        }
+      ],
+      "hint": "Termin, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie spricht"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Deutsch."
+        }
+      ],
+      "hint": "Deutsch, n"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es gibt hier"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apotheke."
+        }
+      ],
+      "hint": "Apotheke, f"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "keine"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lust auf Kino."
+        }
+      ],
+      "hint": "Lust, f"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Laden hat"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "kein"
+          ],
+          "tags": [
+            "form:negation_kein"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brot mehr."
+        }
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "keinen"
+          ],
+          "tags": [
+            "form:negation_kein",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Platz im Auto."
+        }
+      ],
+      "hint": "Platz, m"
+    }
+  ]
+}

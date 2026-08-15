@@ -1,0 +1,506 @@
+{
+  "topic_id": "cases.accusative_basics",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich möchte"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee, bitte."
+        }
+      ],
+      "hint": "Kaffee, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir suchen"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung."
+        }
+      ],
+      "hint": "Wohnung, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie kauft"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto."
+        }
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Moment?"
+        }
+      ],
+      "hint": "Moment, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er braucht"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fahrkarte nach Bonn."
+        }
+      ],
+      "hint": "Fahrkarte, f"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich nehme"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brot mit."
+        }
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin um zehn."
+        }
+      ],
+      "hint": "Termin, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie schreibt"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brief an ihre Oma."
+        }
+      ],
+      "hint": "Brief, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich trinke"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tee am Abend."
+        }
+      ],
+      "hint": "Tee, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er hat"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frage an Sie."
+        }
+      ],
+      "hint": "Frage, f"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir mieten"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer für drei Nächte."
+        }
+      ],
+      "hint": "Zimmer, n"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich brauche"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Stift."
+        }
+      ],
+      "hint": "Stift, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie sucht"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arbeit in Leipzig."
+        }
+      ],
+      "hint": "Arbeit, f"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Bringst du"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kuchen mit?"
+        }
+      ],
+      "hint": "Kuchen, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich möchte"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Glas Wasser."
+        }
+      ],
+      "hint": "Glas, n"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er kauft"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zeitung am Kiosk."
+        }
+      ],
+      "hint": "Zeitung, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir machen"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ausflug nach Potsdam."
+        }
+      ],
+      "hint": "Ausflug, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hund und zwei Katzen."
+        }
+      ],
+      "hint": "Hund, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich schreibe"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "E-Mail an die Firma."
+        }
+      ],
+      "hint": "E-Mail, f"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "case:accusative",
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Handtuch für mich?"
+        }
+      ],
+      "hint": "Handtuch, n"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "topic_id": "discourse.questions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "Wie"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heißt du?"
+        }
+      ],
+      "hint": "name"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Woher"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kommst du?"
+        }
+      ],
+      "hint": "origin"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Wo"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wohnst du jetzt?"
+        }
+      ],
+      "hint": "place"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "Was",
+            "Wie viel"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kostet die Fahrkarte?"
+        }
+      ],
+      "hint": "price"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Wann"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fährt der nächste Zug?"
+        }
+      ],
+      "hint": "time"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "Wer"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ist das da drüben?"
+        }
+      ],
+      "hint": "person"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "Wohin"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gehst du am Wochenende?"
+        }
+      ],
+      "hint": "direction"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Warum",
+            "Wieso"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bist du zu spät gekommen?"
+        }
+      ],
+      "hint": "reason"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "Wie viel"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Uhr ist es?"
+        }
+      ],
+      "hint": "clock time"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Welche"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sprachen sprichst du?"
+        }
+      ],
+      "hint": "which of them"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "Warst"
+          ],
+          "tags": [
+            "word_order:yes_no_question"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du schon einmal in Wien?"
+        }
+      ],
+      "hint": "sein, du, past"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Habt"
+          ],
+          "tags": [
+            "word_order:yes_no_question"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr am Samstag Zeit?"
+        }
+      ],
+      "hint": "haben, ihr"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Können"
+          ],
+          "tags": [
+            "word_order:yes_no_question"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie mir bitte helfen?"
+        }
+      ],
+      "hint": "können, Sie"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Wie"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lange dauert die Fahrt?"
+        }
+      ],
+      "hint": "duration"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "Welcher"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bus fährt zum Bahnhof?"
+        }
+      ],
+      "hint": "which bus"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "Was"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "brauchst du dafür?"
+        }
+      ],
+      "hint": "thing"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Wem"
+          ],
+          "tags": [
+            "form:question_word",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "hast du das Buch gegeben?"
+        }
+      ],
+      "hint": "to whom"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Wie lange",
+            "Seit wann"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "arbeitest du in dieser Firma?"
+        }
+      ],
+      "hint": "since when"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Kommst"
+          ],
+          "tags": [
+            "word_order:yes_no_question"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du morgen mit ins Schwimmbad?"
+        }
+      ],
+      "hint": "kommen, du"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Wie"
+          ],
+          "tags": [
+            "form:question_word"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "oft gehst du ins Fitnessstudio?"
+        }
+      ],
+      "hint": "frequency"
+    }
+  ]
+}

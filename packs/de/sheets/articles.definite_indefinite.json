@@ -1,0 +1,473 @@
+{
+  "topic_id": "articles.definite_indefinite",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich suche"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung. Sie ist klein und hell."
+        }
+      ],
+      "hint": "one flat, first mention"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung im dritten Stock ist schon weg."
+        }
+      ],
+      "hint": "that one flat we know"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hier gibt es"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bäckerei an jeder Ecke."
+        }
+      ],
+      "hint": "any bakery"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie komme ich zu"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "dem"
+          ],
+          "tags": [
+            "declension:definite_article",
+            "case:dative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bahnhof? Es gibt nur einen."
+        }
+      ],
+      "hint": "the only station"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich hätte gern"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee, bitte."
+        }
+      ],
+      "hint": "a coffee"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ist"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "der"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kaffee für mich?"
+        }
+      ],
+      "hint": "that coffee there"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin um zehn Uhr."
+        }
+      ],
+      "hint": "an appointment"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Den"
+          ],
+          "tags": [
+            "declension:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Termin am Montag muss ich leider absagen."
+        }
+      ],
+      "hint": "that known appointment"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er ist"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "declension:indefinite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lehrer."
+        }
+      ],
+      "hint": "profession"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Der"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Lehrer meiner Tochter heißt Herr Wagner."
+        }
+      ],
+      "hint": "one specific teacher"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich brauche"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fahrkarte nach Köln."
+        }
+      ],
+      "hint": "a ticket"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo hast du"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "die"
+          ],
+          "tags": [
+            "declension:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fahrkarte hingelegt?"
+        }
+      ],
+      "hint": "my ticket"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Gibt es hier"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apotheke in der Nähe?"
+        }
+      ],
+      "hint": "any pharmacy"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Die"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Apotheke am Markt hat bis acht offen."
+        }
+      ],
+      "hint": "a known pharmacy"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "einen"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hund und zwei Katzen."
+        }
+      ],
+      "hint": "a dog"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "Der"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hund von Frau Berger bellt jede Nacht."
+        }
+      ],
+      "hint": "that dog"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir suchen"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "ein"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer für zwei Nächte."
+        }
+      ],
+      "hint": "a room"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Das"
+          ],
+          "tags": [
+            "declension:definite_article"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer war leider zu laut."
+        }
+      ],
+      "hint": "the room we had"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "eine"
+          ],
+          "tags": [
+            "declension:indefinite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Frage."
+        }
+      ],
+      "hint": "a question"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kannst du mir"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "den"
+          ],
+          "tags": [
+            "declension:definite_article",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Weg zum Markt zeigen?"
+        }
+      ],
+      "hint": "the way, only one"
+    }
+  ]
+}

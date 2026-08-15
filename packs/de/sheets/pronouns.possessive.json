@@ -1,0 +1,474 @@
+{
+  "topic_id": "pronouns.possessive",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das ist"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "mein"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Bruder. Er heißt Jonas."
+        }
+      ],
+      "hint": "ich, Bruder m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wie heißt"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "deine"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schwester?"
+        }
+      ],
+      "hint": "du, Schwester f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Sein"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Auto steht in der Garage."
+        }
+      ],
+      "hint": "er, Auto n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ist das"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "deine",
+            "Ihre"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tasche?"
+        }
+      ],
+      "hint": "du oder Sie, Tasche f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Meine"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Eltern wohnen in Dresden."
+        }
+      ],
+      "hint": "ich, Eltern pl"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir besuchen morgen"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "unsere"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Großmutter."
+        }
+      ],
+      "hint": "wir, Großmutter f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Habt ihr"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "eure"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hausaufgaben gemacht?"
+        }
+      ],
+      "hint": "ihr, Hausaufgaben pl"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Ihre"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Wohnung ist größer als meine."
+        }
+      ],
+      "hint": "sie, Wohnung f"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "meinen"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Schlüssel verloren."
+        }
+      ],
+      "hint": "ich, Schlüssel m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wo ist"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "dein"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Handy?"
+        }
+      ],
+      "hint": "du, Handy n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "Mein"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Chef ist heute nicht da."
+        }
+      ],
+      "hint": "ich, Chef m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie liebt"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "ihre"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Arbeit."
+        }
+      ],
+      "hint": "sie, Arbeit f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir warten auf"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "unsere"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Freunde."
+        }
+      ],
+      "hint": "wir, Freunde pl"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Kann ich"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "deinen",
+            "Ihren"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kugelschreiber haben?"
+        }
+      ],
+      "hint": "du oder Sie, Kugelschreiber m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "Sein"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Zimmer ist sehr klein."
+        }
+      ],
+      "hint": "er, Zimmer n"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich rufe"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "meine"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mutter an."
+        }
+      ],
+      "hint": "ich, Mutter f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Habt ihr"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "euren"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Pass dabei?"
+        }
+      ],
+      "hint": "ihr, Pass m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "Unsere"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Nachbarn machen viel Lärm."
+        }
+      ],
+      "hint": "wir, Nachbarn pl"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sind das"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Ihre",
+            "deine"
+          ],
+          "tags": [
+            "form:possessive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kinder?"
+        }
+      ],
+      "hint": "Sie oder du, Kinder pl"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er sucht"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "seine"
+          ],
+          "tags": [
+            "form:possessive",
+            "case:accusative"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Brille."
+        }
+      ],
+      "hint": "er, Brille f"
+    }
+  ]
+}

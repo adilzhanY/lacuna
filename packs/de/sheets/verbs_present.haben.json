@@ -1,0 +1,462 @@
+{
+  "topic_id": "verbs_present.haben",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute keine Zeit."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Hast"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du einen Moment?"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwei Kinder."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "morgen einen Termin."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ihr"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "habt"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch drei Tage Urlaub."
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Nachbarn"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "einen großen Hund."
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "Haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie eine Karte für heute Abend?"
+        }
+      ],
+      "hint": "Sie, formal"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Hunger und will essen."
+        }
+      ],
+      "hint": "sie"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Buch schon gelesen."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Habt"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr die Rechnung bekommen?"
+        }
+      ],
+      "hint": "ihr"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Zug"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "zwanzig Minuten Verspätung."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "leider kein Zimmer mehr frei."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "Hast"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du morgen frei?"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Haus"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "einen kleinen Garten."
+        }
+      ],
+      "hint": "es"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Kopfschmerzen."
+        }
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Kollegen"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "viel zu tun."
+        }
+      ],
+      "hint": "sie, pl"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Hast"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du deinen Pass dabei?"
+        }
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "hat"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "keine Ahnung davon."
+        }
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "am Samstag eine Party."
+        }
+      ],
+      "hint": "wir"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Haben"
+          ],
+          "tags": [
+            "form:present_haben"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Sie einen Moment für mich?"
+        }
+      ],
+      "hint": "Sie, formal"
+    }
+  ]
+}

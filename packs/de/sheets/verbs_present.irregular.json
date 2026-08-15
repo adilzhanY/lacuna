@@ -1,0 +1,462 @@
+{
+  "topic_id": "verbs_present.irregular",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "fährt"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "jeden Tag mit dem Rad zur Arbeit."
+        }
+      ],
+      "hint": "fahren, er"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "Isst"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gern Fisch?"
+        }
+      ],
+      "hint": "essen, du"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "spricht"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sehr gut Spanisch."
+        }
+      ],
+      "hint": "sprechen, sie"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Bus"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "fährt"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "um Viertel nach acht."
+        }
+      ],
+      "hint": "fahren, er"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "Siehst"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du das Schild dort?"
+        }
+      ],
+      "hint": "sehen, du"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Tochter"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "schläft"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "noch."
+        }
+      ],
+      "hint": "schlafen, sie"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "gibt"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "mir jeden Monat Geld."
+        }
+      ],
+      "hint": "geben, er"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Was"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "machst"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du am Wochenende?"
+        }
+      ],
+      "hint": "machen, du"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "macht"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Fenster auf."
+        }
+      ],
+      "hint": "aufmachen, sie"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "Kommst"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du mit nach Hause?"
+        }
+      ],
+      "hint": "kommen, du"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Er"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "spricht"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "immer sehr laut."
+        }
+      ],
+      "hint": "sprechen, er"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wohin"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "fahrt"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihr im Sommer?"
+        }
+      ],
+      "hint": "fahren, ihr"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Meine Schwester"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "wohnt"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "in Köln."
+        }
+      ],
+      "hint": "wohnen, sie"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Hast"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du morgen Zeit?"
+        }
+      ],
+      "hint": "haben, du"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Kind"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "nimmt"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "den Ball."
+        }
+      ],
+      "hint": "nehmen, es"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "essen"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "heute Abend Pizza."
+        }
+      ],
+      "hint": "essen, wir"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "Steht"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "er wirklich so früh auf?"
+        }
+      ],
+      "hint": "aufstehen, er"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "hilft"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ihrer Mutter im Haushalt."
+        }
+      ],
+      "hint": "helfen, sie"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "weiß"
+          ],
+          "tags": [
+            "form:present_irregular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das nicht."
+        }
+      ],
+      "hint": "wissen, ich"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "Gehst"
+          ],
+          "tags": [
+            "form:present_regular"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "du gern ins Kino?"
+        }
+      ],
+      "hint": "gehen, du"
+    }
+  ]
+}

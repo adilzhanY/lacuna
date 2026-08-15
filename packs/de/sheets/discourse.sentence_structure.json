@@ -1,0 +1,486 @@
+{
+  "topic_id": "discourse.sentence_structure",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Am Montag"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "fahre"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich nach Hamburg."
+        }
+      ],
+      "hint": "fahren, ich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Heute"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "bleiben"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wir zu Hause."
+        }
+      ],
+      "hint": "bleiben, wir"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nach der Arbeit"
+        },
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "geht"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sie einkaufen."
+        }
+      ],
+      "hint": "gehen, sie"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Um sieben Uhr"
+        },
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "fährt"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "der Zug ab."
+        }
+      ],
+      "hint": "abfahren, er"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Morgen"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "rufe"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich dich an."
+        }
+      ],
+      "hint": "anrufen, ich"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Im Sommer"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "es hier sehr warm."
+        }
+      ],
+      "hint": "sein, es"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Am Wochenende"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "kommen"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "meine Eltern zu Besuch."
+        }
+      ],
+      "hint": "kommen, sie"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Danach"
+        },
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "trinken"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wir noch einen Kaffee."
+        }
+      ],
+      "hint": "trinken, wir"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Leider"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich heute keine Zeit."
+        }
+      ],
+      "hint": "haben, ich"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Zuerst"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "mache"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich die Wohnung sauber."
+        }
+      ],
+      "hint": "machen, ich"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Jeden Morgen"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "steht"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "er um sechs auf."
+        }
+      ],
+      "hint": "aufstehen, er"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Vielleicht"
+        },
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "kommt"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Paket morgen."
+        }
+      ],
+      "hint": "kommen, es"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Deshalb"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "fahre"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich lieber mit dem Rad."
+        }
+      ],
+      "hint": "fahren, ich"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Heute Abend"
+        },
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "gehen"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "wir ins Kino."
+        }
+      ],
+      "hint": "gehen, wir"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Seit gestern"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "ist"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "das Wetter besser."
+        }
+      ],
+      "hint": "sein, es"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Am liebsten"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "esse"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich zu Hause."
+        }
+      ],
+      "hint": "essen, ich"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Dann"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "schickt"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sie mir die Adresse."
+        }
+      ],
+      "hint": "schicken, sie"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Normalerweise"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "macht"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "der Laden um zehn auf."
+        }
+      ],
+      "hint": "aufmachen, er"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Nächste Woche"
+        },
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "habe"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ich einen Termin beim Arzt."
+        }
+      ],
+      "hint": "haben, ich"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hier"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "isst"
+          ],
+          "tags": [
+            "word_order:verb_second"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "man gut und günstig."
+        }
+      ],
+      "hint": "essen, man"
+    }
+  ]
+}
