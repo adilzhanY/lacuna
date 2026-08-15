@@ -49,9 +49,12 @@ export default function Shell({
         </div>
 
         <div className={styles.group}>
-          <p className={`label ${styles.groupTitle}`}>Curriculum</p>
+          <p className={`label ${styles.groupTitle}`}>Workbook</p>
           <Link href="/" className={styles.item}>
             All topics
+          </Link>
+          <Link href="/stats" className={styles.item}>
+            Statistics
           </Link>
         </div>
       </aside>

@@ -27,6 +27,7 @@ pub fn router(state: SharedState) -> Router {
         .route("/api/topics", get(topics))
         .route("/api/today", get(today_queue))
         .route("/api/weaknesses", get(weaknesses))
+        .route("/api/stats", get(stats))
         .route("/api/sheet/{topic_id}", get(sheet_for_topic))
         .route("/api/sheet/{sheet_id}/check", post(check_sheet))
         .route("/api/sheet/{sheet_id}/accept", post(accept_also))
@@ -148,6 +149,215 @@ async fn weaknesses(State(state): State<SharedState>) -> ApiResult<Vec<Weakness>
             .map(|(tag, count)| Weakness { tag, count })
             .collect(),
     ))
+}
+
+// ---------------------------------------------------------------- statistics
+
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct LevelProgress {
+    pub level: Level,
+    #[ts(type = "number")]
+    pub total: i64,
+    #[ts(type = "number")]
+    pub studied: i64,
+    #[ts(type = "number")]
+    pub due: i64,
+}
+
+/// One column of a chart: a date and what happened on it.
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct DayPoint {
+    pub date: String,
+    #[ts(type = "number")]
+    pub count: i64,
+    /// Share of blanks correct that day, absent when nothing was studied.
+    pub accuracy: Option<f32>,
+}
+
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct TopicScore {
+    pub id: String,
+    pub title: String,
+    pub cefr: Level,
+    pub accuracy: f32,
+    #[ts(type = "number")]
+    pub reviews: i64,
+    #[ts(type = "number")]
+    pub lapses: i64,
+}
+
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct Stats {
+    pub today: String,
+    #[ts(type = "number")]
+    pub topics_total: i64,
+    #[ts(type = "number")]
+    pub topics_studied: i64,
+    #[ts(type = "number")]
+    pub topics_due: i64,
+    #[ts(type = "number")]
+    pub reviews_total: i64,
+    #[ts(type = "number")]
+    pub blanks_total: i64,
+    #[ts(type = "number")]
+    pub blanks_correct: i64,
+    /// 0.0 to 1.0 across every blank ever answered.
+    pub accuracy: f32,
+    #[ts(type = "number")]
+    pub streak_days: i64,
+    pub by_level: Vec<LevelProgress>,
+    /// One entry per day for the last 30 days, including empty ones.
+    pub activity: Vec<DayPoint>,
+    /// One entry per day for the next 14 days, including empty ones.
+    pub forecast: Vec<DayPoint>,
+    pub weakest: Vec<Weakness>,
+    pub hardest: Vec<TopicScore>,
+}
+
+const ACTIVITY_DAYS: i64 = 30;
+const FORECAST_DAYS: i64 = 14;
+const TOP_N: usize = 8;
+
+async fn stats(State(state): State<SharedState>) -> ApiResult<Stats> {
+    let today = today();
+    let states = db::topic_states(&state.db).await?;
+    let daily = db::daily_activity(&state.db).await?;
+    let records = db::topic_records(&state.db).await?;
+    let forecast_rows = db::due_forecast(&state.db, today).await?;
+    let tags = db::error_tag_counts(&state.db).await?;
+
+    let studied: HashMap<&str, &db::TopicRecord> =
+        records.iter().map(|r| (r.topic_id.as_str(), r)).collect();
+
+    // Levels, counted from the pack so empty levels still show as empty.
+    let mut by_level = Vec::new();
+    for level in Level::ALL {
+        let in_level: Vec<&crate::pack::Topic> = state
+            .pack
+            .topics
+            .iter()
+            .filter(|t| t.cefr == level)
+            .collect();
+        if in_level.is_empty() {
+            continue;
+        }
+        let due = states
+            .iter()
+            .filter(|s| s.is_due(today) && in_level.iter().any(|t| t.id == s.topic_id))
+            .count() as i64;
+        by_level.push(LevelProgress {
+            level,
+            total: in_level.len() as i64,
+            studied: in_level
+                .iter()
+                .filter(|t| studied.contains_key(t.id.as_str()))
+                .count() as i64,
+            due,
+        });
+    }
+
+    // Activity, filled in day by day so the chart has no invisible gaps.
+    let by_date: HashMap<NaiveDate, &db::DayActivity> =
+        daily.iter().map(|d| (d.date, d)).collect();
+    let mut activity = Vec::new();
+    for offset in (0..ACTIVITY_DAYS).rev() {
+        let date = today - chrono::Duration::days(offset);
+        let entry = by_date.get(&date);
+        activity.push(DayPoint {
+            date: date.to_string(),
+            count: entry.map(|d| d.reviews).unwrap_or(0),
+            accuracy: entry.and_then(|d| {
+                (d.total > 0).then(|| d.correct as f32 / d.total as f32)
+            }),
+        });
+    }
+
+    let due_by_date: HashMap<NaiveDate, i64> = forecast_rows.into_iter().collect();
+    let overdue: i64 = due_by_date
+        .iter()
+        .filter(|(date, _)| **date <= today)
+        .map(|(_, n)| *n)
+        .sum();
+    let never_studied = states.iter().filter(|s| s.due.is_none()).count() as i64;
+    let mut forecast = Vec::new();
+    for offset in 0..FORECAST_DAYS {
+        let date = today + chrono::Duration::days(offset);
+        // Everything overdue and everything never studied is waiting today.
+        let count = if offset == 0 {
+            overdue + never_studied
+        } else {
+            due_by_date.get(&date).copied().unwrap_or(0)
+        };
+        forecast.push(DayPoint {
+            date: date.to_string(),
+            count,
+            accuracy: None,
+        });
+    }
+
+    // Hardest topics: lowest accuracy first, ties broken by how much evidence
+    // there is, so one bad sheet does not outrank a long struggle.
+    let mut hardest: Vec<TopicScore> = records
+        .iter()
+        .filter_map(|record| {
+            let topic = state.pack.topic(&record.topic_id)?;
+            let state_row = states.iter().find(|s| s.topic_id == record.topic_id);
+            Some(TopicScore {
+                id: topic.id.clone(),
+                title: topic.title.clone(),
+                cefr: topic.cefr,
+                accuracy: if record.total > 0 {
+                    record.correct as f32 / record.total as f32
+                } else {
+                    0.0
+                },
+                reviews: record.reviews,
+                lapses: state_row.map(|s| s.lapses).unwrap_or(0),
+            })
+        })
+        .collect();
+    hardest.sort_by(|a, b| {
+        a.accuracy
+            .partial_cmp(&b.accuracy)
+            .unwrap_or(std::cmp::Ordering::Equal)
+            .then(b.reviews.cmp(&a.reviews))
+    });
+    hardest.truncate(TOP_N);
+
+    let blanks_correct: i64 = daily.iter().map(|d| d.correct).sum();
+    let blanks_total: i64 = daily.iter().map(|d| d.total).sum();
+
+    Ok(Json(Stats {
+        today: today.to_string(),
+        topics_total: state.pack.topics.len() as i64,
+        topics_studied: records.len() as i64,
+        topics_due: states.iter().filter(|s| s.is_due(today)).count() as i64,
+        reviews_total: daily.iter().map(|d| d.reviews).sum(),
+        blanks_total,
+        blanks_correct,
+        accuracy: if blanks_total > 0 {
+            blanks_correct as f32 / blanks_total as f32
+        } else {
+            0.0
+        },
+        streak_days: db::streak_from(
+            &daily.iter().map(|d| d.date).collect::<Vec<_>>(),
+            today,
+        ),
+        by_level,
+        activity,
+        forecast,
+        weakest: tags
+            .into_iter()
+            .take(TOP_N)
+            .map(|(tag, count)| Weakness { tag, count })
+            .collect(),
+        hardest,
+    }))
 }
 
 // ---------------------------------------------------------------- sheets

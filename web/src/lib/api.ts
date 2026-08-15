@@ -1,11 +1,17 @@
 import type { ClientSheet } from "./types/ClientSheet";
+import type { Stats } from "./types/Stats";
 import type { Rating } from "./types/Rating";
 import type { TopicView } from "./types/TopicView";
 
 export type { ClientSheet, Rating, TopicView };
 export type { ClientItem } from "./types/ClientItem";
 export type { ClientSegment } from "./types/ClientSegment";
+export type { DayPoint } from "./types/DayPoint";
 export type { Level } from "./types/Level";
+export type { LevelProgress } from "./types/LevelProgress";
+export type { Stats } from "./types/Stats";
+export type { TopicScore } from "./types/TopicScore";
+export type { Weakness } from "./types/Weakness";
 
 /*
  * The graded payload is hand written rather than generated, because it is an
@@ -57,6 +63,7 @@ export const api = {
   topics: () => request<TopicView[]>("/api/topics"),
   today: () => request<TopicView[]>("/api/today"),
   sheet: (topicId: string) => request<ClientSheet>(`/api/sheet/${topicId}`),
+  stats: () => request<Stats>("/api/stats"),
 
   check: (sheetId: number, answers: Record<string, string>, ratingOverride?: Rating) =>
     request<CheckResponse>(`/api/sheet/${sheetId}/check`, {

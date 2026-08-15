@@ -276,6 +276,126 @@ pub async fn error_tag_counts(pool: &SqlitePool) -> anyhow::Result<Vec<(String, 
     Ok(out)
 }
 
+// ---------------------------------------------------------------- statistics
+
+/// One day of study history.
+#[derive(Debug, Clone, PartialEq)]
+pub struct DayActivity {
+    pub date: NaiveDate,
+    pub reviews: i64,
+    pub correct: i64,
+    pub total: i64,
+}
+
+/// How one topic has actually gone, across every review of it.
+#[derive(Debug, Clone, PartialEq)]
+pub struct TopicRecord {
+    pub topic_id: String,
+    pub reviews: i64,
+    pub correct: i64,
+    pub total: i64,
+}
+
+/// Reviews grouped by the day they happened, oldest first.
+pub async fn daily_activity(pool: &SqlitePool) -> anyhow::Result<Vec<DayActivity>> {
+    let rows = sqlx::query(
+        "select reviewed_at,
+                count(*)      as reviews,
+                sum(correct)  as correct,
+                sum(total)    as total
+           from review
+          group by reviewed_at
+          order by reviewed_at",
+    )
+    .fetch_all(pool)
+    .await?;
+
+    rows.into_iter()
+        .map(|row| {
+            let date: String = row.try_get("reviewed_at")?;
+            Ok(DayActivity {
+                date: date.parse()?,
+                reviews: row.try_get("reviews")?,
+                correct: row.try_get("correct")?,
+                total: row.try_get("total")?,
+            })
+        })
+        .collect()
+}
+
+/// Accuracy per topic, worst last. Topics never reviewed are absent.
+pub async fn topic_records(pool: &SqlitePool) -> anyhow::Result<Vec<TopicRecord>> {
+    let rows = sqlx::query(
+        "select topic_id,
+                count(*)     as reviews,
+                sum(correct) as correct,
+                sum(total)   as total
+           from review
+          group by topic_id",
+    )
+    .fetch_all(pool)
+    .await?;
+
+    rows.into_iter()
+        .map(|row| {
+            Ok(TopicRecord {
+                topic_id: row.try_get("topic_id")?,
+                reviews: row.try_get("reviews")?,
+                correct: row.try_get("correct")?,
+                total: row.try_get("total")?,
+            })
+        })
+        .collect()
+}
+
+/// How many topics fall due on each future date.
+pub async fn due_forecast(pool: &SqlitePool, from: NaiveDate) -> anyhow::Result<Vec<(NaiveDate, i64)>> {
+    let rows = sqlx::query(
+        "select due, count(*) as n
+           from topic_state
+          where due is not null and due >= ?1
+          group by due
+          order by due",
+    )
+    .bind(from.to_string())
+    .fetch_all(pool)
+    .await?;
+
+    rows.into_iter()
+        .map(|row| {
+            let due: String = row.try_get("due")?;
+            Ok((due.parse()?, row.try_get("n")?))
+        })
+        .collect()
+}
+
+/// Days in a row with at least one review, counting back from today.
+///
+/// A streak survives today being empty: you have not broken it until you miss a
+/// whole day, so a day that has not finished yet does not count against you.
+pub fn streak_from(days: &[NaiveDate], today: NaiveDate) -> i64 {
+    let mut sorted: Vec<NaiveDate> = days.to_vec();
+    sorted.sort_unstable();
+    sorted.dedup();
+
+    let mut expected = match sorted.last() {
+        None => return 0,
+        Some(&last) if last == today || last == today.pred_opt().unwrap_or(today) => last,
+        Some(_) => return 0,
+    };
+
+    let mut streak = 0;
+    for day in sorted.iter().rev() {
+        if *day == expected {
+            streak += 1;
+            expected = expected.pred_opt().unwrap_or(expected);
+        } else if *day < expected {
+            break;
+        }
+    }
+    streak
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -396,6 +516,57 @@ mod tests {
 
         let counts = error_tag_counts(&pool).await.unwrap();
         assert_eq!(counts, vec![("case:dative".to_string(), 1)]);
+    }
+
+    #[test]
+    fn a_streak_counts_back_from_today() {
+        let d = |day| NaiveDate::from_ymd_opt(2026, 8, day).unwrap();
+        assert_eq!(streak_from(&[], today()), 0);
+        assert_eq!(streak_from(&[d(15)], today()), 1);
+        assert_eq!(streak_from(&[d(13), d(14), d(15)], today()), 3);
+        // A gap breaks it.
+        assert_eq!(streak_from(&[d(11), d(14), d(15)], today()), 2);
+        // Today not studied yet, but yesterday was: the streak still stands.
+        assert_eq!(streak_from(&[d(13), d(14)], today()), 2);
+        // Two days off means it is gone.
+        assert_eq!(streak_from(&[d(12), d(13)], today()), 0);
+        // Duplicates from several sheets on one day count once.
+        assert_eq!(streak_from(&[d(15), d(15), d(14)], today()), 2);
+    }
+
+    #[tokio::test]
+    async fn statistics_summarise_the_history() {
+        let (pool, _) = setup().await;
+        let sheet = tiny_sheet();
+        let sheet_id = save_sheet(&pool, &sheet, today()).await.unwrap();
+
+        let mut answers = HashMap::new();
+        answers.insert("1a".to_string(), "dem".to_string());
+        let graded = grade_sheet(&sheet, &answers);
+        let memory = TopicMemory {
+            stability: 3.0,
+            difficulty: 5.0,
+        };
+        let due = NaiveDate::from_ymd_opt(2026, 8, 18).unwrap();
+        record_review(
+            &pool, sheet_id, "cases.dative", &graded, graded.rating, memory, due, today(),
+        )
+        .await
+        .unwrap();
+
+        let daily = daily_activity(&pool).await.unwrap();
+        assert_eq!(daily.len(), 1);
+        assert_eq!(daily[0].date, today());
+        assert_eq!(daily[0].reviews, 1);
+        assert_eq!(daily[0].correct, 1);
+        assert_eq!(daily[0].total, 1);
+
+        let records = topic_records(&pool).await.unwrap();
+        assert_eq!(records.len(), 1);
+        assert_eq!(records[0].topic_id, "cases.dative");
+
+        let forecast = due_forecast(&pool, today()).await.unwrap();
+        assert_eq!(forecast, vec![(due, 1)]);
     }
 
     #[tokio::test]

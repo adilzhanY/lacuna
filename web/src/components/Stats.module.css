@@ -1,0 +1,272 @@
+/*
+ * Dashboard marks.
+ *
+ * The decorative gold (--gold, #C8912F) only reaches 2.69:1 on the sheet, so it
+ * stays on thin borders and badges. Anything that carries data uses --gold-ink,
+ * which clears 3:1. Every chart here is a single series, so no legend is needed;
+ * the heading names it.
+ */
+
+.page {
+  --gold-ink: #a87516;
+  --track: rgba(198, 186, 165, 0.45);
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+}
+
+.intro {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin: 0 0 30px;
+  max-width: 62ch;
+}
+
+/* ---------------------------------------------------------------- tiles */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 42px;
+}
+
+.tile {
+  background: var(--sheet);
+  padding: 18px 20px;
+}
+
+.tileValue {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 6px 0 2px;
+  letter-spacing: -0.02em;
+}
+
+.tileNote {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------- sections */
+
+.section {
+  margin-bottom: 42px;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 42px;
+}
+
+/* ---------------------------------------------------------------- columns */
+
+.columns {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px; /* the 2px surface gap between adjacent bars */
+  height: 130px;
+  padding-top: 18px;
+}
+
+.column {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Rounded data end, anchored to the baseline. */
+.bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background: var(--blue);
+  min-height: 2px;
+}
+
+.bar.future {
+  background: var(--gold-ink);
+}
+
+/* An empty day is a hairline on the baseline, not a missing column. */
+.bar.zero {
+  height: 1px !important;
+  background: var(--track);
+  border-radius: 0;
+}
+
+.column:hover .bar {
+  filter: brightness(1.25);
+}
+
+.tip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -4px);
+  background: var(--ink);
+  color: var(--sheet);
+  font-size: 10.5px;
+  line-height: 1.35;
+  white-space: nowrap;
+  padding: 4px 7px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.08s;
+  z-index: 2;
+}
+
+.column:hover .tip {
+  opacity: 1;
+}
+
+.axis {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule);
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.axis span {
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- rows */
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 170px) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.rowLabel {
+  font-size: 12.5px;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rowLabel small {
+  color: var(--muted);
+}
+
+.track {
+  height: 9px;
+  background: var(--track);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--green);
+  min-width: 2px;
+}
+
+.fill.weak {
+  background: var(--red);
+}
+
+.rowValue {
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------------- table */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0 10px 7px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.table td {
+  padding: 9px 10px 9px 0;
+  border-bottom: 1px dotted var(--rule);
+  font-variant-numeric: tabular-nums;
+}
+
+.table td:first-child {
+  font-family: var(--serif);
+  font-size: 15px;
+}
+
+.numeric {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bad {
+  color: var(--red);
+}
+
+.good {
+  color: var(--green);
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.error {
+  color: var(--red);
+}

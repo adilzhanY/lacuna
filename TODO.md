@@ -71,6 +71,7 @@ Ticked items are done and committed.
 - [x] "Also accept" patches the stored sheet permanently and regrades the answer
 - [x] Error tag aggregation, so the app can say "dative fails only after two-way prepositions"
 - [ ] Leech detection: a topic that keeps lapsing gets flagged, not just rescheduled
+      (the dashboard already ranks by accuracy and lapses, this is the flag itself)
 
 ## 6. Scheduler behaviour
 
@@ -78,7 +79,8 @@ Ticked items are done and committed.
       (A1 alone is 27 topics and 540 sentences, without a cap the due queue drowns you by week two)
 - [ ] Respect topic prerequisites when choosing what to introduce
 - [ ] Targeted sheets: generate from a weak error tag instead of a whole topic
-- [ ] Today view: what is due, what is new, current streak
+- [x] Statistics dashboard: accuracy, streak, level progress, 30 day activity,
+      14 day forecast, weakest error tags, hardest topics
 
 ## 7. UI, "Papier" direction
 
