@@ -1,72 +1,94 @@
+/*
+ * The sheet, Schema direction.
+ *
+ * The old serif layout ran to roughly two and a half screens. This one splits
+ * into two columns above 1180px, so twenty items fit in one screen on a normal
+ * desktop and fall back to a single column on anything narrower.
+ */
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .head {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 2px;
 }
 
 .title {
-  font-family: var(--serif);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
-.breadcrumb {
-  margin: 0 0 26px;
-}
-
-.counter {
+.meta {
+  font-family: var(--mono);
   font-size: 11px;
-  font-weight: 600;
-  color: var(--muted);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 3px 9px;
+  color: var(--dim);
+  margin: 0 0 18px;
 }
 
 /* ---------------------------------------------------------------- items */
 
+.items {
+  column-gap: 34px;
+}
+
+@media (min-width: 1180px) {
+  .items {
+    columns: 2;
+  }
+}
+
 .item {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: baseline;
-  padding: 13px 0;
-  border-bottom: 1px dotted var(--rule);
+  padding: 7px 0;
+  break-inside: avoid;
+}
+
+/* One hairline between rows, not a box around each. */
+.item + .item {
+  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
 }
 
 .n {
   flex: none;
-  width: 26px;
-  height: 26px;
-  display: grid;
-  place-items: center;
-  font-family: var(--serif);
-  font-size: 12px;
-  color: var(--muted);
-  border: 1px solid var(--rule);
-  border-radius: 50%;
+  width: 20px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--dim);
 }
 
 .sentence {
-  font-family: var(--serif);
-  font-size: 17.5px;
-  line-height: 2.15;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 7px;
+  gap: 6px;
+  font-size: 15px;
+  line-height: 1.85;
   min-width: 0;
 }
 
 .hint {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 15px;
-  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--dim);
 }
 
 /* ---------------------------------------------------------------- blanks */
@@ -75,7 +97,6 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  vertical-align: baseline;
 }
 
 /*
@@ -83,21 +104,23 @@
  * leaks how long the word should be.
  */
 .blank {
-  font-family: var(--serif);
-  font-size: 17.5px;
-  width: 7.5ch;
-  padding: 0 4px 2px;
+  width: 7ch;
+  padding: 3px 6px;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  font-weight: 500;
   text-align: center;
   color: var(--ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 1.5px solid var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-bottom: 2px solid color-mix(in srgb, var(--ink) 30%, var(--line));
+  border-radius: var(--radius);
   outline: none;
 }
 
 .blank:focus {
-  border-bottom-color: var(--blue);
-  background: rgba(39, 69, 111, 0.06);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .blank:disabled {
@@ -105,57 +128,48 @@
 }
 
 .blank.ok {
-  color: var(--green);
-  border-bottom-color: var(--green);
+  border-bottom-color: var(--ok);
+  color: var(--ok);
 }
 
 .blank.note {
-  color: var(--green);
-  border-bottom-color: var(--gold);
+  border-bottom-color: var(--accent);
+  color: var(--ok);
 }
 
 .blank.no {
-  color: var(--red);
-  border-bottom-color: var(--red);
+  border-bottom-color: var(--no);
+  color: var(--no);
 }
 
-/* The correct form appears under the blank, never in a summary at the bottom. */
+/* The correct form sits under the blank, never in a summary at the bottom. */
 .correction {
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 11px;
   line-height: 1.4;
-  color: var(--red);
-  margin-top: 2px;
+  color: var(--no);
+  margin-top: 3px;
   white-space: nowrap;
 }
 
-.correction em {
-  font-family: var(--serif);
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-}
-
 .noteText {
-  color: var(--muted);
+  color: var(--dim);
 }
 
 .accept {
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 10px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
+  color: var(--dim);
   background: transparent;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
   padding: 1px 5px;
   margin-top: 3px;
 }
 
 .accept:hover {
-  color: var(--ink);
-  border-color: var(--ink);
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* ---------------------------------------------------------------- actions */
@@ -165,76 +179,124 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  margin-top: 26px;
+  margin-top: 22px;
 }
 
 .button {
   font-size: 12.5px;
   font-weight: 600;
-  padding: 9px 18px;
-  border-radius: 3px;
-  border: 1px solid var(--ink);
-  background: var(--ink);
-  color: var(--sheet);
+  padding: 9px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  transition: transform 0.08s;
+}
+
+.button:active {
+  transform: translateY(1px);
 }
 
 .button.ghost {
   background: transparent;
   color: var(--ink);
+  border-color: var(--line);
 }
 
 .keys {
+  font-family: var(--mono);
   font-size: 11px;
-  color: var(--muted);
+  color: var(--dim);
 }
 
-/* ---------------------------------------------------------------- result */
+/* ---------------------------------------------------------------- rail */
 
-.result {
-  margin: 30px 0 0;
-  padding: 18px 20px;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
+.rail {
+  position: sticky;
+  top: calc(var(--bar-height) + 20px);
+  display: grid;
+  gap: 2px;
 }
 
-.score {
-  font-family: var(--serif);
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0;
+@media (max-width: 900px) {
+  .rail {
+    position: static;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
 }
 
-.resultLine {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 4px 0 0;
+.progress {
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s;
+}
+
+.railValue {
+  font-family: var(--mono);
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  margin: 2px 0 14px;
+}
+
+.railValue.correct {
+  color: var(--ok);
+}
+
+.railValue.poor {
+  color: var(--no);
+}
+
+.railLine {
+  font-size: 11.5px;
+  color: var(--dim);
+  margin: 0 0 14px;
 }
 
 .ratings {
   display: flex;
-  gap: 6px;
-  margin-top: 14px;
   flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 14px;
 }
 
 .rating {
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 3px;
-  border: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
   background: transparent;
-  color: var(--muted);
+  color: var(--dim);
 }
 
 .rating.chosen {
-  border-color: var(--ink);
-  color: var(--ink);
-  background: var(--sheet);
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.nextLink {
+  display: block;
+  font-size: 12.5px;
+  color: var(--accent);
+  padding: 5px 0;
 }
 
 .error {
-  color: var(--red);
+  color: var(--no);
   font-size: 13px;
 }

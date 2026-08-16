@@ -46,17 +46,29 @@ These are not preferences. Breaking one costs a migration or a rewrite later.
    regenerated, never repaired by hand at read time.
 7. **Anki not running must never block a session.** Degrade to no recycled words.
 
-## UI direction: "Papier"
+## UI direction: "Schema"
 
-A printed German workbook, not a SaaS dashboard.
+Swiss grid, cool neutrals, one saturated accent. A tool you use daily, not a dashboard
+and not a document. It replaced the earlier "Papier" serif look on 2026-08-16, because
+that palette was generic and the serif made a twenty item sheet scroll for ages.
 
-- Source Serif 4 for German text, Inter for interface chrome
-- paper `#F2ECE1`, sheet `#FDFBF6`, ink `#1E1B16`, hint blue `#27456F`,
-  wrong `#A33529`, right `#3D6B49`, due gold `#C8912F`
-- Blanks are ruled underlines, never boxes
-- Every blank is one constant width, so its size never leaks the answer length
-- Tab moves to the next blank, Enter checks the sheet, 20 items with no mouse
-- A wrong answer shows the correct form in place, not in a summary at the bottom
+All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a component.
+
+- Geist for all text, German included. Geist Mono for numbers, topic ids and hints.
+  **No serif anywhere.**
+- light: ground `#F3F3F1`, panel `#FFFFFF`, ink `#101215`, dim `#606672`,
+  line `#DEDEDA`, accent `#1E43C8`, right `#106B45`, wrong `#B4232B`
+- dark: ground `#0F1114`, panel `#16191E`, ink `#E8EAED`, accent `#7D97FF`
+- **One accent.** Cobalt marks focus, progress and the active nav. Nothing else is
+  coloured except a right or wrong answer.
+- **One radius**, 3px, everywhere.
+- **One theme at a time.** Light by default, dark from `prefers-color-scheme`. No
+  section inverts.
+- Blanks are slots with a heavier bottom edge, all one constant width, so their size
+  never leaks the answer length.
+- The sheet splits into two columns above 1180px so twenty items fit one screen.
+- Tab moves to the next blank, Enter checks the sheet, 20 items with no mouse.
+- A wrong answer shows the correct form under the blank, not in a summary at the bottom.
 
 ## Language and content
 

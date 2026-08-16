@@ -1,65 +1,57 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { api, type TopicView } from "@/lib/api";
+import { api } from "@/lib/api";
 import styles from "./Shell.module.css";
 
-/**
- * The workbook frame: sheets on the left, the open sheet on the right.
- */
-export default function Shell({
-  activeTopicId,
-  children,
-}: {
-  activeTopicId?: string;
-  children: React.ReactNode;
-}) {
-  const [due, setDue] = useState<TopicView[] | null>(null);
+const LINKS = [
+  { href: "/", label: "Curriculum" },
+  { href: "/stats", label: "Statistics" },
+];
+
+export default function Shell({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const [due, setDue] = useState<number | null>(null);
 
   useEffect(() => {
-    api.today().then(setDue).catch(() => setDue([]));
-  }, [activeTopicId]);
+    let cancelled = false;
+    api
+      .today()
+      .then((topics) => {
+        if (!cancelled) setDue(topics.length);
+      })
+      .catch(() => {
+        if (!cancelled) setDue(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [pathname]);
 
   return (
-    <div className={styles.shell}>
-      <aside className={styles.side}>
-        <Link href="/">
-          <h1 className={styles.brand}>lacuna</h1>
+    <>
+      <header className={styles.bar}>
+        <Link href="/" className={styles.brand}>
+          lacuna
         </Link>
-        <p className={styles.tagline}>Fill in what is missing.</p>
-
-        <div className={styles.group}>
-          <p className={`label ${styles.groupTitle}`}>Due today</p>
-          {due === null && <p className={styles.empty}>Loading</p>}
-          {due?.length === 0 && <p className={styles.empty}>Nothing due. Rest.</p>}
-          {due?.map((topic) => (
+        <nav className={styles.nav}>
+          {LINKS.map((link) => (
             <Link
-              key={topic.id}
-              href={`/sheet/${topic.id}`}
-              className={`${styles.item} ${topic.id === activeTopicId ? styles.active : ""}`}
+              key={link.href}
+              href={link.href}
+              className={`${styles.link} ${pathname === link.href ? styles.active : ""}`}
             >
-              {topic.title}
-              <small>
-                {topic.cefr} &middot; {topic.is_new ? "new" : `${topic.reps} reviews`}
-              </small>
+              {link.label}
             </Link>
           ))}
-        </div>
-
-        <div className={styles.group}>
-          <p className={`label ${styles.groupTitle}`}>Workbook</p>
-          <Link href="/" className={styles.item}>
-            All topics
-          </Link>
-          <Link href="/stats" className={styles.item}>
-            Statistics
-          </Link>
-        </div>
-      </aside>
-
+        </nav>
+        <span className={styles.spacer} />
+        {due !== null && due > 0 && <span className={styles.due}>{due} due</span>}
+      </header>
       <main className={styles.main}>{children}</main>
-    </div>
+    </>
   );
 }

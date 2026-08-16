@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const sans = Inter({
+const sans = Geist({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-// German text only. Everything the interface says stays in Inter.
-const serif = Source_Serif_4({
-  variable: "--font-serif",
+// Numbers, topic ids and hints. Never body text.
+const mono = Geist_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body>{children}</body>
     </html>
   );

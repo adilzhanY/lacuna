@@ -31,7 +31,7 @@ export default function Stats() {
 
   return (
     <div className={styles.page}>
-      <h2 className={styles.title}>Statistics</h2>
+      <h1 className={styles.title}>Statistics</h1>
       <p className={styles.intro}>
         Everything here comes from sheets you have actually answered. Accuracy counts
         blanks, not sheets, so one bad sheet of twenty moves it by the right amount.
@@ -185,7 +185,7 @@ function Section({
   return (
     <section className={styles.section}>
       <div className={styles.sectionHead}>
-        <h3 className={styles.sectionTitle}>{title}</h3>
+        <h2 className={styles.sectionTitle}>{title}</h2>
         <span className="label">{note}</span>
       </div>
       {children}

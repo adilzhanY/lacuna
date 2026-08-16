@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import {
   api,
@@ -8,6 +9,7 @@ import {
   type CheckResponse,
   type ClientSheet,
   type Rating,
+  type TopicView,
 } from "@/lib/api";
 import styles from "./Sheet.module.css";
 
@@ -19,7 +21,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<CheckResponse | null>(null);
   const [patched, setPatched] = useState<Record<string, true>>({});
-  const formRef = useRef<HTMLFormElement>(null);
+  const [due, setDue] = useState<TopicView[]>([]);
 
   // The page remounts this component per topic (see the `key` on <Sheet>), so
   // the effect only has to fetch. Nothing here resets state by hand.
@@ -32,6 +34,14 @@ export default function Sheet({ topicId }: { topicId: string }) {
       })
       .catch((e: Error) => {
         if (!cancelled) setError(e.message);
+      });
+    api
+      .today()
+      .then((topics) => {
+        if (!cancelled) setDue(topics.filter((t) => t.id !== topicId));
+      })
+      .catch(() => {
+        if (!cancelled) setDue([]);
       });
     return () => {
       cancelled = true;
@@ -72,9 +82,8 @@ export default function Sheet({ topicId }: { topicId: string }) {
 
   const acceptAlso = async (blankId: string) => {
     if (!sheet) return;
-    const given = answers[blankId] ?? "";
     try {
-      await api.acceptAlso(sheet.sheet_id, blankId, given);
+      await api.acceptAlso(sheet.sheet_id, blankId, answers[blankId] ?? "");
       setPatched((p) => ({ ...p, [blankId]: true }));
     } catch (e) {
       setError((e as Error).message);
@@ -84,53 +93,113 @@ export default function Sheet({ topicId }: { topicId: string }) {
   if (error) return <p className={styles.error}>{error}</p>;
   if (!sheet) return <p className="label">Loading sheet</p>;
 
+  const percent = checked ? Math.round(checked.graded.score * 100) : null;
+
   return (
-    <form ref={formRef} onSubmit={onSubmit}>
-      <div className={styles.head}>
-        <h2 className={styles.title}>{sheet.topic_title}</h2>
-        <span className={styles.counter}>
-          {checked ? `${checked.graded.correct} / ${checked.graded.total}` : `${filled} / ${totalBlanks}`}
-        </span>
+    <form onSubmit={onSubmit} className={styles.layout}>
+      <div>
+        <div className={styles.head}>
+          <h1 className={styles.title}>{sheet.topic_title}</h1>
+        </div>
+        <p className={styles.meta}>
+          {sheet.topic_id} / {sheet.cefr} / {totalBlanks} blanks
+        </p>
+
+        <div className={styles.items}>
+          {sheet.items.map((item) => (
+            <div key={item.n} className={styles.item}>
+              <span className={styles.n}>{String(item.n).padStart(2, "0")}</span>
+              <span className={styles.sentence}>
+                {item.segments.map((segment, index) =>
+                  segment.type === "text" ? (
+                    <span key={index}>{segment.text}</span>
+                  ) : (
+                    <Blank
+                      key={segment.id}
+                      id={segment.id}
+                      value={answers[segment.id] ?? ""}
+                      result={byBlank.get(segment.id)}
+                      patched={patched[segment.id] === true}
+                      locked={checked !== null}
+                      onChange={(value) =>
+                        setAnswers((a) => ({ ...a, [segment.id]: value }))
+                      }
+                      onAccept={() => acceptAlso(segment.id)}
+                    />
+                  ),
+                )}
+                {item.hint && <span className={styles.hint}>{item.hint}</span>}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {!checked && (
+          <div className={styles.actions}>
+            <button type="submit" className={styles.button}>
+              Check sheet
+            </button>
+            <span className={styles.keys}>tab, then enter to check</span>
+          </div>
+        )}
       </div>
-      <p className={`label ${styles.breadcrumb}`}>
-        {sheet.topic_category} &rsaquo; {sheet.cefr}
-      </p>
 
-      {sheet.items.map((item) => (
-        <div key={item.n} className={styles.item}>
-          <span className={styles.n}>{item.n}</span>
-          <span className={styles.sentence}>
-            {item.segments.map((segment, index) =>
-              segment.type === "text" ? (
-                <span key={index}>{segment.text}</span>
-              ) : (
-                <Blank
-                  key={segment.id}
-                  id={segment.id}
-                  value={answers[segment.id] ?? ""}
-                  result={byBlank.get(segment.id)}
-                  patched={patched[segment.id] === true}
-                  locked={checked !== null}
-                  onChange={(value) => setAnswers((a) => ({ ...a, [segment.id]: value }))}
-                  onAccept={() => acceptAlso(segment.id)}
-                />
-              ),
-            )}
-            {item.hint && <span className={styles.hint}>({item.hint})</span>}
-          </span>
+      <aside className={styles.rail}>
+        <div className={styles.progress}>
+          <i style={{ width: `${totalBlanks ? (filled / totalBlanks) * 100 : 0}%` }} />
         </div>
-      ))}
 
-      {!checked && (
-        <div className={styles.actions}>
-          <button type="submit" className={styles.button}>
-            Check sheet
-          </button>
-          <span className={styles.keys}>Tab for the next blank, Enter to check</span>
-        </div>
-      )}
+        {checked ? (
+          <>
+            <p className="label">Score</p>
+            <p
+              className={`${styles.railValue} ${
+                percent !== null && percent >= 80 ? styles.correct : styles.poor
+              }`}
+            >
+              {percent}%
+            </p>
+            <p className={styles.railLine}>
+              {checked.graded.correct} of {checked.graded.total} blanks. Back in{" "}
+              {checked.interval_days} {checked.interval_days === 1 ? "day" : "days"}, on{" "}
+              {checked.due}.
+            </p>
+            <p className="label">Rating</p>
+            <div className={styles.ratings}>
+              {RATINGS.map((rating) => (
+                <button
+                  key={rating}
+                  type="button"
+                  className={`${styles.rating} ${
+                    rating === checked.rating ? styles.chosen : ""
+                  }`}
+                  onClick={() => check(rating)}
+                >
+                  {rating}
+                </button>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <p className="label">Filled</p>
+            <p className={styles.railValue}>
+              {filled}/{totalBlanks}
+            </p>
+          </>
+        )}
 
-      {checked && <Result checked={checked} onRate={(rating) => check(rating)} />}
+        {due.length > 0 && (
+          <>
+            <p className="label">Also due</p>
+            {due.slice(0, 5).map((topic) => (
+              <Link key={topic.id} href={`/sheet/${topic.id}`} className={styles.nextLink}>
+                {topic.title}
+              </Link>
+            ))}
+          </>
+        )}
+      </aside>
     </form>
   );
 }
@@ -178,9 +247,7 @@ function Blank({
       />
       {wrong && result.verdict === "wrong" && (
         <>
-          <span className={styles.correction}>
-            <em>{result.expected}</em>
-          </span>
+          <span className={styles.correction}>{result.expected}</span>
           {value.trim() !== "" && (
             <button type="button" className={styles.accept} onClick={onAccept}>
               also accept
@@ -193,41 +260,5 @@ function Blank({
       )}
       {patched && <span className={`${styles.correction} ${styles.noteText}`}>accepted</span>}
     </span>
-  );
-}
-
-function Result({
-  checked,
-  onRate,
-}: {
-  checked: CheckResponse;
-  onRate: (rating: Rating) => void;
-}) {
-  const percent = Math.round(checked.graded.score * 100);
-  return (
-    <div className={styles.result}>
-      <p className="label">Result</p>
-      <p className={styles.score}>{percent}%</p>
-      <p className={styles.resultLine}>
-        {checked.graded.correct} of {checked.graded.total} blanks. Rated{" "}
-        <strong>{checked.rating}</strong>, back in {checked.interval_days}{" "}
-        {checked.interval_days === 1 ? "day" : "days"} on {checked.due}.
-      </p>
-      <div className={styles.ratings}>
-        {RATINGS.map((rating) => (
-          <button
-            key={rating}
-            type="button"
-            className={`${styles.rating} ${rating === checked.rating ? styles.chosen : ""}`}
-            onClick={() => onRate(rating)}
-          >
-            {rating}
-          </button>
-        ))}
-      </div>
-      <p className={styles.resultLine} style={{ marginTop: 10 }}>
-        Override the rating if the score does not match what you actually knew.
-      </p>
-    </div>
   );
 }

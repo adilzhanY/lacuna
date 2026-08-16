@@ -1,93 +1,81 @@
-.shell {
-  display: grid;
-  grid-template-columns: var(--sidebar) minmax(0, 1fr);
-  min-height: 100vh;
-}
+/* Top bar instead of a sidebar: the sheet gets the full width. */
 
-.side {
-  background: var(--paper);
-  border-right: 1px solid var(--rule);
-  padding: 26px 18px;
+.bar {
   position: sticky;
   top: 0;
-  align-self: start;
-  max-height: 100vh;
-  overflow-y: auto;
+  z-index: 10;
+  height: var(--bar-height);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
 }
 
 .brand {
-  font-family: var(--serif);
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: -0.01em;
-  margin: 0 0 2px;
+  letter-spacing: -0.02em;
 }
 
-.tagline {
-  color: var(--muted);
-  font-size: 11.5px;
-  margin: 0 0 26px;
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
 }
 
-.group {
-  margin-bottom: 22px;
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 13px;
+  color: var(--dim);
+  box-shadow: inset 0 -2px 0 transparent;
 }
 
-.groupTitle {
-  margin-bottom: 8px;
+.link:hover {
+  color: var(--ink);
 }
 
-.item {
-  display: block;
-  font-family: var(--serif);
-  font-size: 14.5px;
-  padding: 8px 10px;
-  border-radius: 3px;
-  border-left: 3px solid transparent;
+.link.active {
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--accent);
 }
 
-.item:hover {
-  background: rgba(255, 255, 255, 0.55);
+.spacer {
+  flex: 1;
 }
 
-.item.active {
-  background: var(--sheet);
-  border-left-color: var(--gold);
-}
-
-.item small {
-  display: block;
-  font-family: var(--sans);
-  font-size: 10.5px;
-  color: var(--muted);
-  margin-top: 1px;
-}
-
-.empty {
-  color: var(--muted);
-  font-size: 12.5px;
-  font-style: italic;
+.due {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  white-space: nowrap;
 }
 
 .main {
-  background: var(--sheet);
-  padding: 40px 48px 80px;
-  min-width: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 26px 20px 64px;
 }
 
-@media (max-width: 860px) {
-  .shell {
-    grid-template-columns: minmax(0, 1fr);
+@media (max-width: 640px) {
+  .bar {
+    gap: 14px;
+    padding: 0 14px;
   }
 
-  .side {
-    position: static;
-    max-height: none;
-    border-right: 0;
-    border-bottom: 1px solid var(--rule);
+  .nav {
+    gap: 14px;
   }
 
   .main {
-    padding: 28px 20px 60px;
+    padding: 20px 14px 48px;
   }
 }

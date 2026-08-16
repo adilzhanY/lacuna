@@ -1,23 +1,47 @@
 /*
- * The "Papier" direction: a printed German workbook, not a dashboard.
- * Source Serif 4 carries the German text, Inter carries the interface.
+ * The "Schema" direction: swiss grid, cool neutrals, one saturated accent.
+ *
+ * Rules this file holds the whole app to:
+ *   - one accent (cobalt), used for focus, progress and the active nav, nothing else
+ *   - one radius (3px), everywhere
+ *   - sans only. German text and interface chrome share Geist, numbers use Geist Mono
+ *   - one theme at a time, light by default, dark when the system asks for it
  */
 
 :root {
-  --paper: #f2ece1;
-  --sheet: #fdfbf6;
-  --ink: #1e1b16;
-  --muted: #7a7062;
-  --rule: #c6baa5;
-  --blue: #27456f;
-  --red: #a33529;
-  --green: #3d6b49;
-  --gold: #c8912f;
+  --ground: #f3f3f1;
+  --panel: #ffffff;
+  --ink: #101215;
+  --dim: #606672;
+  --line: #dedeDA;
+  --accent: #1e43c8;
+  --accent-soft: #e7ebfb;
+  --ok: #106b45;
+  --no: #b4232b;
 
-  --serif: var(--font-serif), "Source Serif 4", Georgia, serif;
-  --sans: var(--font-sans), Inter, system-ui, sans-serif;
+  --radius: 3px;
+  --bar-height: 56px;
 
-  --sidebar: 260px;
+  --sans: var(--font-sans), system-ui, sans-serif;
+  --mono: var(--font-mono), ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0f1114;
+    --panel: #16191e;
+    --ink: #e8eaed;
+    --dim: #949ca8;
+    --line: #262b33;
+    --accent: #7d97ff;
+    --accent-soft: #1b2440;
+    --ok: #4fbf8b;
+    --no: #ff7a72;
+
+    color-scheme: dark;
+  }
 }
 
 * {
@@ -31,7 +55,7 @@ body {
 }
 
 body {
-  background: var(--paper);
+  background: var(--ground);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 15px;
@@ -49,14 +73,17 @@ button {
   cursor: pointer;
 }
 
-/* The one label style used for every small caps heading in the app. */
+/* Small caps label. Used sparingly: rail headings and table headers only. */
 .label {
-  font-size: 10px;
-  letter-spacing: 0.16em;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--dim);
 }
 
-.serif {
-  font-family: var(--serif);
+/* Every number in the app is tabular and monospaced, so columns line up. */
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
 }
