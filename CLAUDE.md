@@ -72,6 +72,36 @@ All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a compo
   checks the sheet from the middle, because that ends a run by accident.
 - A wrong answer shows the correct form under the blank, not in a summary at the bottom.
 
+## Review mode
+
+The default way to study, at `/review`. One sentence at a time, Enter answers it,
+the next arrives on its own. Sheet mode at `/sheet/<topic>` still exists for working
+through twenty items at once.
+
+- The clock runs from the sentence appearing to the answer being sent, and is **never
+  shown**. Timing feeds the rating only. Showing it would turn practice into a race.
+- Each item earns a rating: a mistake is always Again, whatever the clock says. A
+  correct answer is Easy, Good or Hard depending on how it compares to a budget worked
+  out from that item, not a flat number. See `server/src/review.rs`.
+- The topic rating is the mean of the item ratings, mapped through the same thresholds
+  a checked sheet uses, with one rule on top: **a perfect rating needs a perfect run**,
+  so one mistake caps the session at Good.
+- A wrong answer flashes the background red for half a second, shows the correct form,
+  and moves on. No retries, no going back.
+- Grading happens on the server twice: once per item for immediate feedback, once at
+  the end over the same raw answers and timings. The end pass is what gets recorded, so
+  the server stays the authority.
+
+## Routes
+
+| Route | What it is |
+|---|---|
+| `/` | Today: due count, the year heatmap, and the button into review mode |
+| `/review` | Review mode, one sentence at a time |
+| `/curriculum` | The whole topic tree by level |
+| `/stats` | Dashboard |
+| `/sheet/<topic>` | Sheet mode, twenty items at once |
+
 ## Language and content
 
 - The interface is English only. No Russian, no German labels in the chrome.

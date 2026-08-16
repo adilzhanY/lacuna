@@ -61,6 +61,16 @@ Ticked items are done and committed.
 - [ ] Degrade gracefully when Anki is not running, never block a session
 - [ ] Never write to Anki
 
+## 5b. Review mode
+
+- [x] One sentence at a time at `/review`, with the next arriving on its own
+- [x] Hidden per item clock, from the sentence appearing to the answer being sent
+- [x] Easiness model: correct but slow is Good or Hard, never Easy. A mistake is Again
+- [x] Session rating from the item ratings, capped at Good when anything was missed
+- [x] Red flash for half a second on a mistake, then the correct form, then the next item
+- [x] Chains through every due topic, with a summary between them
+- [ ] A "hard again" pile: items missed in a run come back at the end of that run
+
 ## 5. Grading
 
 - [x] Answer normalisation: `ß` and `ss`, `ä` and `ae`, whitespace, trailing punctuation
@@ -104,8 +114,10 @@ Ticked items are done and committed.
 
 - [ ] Recycled words panel: visible during the sheet, or only after?
       (leaning towards after, since seeing the target words makes some items too easy)
-- [ ] Should a wrong answer immediately reveal, or only after the whole sheet is checked?
-- [ ] One sheet per session, or keep serving sheets until the due queue is empty?
+- [x] Should a wrong answer immediately reveal, or only after the whole sheet is checked?
+      Review mode reveals immediately, sheet mode reveals on check. Both exist.
+- [x] One sheet per session, or keep serving sheets until the due queue is empty?
+      Review mode chains topics until the queue is empty, with a stop button.
 
 ## 9. Before open sourcing
 

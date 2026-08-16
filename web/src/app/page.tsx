@@ -1,24 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import Shell from "@/components/Shell";
-import { api, type Level, type TopicView } from "@/lib/api";
+import { api, type DayPoint, type Stats } from "@/lib/api";
 import styles from "./page.module.css";
 
-const LEVELS: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const WEEKDAYS = ["M", "", "W", "", "F", "", "S"];
 
-export default function Home() {
-  const [topics, setTopics] = useState<TopicView[] | null>(null);
+export default function Today() {
+  const [stats, setStats] = useState<Stats | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     api
-      .topics()
+      .stats()
       .then((loaded) => {
-        if (!cancelled) setTopics(loaded);
+        if (!cancelled) setStats(loaded);
       })
       .catch((e: Error) => {
         if (!cancelled) setError(e.message);
@@ -28,57 +28,137 @@ export default function Home() {
     };
   }, []);
 
+  const weeks = useMemo(() => chunk(stats?.year ?? [], 7), [stats]);
+
+  if (error) return <Shell><p className={styles.error}>{error}</p></Shell>;
+  if (!stats) return <Shell><p className="label">Loading</p></Shell>;
+
+  const due = stats.topics_due;
+  const minutes = stats.today_ms / 60000;
+  const perBlank = stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
+
   return (
     <Shell>
-      <h1 className={styles.title}>Curriculum</h1>
-      <p className={styles.intro}>
-        Every topic in the German pack, in the order it should be taught. Numbers on the
-        left are the teaching stage inside the level.
-      </p>
+      <div className={styles.page}>
+        <section className={styles.hero}>
+          <div className={styles.heroText}>
+            <h1 className={styles.title}>
+              {due > 0
+                ? `${due} ${due === 1 ? "topic" : "topics"} to review`
+                : "Nothing due today"}
+            </h1>
+            <p className={styles.sub}>
+              {due > 0
+                ? "One sentence at a time. Type the missing word and press Enter."
+                : "Everything is scheduled ahead. Come back tomorrow, or open the curriculum to start a topic early."}
+            </p>
+          </div>
+          {due > 0 ? (
+            <Link href="/review" className={styles.go}>
+              Let&apos;s go
+            </Link>
+          ) : (
+            <span className={`${styles.go} ${styles.done}`}>All done</span>
+          )}
+        </section>
 
-      {error && <p className={styles.error}>{error}</p>}
-      {!topics && !error && <p className="label">Loading topics</p>}
+        <div className={styles.card}>
+          <p className={styles.todayLine}>
+            {stats.today_blanks > 0 ? (
+              <>
+                Studied <b>{stats.today_blanks}</b> blanks in {minutes.toFixed(1)} minutes
+                today <span className={styles.quiet}>({perBlank.toFixed(1)}s each)</span>
+              </>
+            ) : (
+              <span className={styles.quiet}>Nothing studied yet today</span>
+            )}
+          </p>
 
-      <div className={styles.levels}>
-        {LEVELS.map((level) => {
-          const inLevel = topics?.filter((t) => t.cefr === level) ?? [];
-          if (inLevel.length === 0) return null;
-          return (
-            <section key={level}>
-              <div className={styles.levelHead}>
-                <h2 className={styles.levelName}>{level}</h2>
-                <span className="label">{inLevel.length} topics</span>
-              </div>
-              {inLevel.map((topic) => (
-                <div key={topic.id} className={styles.row}>
-                  <span className={styles.stage}>{String(topic.stage).padStart(2, "0")}</span>
-                  <span className={styles.rowTitle}>
-                    {topic.has_sheet ? (
-                      <Link href={`/sheet/${topic.id}`} className={styles.ready}>
-                        {topic.title}
-                      </Link>
-                    ) : (
-                      topic.title
-                    )}
-                    <small>{topic.goal}</small>
-                  </span>
-                  <span
-                    className={`${styles.state} ${
-                      topic.is_due && topic.has_sheet ? styles.due : ""
-                    }`}
-                  >
-                    {topic.reps === 0
-                      ? "new"
-                      : topic.is_due
-                        ? "due"
-                        : `${topic.due ?? ""}`}
-                  </span>
-                </div>
+          <div className={styles.heatWrap}>
+            <div className={styles.days}>
+              {WEEKDAYS.map((day, index) => (
+                <span key={index}>{day}</span>
               ))}
-            </section>
-          );
-        })}
+            </div>
+            <div>
+              <div className={styles.weeks}>
+                {weeks.map((week, index) => (
+                  <div key={index} className={styles.week}>
+                    {week.map((day) => (
+                      <span
+                        key={day.date}
+                        className={`${styles.cell} ${levelClass(day.count)} ${
+                          day.date === stats.today ? styles.today : ""
+                        }`}
+                        title={`${day.date}: ${day.count} ${
+                          day.count === 1 ? "sheet" : "sheets"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+              <div className={styles.months}>
+                {monthLabels(weeks).map((label, index) => (
+                  <span
+                    key={index}
+                    className={styles.month}
+                    style={{ width: 12, minWidth: 12 }}
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.summary}>
+            <span className={styles.stat}>
+              Days learned <b>{Math.round(stats.days_learned * 100)}%</b>
+            </span>
+            <span className={styles.stat}>
+              Longest streak <b>{stats.longest_streak}</b>
+            </span>
+            <span className={styles.stat}>
+              Current streak <b>{stats.streak_days}</b>
+            </span>
+            <span className={styles.stat}>
+              Accuracy <b>{Math.round(stats.accuracy * 100)}%</b>
+            </span>
+          </div>
+        </div>
       </div>
     </Shell>
   );
+}
+
+function chunk(days: DayPoint[], size: number): DayPoint[][] {
+  const out: DayPoint[][] = [];
+  for (let i = 0; i < days.length; i += size) {
+    out.push(days.slice(i, i + size));
+  }
+  return out;
+}
+
+/** Four steps, so a heavy day is visibly heavier than a single sheet. */
+function levelClass(count: number) {
+  if (count === 0) return "";
+  if (count === 1) return styles.l1;
+  if (count <= 3) return styles.l2;
+  if (count <= 6) return styles.l3;
+  return styles.l4;
+}
+
+/** A month name over the first week that starts in it, blank everywhere else. */
+function monthLabels(weeks: DayPoint[][]) {
+  const names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  let previous = -1;
+  return weeks.map((week) => {
+    const month = new Date(`${week[0].date}T00:00:00`).getMonth();
+    if (month !== previous) {
+      previous = month;
+      return names[month];
+    }
+    return "";
+  });
 }

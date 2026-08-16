@@ -183,6 +183,9 @@ pub async fn update_sheet(pool: &SqlitePool, id: i64, sheet: &Sheet) -> anyhow::
 }
 
 /// Write the review and every answer in it, then move the topic's schedule on.
+///
+/// `elapsed_ms` is how long the run took. Sheet mode does not measure time and
+/// passes zero, which the statistics treat as "not timed" rather than instant.
 #[allow(clippy::too_many_arguments)]
 pub async fn record_review(
     pool: &SqlitePool,
@@ -193,12 +196,13 @@ pub async fn record_review(
     memory: TopicMemory,
     due: NaiveDate,
     today: NaiveDate,
+    elapsed_ms: i64,
 ) -> anyhow::Result<i64> {
     let mut tx = pool.begin().await?;
 
     let row = sqlx::query(
-        "insert into review (sheet_id, topic_id, reviewed_at, correct, total, score, rating)
-         values (?1, ?2, ?3, ?4, ?5, ?6, ?7) returning id",
+        "insert into review (sheet_id, topic_id, reviewed_at, correct, total, score, rating, elapsed_ms)
+         values (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) returning id",
     )
     .bind(sheet_id)
     .bind(topic_id)
@@ -207,6 +211,7 @@ pub async fn record_review(
     .bind(graded.total as i64)
     .bind(graded.score as f64)
     .bind(rating.as_str())
+    .bind(elapsed_ms)
     .fetch_one(&mut *tx)
     .await?;
     let review_id: i64 = row.try_get("id")?;
@@ -285,6 +290,7 @@ pub struct DayActivity {
     pub reviews: i64,
     pub correct: i64,
     pub total: i64,
+    pub elapsed_ms: i64,
 }
 
 /// How one topic has actually gone, across every review of it.
@@ -300,9 +306,10 @@ pub struct TopicRecord {
 pub async fn daily_activity(pool: &SqlitePool) -> anyhow::Result<Vec<DayActivity>> {
     let rows = sqlx::query(
         "select reviewed_at,
-                count(*)      as reviews,
-                sum(correct)  as correct,
-                sum(total)    as total
+                count(*)         as reviews,
+                sum(correct)     as correct,
+                sum(total)       as total,
+                sum(elapsed_ms)  as elapsed_ms
            from review
           group by reviewed_at
           order by reviewed_at",
@@ -318,6 +325,7 @@ pub async fn daily_activity(pool: &SqlitePool) -> anyhow::Result<Vec<DayActivity
                 reviews: row.try_get("reviews")?,
                 correct: row.try_get("correct")?,
                 total: row.try_get("total")?,
+                elapsed_ms: row.try_get("elapsed_ms")?,
             })
         })
         .collect()
@@ -394,6 +402,26 @@ pub fn streak_from(days: &[NaiveDate], today: NaiveDate) -> i64 {
         }
     }
     streak
+}
+
+/// The longest run of consecutive study days there has ever been.
+pub fn longest_streak_from(days: &[NaiveDate]) -> i64 {
+    let mut sorted: Vec<NaiveDate> = days.to_vec();
+    sorted.sort_unstable();
+    sorted.dedup();
+
+    let mut best = 0;
+    let mut run = 0;
+    let mut previous: Option<NaiveDate> = None;
+    for day in sorted {
+        run = match previous {
+            Some(p) if p.succ_opt() == Some(day) => run + 1,
+            _ => 1,
+        };
+        best = best.max(run);
+        previous = Some(day);
+    }
+    best
 }
 
 #[cfg(test)]
@@ -502,6 +530,7 @@ mod tests {
             memory,
             due,
             today(),
+            0,
         )
         .await
         .unwrap();
@@ -516,6 +545,23 @@ mod tests {
 
         let counts = error_tag_counts(&pool).await.unwrap();
         assert_eq!(counts, vec![("case:dative".to_string(), 1)]);
+    }
+
+    #[test]
+    fn the_longest_streak_is_found_anywhere_in_the_history() {
+        let d = |month, day| NaiveDate::from_ymd_opt(2026, month, day).unwrap();
+        assert_eq!(longest_streak_from(&[]), 0);
+        assert_eq!(longest_streak_from(&[d(8, 15)]), 1);
+        // A four day run in June beats a two day run in August.
+        let days = [
+            d(6, 1), d(6, 2), d(6, 3), d(6, 4),
+            d(8, 14), d(8, 15),
+        ];
+        assert_eq!(longest_streak_from(&days), 4);
+        // Duplicates on one day count once.
+        assert_eq!(longest_streak_from(&[d(8, 14), d(8, 14), d(8, 15)]), 2);
+        // A run that crosses the end of a month still counts.
+        assert_eq!(longest_streak_from(&[d(6, 29), d(6, 30), d(7, 1)]), 3);
     }
 
     #[test]
@@ -549,13 +595,14 @@ mod tests {
         };
         let due = NaiveDate::from_ymd_opt(2026, 8, 18).unwrap();
         record_review(
-            &pool, sheet_id, "cases.dative", &graded, graded.rating, memory, due, today(),
+            &pool, sheet_id, "cases.dative", &graded, graded.rating, memory, due, today(), 90_000,
         )
         .await
         .unwrap();
 
         let daily = daily_activity(&pool).await.unwrap();
         assert_eq!(daily.len(), 1);
+        assert_eq!(daily[0].elapsed_ms, 90_000);
         assert_eq!(daily[0].date, today());
         assert_eq!(daily[0].reviews, 1);
         assert_eq!(daily[0].correct, 1);

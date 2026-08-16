@@ -1,94 +1,192 @@
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin: 0 0 4px;
+/*
+ * Today. One question answered above the fold: is there anything to do, and
+ * have I been showing up.
+ */
+
+.page {
+  /* Sequential ramp, one hue, light to dark. The empty step is not a colour, it
+     is the surface, so a quiet year does not read as a wall of blue. */
+  --heat-0: color-mix(in srgb, var(--line) 55%, transparent);
+  --heat-1: #c9d4f5;
+  --heat-2: #90a6ea;
+  --heat-3: #4f6fd8;
+  --heat-4: #1e43c8;
 }
 
-.intro {
-  color: var(--dim);
-  font-size: 13px;
-  margin: 0 0 28px;
-  max-width: 62ch;
-}
-
-.levels {
-  display: grid;
-  gap: 34px;
-}
-
-@media (min-width: 1100px) {
-  .levels {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 34px 40px;
+@media (prefers-color-scheme: dark) {
+  .page {
+    --heat-0: #1e232b;
+    --heat-1: #23366b;
+    --heat-2: #33509e;
+    --heat-3: #4e6fd0;
+    --heat-4: #7d97ff;
   }
 }
 
-.levelHead {
+/* ---------------------------------------------------------------- hero */
+
+.hero {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 6px;
-  margin-bottom: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  padding: 34px 0 30px;
 }
 
-.levelName {
-  font-family: var(--mono);
-  font-size: 15px;
-  font-weight: 500;
+.heroText {
+  flex: 1;
+  min-width: 260px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 6px;
+}
+
+.sub {
+  color: var(--dim);
+  font-size: 13.5px;
   margin: 0;
+  max-width: 52ch;
 }
 
-.row {
+.go {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 16px 34px;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  transition: transform 0.08s;
+  white-space: nowrap;
+}
+
+.go:active {
+  transform: translateY(1px);
+}
+
+.go.done {
+  background: transparent;
+  color: var(--dim);
+  border-color: var(--line);
+  cursor: default;
+}
+
+/* ---------------------------------------------------------------- heatmap */
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.todayLine {
+  text-align: center;
+  font-size: 13.5px;
+  margin: 0 0 20px;
+  color: var(--ink);
+}
+
+.todayLine .quiet {
+  color: var(--dim);
+}
+
+.heatWrap {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.days {
   display: grid;
-  grid-template-columns: 22px minmax(0, 1fr) auto;
-  align-items: baseline;
-  gap: 10px;
-  padding: 8px 0;
+  grid-template-rows: repeat(7, 12px);
+  gap: 3px;
+  flex: none;
 }
 
-.row + .row {
-  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
-}
-
-.stage {
+.days span {
   font-family: var(--mono);
-  font-size: 11px;
-  font-variant-numeric: tabular-nums;
+  font-size: 8.5px;
+  line-height: 12px;
   color: var(--dim);
 }
 
-.rowTitle {
-  font-size: 14.5px;
-  min-width: 0;
+.weeks {
+  display: flex;
+  gap: 3px;
 }
 
-.rowTitle small {
-  display: block;
-  font-size: 11.5px;
-  color: var(--dim);
-  margin-top: 1px;
+.week {
+  display: grid;
+  grid-template-rows: repeat(7, 12px);
+  gap: 3px;
 }
 
-.ready {
-  color: var(--accent);
+.cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--heat-0);
 }
 
-.ready:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.cell.l1 {
+  background: var(--heat-1);
+}
+.cell.l2 {
+  background: var(--heat-2);
+}
+.cell.l3 {
+  background: var(--heat-3);
+}
+.cell.l4 {
+  background: var(--heat-4);
 }
 
-.state {
+.cell.today {
+  box-shadow: 0 0 0 1.5px var(--ink);
+}
+
+.months {
+  display: flex;
+  gap: 3px;
+  margin-top: 6px;
+}
+
+.month {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 9.5px;
   color: var(--dim);
   white-space: nowrap;
 }
 
-.state.due {
+/* ---------------------------------------------------------------- summary */
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 34px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.stat {
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.stat b {
+  font-family: var(--mono);
+  font-weight: 500;
   color: var(--accent);
+  font-variant-numeric: tabular-nums;
 }
 
 .error {

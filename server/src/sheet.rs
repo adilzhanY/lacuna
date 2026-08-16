@@ -99,7 +99,8 @@ impl Item {
         false
     }
 
-    fn visible_text(&self) -> String {
+    /// Everything the reader can see, blanks removed.
+    pub fn visible_text(&self) -> String {
         self.segments
             .iter()
             .filter_map(|s| match s {

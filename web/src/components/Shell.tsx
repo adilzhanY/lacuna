@@ -8,7 +8,8 @@ import { api } from "@/lib/api";
 import styles from "./Shell.module.css";
 
 const LINKS = [
-  { href: "/", label: "Curriculum" },
+  { href: "/", label: "Today" },
+  { href: "/curriculum", label: "Curriculum" },
   { href: "/stats", label: "Statistics" },
 ];
 

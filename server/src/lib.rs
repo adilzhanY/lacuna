@@ -7,6 +7,7 @@ pub mod db;
 pub mod domain;
 pub mod grade;
 pub mod pack;
+pub mod review;
 pub mod schedule;
 pub mod sheet;
 

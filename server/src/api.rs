@@ -11,13 +11,14 @@ use axum::http::StatusCode;
 use axum::response::{IntoResponse, Response};
 use axum::routing::{get, post};
 use axum::{Json, Router};
-use chrono::{NaiveDate, Utc};
+use chrono::{Datelike, NaiveDate, Utc, Weekday};
 use serde::{Deserialize, Serialize};
 use ts_rs::TS;
 
 use crate::db;
 use crate::domain::{Level, Rating};
-use crate::grade::{grade_blank, grade_sheet, GradedSheet, Verdict};
+use crate::grade::{grade_blank, grade_sheet, rating_for, BlankResult, GradedSheet, Verdict};
+use crate::review::{grade_item, session_rating};
 use crate::sheet::{Segment, Sheet};
 use crate::SharedState;
 
@@ -31,6 +32,9 @@ pub fn router(state: SharedState) -> Router {
         .route("/api/sheet/{topic_id}", get(sheet_for_topic))
         .route("/api/sheet/{sheet_id}/check", post(check_sheet))
         .route("/api/sheet/{sheet_id}/accept", post(accept_also))
+        .route("/api/review/next", get(review_next))
+        .route("/api/review/{sheet_id}/item", post(review_item))
+        .route("/api/review/{sheet_id}/finish", post(review_finish))
         .with_state(state)
 }
 
@@ -216,9 +220,22 @@ pub struct Stats {
     pub forecast: Vec<DayPoint>,
     pub weakest: Vec<Weakness>,
     pub hardest: Vec<TopicScore>,
+    /// One entry per day for the last year, starting on a Monday so the grid is square.
+    pub year: Vec<DayPoint>,
+    #[ts(type = "number")]
+    pub longest_streak: i64,
+    /// Share of days in the year window with at least one review.
+    pub days_learned: f32,
+    #[ts(type = "number")]
+    pub today_reviews: i64,
+    #[ts(type = "number")]
+    pub today_blanks: i64,
+    #[ts(type = "number")]
+    pub today_ms: i64,
 }
 
 const ACTIVITY_DAYS: i64 = 30;
+const YEAR_DAYS: i64 = 364;
 const FORECAST_DAYS: i64 = 14;
 const TOP_N: usize = 8;
 
@@ -328,6 +345,28 @@ async fn stats(State(state): State<SharedState>) -> ApiResult<Stats> {
     });
     hardest.truncate(TOP_N);
 
+    // A year of days, wound back to a Monday so the heatmap starts a clean week.
+    let mut year_start = today - chrono::Duration::days(YEAR_DAYS);
+    while year_start.weekday() != Weekday::Mon {
+        year_start -= chrono::Duration::days(1);
+    }
+    let mut year = Vec::new();
+    let mut day = year_start;
+    let mut studied_days = 0i64;
+    while day <= today {
+        let entry = by_date.get(&day);
+        if entry.is_some() {
+            studied_days += 1;
+        }
+        year.push(DayPoint {
+            date: day.to_string(),
+            count: entry.map(|d| d.reviews).unwrap_or(0),
+            accuracy: entry.and_then(|d| (d.total > 0).then(|| d.correct as f32 / d.total as f32)),
+        });
+        day += chrono::Duration::days(1);
+    }
+
+    let today_row = by_date.get(&today);
     let blanks_correct: i64 = daily.iter().map(|d| d.correct).sum();
     let blanks_total: i64 = daily.iter().map(|d| d.total).sum();
 
@@ -357,6 +396,18 @@ async fn stats(State(state): State<SharedState>) -> ApiResult<Stats> {
             .map(|(tag, count)| Weakness { tag, count })
             .collect(),
         hardest,
+        longest_streak: db::longest_streak_from(
+            &daily.iter().map(|d| d.date).collect::<Vec<_>>(),
+        ),
+        days_learned: if year.is_empty() {
+            0.0
+        } else {
+            studied_days as f32 / year.len() as f32
+        },
+        today_reviews: today_row.map(|d| d.reviews).unwrap_or(0),
+        today_blanks: today_row.map(|d| d.total).unwrap_or(0),
+        today_ms: today_row.map(|d| d.elapsed_ms).unwrap_or(0),
+        year,
     }))
 }
 
@@ -404,6 +455,11 @@ async fn sheet_for_topic(
     State(state): State<SharedState>,
     Path(topic_id): Path<String>,
 ) -> ApiResult<ClientSheet> {
+    Ok(Json(load_client_sheet(&state, &topic_id).await?))
+}
+
+async fn load_client_sheet(state: &SharedState, topic_id: &str) -> Result<ClientSheet, ApiError> {
+    let topic_id = topic_id.to_string();
     let topic = state
         .pack
         .topic(&topic_id)
@@ -425,7 +481,7 @@ async fn sheet_for_topic(
         }
     };
 
-    Ok(Json(ClientSheet {
+    Ok(ClientSheet {
         sheet_id,
         topic_id: sheet.topic_id.clone(),
         topic_title: topic.title.clone(),
@@ -447,7 +503,7 @@ async fn sheet_for_topic(
                     .collect(),
             })
             .collect(),
-    }))
+    })
 }
 
 #[derive(Debug, Deserialize, TS)]
@@ -501,6 +557,8 @@ async fn check_sheet(
         scheduled.memory,
         scheduled.due,
         today,
+        // Sheet mode does not measure time.
+        0,
     )
     .await?;
 
@@ -559,4 +617,211 @@ async fn accept_also(
         accept: blank.accept,
         verdict,
     }))
+}
+
+// ---------------------------------------------------------------- review mode
+
+/// The next thing to study, or nothing when the queue is empty.
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct ReviewQueue {
+    pub sheet: Option<ClientSheet>,
+    /// Topics still due after this one.
+    #[ts(type = "number")]
+    pub remaining: i64,
+}
+
+/// One item as the browser reports it.
+#[derive(Debug, Deserialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct ItemAnswer {
+    pub n: u32,
+    /// Milliseconds from the sentence appearing to the answer being sent.
+    pub elapsed_ms: u32,
+    /// Blank id to what was typed.
+    pub answers: HashMap<String, String>,
+}
+
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct ItemVerdict {
+    pub correct: bool,
+    /// What this single item earned, before the run is averaged.
+    pub grade: Rating,
+    #[ts(type = "unknown")]
+    pub results: Vec<BlankResult>,
+}
+
+#[derive(Debug, Deserialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct FinishRequest {
+    pub items: Vec<ItemAnswer>,
+}
+
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct FinishResponse {
+    pub topic_title: String,
+    pub rating: Rating,
+    #[ts(type = "number")]
+    pub interval_days: i64,
+    pub due: String,
+    #[ts(type = "number")]
+    pub correct: usize,
+    #[ts(type = "number")]
+    pub total: usize,
+    pub accuracy: f32,
+    /// Topics still due after this one.
+    #[ts(type = "number")]
+    pub remaining: i64,
+}
+
+/// Pick the next due topic in teaching order and hand back its sheet.
+async fn review_next(State(state): State<SharedState>) -> ApiResult<ReviewQueue> {
+    let views = topic_views(&state).await?;
+    let due: Vec<&TopicView> = views.iter().filter(|v| v.is_due && v.has_sheet).collect();
+
+    let Some(next) = due.first() else {
+        return Ok(Json(ReviewQueue {
+            sheet: None,
+            remaining: 0,
+        }));
+    };
+
+    let sheet = load_client_sheet(&state, &next.id).await?;
+    Ok(Json(ReviewQueue {
+        sheet: Some(sheet),
+        remaining: due.len() as i64 - 1,
+    }))
+}
+
+/// Grade one item as it is answered, so the reader gets feedback immediately.
+///
+/// Nothing is stored here. The run is recorded once, at the end, from the same
+/// raw answers and timings, so the server stays the authority on the result.
+async fn review_item(
+    State(state): State<SharedState>,
+    Path(sheet_id): Path<i64>,
+    Json(body): Json<ItemAnswer>,
+) -> ApiResult<ItemVerdict> {
+    let sheet = db::load_sheet(&state.db, sheet_id)
+        .await?
+        .ok_or_else(|| ApiError::not_found(format!("no sheet {sheet_id}")))?;
+    let item = sheet
+        .items
+        .iter()
+        .find(|i| i.n == body.n)
+        .ok_or_else(|| ApiError::not_found(format!("sheet {sheet_id} has no item {}", body.n)))?;
+
+    let (results, correct) = grade_one_item(item, &body.answers);
+    Ok(Json(ItemVerdict {
+        correct,
+        grade: grade_item(item, body.elapsed_ms, correct),
+        results,
+    }))
+}
+
+/// Finish a run: regrade everything, rate the topic, move its schedule on.
+async fn review_finish(
+    State(state): State<SharedState>,
+    Path(sheet_id): Path<i64>,
+    Json(body): Json<FinishRequest>,
+) -> ApiResult<FinishResponse> {
+    let sheet = db::load_sheet(&state.db, sheet_id)
+        .await?
+        .ok_or_else(|| ApiError::not_found(format!("no sheet {sheet_id}")))?;
+    let topic = state
+        .pack
+        .topic(&sheet.topic_id)
+        .ok_or_else(|| ApiError::not_found(format!("no topic `{}`", sheet.topic_id)))?;
+
+    let mut results: Vec<BlankResult> = Vec::new();
+    let mut item_ratings = Vec::new();
+    let mut elapsed_ms: i64 = 0;
+
+    for attempt in &body.items {
+        let Some(item) = sheet.items.iter().find(|i| i.n == attempt.n) else {
+            continue;
+        };
+        let (mut item_results, correct) = grade_one_item(item, &attempt.answers);
+        results.append(&mut item_results);
+        item_ratings.push(grade_item(item, attempt.elapsed_ms, correct));
+        elapsed_ms += attempt.elapsed_ms as i64;
+    }
+
+    let total = results.len();
+    let correct = results.iter().filter(|r| r.verdict.is_correct()).count();
+    let score = if total == 0 {
+        0.0
+    } else {
+        correct as f32 / total as f32
+    };
+    let graded = GradedSheet {
+        results,
+        correct,
+        total,
+        score,
+        rating: rating_for(score),
+    };
+
+    // Speed and mistakes decide the rating here, not the raw score.
+    let rating = session_rating(&item_ratings);
+
+    let today = today();
+    let state_row = db::topic_state(&state.db, &sheet.topic_id).await?;
+    let memory = state_row.as_ref().and_then(|s| s.memory);
+    let days = state_row
+        .as_ref()
+        .map(|s| s.days_since_review(today))
+        .unwrap_or(0);
+    let scheduled = state.scheduler.review(memory, days, rating, today)?;
+
+    db::record_review(
+        &state.db,
+        sheet_id,
+        &sheet.topic_id,
+        &graded,
+        rating,
+        scheduled.memory,
+        scheduled.due,
+        today,
+        elapsed_ms,
+    )
+    .await?;
+
+    let views = topic_views(&state).await?;
+    let remaining = views.iter().filter(|v| v.is_due && v.has_sheet).count() as i64;
+
+    Ok(Json(FinishResponse {
+        topic_title: topic.title.clone(),
+        rating,
+        interval_days: scheduled.interval_days,
+        due: scheduled.due.to_string(),
+        correct,
+        total,
+        accuracy: score,
+        remaining,
+    }))
+}
+
+/// Grade every blank in one item. The item counts as right only if all of them do.
+fn grade_one_item(
+    item: &crate::sheet::Item,
+    answers: &HashMap<String, String>,
+) -> (Vec<BlankResult>, bool) {
+    let mut results = Vec::new();
+    let mut correct = true;
+    for blank in item.blanks() {
+        let given = answers.get(&blank.id).cloned().unwrap_or_default();
+        let verdict = grade_blank(blank, item, &given);
+        if !verdict.is_correct() {
+            correct = false;
+        }
+        results.push(BlankResult {
+            blank_id: blank.id.clone(),
+            given,
+            verdict,
+        });
+    }
+    (results, correct)
 }

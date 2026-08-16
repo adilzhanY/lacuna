@@ -16,4 +16,12 @@ activity: Array<DayPoint>,
 /**
  * One entry per day for the next 14 days, including empty ones.
  */
-forecast: Array<DayPoint>, weakest: Array<Weakness>, hardest: Array<TopicScore>, };
+forecast: Array<DayPoint>, weakest: Array<Weakness>, hardest: Array<TopicScore>, 
+/**
+ * One entry per day for the last year, starting on a Monday so the grid is square.
+ */
+year: Array<DayPoint>, longest_streak: number, 
+/**
+ * Share of days in the year window with at least one review.
+ */
+days_learned: number, today_reviews: number, today_blanks: number, today_ms: number, };
