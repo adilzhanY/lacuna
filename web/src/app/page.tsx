@@ -100,11 +100,7 @@ export default function Today() {
               </div>
               <div className={styles.months}>
                 {monthLabels(weeks).map((label, index) => (
-                  <span
-                    key={index}
-                    className={styles.month}
-                    style={{ width: 12, minWidth: 12 }}
-                  >
+                  <span key={index} className={styles.month}>
                     {label}
                   </span>
                 ))}

@@ -62,6 +62,10 @@ All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a compo
 - **One accent.** Cobalt marks focus, progress and the active nav. Nothing else is
   coloured except a right or wrong answer.
 - **One radius**, 3px, everywhere.
+- **Every size is in rem, never px**, apart from hairlines under 4px (borders, small
+  radii) which stay crisp in px. The root font size in `globals.css` is the zoom dial
+  for the whole app: 17px, stepping up to 18, 19 and 21 on wider screens. Media query
+  widths stay in px, since rem inside a media query means the browser default.
 - **One theme at a time.** Light by default, dark from `prefers-color-scheme`. No
   section inverts.
 - Blanks are slots with a heavier bottom edge, all one constant width, so their size

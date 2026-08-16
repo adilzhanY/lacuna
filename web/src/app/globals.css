@@ -20,7 +20,7 @@
   --no: #b4232b;
 
   --radius: 3px;
-  --bar-height: 56px;
+  --bar-height: 3.5rem;
 
   --sans: var(--font-sans), system-ui, sans-serif;
   --mono: var(--font-mono), ui-monospace, monospace;
@@ -44,6 +44,36 @@
   }
 }
 
+/*
+ * The zoom dial for the whole app.
+ *
+ * Every size in every stylesheet is in rem, so this single number scales the
+ * interface. Wider screens are usually further away and have room to spare, so
+ * they get a larger step. Media query widths stay in px on purpose: inside a
+ * media query, rem always means the browser default, never this value.
+ */
+html {
+  font-size: 17px;
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 2400px) {
+  html {
+    font-size: 21px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -58,7 +88,7 @@ body {
   background: var(--ground);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -76,7 +106,7 @@ button {
 /* Small caps label. Used sparingly: rail headings and table headers only. */
 .label {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 0.6562rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--dim);
