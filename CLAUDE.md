@@ -67,7 +67,9 @@ All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a compo
 - Blanks are slots with a heavier bottom edge, all one constant width, so their size
   never leaks the answer length.
 - The sheet splits into two columns above 1180px so twenty items fit one screen.
-- Tab moves to the next blank, Enter checks the sheet, 20 items with no mouse.
+- Tab and Enter both move to the next blank, so 20 items need no mouse. Enter on the
+  last blank arms the check and says so, and a second Enter runs it. Enter never
+  checks the sheet from the middle, because that ends a run by accident.
 - A wrong answer shows the correct form under the blank, not in a summary at the bottom.
 
 ## Language and content

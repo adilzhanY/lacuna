@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import {
   api,
@@ -22,6 +22,9 @@ export default function Sheet({ topicId }: { topicId: string }) {
   const [checked, setChecked] = useState<CheckResponse | null>(null);
   const [patched, setPatched] = useState<Record<string, true>>({});
   const [due, setDue] = useState<TopicView[]>([]);
+  /** True once Enter has been pressed on the last blank, so the next one checks. */
+  const [armed, setArmed] = useState(false);
+  const inputs = useRef<Record<string, HTMLInputElement | null>>({});
 
   // The page remounts this component per topic (see the `key` on <Sheet>), so
   // the effect only has to fetch. Nothing here resets state by hand.
@@ -54,12 +57,17 @@ export default function Sheet({ topicId }: { topicId: string }) {
     return map;
   }, [checked]);
 
+  /** Every blank id in reading order, which is the order Enter walks. */
+  const order = useMemo(
+    () =>
+      sheet?.items.flatMap((item) =>
+        item.segments.filter((s) => s.type === "blank").map((s) => s.id),
+      ) ?? [],
+    [sheet],
+  );
+
   const filled = Object.values(answers).filter((a) => a.trim() !== "").length;
-  const totalBlanks =
-    sheet?.items.reduce(
-      (sum, item) => sum + item.segments.filter((s) => s.type === "blank").length,
-      0,
-    ) ?? 0;
+  const totalBlanks = order.length;
 
   const check = useCallback(
     async (ratingOverride?: Rating) => {
@@ -73,11 +81,36 @@ export default function Sheet({ topicId }: { topicId: string }) {
     [sheet, answers],
   );
 
-  // Enter checks the sheet from anywhere in it, so a run of twenty items never
-  // needs the mouse.
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     if (!checked) void check();
+  };
+
+  /**
+   * Enter walks to the next blank rather than checking the sheet, so a run of
+   * twenty items never needs the mouse and never ends early by accident. On the
+   * last blank the first Enter only arms the check, and the second one runs it.
+   */
+  const onBlankKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, blankId: string) => {
+    if (event.key !== "Enter" || checked) return;
+    event.preventDefault();
+
+    const index = order.indexOf(blankId);
+    const next = order[index + 1];
+
+    if (next) {
+      setArmed(false);
+      const field = inputs.current[next];
+      field?.focus();
+      field?.select();
+      return;
+    }
+
+    if (armed) {
+      void check();
+    } else {
+      setArmed(true);
+    }
   };
 
   const acceptAlso = async (blankId: string) => {
@@ -121,9 +154,16 @@ export default function Sheet({ topicId }: { topicId: string }) {
                       result={byBlank.get(segment.id)}
                       patched={patched[segment.id] === true}
                       locked={checked !== null}
-                      onChange={(value) =>
-                        setAnswers((a) => ({ ...a, [segment.id]: value }))
-                      }
+                      onChange={(value) => {
+                        // Typing again means the answer is not settled, so the
+                        // armed check goes away.
+                        setArmed(false);
+                        setAnswers((a) => ({ ...a, [segment.id]: value }));
+                      }}
+                      onKeyDown={(event) => onBlankKeyDown(event, segment.id)}
+                      register={(element) => {
+                        inputs.current[segment.id] = element;
+                      }}
                       onAccept={() => acceptAlso(segment.id)}
                     />
                   ),
@@ -139,7 +179,11 @@ export default function Sheet({ topicId }: { topicId: string }) {
             <button type="submit" className={styles.button}>
               Check sheet
             </button>
-            <span className={styles.keys}>tab, then enter to check</span>
+            <span className={armed ? styles.armed : styles.keys} aria-live="polite">
+              {armed
+                ? "Press Enter once more to check the blanks"
+                : "enter moves to the next blank"}
+            </span>
           </div>
         )}
       </div>
@@ -211,6 +255,8 @@ function Blank({
   patched,
   locked,
   onChange,
+  onKeyDown,
+  register,
   onAccept,
 }: {
   id: string;
@@ -219,6 +265,8 @@ function Blank({
   patched: boolean;
   locked: boolean;
   onChange: (value: string) => void;
+  onKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+  register: (element: HTMLInputElement | null) => void;
   onAccept: () => void;
 }) {
   const wrong = result?.verdict === "wrong" && !patched;
@@ -236,6 +284,7 @@ function Blank({
   return (
     <span className={styles.blankWrap}>
       <input
+        ref={register}
         className={className}
         aria-label={`blank ${id}`}
         value={value}
@@ -244,6 +293,7 @@ function Blank({
         autoCorrect="off"
         spellCheck={false}
         onChange={(event) => onChange(event.target.value)}
+        onKeyDown={onKeyDown}
       />
       {wrong && result.verdict === "wrong" && (
         <>

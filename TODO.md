@@ -92,7 +92,7 @@ Ticked items are done and committed.
 - [ ] Blank component:
   - [x] ruled underline, no box
   - [x] one constant width for every blank, so length never leaks the answer
-  - [x] Tab moves to the next blank, Enter checks the sheet, no mouse needed
+  - [x] Tab and Enter move to the next blank, Enter twice at the end checks, no mouse needed
   - [x] the correct form appears under the blank on a wrong answer, not in a summary
   - [x] "Also accept" button next to a wrong blank
 - [ ] Sidebar: due sheets, recycled words panel
