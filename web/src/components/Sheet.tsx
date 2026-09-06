@@ -11,9 +11,17 @@ import {
   type Rating,
   type TopicView,
 } from "@/lib/api";
+import { Button } from "@/components/ui/Button";
+import { Segmented } from "@/components/ui/Segmented";
+import { Centered, Chip, ReadOnly, Section } from "@/components/ui/Section";
 import styles from "./Sheet.module.css";
 
-const RATINGS: Rating[] = ["again", "hard", "good", "easy"];
+const RATINGS: { value: Rating; label: string }[] = [
+  { value: "again", label: "Again" },
+  { value: "hard", label: "Hard" },
+  { value: "good", label: "Good" },
+  { value: "easy", label: "Easy" },
+];
 
 export default function Sheet({ topicId }: { topicId: string }) {
   const [sheet, setSheet] = useState<ClientSheet | null>(null);
@@ -91,7 +99,10 @@ export default function Sheet({ topicId }: { topicId: string }) {
    * twenty items never needs the mouse and never ends early by accident. On the
    * last blank the first Enter only arms the check, and the second one runs it.
    */
-  const onBlankKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, blankId: string) => {
+  const onBlankKeyDown = (
+    event: React.KeyboardEvent<HTMLInputElement>,
+    blankId: string,
+  ) => {
     if (event.key !== "Enter" || checked) return;
     event.preventDefault();
 
@@ -123,7 +134,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
     }
   };
 
-  if (error) return <p className={styles.error}>{error}</p>;
+  if (error) return <Centered title="Could not load" body={error} error />;
   if (!sheet) return <p className="label">Loading sheet</p>;
 
   const percent = checked ? Math.round(checked.graded.score * 100) : null;
@@ -135,13 +146,17 @@ export default function Sheet({ topicId }: { topicId: string }) {
           <h1 className={styles.title}>{sheet.topic_title}</h1>
         </div>
         <p className={styles.meta}>
-          {sheet.topic_id} / {sheet.cefr} / {totalBlanks} blanks
+          <Chip tone="neutral">{sheet.cefr}</Chip>
+          <span>{sheet.topic_id}</span>
+          <span>{totalBlanks} blanks</span>
         </p>
 
         <div className={styles.items}>
           {sheet.items.map((item) => (
             <div key={item.n} className={styles.item}>
-              <span className={styles.n}>{String(item.n).padStart(2, "0")}</span>
+              <span className={styles.n}>
+                {String(item.n).padStart(2, "0")}
+              </span>
               <span className={styles.sentence}>
                 {item.segments.map((segment, index) =>
                   segment.type === "text" ? (
@@ -176,13 +191,17 @@ export default function Sheet({ topicId }: { topicId: string }) {
 
         {!checked && (
           <div className={styles.actions}>
-            <button type="submit" className={styles.button}>
+            <Button type="submit" variant="primary">
               Check sheet
-            </button>
-            <span className={armed ? styles.armed : styles.keys} aria-live="polite">
-              {armed
-                ? "Press Enter once more to check the blanks"
-                : "enter moves to the next blank"}
+            </Button>
+            <span aria-live="polite">
+              {armed ? (
+                <Chip>Press Enter once more to check the blanks</Chip>
+              ) : (
+                <span className={styles.keys}>
+                  Enter moves to the next blank
+                </span>
+              )}
             </span>
           </div>
         )}
@@ -190,58 +209,66 @@ export default function Sheet({ topicId }: { topicId: string }) {
 
       <aside className={styles.rail}>
         <div className={styles.progress}>
-          <i style={{ width: `${totalBlanks ? (filled / totalBlanks) * 100 : 0}%` }} />
+          <i
+            style={{
+              width: `${totalBlanks ? (filled / totalBlanks) * 100 : 0}%`,
+            }}
+          />
         </div>
 
         {checked ? (
           <>
-            <p className="label">Score</p>
-            <p
-              className={`${styles.railValue} ${
-                percent !== null && percent >= 80 ? styles.correct : styles.poor
-              }`}
-            >
-              {percent}%
-            </p>
-            <p className={styles.railLine}>
-              {checked.graded.correct} of {checked.graded.total} blanks. Back in{" "}
-              {checked.interval_days} {checked.interval_days === 1 ? "day" : "days"}, on{" "}
-              {checked.due}.
-            </p>
-            <p className="label">Rating</p>
-            <div className={styles.ratings}>
-              {RATINGS.map((rating) => (
-                <button
-                  key={rating}
-                  type="button"
-                  className={`${styles.rating} ${
-                    rating === checked.rating ? styles.chosen : ""
-                  }`}
-                  onClick={() => check(rating)}
-                >
-                  {rating}
-                </button>
-              ))}
-            </div>
+            <Section title="Score" first>
+              <p
+                className={`${styles.railValue} ${
+                  percent !== null && percent >= 80
+                    ? styles.correct
+                    : styles.poor
+                }`}
+              >
+                {percent}%
+              </p>
+              <ReadOnly
+                label="Right"
+                value={`${checked.graded.correct} of ${checked.graded.total}`}
+              />
+              <ReadOnly
+                label="Back in"
+                value={`${checked.interval_days} ${checked.interval_days === 1 ? "day" : "days"}`}
+              />
+              <ReadOnly label="Due" value={checked.due} />
+            </Section>
+            <Section title="Rating">
+              <Segmented
+                label="Rating"
+                value={checked.rating}
+                options={RATINGS}
+                onChange={(rating) => check(rating)}
+              />
+            </Section>
           </>
         ) : (
-          <>
-            <p className="label">Filled</p>
+          <Section title="Filled" first>
             <p className={styles.railValue}>
               {filled}/{totalBlanks}
             </p>
-          </>
+          </Section>
         )}
 
         {due.length > 0 && (
-          <>
-            <p className="label">Also due</p>
-            {due.slice(0, 5).map((topic) => (
-              <Link key={topic.id} href={`/sheet/${topic.id}`} className={styles.nextLink}>
-                {topic.title}
-              </Link>
-            ))}
-          </>
+          <Section title="Also due">
+            <div className={styles.nextList}>
+              {due.slice(0, 5).map((topic) => (
+                <Link
+                  key={topic.id}
+                  href={`/sheet/${topic.id}`}
+                  className={styles.nextLink}
+                >
+                  {topic.title}
+                </Link>
+              ))}
+            </div>
+          </Section>
         )}
       </aside>
     </form>
@@ -306,9 +333,15 @@ function Blank({
         </>
       )}
       {note && result.verdict === "correct_with_note" && (
-        <span className={`${styles.correction} ${styles.noteText}`}>{result.expected}</span>
+        <span className={`${styles.correction} ${styles.noteText}`}>
+          {result.expected}
+        </span>
       )}
-      {patched && <span className={`${styles.correction} ${styles.noteText}`}>accepted</span>}
+      {patched && (
+        <span className={`${styles.correction} ${styles.noteText}`}>
+          accepted
+        </span>
+      )}
     </span>
   );
 }

@@ -1,9 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
 import Shell from "@/components/Shell";
+import { LinkButton } from "@/components/ui/Button";
+import { Centered, ReadOnly, Section } from "@/components/ui/Section";
 import { api, type DayPoint, type Stats } from "@/lib/api";
 import styles from "./page.module.css";
 
@@ -30,12 +32,25 @@ export default function Today() {
 
   const weeks = useMemo(() => chunk(stats?.year ?? [], 7), [stats]);
 
-  if (error) return <Shell><p className={styles.error}>{error}</p></Shell>;
-  if (!stats) return <Shell><p className="label">Loading</p></Shell>;
+  if (error) {
+    return (
+      <Shell>
+        <Centered title="Could not load" body={error} error />
+      </Shell>
+    );
+  }
+  if (!stats) {
+    return (
+      <Shell>
+        <p className="label">Loading</p>
+      </Shell>
+    );
+  }
 
   const due = stats.topics_due;
   const minutes = stats.today_ms / 60000;
-  const perBlank = stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
+  const perBlank =
+    stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
 
   return (
     <Shell>
@@ -54,73 +69,101 @@ export default function Today() {
             </p>
           </div>
           {due > 0 ? (
-            <Link href="/review" className={styles.go}>
-              Let&apos;s go
-            </Link>
+            <LinkButton
+              href="/review"
+              variant="primary"
+              large
+              icon={<ArrowRight size={16} />}
+            >
+              Start review
+            </LinkButton>
           ) : (
-            <span className={`${styles.go} ${styles.done}`}>All done</span>
+            <LinkButton href="/curriculum" large>
+              Open the curriculum
+            </LinkButton>
           )}
         </section>
 
-        <div className={styles.card}>
-          <p className={styles.todayLine}>
-            {stats.today_blanks > 0 ? (
-              <>
-                Studied <b>{stats.today_blanks}</b> blanks in {minutes.toFixed(1)} minutes
-                today <span className={styles.quiet}>({perBlank.toFixed(1)}s each)</span>
-              </>
-            ) : (
-              <span className={styles.quiet}>Nothing studied yet today</span>
-            )}
-          </p>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <Section title="This year" action="sheets per day" first>
+              <p className={styles.todayLine}>
+                {stats.today_blanks > 0 ? (
+                  <>
+                    Studied <b>{stats.today_blanks}</b> blanks in{" "}
+                    {minutes.toFixed(1)} minutes today{" "}
+                    <span className={styles.quiet}>
+                      ({perBlank.toFixed(1)}s each)
+                    </span>
+                  </>
+                ) : (
+                  <span className={styles.quiet}>
+                    Nothing studied yet today
+                  </span>
+                )}
+              </p>
 
-          <div className={styles.heatWrap}>
-            <div className={styles.days}>
-              {WEEKDAYS.map((day, index) => (
-                <span key={index}>{day}</span>
-              ))}
-            </div>
-            <div>
-              <div className={styles.weeks}>
-                {weeks.map((week, index) => (
-                  <div key={index} className={styles.week}>
-                    {week.map((day) => (
-                      <span
-                        key={day.date}
-                        className={`${styles.cell} ${levelClass(day.count)} ${
-                          day.date === stats.today ? styles.today : ""
-                        }`}
-                        title={`${day.date}: ${day.count} ${
-                          day.count === 1 ? "sheet" : "sheets"
-                        }`}
-                      />
+              <div className={styles.heatWrap}>
+                <div className={styles.days}>
+                  {WEEKDAYS.map((day, index) => (
+                    <span key={index}>{day}</span>
+                  ))}
+                </div>
+                <div>
+                  <div className={styles.weeks}>
+                    {weeks.map((week, index) => (
+                      <div key={index} className={styles.week}>
+                        {week.map((day) => (
+                          <span
+                            key={day.date}
+                            className={`${styles.cell} ${levelClass(day.count)} ${
+                              day.date === stats.today ? styles.today : ""
+                            }`}
+                            title={`${day.date}: ${day.count} ${
+                              day.count === 1 ? "sheet" : "sheets"
+                            }`}
+                          />
+                        ))}
+                      </div>
                     ))}
                   </div>
-                ))}
+                  <div className={styles.months}>
+                    {monthLabels(weeks).map((label, index) => (
+                      <span key={index} className={styles.month}>
+                        {label}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className={styles.months}>
-                {monthLabels(weeks).map((label, index) => (
-                  <span key={index} className={styles.month}>
-                    {label}
-                  </span>
-                ))}
-              </div>
-            </div>
+            </Section>
           </div>
 
-          <div className={styles.summary}>
-            <span className={styles.stat}>
-              Days learned <b>{Math.round(stats.days_learned * 100)}%</b>
-            </span>
-            <span className={styles.stat}>
-              Longest streak <b>{stats.longest_streak}</b>
-            </span>
-            <span className={styles.stat}>
-              Current streak <b>{stats.streak_days}</b>
-            </span>
-            <span className={styles.stat}>
-              Accuracy <b>{Math.round(stats.accuracy * 100)}%</b>
-            </span>
+          <div className={styles.card}>
+            <Section title="Showing up" first>
+              <div className={styles.rows}>
+                <ReadOnly
+                  label="Days learned"
+                  value={`${Math.round(stats.days_learned * 100)}%`}
+                />
+                <ReadOnly
+                  label="Current streak"
+                  value={`${stats.streak_days} days`}
+                />
+                <ReadOnly
+                  label="Longest streak"
+                  value={`${stats.longest_streak} days`}
+                />
+                <ReadOnly
+                  label="Accuracy"
+                  value={`${Math.round(stats.accuracy * 100)}%`}
+                />
+                <ReadOnly
+                  label="Topics started"
+                  value={`${stats.topics_studied} of ${stats.topics_total}`}
+                />
+              </div>
+            </Section>
           </div>
         </div>
       </div>
@@ -147,7 +190,20 @@ function levelClass(count: number) {
 
 /** A month name over the first week that starts in it, blank everywhere else. */
 function monthLabels(weeks: DayPoint[][]) {
-  const names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const names = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
   let previous = -1;
   return weeks.map((week) => {
     const month = new Date(`${week[0].date}T00:00:00`).getMonth();

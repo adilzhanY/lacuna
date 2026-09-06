@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo, Manrope } from "next/font/google";
 import "./globals.css";
 
-const sans = Geist({
-  variable: "--font-sans",
+// Headings and big numbers.
+const display = Archivo({
+  variable: "--font-display",
   subsets: ["latin"],
 });
 
-// Numbers, topic ids and hints. Never body text.
-const mono = Geist_Mono({
-  variable: "--font-mono",
+// Labels, body and every number.
+const sans = Manrope({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );

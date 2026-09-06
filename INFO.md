@@ -13,7 +13,7 @@ German first, other languages later. The name is the mechanic: a lacuna is a gap
 | Scheduler | `fsrs-rs`, the same algorithm Anki uses |
 | Exercise unit | A sheet: one topic, 20 items |
 | UI language | English only |
-| Design direction | "Papier": warm paper, Source Serif 4 for German text, Inter for chrome, blanks as ruled underlines |
+| Design direction | "Bauwerk": drawing-office neutrals, Archivo headings, Manrope body text, pill controls and rounded cards |
 | Anki role | Read only, vocabulary staleness source. No grammar deck in Anki |
 
 ## Why Rust for the backend
@@ -60,7 +60,7 @@ Claude Code generates a sheet behind an API route, the Rust side validates and s
 ## Blank design rules
 
 1. Every blank starts at one constant width, so it never leaks the answer length.
-2. Tab moves to the next blank, Enter checks the sheet. 20 items with no mouse.
+2. Tab and Enter move to the next blank. On the final blank, the first Enter arms the check and the second submits it.
 3. A wrong answer shows the correct form in place, not in a summary at the bottom.
 4. "Also accept" permanently patches the stored sheet when your answer was valid too. The generator will be wrong sometimes, so store an accept list per blank, never a single string.
 

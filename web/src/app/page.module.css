@@ -4,23 +4,9 @@
  */
 
 .page {
-  /* Sequential ramp, one hue, light to dark. The empty step is not a colour, it
-     is the surface, so a quiet year does not read as a wall of blue. */
-  --heat-0: color-mix(in srgb, var(--line) 55%, transparent);
-  --heat-1: #c9d4f5;
-  --heat-2: #90a6ea;
-  --heat-3: #4f6fd8;
-  --heat-4: #1e43c8;
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --heat-0: #1e232b;
-    --heat-1: #23366b;
-    --heat-2: #33509e;
-    --heat-3: #4e6fd0;
-    --heat-4: #7d97ff;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* ---------------------------------------------------------------- hero */
@@ -29,76 +15,78 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.75rem;
-  padding: 2.125rem 0 1.875rem;
+  gap: 1.5rem;
+  padding: 1rem 0 0.5rem;
 }
 
 .heroText {
   flex: 1;
-  min-width: 16.25rem;
+  min-width: 16rem;
 }
 
 .title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-size: var(--text-title);
+  font-weight: 600;
   margin: 0 0 0.375rem;
 }
 
 .sub {
-  color: var(--dim);
-  font-size: 0.8438rem;
+  color: var(--muted);
+  font-size: var(--text-base);
   margin: 0;
   max-width: 52ch;
 }
 
-.go {
-  font-size: 0.9375rem;
+/* ---------------------------------------------------------------- cards */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr) 18rem;
+  }
+}
+
+.card {
+  border-radius: var(--radius-inner);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  padding: 0 1.25rem 0.25rem;
+}
+
+.card > section {
+  padding-top: 0.5rem;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.todayLine {
+  font-size: var(--text-sm);
+  margin: 0;
+  color: var(--ink);
+}
+
+.todayLine b {
   font-weight: 600;
-  padding: 1rem 2.125rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--accent);
-  background: var(--accent);
-  color: #ffffff;
-  transition: transform 0.08s;
-  white-space: nowrap;
 }
 
-.go:active {
-  transform: translateY(1px);
-}
-
-.go.done {
-  background: transparent;
-  color: var(--dim);
-  border-color: var(--line);
-  cursor: default;
+.todayLine .quiet {
+  color: var(--muted);
 }
 
 /* ---------------------------------------------------------------- heatmap */
 
-.card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.25rem;
-}
-
-.todayLine {
-  text-align: center;
-  font-size: 0.8438rem;
-  margin: 0 0 1.25rem;
-  color: var(--ink);
-}
-
-.todayLine .quiet {
-  color: var(--dim);
-}
-
 .heatWrap {
   display: flex;
   gap: 0.5rem;
-  justify-content: center;
   overflow-x: auto;
   padding-bottom: 0.25rem;
 }
@@ -111,10 +99,9 @@
 }
 
 .days span {
-  font-family: var(--mono);
-  font-size: 0.5312rem;
+  font-size: 0.5625rem;
   line-height: 0.75rem;
-  color: var(--dim);
+  color: var(--muted);
 }
 
 .weeks {
@@ -128,11 +115,12 @@
   gap: 3px;
 }
 
+/* The empty step is the surface, so a quiet year does not read as a wall of blue. */
 .cell {
   width: 0.75rem;
   height: 0.75rem;
-  border-radius: 2px;
-  background: var(--heat-0);
+  border-radius: 3px;
+  background: var(--panel-2);
 }
 
 .cell.l1 {
@@ -162,36 +150,7 @@
 .month {
   width: 0.75rem;
   min-width: 0.75rem;
-  font-family: var(--mono);
-  font-size: 0.5938rem;
-  color: var(--dim);
+  font-size: 0.625rem;
+  color: var(--muted);
   white-space: nowrap;
-}
-
-/* ---------------------------------------------------------------- summary */
-
-.summary {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.625rem 2.125rem;
-  margin-top: 1.375rem;
-  padding-top: 1.125rem;
-  border-top: 1px solid var(--line);
-}
-
-.stat {
-  font-size: 0.8125rem;
-  color: var(--dim);
-}
-
-.stat b {
-  font-family: var(--mono);
-  font-weight: 500;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-}
-
-.error {
-  color: var(--no);
 }

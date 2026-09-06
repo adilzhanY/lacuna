@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { ArrowRight, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import {
@@ -10,6 +10,8 @@ import {
   type FinishResponse,
   type ItemAttempt,
 } from "@/lib/api";
+import { Button, LinkButton } from "@/components/ui/Button";
+import { Centered, Chip } from "@/components/ui/Section";
 import styles from "./Review.module.css";
 
 /*
@@ -97,8 +99,17 @@ export default function Review() {
     });
 
     try {
-      const verdict = await api.reviewItem(sheet.sheet_id, item.n, elapsed, given);
-      attempts.current.push({ n: item.n, elapsed_ms: Math.round(elapsed), answers: given });
+      const verdict = await api.reviewItem(
+        sheet.sheet_id,
+        item.n,
+        elapsed,
+        given,
+      );
+      attempts.current.push({
+        n: item.n,
+        elapsed_ms: Math.round(elapsed),
+        answers: given,
+      });
 
       if (verdict.correct) {
         setPhase("right");
@@ -130,7 +141,10 @@ export default function Review() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sheet, item, answers, index]);
 
-  const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, blankId: string) => {
+  const onKeyDown = (
+    event: React.KeyboardEvent<HTMLInputElement>,
+    blankId: string,
+  ) => {
     if (event.key !== "Enter") return;
     event.preventDefault();
     if (phase !== "typing") return;
@@ -149,11 +163,10 @@ export default function Review() {
     return (
       <div className={styles.screen}>
         <div className={styles.stage}>
-          <div>
-            <p className={styles.error}>{error}</p>
-            <Link href="/" className={styles.leave}>
-              back to today
-            </Link>
+          <div className={styles.card}>
+            <Centered title="Could not load" body={error} error>
+              <LinkButton href="/">Back to today</LinkButton>
+            </Centered>
           </div>
         </div>
       </div>
@@ -162,32 +175,42 @@ export default function Review() {
 
   // Finished a topic.
   if (done) {
+    const perfect = done.rating === "easy" || done.rating === "good";
     return (
       <div className={styles.screen}>
         <div className={styles.stage}>
-          <div className={styles.summary}>
-            <p className="label">{done.topic_title}</p>
-            <p className={`${styles.rating} ${styles[done.rating]}`}>{done.rating}</p>
-            <p className={styles.line}>
-              {done.correct} of {done.total} blanks right. Back in {done.interval_days}{" "}
-              {done.interval_days === 1 ? "day" : "days"}, on {done.due}.
-              {done.remaining > 0
-                ? ` ${done.remaining} ${done.remaining === 1 ? "topic" : "topics"} still due.`
-                : " Nothing else due today."}
-            </p>
-            <div className={styles.actions}>
-              {done.remaining > 0 ? (
-                <button type="button" className={styles.button} onClick={load}>
-                  Next topic
-                </button>
-              ) : (
-                <Link href="/" className={styles.button}>
-                  Done for today
-                </Link>
-              )}
-              <Link href="/" className={`${styles.button} ${styles.ghost}`}>
-                Stop here
-              </Link>
+          <div className={styles.card}>
+            <div className={styles.summary}>
+              <p className="label">{done.topic_title}</p>
+              <p
+                className={`${styles.rating} ${perfect ? styles.ratingOk : styles.ratingMark}`}
+              >
+                {done.rating}
+              </p>
+              <p className={styles.line}>
+                {done.correct} of {done.total} blanks right. Back in{" "}
+                {done.interval_days} {done.interval_days === 1 ? "day" : "days"}
+                , on {done.due}.
+                {done.remaining > 0
+                  ? ` ${done.remaining} ${done.remaining === 1 ? "topic" : "topics"} still due.`
+                  : " Nothing else due today."}
+              </p>
+              <div className={styles.actions}>
+                {done.remaining > 0 ? (
+                  <Button
+                    variant="primary"
+                    icon={<ArrowRight size={16} />}
+                    onClick={load}
+                  >
+                    Next topic
+                  </Button>
+                ) : (
+                  <LinkButton href="/" variant="primary">
+                    Done for today
+                  </LinkButton>
+                )}
+                <LinkButton href="/">Stop here</LinkButton>
+              </div>
             </div>
           </div>
         </div>
@@ -199,11 +222,13 @@ export default function Review() {
     return (
       <div className={styles.screen}>
         <div className={styles.stage}>
-          <div className={styles.empty}>
-            <p className="label">Nothing due</p>
-            <Link href="/" className={styles.leave}>
-              back to today
-            </Link>
+          <div className={styles.card}>
+            <Centered
+              title="Nothing due"
+              body="Everything is scheduled ahead. Come back tomorrow."
+            >
+              <LinkButton href="/">Back to today</LinkButton>
+            </Centered>
           </div>
         </div>
       </div>
@@ -215,19 +240,21 @@ export default function Review() {
   const progress = (index / sheet.items.length) * 100;
 
   return (
-    <div className={`${styles.screen} ${phase === "wrong" ? styles.wrong : ""}`}>
+    <div
+      className={`${styles.screen} ${phase === "wrong" ? styles.wrong : ""}`}
+    >
       <div className={styles.top}>
         <span className={styles.topic}>{sheet.topic_title}</span>
         <div className={styles.progress}>
           <i style={{ width: `${progress}%` }} />
         </div>
-        <span className={styles.topic}>
+        <span className={styles.count}>
           {index + 1}/{sheet.items.length}
-          {remaining > 0 && ` · ${remaining} left today`}
         </span>
-        <Link href="/" className={styles.leave}>
-          leave
-        </Link>
+        {remaining > 0 && <Chip tone="neutral">{remaining} left today</Chip>}
+        <LinkButton href="/" variant="quiet" icon={<X size={15} />}>
+          Leave
+        </LinkButton>
       </div>
 
       <div className={styles.stage}>
@@ -244,7 +271,11 @@ export default function Review() {
                     inputs.current[segment.id] = element;
                   }}
                   className={`${styles.blank} ${
-                    phase === "right" ? styles.ok : phase === "wrong" ? styles.bad : ""
+                    phase === "right"
+                      ? styles.ok
+                      : phase === "wrong"
+                        ? styles.bad
+                        : ""
                   }`}
                   aria-label="missing word"
                   value={answers[segment.id] ?? ""}
@@ -253,7 +284,10 @@ export default function Review() {
                   autoCorrect="off"
                   spellCheck={false}
                   onChange={(event) =>
-                    setAnswers((a) => ({ ...a, [segment.id]: event.target.value }))
+                    setAnswers((a) => ({
+                      ...a,
+                      [segment.id]: event.target.value,
+                    }))
                   }
                   onKeyDown={(event) => onKeyDown(event, segment.id)}
                 />
@@ -269,7 +303,9 @@ export default function Review() {
             </span>
           )}
 
-          {phase === "typing" && <span className={styles.keys}>enter to answer</span>}
+          {phase === "typing" && (
+            <span className={styles.keys}>Enter to answer</span>
+          )}
         </div>
       </div>
     </div>

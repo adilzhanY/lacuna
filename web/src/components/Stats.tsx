@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { api, type DayPoint, type Stats as StatsData } from "@/lib/api";
+import { Centered, Section } from "@/components/ui/Section";
 import styles from "./Stats.module.css";
 
 export default function Stats() {
@@ -24,7 +25,7 @@ export default function Stats() {
     };
   }, []);
 
-  if (error) return <p className={styles.error}>{error}</p>;
+  if (error) return <Centered title="Could not load" body={error} error />;
   if (!stats) return <p className="label">Loading statistics</p>;
 
   const nothingYet = stats.reviews_total === 0;
@@ -33,8 +34,9 @@ export default function Stats() {
     <div className={styles.page}>
       <h1 className={styles.title}>Statistics</h1>
       <p className={styles.intro}>
-        Everything here comes from sheets you have actually answered. Accuracy counts
-        blanks, not sheets, so one bad sheet of twenty moves it by the right amount.
+        Everything here comes from sheets you have actually answered. Accuracy
+        counts blanks, not sheets, so one bad sheet of twenty moves it by the
+        right amount.
       </p>
 
       <div className={styles.tiles}>
@@ -57,7 +59,11 @@ export default function Stats() {
           value={`${stats.topics_studied}`}
           note={`of ${stats.topics_total} in the pack`}
         />
-        <Tile label="Sheets checked" value={`${stats.reviews_total}`} note="all time" />
+        <Tile
+          label="Sheets checked"
+          value={`${stats.reviews_total}`}
+          note="all time"
+        />
         <Tile
           label="Due now"
           value={`${stats.topics_due}`}
@@ -66,104 +72,128 @@ export default function Stats() {
       </div>
 
       <div className={styles.grid2}>
-        <Section title="Last 30 days" note="sheets checked per day">
-          <Columns points={stats.activity} kind="past" />
-        </Section>
+        <div className={styles.card}>
+          <Section title="Last 30 days" action="sheets checked per day" first>
+            <Columns points={stats.activity} kind="past" />
+          </Section>
+        </div>
 
-        <Section title="Next 14 days" note="topics falling due">
-          <Columns points={stats.forecast} kind="future" />
-        </Section>
+        <div className={styles.card}>
+          <Section title="Next 14 days" action="topics falling due" first>
+            <Columns points={stats.forecast} kind="future" />
+          </Section>
+        </div>
       </div>
 
-      <Section title="Progress by level" note="topics started">
-        <div className={styles.rows}>
-          {stats.by_level.map((level) => (
-            <div key={level.level} className={styles.row}>
-              <span className={styles.rowLabel}>
-                {level.level} <small>&middot; {level.total} topics</small>
-              </span>
-              <div
-                className={styles.track}
-                role="img"
-                aria-label={`${level.studied} of ${level.total} topics started at ${level.level}`}
-              >
-                <div
-                  className={styles.fill}
-                  style={{ width: `${(level.studied / level.total) * 100}%` }}
-                />
-              </div>
-              <span className={styles.rowValue}>
-                {level.studied} / {level.total}
-              </span>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section title="Weakest points" note="wrong answers by what they were testing">
-        {stats.weakest.length === 0 ? (
-          <p className={styles.empty}>Nothing wrong yet, or nothing answered yet.</p>
-        ) : (
+      <div className={styles.card}>
+        <Section title="Progress by level" action="topics started" first>
           <div className={styles.rows}>
-            {stats.weakest.map((weak) => (
-              <div key={weak.tag} className={styles.row}>
-                <span className={styles.rowLabel}>{prettyTag(weak.tag)}</span>
+            {stats.by_level.map((level) => (
+              <div key={level.level} className={styles.row}>
+                <span className={styles.rowLabel}>
+                  {level.level} <small>&middot; {level.total} topics</small>
+                </span>
                 <div
                   className={styles.track}
                   role="img"
-                  aria-label={`${weak.tag}, ${weak.count} wrong`}
+                  aria-label={`${level.studied} of ${level.total} topics started at ${level.level}`}
                 >
                   <div
-                    className={`${styles.fill} ${styles.weak}`}
-                    style={{
-                      width: `${(weak.count / stats.weakest[0].count) * 100}%`,
-                    }}
+                    className={styles.fill}
+                    style={{ width: `${(level.studied / level.total) * 100}%` }}
                   />
                 </div>
-                <span className={styles.rowValue}>{weak.count}</span>
+                <span className={styles.rowValue}>
+                  {level.studied} / {level.total}
+                </span>
               </div>
             ))}
           </div>
-        )}
-      </Section>
+        </Section>
+      </div>
 
-      <Section title="Hardest topics" note="lowest accuracy first">
-        {stats.hardest.length === 0 ? (
-          <p className={styles.empty}>No topic has been reviewed yet.</p>
-        ) : (
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Topic</th>
-                <th>Level</th>
-                <th className={styles.numeric}>Accuracy</th>
-                <th className={styles.numeric}>Sheets</th>
-                <th className={styles.numeric}>Lapses</th>
-              </tr>
-            </thead>
-            <tbody>
-              {stats.hardest.map((topic) => (
-                <tr key={topic.id}>
-                  <td>{topic.title}</td>
-                  <td>{topic.cefr}</td>
-                  <td
-                    className={`${styles.numeric} ${topic.accuracy < 0.6 ? styles.bad : styles.good}`}
+      <div className={styles.card}>
+        <Section
+          title="Weakest points"
+          action="wrong answers by what they were testing"
+          first
+        >
+          {stats.weakest.length === 0 ? (
+            <p className={styles.empty}>
+              Nothing wrong yet, or nothing answered yet.
+            </p>
+          ) : (
+            <div className={styles.rows}>
+              {stats.weakest.map((weak) => (
+                <div key={weak.tag} className={styles.row}>
+                  <span className={styles.rowLabel}>{prettyTag(weak.tag)}</span>
+                  <div
+                    className={styles.track}
+                    role="img"
+                    aria-label={`${weak.tag}, ${weak.count} wrong`}
                   >
-                    {Math.round(topic.accuracy * 100)}%
-                  </td>
-                  <td className={styles.numeric}>{topic.reviews}</td>
-                  <td className={styles.numeric}>{topic.lapses}</td>
-                </tr>
+                    <div
+                      className={`${styles.fill} ${styles.weak}`}
+                      style={{
+                        width: `${(weak.count / stats.weakest[0].count) * 100}%`,
+                      }}
+                    />
+                  </div>
+                  <span className={styles.rowValue}>{weak.count}</span>
+                </div>
               ))}
-            </tbody>
-          </table>
-        )}
-      </Section>
+            </div>
+          )}
+        </Section>
+      </div>
+
+      <div className={styles.card}>
+        <Section title="Hardest topics" action="lowest accuracy first" first>
+          {stats.hardest.length === 0 ? (
+            <p className={styles.empty}>No topic has been reviewed yet.</p>
+          ) : (
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Topic</th>
+                  <th>Level</th>
+                  <th className={styles.numeric}>Accuracy</th>
+                  <th className={styles.numeric}>Sheets</th>
+                  <th className={styles.numeric}>Lapses</th>
+                </tr>
+              </thead>
+              <tbody>
+                {stats.hardest.map((topic) => (
+                  <tr key={topic.id}>
+                    <td>{topic.title}</td>
+                    <td>{topic.cefr}</td>
+                    <td
+                      className={`${styles.numeric} ${topic.accuracy < 0.6 ? styles.bad : styles.good}`}
+                    >
+                      {Math.round(topic.accuracy * 100)}%
+                    </td>
+                    <td className={styles.numeric}>{topic.reviews}</td>
+                    <td className={styles.numeric}>{topic.lapses}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </Section>
+      </div>
     </div>
   );
 }
 
-function Tile({ label, value, note }: { label: string; value: string; note: string }) {
+function Tile({
+  label,
+  value,
+  note,
+}: {
+  label: string;
+  value: string;
+  note: string;
+}) {
   return (
     <div className={styles.tile}>
       <p className="label">{label}</p>
@@ -173,31 +203,17 @@ function Tile({ label, value, note }: { label: string; value: string; note: stri
   );
 }
 
-function Section({
-  title,
-  note,
-  children,
-}: {
-  title: string;
-  note: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className={styles.section}>
-      <div className={styles.sectionHead}>
-        <h2 className={styles.sectionTitle}>{title}</h2>
-        <span className="label">{note}</span>
-      </div>
-      {children}
-    </section>
-  );
-}
-
 /**
  * One bar per day. The scale is shared across the whole series, and an empty day
  * keeps its column as a hairline so gaps stay visible.
  */
-function Columns({ points, kind }: { points: DayPoint[]; kind: "past" | "future" }) {
+function Columns({
+  points,
+  kind,
+}: {
+  points: DayPoint[];
+  kind: "past" | "future";
+}) {
   const max = Math.max(1, ...points.map((p) => p.count));
   const first = points[0];
   const last = points[points.length - 1];
@@ -209,7 +225,8 @@ function Columns({ points, kind }: { points: DayPoint[]; kind: "past" | "future"
           <div key={point.date} className={styles.column}>
             <span className={styles.tip}>
               {formatDay(point.date)}: {point.count}
-              {point.accuracy !== null && ` · ${Math.round(point.accuracy * 100)}%`}
+              {point.accuracy !== null &&
+                ` · ${Math.round(point.accuracy * 100)}%`}
             </span>
             <div
               className={`${styles.bar} ${kind === "future" ? styles.future : ""} ${

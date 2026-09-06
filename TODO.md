@@ -93,12 +93,12 @@ Ticked items are done and committed.
 - [x] Statistics dashboard: accuracy, streak, level progress, 30 day activity,
       14 day forecast, weakest error tags, hardest topics
 
-## 7. UI, "Papier" direction
+## 7. UI, "Bauwerk" direction
 
-- [x] Design tokens: paper `#F2ECE1`, sheet `#FDFBF6`, ink `#1E1B16`, hint blue `#27456F`,
-      wrong `#A33529`, right `#3D6B49`, due gold `#C8912F`
-- [x] Source Serif 4 for German text, Inter for interface chrome
-- [x] Sheet view: numbered items, dotted rules between them, hints in italic blue
+- [x] Design tokens copied from Bauwerk: paper, panels, ink, selection blue, warning red and success green
+- [x] Archivo for headings and large numbers, Manrope for body text and controls
+- [x] Shared pill buttons, segmented controls, chips, sections and rounded cards
+- [x] Sheet view: numbered items, compact rows, constant-width blanks and a progress rail
 - [ ] Blank component:
   - [x] ruled underline, no box
   - [x] one constant width for every blank, so length never leaks the answer
@@ -106,7 +106,7 @@ Ticked items are done and committed.
   - [x] the correct form appears under the blank on a wrong answer, not in a summary
   - [x] "Also accept" button next to a wrong blank
 - [ ] Sidebar: due sheets, recycled words panel
-- [ ] Watch the line height cost of 17px serif over 20 items, shrink the type scale if it scrolls too much
+- [x] Compact sans text keeps a twenty-item sheet practical without shrinking below the shared type scale
 - [ ] Settings page driven by the `settings` table
 - [x] Review screen after a sheet: score, computed rating, override buttons
 
