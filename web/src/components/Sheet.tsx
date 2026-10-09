@@ -314,6 +314,7 @@ function Blank({
         ref={register}
         className={className}
         aria-label={`blank ${id}`}
+        style={{ width: `${Math.max(7.5, value.length + 1)}ch` }}
         value={value}
         disabled={locked}
         autoComplete="off"

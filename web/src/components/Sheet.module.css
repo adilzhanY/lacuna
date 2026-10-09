@@ -103,7 +103,7 @@
  * rounded box on paper that turns selection blue when it has focus.
  */
 .blank {
-  width: 7.5ch;
+  min-width: 7.5ch;
   height: 2rem;
   padding: 0 0.5rem;
   font-family: var(--sans);

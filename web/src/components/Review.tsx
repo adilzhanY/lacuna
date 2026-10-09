@@ -18,6 +18,11 @@ import styles from "./Review.module.css";
  * The red flash itself is half a second, defined by the `flash-wrong` keyframe
  * in Review.module.css. These two hold the sentence in place afterwards.
  */
+/** A blank is at least `min` characters wide and grows to fit what is in it. */
+function blankWidth(value: string, min: number): string {
+  return `${Math.max(min, value.length + 1)}ch`;
+}
+
 /** How long a wrong answer and its correction stay readable before moving on. */
 const WRONG_HOLD_MS = 1600;
 /** A correct answer only needs a beat before the next sentence. */
@@ -278,6 +283,7 @@ export default function Review() {
                         : ""
                   }`}
                   aria-label="missing word"
+                  style={{ width: blankWidth(answers[segment.id] ?? "", 8) }}
                   value={answers[segment.id] ?? ""}
                   disabled={phase !== "typing"}
                   autoComplete="off"
