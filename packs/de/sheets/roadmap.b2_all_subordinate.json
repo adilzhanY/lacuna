@@ -1,0 +1,182 @@
+{
+  "topic_id": "roadmap.b2_all_subordinate",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe zu Hause,"},
+        {"type": "blank", "id": "1a", "accept": ["weil"], "tags": ["trigger:weil", "word_order:verb_final"]},
+        {"type": "text", "text": "es heute regnet."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir fahren mit dem Rad,"},
+        {"type": "blank", "id": "2a", "accept": ["falls"], "tags": ["trigger:falls", "word_order:verb_final"]},
+        {"type": "text", "text": "es nicht regnet."}
+      ],
+      "hint": "Bedingung"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Obwohl"], "tags": ["trigger:obwohl", "word_order:verb_final"]},
+        {"type": "text", "text": "es kalt ist, gehen wir spazieren."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Der Arzt sagt,"},
+        {"type": "blank", "id": "4a", "accept": ["dass"], "tags": ["trigger:dass", "word_order:verb_final"]},
+        {"type": "text", "text": "ich mehr schlafen muss."}
+      ],
+      "hint": "Aussage"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Wir nehmen den frühen Zug,"},
+        {"type": "blank", "id": "5a", "accept": ["damit"], "tags": ["trigger:damit", "word_order:verb_final"]},
+        {"type": "text", "text": "wir pünktlich in Hamburg ankommen."}
+      ],
+      "hint": "Zweck"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Meine Nachbarin,"},
+        {"type": "blank", "id": "6a", "accept": ["die"], "tags": ["case:nominative", "gender:feminine", "trigger:relative_pronoun"]},
+        {"type": "text", "text": "im dritten Stock wohnt, backt sehr gut."}
+      ],
+      "hint": "Nachbarin, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Mann,"},
+        {"type": "blank", "id": "7a", "accept": ["dem"], "tags": ["case:dative", "trigger:relative_pronoun", "trigger:helfen"]},
+        {"type": "text", "text": "ich geholfen habe, wohnt nebenan."}
+      ],
+      "hint": "Mann, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Das ist der Kollege,"},
+        {"type": "blank", "id": "8a", "accept": ["dessen"], "tags": ["case:genitive", "trigger:relative_pronoun"]},
+        {"type": "text", "text": "Vater Bäcker ist."}
+      ],
+      "hint": "Kollege, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Das ist das Café,"},
+        {"type": "blank", "id": "9a", "accept": ["in dem"], "tags": ["case:dative", "trigger:relative_pronoun"]},
+        {"type": "text", "text": "wir gestern gefrühstückt haben."}
+      ],
+      "hint": "Café, n"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Als"], "tags": ["trigger:als", "word_order:verb_final"]},
+        {"type": "text", "text": "ich in Berlin wohnte, kannte ich viele Leute."}
+      ],
+      "hint": "Vergangenheit"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich rufe dich an,"},
+        {"type": "blank", "id": "11a", "accept": ["wenn"], "tags": ["trigger:wenn", "word_order:verb_final"]},
+        {"type": "text", "text": "ich Zeit habe."}
+      ],
+      "hint": "Bedingung"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "blank", "id": "12a", "accept": ["Nachdem"], "tags": ["trigger:nachdem", "word_order:verb_final"]},
+        {"type": "text", "text": "wir gegessen haben, gehen wir spazieren."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wir müssen noch einkaufen,"},
+        {"type": "blank", "id": "13a", "accept": ["bevor"], "tags": ["trigger:bevor", "word_order:verb_final"]},
+        {"type": "text", "text": "der Laden schließt."}
+      ],
+      "hint": "Zeitpunkt"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mein Sohn spielt Fußball,"},
+        {"type": "blank", "id": "14a", "accept": ["während"], "tags": ["trigger:waehrend", "word_order:verb_final"]},
+        {"type": "text", "text": "ich die Wäsche mache."}
+      ],
+      "hint": "gleichzeitig"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Kannst du mir sagen,"},
+        {"type": "blank", "id": "15a", "accept": ["ob"], "tags": ["trigger:ob", "word_order:verb_final"]},
+        {"type": "text", "text": "der Bäcker heute offen ist?"}
+      ],
+      "hint": "Frage"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Weißt du,"},
+        {"type": "blank", "id": "16a", "accept": ["wann"], "tags": ["trigger:wann", "word_order:verb_final"]},
+        {"type": "text", "text": "der Zug abfährt?"}
+      ],
+      "hint": "Zeit"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich habe keine Ahnung,"},
+        {"type": "blank", "id": "17a", "accept": ["warum"], "tags": ["trigger:warum", "word_order:verb_final"]},
+        {"type": "text", "text": "er gestern nicht angerufen hat."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Sobald"], "tags": ["trigger:sobald", "word_order:verb_final"]},
+        {"type": "text", "text": "die Sonne scheint, gehen wir an den See."}
+      ],
+      "hint": "Zeit"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe hier,"},
+        {"type": "blank", "id": "19a", "accept": ["bis"], "tags": ["trigger:bis", "word_order:verb_final"]},
+        {"type": "text", "text": "der Regen aufhört."}
+      ],
+      "hint": "Dauer"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich spare Geld,"},
+        {"type": "blank", "id": "20a", "accept": ["sodass"], "tags": ["trigger:sodass", "word_order:verb_final"]},
+        {"type": "text", "text": "ich bald ein Fahrrad kaufen kann."}
+      ],
+      "hint": "Folge"
+    }
+  ]
+}

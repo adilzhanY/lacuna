@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2p_verbs_with_cases",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich helfe"},
+        {"type": "blank", "id": "1a", "accept": ["dem"], "tags": ["case:dative", "trigger:verb_helfen"]},
+        {"type": "text", "text": "Nachbarn beim Umzug."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Kannst du"},
+        {"type": "blank", "id": "2a", "accept": ["mir"], "tags": ["case:dative", "trigger:verb_erklaeren"]},
+        {"type": "text", "text": "bitte den Weg erklären?"}
+      ],
+      "hint": "erklären"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich warte auf"},
+        {"type": "blank", "id": "3a", "accept": ["den"], "tags": ["case:accusative", "trigger:verb_warten_auf"]},
+        {"type": "text", "text": "Bus seit zehn Minuten."}
+      ],
+      "hint": "warten auf"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Das Fahrrad gehört"},
+        {"type": "blank", "id": "4a", "accept": ["meinem"], "tags": ["case:dative", "form:possessive", "trigger:verb_gehoeren"]},
+        {"type": "text", "text": "Bruder."}
+      ],
+      "hint": "gehören"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Er bittet"},
+        {"type": "blank", "id": "5a", "accept": ["seinen"], "tags": ["case:accusative", "form:possessive", "trigger:verb_bitten"]},
+        {"type": "text", "text": "Chef um einen Termin."}
+      ],
+      "hint": "bitten"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich erinnere"},
+        {"type": "blank", "id": "6a", "accept": ["mich"], "tags": ["case:accusative", "trigger:verb_sich_erinnern_an"]},
+        {"type": "text", "text": "an den Termin morgen."}
+      ],
+      "hint": "sich erinnern an"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung bedarf"},
+        {"type": "blank", "id": "7a", "accept": ["einer"], "tags": ["case:genitive", "declension:indefinite_article", "trigger:verb_beduerfen"]},
+        {"type": "text", "text": "Renovierung."}
+      ],
+      "hint": "bedürfen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wir freuen uns auf"},
+        {"type": "blank", "id": "8a", "accept": ["den"], "tags": ["case:accusative", "trigger:verb_sich_freuen_auf"]},
+        {"type": "text", "text": "Urlaub im Sommer."}
+      ],
+      "hint": "sich freuen auf"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich denke oft an"},
+        {"type": "blank", "id": "9a", "accept": ["die"], "tags": ["case:accusative", "trigger:verb_denken_an"]},
+        {"type": "text", "text": "alte Heimat."}
+      ],
+      "hint": "denken an"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Sie kümmert sich um"},
+        {"type": "blank", "id": "10a", "accept": ["ihre"], "tags": ["case:accusative", "form:possessive", "trigger:verb_sich_kuemmern_um"]},
+        {"type": "text", "text": "Eltern."}
+      ],
+      "hint": "sich kümmern um"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er ärgert sich über"},
+        {"type": "blank", "id": "11a", "accept": ["den"], "tags": ["case:accusative", "trigger:verb_sich_aergern_ueber"]},
+        {"type": "text", "text": "Lärm im Treppenhaus."}
+      ],
+      "hint": "sich ärgern über"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich glaube"},
+        {"type": "blank", "id": "12a", "accept": ["dir"], "tags": ["case:dative", "trigger:verb_glauben"]},
+        {"type": "text", "text": "kein Wort."}
+      ],
+      "hint": "glauben"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die neue Wohnung gefällt"},
+        {"type": "blank", "id": "13a", "accept": ["meiner"], "tags": ["case:dative", "form:possessive", "trigger:verb_gefallen"]},
+        {"type": "text", "text": "Mutter sehr."}
+      ],
+      "hint": "gefallen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Viele Mieter leiden unter"},
+        {"type": "blank", "id": "14a", "accept": ["dem"], "tags": ["case:dative", "trigger:verb_leiden_unter"]},
+        {"type": "text", "text": "Verkehr am Abend."}
+      ],
+      "hint": "leiden unter"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich träume oft von"},
+        {"type": "blank", "id": "15a", "accept": ["einem"], "tags": ["case:dative", "declension:indefinite_article", "trigger:verb_traeumen_von"]},
+        {"type": "text", "text": "eigenen Garten."}
+      ],
+      "hint": "träumen von"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir haben über"},
+        {"type": "blank", "id": "16a", "accept": ["die"], "tags": ["case:accusative", "trigger:verb_sprechen_ueber"]},
+        {"type": "text", "text": "neue Stelle gesprochen."}
+      ],
+      "hint": "sprechen über"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Hast du dich schon für"},
+        {"type": "blank", "id": "17a", "accept": ["einen"], "tags": ["case:accusative", "declension:indefinite_article", "trigger:verb_sich_anmelden_fuer"]},
+        {"type": "text", "text": "Kurs angemeldet?"}
+      ],
+      "hint": "sich anmelden für"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich gratuliere"},
+        {"type": "blank", "id": "18a", "accept": ["ihr"], "tags": ["case:dative", "form:personal_pronoun", "trigger:verb_gratulieren"]},
+        {"type": "text", "text": "zur Hochzeit."}
+      ],
+      "hint": "gratulieren"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir erwarten"},
+        {"type": "blank", "id": "19a", "accept": ["die"], "tags": ["case:accusative", "trigger:verb_erwarten"]},
+        {"type": "text", "text": "Gäste um acht."}
+      ],
+      "hint": "erwarten"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich fange nächste Woche mit"},
+        {"type": "blank", "id": "20a", "accept": ["einem"], "tags": ["case:dative", "declension:indefinite_article", "trigger:verb_anfangen_mit"]},
+        {"type": "text", "text": "neuen Job an."}
+      ],
+      "hint": "anfangen mit"
+    }
+  ]
+}

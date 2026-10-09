@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.ms_retelling",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Sie meinte,"},
+        {"type": "blank", "id": "1a", "accept": ["dass"], "tags": ["trigger:dass_clause", "word_order:verb_final"]},
+        {"type": "text", "text": "das Essen schon kalt sei."}
+      ],
+      "hint": "dass"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er sagte, er"},
+        {"type": "blank", "id": "2a", "accept": ["habe"], "tags": ["form:konjunktiv_1"]},
+        {"type": "text", "text": "keine Zeit."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin erzählte, sie"},
+        {"type": "blank", "id": "3a", "accept": ["sei"], "tags": ["form:konjunktiv_1"]},
+        {"type": "text", "text": "letzte Woche beim Arzt gewesen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Mein Vater wollte wissen,"},
+        {"type": "blank", "id": "4a", "accept": ["ob"], "tags": ["trigger:ob_clause", "word_order:verb_final"]},
+        {"type": "text", "text": "wir am Samstag Zeit haben."}
+      ],
+      "hint": "ob"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Handwerker meinte, er"},
+        {"type": "blank", "id": "5a", "accept": ["komme"], "tags": ["form:konjunktiv_1"]},
+        {"type": "text", "text": "am Donnerstag."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder meinte,"},
+        {"type": "blank", "id": "6a", "accept": ["sein"], "tags": ["form:possessive", "case:nominative"]},
+        {"type": "text", "text": "Auto sei kaputt."}
+      ],
+      "hint": "mein"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie sagte, sie habe"},
+        {"type": "blank", "id": "7a", "accept": ["ihren"], "tags": ["form:possessive", "case:accusative"]},
+        {"type": "text", "text": "Schlüssel verloren."}
+      ],
+      "hint": "mein"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Kinder sagten, sie"},
+        {"type": "blank", "id": "8a", "accept": ["hätten"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern Eis gegessen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Sie sagte, sie"},
+        {"type": "blank", "id": "9a", "accept": ["werde"], "tags": ["form:konjunktiv_1", "form:futur"]},
+        {"type": "text", "text": "uns am Abend anrufen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Er sagte, er komme am"},
+        {"type": "blank", "id": "10a", "accept": ["nächsten"], "tags": ["trigger:time_shift"]},
+        {"type": "text", "text": "Tag."}
+      ],
+      "hint": "nächst"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er fragte mich, wann der Zug"},
+        {"type": "blank", "id": "11a", "accept": ["abfahre"], "tags": ["form:konjunktiv_1", "word_order:verb_final"]},
+        {"type": "text", "text": "und ob ich mitkomme."}
+      ],
+      "hint": "abfahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Ärztin sagte, ich"},
+        {"type": "blank", "id": "12a", "accept": ["solle"], "tags": ["form:konjunktiv_1", "trigger:modal"]},
+        {"type": "text", "text": "mehr Wasser trinken."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ihre Schwester sagte, sie"},
+        {"type": "blank", "id": "13a", "accept": ["könne"], "tags": ["form:konjunktiv_1", "trigger:modal"]},
+        {"type": "text", "text": "morgen nicht kommen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er erzählte, er bringe"},
+        {"type": "blank", "id": "14a", "accept": ["sie"], "tags": ["case:accusative", "form:personal_pronoun"]},
+        {"type": "text", "text": "nach Hause."}
+      ],
+      "hint": "sie"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Anna schrieb, sie"},
+        {"type": "blank", "id": "15a", "accept": ["wäre"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern gekommen, aber der Zug fiel aus."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Lisa erzählte, sie habe"},
+        {"type": "blank", "id": "16a", "accept": ["mir"], "tags": ["case:dative", "form:personal_pronoun"]},
+        {"type": "text", "text": "geholfen."}
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Sie erzählte, sie sei am"},
+        {"type": "blank", "id": "17a", "accept": ["Vortag"], "tags": ["trigger:time_shift"]},
+        {"type": "text", "text": "in Hamburg gewesen."}
+      ],
+      "hint": "Vortag, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Er behauptete,"},
+        {"type": "blank", "id": "18a", "accept": ["dass"], "tags": ["trigger:dass_clause", "word_order:verb_final"]},
+        {"type": "text", "text": "er nichts gewusst habe."}
+      ],
+      "hint": "dass"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Kollegen sagten, sie"},
+        {"type": "blank", "id": "19a", "accept": ["seien"], "tags": ["form:konjunktiv_1", "number:plural"]},
+        {"type": "text", "text": "heute alle da."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Mein Nachbar"},
+        {"type": "blank", "id": "20a", "accept": ["versprach"], "tags": ["trigger:reporting_verb", "form:praeteritum"]},
+        {"type": "text", "text": "mir, er kümmere sich um den Garten."}
+      ],
+      "hint": "versprechen"
+    }
+  ]
+}

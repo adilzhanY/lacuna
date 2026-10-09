@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c1_place_time_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Schlüssel liegt"},
+        {"type": "blank", "id": "1a", "accept": ["im"], "tags": ["trigger:preposition_in", "case:dative"]},
+        {"type": "text", "text": "Flur."}
+      ],
+      "hint": "Flur, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir treffen uns"},
+        {"type": "blank", "id": "2a", "accept": ["um"], "tags": ["trigger:preposition_um", "case:accusative"]},
+        {"type": "text", "text": "acht Uhr vor dem Kino."}
+      ],
+      "hint": "Uhrzeit, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Praxis ist"},
+        {"type": "blank", "id": "3a", "accept": ["seit"], "tags": ["trigger:preposition_seit", "case:dative"]},
+        {"type": "text", "text": "drei Jahren geschlossen."}
+      ],
+      "hint": "Zeitraum, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Stell die Tasse bitte auf"},
+        {"type": "blank", "id": "4a", "accept": ["den"], "tags": ["trigger:preposition_auf", "case:accusative", "declension:definite_article"]},
+        {"type": "text", "text": "Tisch."}
+      ],
+      "hint": "Tisch, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Kinder spielen gerade auf"},
+        {"type": "blank", "id": "5a", "accept": ["dem"], "tags": ["trigger:preposition_auf", "case:dative", "declension:definite_article"]},
+        {"type": "text", "text": "Spielplatz."}
+      ],
+      "hint": "Spielplatz, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin hat die Blumen gegossen"},
+        {"type": "blank", "id": "6a", "accept": ["während"], "tags": ["trigger:preposition_waehrend", "case:genitive"]},
+        {"type": "text", "text": "unserer Abwesenheit."}
+      ],
+      "hint": "Abwesenheit, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Das Bild hängt"},
+        {"type": "blank", "id": "7a", "accept": ["über"], "tags": ["trigger:preposition_ueber", "case:dative"]},
+        {"type": "text", "text": "dem Sofa."}
+      ],
+      "hint": "Sofa, n"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich schiebe den Koffer"},
+        {"type": "blank", "id": "8a", "accept": ["unter"], "tags": ["trigger:preposition_unter", "case:accusative"]},
+        {"type": "text", "text": "das Bett."}
+      ],
+      "hint": "Bett, n"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei hat"},
+        {"type": "blank", "id": "9a", "accept": ["bis"], "tags": ["trigger:preposition_bis", "case:accusative"]},
+        {"type": "text", "text": "18 Uhr geöffnet."}
+      ],
+      "hint": "Öffnungszeit, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Nach"},
+        {"type": "blank", "id": "10a", "accept": ["dem"], "tags": ["trigger:preposition_nach", "case:dative", "declension:definite_article"]},
+        {"type": "text", "text": "Essen gehen wir spazieren."}
+      ],
+      "hint": "Essen, n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der Bäcker liegt"},
+        {"type": "blank", "id": "11a", "accept": ["zwischen"], "tags": ["trigger:preposition_zwischen", "case:dative"]},
+        {"type": "text", "text": "der Apotheke und dem Supermarkt."}
+      ],
+      "hint": "Lage, f"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Post liegt"},
+        {"type": "blank", "id": "12a", "accept": ["gegenüber"], "tags": ["trigger:preposition_gegenueber", "case:dative"]},
+        {"type": "text", "text": "vom Bahnhof."}
+      ],
+      "hint": "Standort, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Rückgabe ist"},
+        {"type": "blank", "id": "13a", "accept": ["innerhalb"], "tags": ["trigger:preposition_innerhalb", "case:genitive"]},
+        {"type": "text", "text": "zweier Wochen möglich."}
+      ],
+      "hint": "Rückgabe, f"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wir fahren"},
+        {"type": "blank", "id": "14a", "accept": ["im"], "tags": ["trigger:preposition_in", "case:dative", "declension:definite_article"]},
+        {"type": "text", "text": "Sommer ans Meer."}
+      ],
+      "hint": "Jahreszeit, f"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Kasse schließt"},
+        {"type": "blank", "id": "15a", "accept": ["am"], "tags": ["trigger:preposition_an", "case:dative", "declension:definite_article"]},
+        {"type": "text", "text": "Sonntag um vier."}
+      ],
+      "hint": "Wochentag, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir gehen"},
+        {"type": "blank", "id": "16a", "accept": ["trotz"], "tags": ["trigger:preposition_trotz", "case:genitive"]},
+        {"type": "text", "text": "des Regens spazieren."}
+      ],
+      "hint": "Regen, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Mein Handy liegt"},
+        {"type": "blank", "id": "17a", "accept": ["neben"], "tags": ["trigger:preposition_neben", "case:dative"]},
+        {"type": "text", "text": "der Kaffeemaschine."}
+      ],
+      "hint": "Küche, f"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Parkplatz liegt"},
+        {"type": "blank", "id": "18a", "accept": ["hinter"], "tags": ["trigger:preposition_hinter", "case:dative"]},
+        {"type": "text", "text": "dem Rathaus."}
+      ],
+      "hint": "Rathaus, n"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Der Zug fährt"},
+        {"type": "blank", "id": "19a", "accept": ["durch"], "tags": ["trigger:preposition_durch", "case:accusative"]},
+        {"type": "text", "text": "den Tunnel."}
+      ],
+      "hint": "Tunnel, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wir kommen"},
+        {"type": "blank", "id": "20a", "accept": ["gegen"], "tags": ["trigger:preposition_gegen", "case:accusative"]},
+        {"type": "text", "text": "acht Uhr zurück."}
+      ],
+      "hint": "Ankunft, f"
+    }
+  ]
+}

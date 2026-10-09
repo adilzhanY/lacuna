@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1_word_order",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Am Samstag"},
+        {"type": "blank", "id": "1a", "accept": ["gehe"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "ich mit meiner Freundin ins Kino."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "2a", "accept": ["wohne"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "seit zwei Jahren in Leipzig."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Morgen"},
+        {"type": "blank", "id": "3a", "accept": ["fliegen"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "wir mit dem Flugzeug nach Wien."}
+      ],
+      "hint": "fliegen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "In der Bäckerei"},
+        {"type": "blank", "id": "4a", "accept": ["kaufe"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "ich jeden Morgen ein Brötchen."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "5a", "accept": ["hat"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "heute zehn Minuten Verspätung."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Leider"},
+        {"type": "blank", "id": "6a", "accept": ["kann"], "tags": ["word_order:verb_second", "form:modal"]},
+        {"type": "text", "text": "er heute nicht zum Arzt gehen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Am Wochenende"},
+        {"type": "blank", "id": "7a", "accept": ["besuche"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "meine Eltern in Köln."}
+      ],
+      "hint": "besuchen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Jeden Tag"},
+        {"type": "blank", "id": "8a", "accept": ["lernen"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "wir zwei Stunden Deutsch."}
+      ],
+      "hint": "lernen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Hier"},
+        {"type": "blank", "id": "9a", "accept": ["ist"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "es im Sommer sehr heiß."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Vorhin"},
+        {"type": "blank", "id": "10a", "accept": ["habe"], "tags": ["word_order:verb_second", "form:perfekt"]},
+        {"type": "text", "text": "ich lange auf den Bus gewartet."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Im Sommer"},
+        {"type": "blank", "id": "11a", "accept": ["fahren"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "viele Leute an die Ostsee."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Heute Abend"},
+        {"type": "blank", "id": "12a", "accept": ["koche"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "ich Nudeln mit Tomatensoße."}
+      ],
+      "hint": "kochen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Bitte"},
+        {"type": "blank", "id": "13a", "accept": ["kommen"], "tags": ["word_order:verb_second", "form:imperative"]},
+        {"type": "text", "text": "Sie um zehn Uhr in mein Büro."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mit dem Fahrrad"},
+        {"type": "blank", "id": "14a", "accept": ["bin"], "tags": ["word_order:verb_second", "form:perfekt"]},
+        {"type": "text", "text": "ich heute früh zur Arbeit gefahren."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Nach dem Essen"},
+        {"type": "blank", "id": "15a", "accept": ["trinkt"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "mein Vater immer einen Kaffee."}
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Am Montag"},
+        {"type": "blank", "id": "16a", "accept": ["beginnt"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "der neue Kurs um neun Uhr."}
+      ],
+      "hint": "beginnen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Zu Hause"},
+        {"type": "blank", "id": "17a", "accept": ["spreche"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "ich mit meiner Mutter Deutsch."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Leider"},
+        {"type": "blank", "id": "18a", "accept": ["regnet"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "es seit dem Morgen ununterbrochen."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Später"},
+        {"type": "blank", "id": "19a", "accept": ["rufe"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "ich dich noch einmal an."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "20a", "accept": ["hat"], "tags": ["word_order:verb_second", "form:perfekt"]},
+        {"type": "text", "text": "mein Bruder die Wohnung gestrichen."}
+      ],
+      "hint": "haben"
+    }
+  ]
+}

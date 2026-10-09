@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1p_passiv",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Die Brötchen"},
+        {"type": "blank", "id": "1a", "accept": ["werden"], "tags": ["form:passive_present", "number:plural"]},
+        {"type": "text", "text": "jeden Morgen frisch gebacken."}
+      ],
+      "hint": "backen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Mein Antrag"},
+        {"type": "blank", "id": "2a", "accept": ["wurde"], "tags": ["form:passive_praeteritum", "number:singular"]},
+        {"type": "text", "text": "im Bürgeramt schnell bearbeitet."}
+      ],
+      "hint": "bearbeiten"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung"},
+        {"type": "blank", "id": "3a", "accept": ["ist"], "tags": ["form:passive_perfekt", "number:singular"]},
+        {"type": "text", "text": "letzte Woche renoviert worden."}
+      ],
+      "hint": "renovieren"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Waren"},
+        {"type": "blank", "id": "4a", "accept": ["werden"], "tags": ["form:passive_present", "number:plural"]},
+        {"type": "text", "text": "am Morgen in den Laden geliefert."}
+      ],
+      "hint": "liefern"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Brief"},
+        {"type": "blank", "id": "5a", "accept": ["wurde"], "tags": ["form:passive_praeteritum", "number:singular"]},
+        {"type": "text", "text": "gestern von meiner Mutter geschrieben."}
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das Fahrrad"},
+        {"type": "blank", "id": "6a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "am Bahnhof repariert."}
+      ],
+      "hint": "reparieren"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Unterlagen müssen bis Freitag"},
+        {"type": "blank", "id": "7a", "accept": ["abgegeben"], "tags": ["form:partizip_ii", "form:passive_modal"]},
+        {"type": "text", "text": "werden."}
+      ],
+      "hint": "abgeben"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Mein Koffer"},
+        {"type": "blank", "id": "8a", "accept": ["wurde"], "tags": ["form:passive_praeteritum", "number:singular"]},
+        {"type": "text", "text": "am Flughafen leider nicht gefunden."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Das Konzert"},
+        {"type": "blank", "id": "9a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "wegen des Regens verschoben."}
+      ],
+      "hint": "verschieben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Rechnung"},
+        {"type": "blank", "id": "10a", "accept": ["ist"], "tags": ["form:passive_perfekt", "number:singular"]},
+        {"type": "text", "text": "schon von der Bank bezahlt worden."}
+      ],
+      "hint": "bezahlen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Das Essen"},
+        {"type": "blank", "id": "11a", "accept": ["wurde"], "tags": ["form:passive_praeteritum", "number:singular"]},
+        {"type": "text", "text": "schon um sechs Uhr serviert."}
+      ],
+      "hint": "servieren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Das Auto wurde"},
+        {"type": "blank", "id": "12a", "accept": ["vom"], "tags": ["trigger:von_agent", "case:dative"]},
+        {"type": "text", "text": "Mechaniker geprüft."}
+      ],
+      "hint": "prüfen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Post"},
+        {"type": "blank", "id": "13a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "heute nicht zugestellt."}
+      ],
+      "hint": "zustellen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Geldbeutel"},
+        {"type": "blank", "id": "14a", "accept": ["ist"], "tags": ["form:passive_perfekt", "number:singular"]},
+        {"type": "text", "text": "am Bahnhof gefunden worden."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Fenster"},
+        {"type": "blank", "id": "15a", "accept": ["wurden"], "tags": ["form:passive_praeteritum", "number:plural"]},
+        {"type": "text", "text": "im Frühling geputzt."}
+      ],
+      "hint": "putzen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Termin"},
+        {"type": "blank", "id": "16a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "per E-Mail bestätigt."}
+      ],
+      "hint": "bestätigen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Schule"},
+        {"type": "blank", "id": "17a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "im Sommer neu gestrichen."}
+      ],
+      "hint": "streichen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Tür wird jeden Abend"},
+        {"type": "blank", "id": "18a", "accept": ["abgeschlossen"], "tags": ["form:partizip_ii", "form:passive_present"]},
+        {"type": "text", "text": "und am Morgen wieder geöffnet."}
+      ],
+      "hint": "abschließen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Hier"},
+        {"type": "blank", "id": "19a", "accept": ["wird"], "tags": ["form:passive_present", "number:singular"]},
+        {"type": "text", "text": "nicht geraucht."}
+      ],
+      "hint": "rauchen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Im Wartezimmer"},
+        {"type": "blank", "id": "20a", "accept": ["werden"], "tags": ["form:passive_present", "number:plural"]},
+        {"type": "text", "text": "die Namen aufgerufen."}
+      ],
+      "hint": "aufrufen"
+    }
+  ]
+}

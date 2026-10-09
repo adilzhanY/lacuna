@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1p_futur_1",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Morgen"},
+        {"type": "blank", "id": "1a", "accept": ["werde"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "ich um sieben Uhr früh aufstehen."}
+      ],
+      "hint": "aufstehen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Im Sommer"},
+        {"type": "blank", "id": "2a", "accept": ["wirst"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "du mit uns nach Italien fahren?"}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Der Bus"},
+        {"type": "blank", "id": "3a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "in zehn Minuten am Bahnhof ankommen."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Am Freitag"},
+        {"type": "blank", "id": "4a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "wir die neue Wohnung ansehen."}
+      ],
+      "hint": "ansehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Morgen"},
+        {"type": "blank", "id": "5a", "accept": ["werdet"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "ihr die Fahrkarten am Automaten kaufen."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Nächste Woche"},
+        {"type": "blank", "id": "6a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "die Kinder bei Oma übernachten."}
+      ],
+      "hint": "übernachten"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "7a", "accept": ["wird"], "tags": ["form:futur_1", "form:futur_1_presumption"]},
+        {"type": "text", "text": "wohl im Stau stehen."}
+      ],
+      "hint": "stehen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "8a", "accept": ["wird"], "tags": ["form:futur_1", "form:futur_1_presumption"]},
+        {"type": "text", "text": "wohl schon zu Hause sein."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wann"},
+        {"type": "blank", "id": "9a", "accept": ["wirst"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "du endlich deine Hausaufgaben machen?"}
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Das Geschenk"},
+        {"type": "blank", "id": "10a", "accept": ["wird"], "tags": ["form:futur_1", "form:futur_1_presumption"]},
+        {"type": "text", "text": "dem Kind bestimmt gefallen."}
+      ],
+      "hint": "gefallen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Apotheke"},
+        {"type": "blank", "id": "11a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "morgen früh um acht Uhr öffnen."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Es"},
+        {"type": "blank", "id": "12a", "accept": ["wird"], "tags": ["form:futur_1", "form:futur_1_presumption"]},
+        {"type": "text", "text": "heute Abend sicher regnen."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "13a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "Sie gleich aufrufen."}
+      ],
+      "hint": "aufrufen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "14a", "accept": ["werde"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "dir morgen beim Umzug helfen."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die beiden"},
+        {"type": "blank", "id": "15a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "bestimmt einen Parkplatz finden."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "16a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "im Herbst eine größere Wohnung suchen."}
+      ],
+      "hint": "suchen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Kunde"},
+        {"type": "blank", "id": "17a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "den Preis sicher nicht akzeptieren."}
+      ],
+      "hint": "akzeptieren"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich glaube, sie"},
+        {"type": "blank", "id": "18a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "heute nicht mehr anrufen."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Nächstes Jahr"},
+        {"type": "blank", "id": "19a", "accept": ["werde"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "ich endlich gut Deutsch sprechen."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wenn wir das Haus verkaufen,"},
+        {"type": "blank", "id": "20a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural", "word_order:verb_second"]},
+        {"type": "text", "text": "wir viel Geld bekommen."}
+      ],
+      "hint": "bekommen"
+    }
+  ]
+}

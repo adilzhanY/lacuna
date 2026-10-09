@@ -1,0 +1,181 @@
+{
+  "topic_id": "roadmap.c1_conjunctions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Wir gehen heute spazieren,"},
+        {"type": "blank", "id": "1a", "accept": ["obwohl"], "tags": ["trigger:concessive", "word_order:verb_final"]},
+        {"type": "text", "text": "es draußen kalt ist."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich lese die Zeitung,"},
+        {"type": "blank", "id": "2a", "accept": ["während"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "mein Mann kocht."}
+      ],
+      "hint": "gleichzeitig"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Du darfst den Wagen nehmen,"},
+        {"type": "blank", "id": "3a", "accept": ["sofern"], "tags": ["trigger:conditional", "word_order:verb_final"]},
+        {"type": "text", "text": "du ihn am Abend zurückbringst."}
+      ],
+      "hint": "Bedingung"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir bleiben heute zu Hause,"},
+        {"type": "blank", "id": "4a", "accept": ["zumal"], "tags": ["trigger:causal", "word_order:verb_final"]},
+        {"type": "text", "text": "das Wetter schlecht ist."}
+      ],
+      "hint": "zusätzlicher Grund"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Sie spricht langsam und deutlich,"},
+        {"type": "blank", "id": "5a", "accept": ["damit"], "tags": ["trigger:purpose", "word_order:verb_final"]},
+        {"type": "text", "text": "alle sie verstehen."}
+      ],
+      "hint": "Zweck"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "blank", "id": "6a", "accept": ["Nachdem"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "wir das Essen bezahlt haben, gehen wir nach Hause."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Regen dauerte die ganze Nacht,"},
+        {"type": "blank", "id": "7a", "accept": ["sodass"], "tags": ["trigger:consecutive", "word_order:verb_final"]},
+        {"type": "text", "text": "die Straße überflutet ist."}
+      ],
+      "hint": "Folge"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht,"},
+        {"type": "blank", "id": "8a", "accept": ["ob"], "tags": ["trigger:indirect_question", "word_order:verb_final"]},
+        {"type": "text", "text": "er morgen zur Arbeit kommt."}
+      ],
+      "hint": "indirekte Frage"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Bitte schließ das Fenster,"},
+        {"type": "blank", "id": "9a", "accept": ["bevor"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "du gehst."}
+      ],
+      "hint": "vorher"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Man spart viel Zeit,"},
+        {"type": "blank", "id": "10a", "accept": ["indem"], "tags": ["trigger:manner", "word_order:verb_final"]},
+        {"type": "text", "text": "man online einkauft."}
+      ],
+      "hint": "Art und Weise"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er kommt nicht heute,"},
+        {"type": "blank", "id": "11a", "accept": ["sondern"], "tags": ["trigger:adversative", "word_order:verb_second"]},
+        {"type": "text", "text": "erst am Freitag."}
+      ],
+      "hint": "nach Verneinung"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist teuer,"},
+        {"type": "blank", "id": "12a", "accept": ["denn"], "tags": ["trigger:causal", "word_order:verb_second"]},
+        {"type": "text", "text": "sie liegt im Zentrum."}
+      ],
+      "hint": "Begründung"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wir brauchen Mehl, Zucker"},
+        {"type": "blank", "id": "13a", "accept": ["sowie"], "tags": ["trigger:additive", "word_order:verb_second"]},
+        {"type": "text", "text": "Eier für den Kuchen."}
+      ],
+      "hint": "Aufzählung"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "blank", "id": "14a", "accept": ["Wenngleich"], "tags": ["trigger:concessive", "word_order:verb_final"]},
+        {"type": "text", "text": "das Angebot verlockend klingt, lehne ich es ab."}
+      ],
+      "hint": "Gegensatz, gehoben"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "blank", "id": "15a", "accept": ["Sobald"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "der Bus kommt, steigen wir ein."}
+      ],
+      "hint": "sofort danach"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "blank", "id": "16a", "accept": ["Solange"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "das Wetter hält, grillen wir im Garten."}
+      ],
+      "hint": "Dauer"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Er hat versprochen zu kommen,"},
+        {"type": "blank", "id": "17a", "accept": ["doch"], "tags": ["trigger:adversative", "word_order:verb_second"]},
+        {"type": "text", "text": "er hat abgesagt."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Seitdem"], "tags": ["trigger:temporal", "word_order:verb_final"]},
+        {"type": "text", "text": "er in Hamburg wohnt, fährt er jeden Tag Rad."}
+      ],
+      "hint": "Zeitpunkt des Beginns"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Sie hat das Projekt beendet,"},
+        {"type": "blank", "id": "19a", "accept": ["wobei"], "tags": ["trigger:manner", "word_order:verb_final"]},
+        {"type": "text", "text": "sie viele Fehler korrigieren musste."}
+      ],
+      "hint": "dabei"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wir fahren mit dem Zug,"},
+        {"type": "blank", "id": "20a", "accept": ["anstatt"], "tags": ["trigger:alternative"]},
+        {"type": "text", "text": "zu fliegen."}
+      ],
+      "hint": "Alternative"
+    }
+  ]
+}

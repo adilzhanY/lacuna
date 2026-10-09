@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1_haben_sein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["bin"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "müde heute Abend."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wer"},
+        {"type": "blank", "id": "2a", "accept": ["hat"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "das Auto heute?"}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "3a", "accept": ["ist"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "im Büro bis sechs Uhr."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["haben"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "morgen frei."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ihr"},
+        {"type": "blank", "id": "5a", "accept": ["seid"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "sehr früh am Bahnhof."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "6a", "accept": ["haben"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "zwei Kinder und ein Haus."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Das Café"},
+        {"type": "blank", "id": "7a", "accept": ["ist"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "heute geschlossen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Brötchen"},
+        {"type": "blank", "id": "8a", "accept": ["sind"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "noch warm."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wie viel Geld"},
+        {"type": "blank", "id": "9a", "accept": ["hast"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "du noch?"}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Meine Tante"},
+        {"type": "blank", "id": "10a", "accept": ["hat"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "eine Wohnung in Berlin."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "11a", "accept": ["habe"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "keine Zeit für Sport."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Woher"},
+        {"type": "blank", "id": "12a", "accept": ["bist"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "du?"}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Das Kind"},
+        {"type": "blank", "id": "13a", "accept": ["hat"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "Fieber und bleibt zu Hause."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Heute"},
+        {"type": "blank", "id": "14a", "accept": ["ist"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "es sehr kalt draußen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ihr"},
+        {"type": "blank", "id": "15a", "accept": ["habt"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "Glück mit dem Wetter."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Film"},
+        {"type": "blank", "id": "16a", "accept": ["ist"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "sehr lang, aber gut."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "17a", "accept": ["bin"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "seit drei Jahren in Deutschland."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder"},
+        {"type": "blank", "id": "18a", "accept": ["hat"], "tags": ["form:present", "number:singular"]},
+        {"type": "text", "text": "ein neues Fahrrad."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wo"},
+        {"type": "blank", "id": "19a", "accept": ["sind"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "die Schlüssel?"}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "20a", "accept": ["sind"], "tags": ["form:present", "number:plural"]},
+        {"type": "text", "text": "schon zu spät für den Termin."}
+      ],
+      "hint": "sein"
+    }
+  ]
+}

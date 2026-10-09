@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2p_um_zu",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich spare Geld,"},
+        {"type": "blank", "id": "1a", "accept": ["um"], "tags": ["trigger:um_zu"]},
+        {"type": "text", "text": "ein Fahrrad zu kaufen."}
+      ],
+      "hint": "sparen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er kommt früh,"},
+        {"type": "blank", "id": "2a", "accept": ["um"], "tags": ["trigger:um_zu"]},
+        {"type": "text", "text": "den Schlüssel abzuholen."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir fahren nach Hamburg,"},
+        {"type": "blank", "id": "3a", "accept": ["um"], "tags": ["trigger:um_zu"]},
+        {"type": "text", "text": "meine Eltern zu besuchen."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Sie geht zur Apotheke,"},
+        {"type": "blank", "id": "4a", "accept": ["um"], "tags": ["trigger:um_zu"]},
+        {"type": "text", "text": "Tabletten zu holen."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich komme, um dir"},
+        {"type": "blank", "id": "5a", "accept": ["zu"], "tags": ["trigger:um_zu", "form:infinitive_zu"]},
+        {"type": "text", "text": "helfen."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Er steht früh auf, um den Bus"},
+        {"type": "blank", "id": "6a", "accept": ["zu"], "tags": ["trigger:um_zu", "form:infinitive_zu"]},
+        {"type": "text", "text": "erreichen."}
+      ],
+      "hint": "erreichen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Kinder lernen Deutsch, um in Berlin"},
+        {"type": "blank", "id": "7a", "accept": ["zu"], "tags": ["trigger:um_zu", "form:infinitive_zu"]},
+        {"type": "text", "text": "arbeiten."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wir sparen Strom, um die Rechnung"},
+        {"type": "blank", "id": "8a", "accept": ["zu"], "tags": ["trigger:um_zu", "form:infinitive_zu"]},
+        {"type": "text", "text": "senken."}
+      ],
+      "hint": "senken"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Es regnet so stark,"},
+        {"type": "blank", "id": "9a", "accept": ["dass"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "wir zu Hause bleiben."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist so klein,"},
+        {"type": "blank", "id": "10a", "accept": ["dass"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "wir kaum Platz haben."}
+      ],
+      "hint": "klein"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der Kaffee war so heiß,"},
+        {"type": "blank", "id": "11a", "accept": ["dass"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "ich ihn nicht trinken konnte."}
+      ],
+      "hint": "heiß"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Es war schon so spät,"},
+        {"type": "blank", "id": "12a", "accept": ["dass"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "die Geschäfte geschlossen waren."}
+      ],
+      "hint": "spät"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Zug hatte"},
+        {"type": "blank", "id": "13a", "accept": ["so"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "viel Verspätung, dass wir den Anschluss verpassten."}
+      ],
+      "hint": "Verspätung, f"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er hat"},
+        {"type": "blank", "id": "14a", "accept": ["so"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "laut gesungen, dass die Nachbarn sich beschwert haben."}
+      ],
+      "hint": "laut"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Sie war"},
+        {"type": "blank", "id": "15a", "accept": ["so"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "müde, dass sie sofort einschlief."}
+      ],
+      "hint": "müde"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Das Konzert war"},
+        {"type": "blank", "id": "16a", "accept": ["so"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "voll, dass wir keinen Platz fanden."}
+      ],
+      "hint": "voll"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Er ist zu erschöpft, als"},
+        {"type": "blank", "id": "17a", "accept": ["dass"], "tags": ["trigger:als_dass"]},
+        {"type": "text", "text": "er noch lernen könnte."}
+      ],
+      "hint": "erschöpft"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das Wasser ist zu kalt, als dass ich darin"},
+        {"type": "blank", "id": "18a", "accept": ["schwimmen"], "tags": ["trigger:als_dass"]},
+        {"type": "text", "text": "könnte."}
+      ],
+      "hint": "Wasser, n"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Suppe ist zu heiß, als dass man sie"},
+        {"type": "blank", "id": "19a", "accept": ["essen"], "tags": ["trigger:als_dass"]},
+        {"type": "text", "text": "könnte."}
+      ],
+      "hint": "Suppe, f"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er hat den Termin vergessen, so"},
+        {"type": "blank", "id": "20a", "accept": ["dass"], "tags": ["trigger:so_dass"]},
+        {"type": "text", "text": "er zu spät kam."}
+      ],
+      "hint": "vergessen"
+    }
+  ]
+}

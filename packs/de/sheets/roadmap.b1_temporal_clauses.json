@@ -1,0 +1,180 @@
+{
+  "topic_id": "roadmap.b1_temporal_clauses",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "blank", "id": "1a", "accept": ["Als"], "tags": ["trigger:als", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "ich letzte Woche beim Bäcker war, traf ich meine alte Nachbarin."}
+      ],
+      "hint": "Vergangenheit, einmal"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Zug fuhr ab,"},
+        {"type": "blank", "id": "2a", "accept": ["während"], "tags": ["trigger:waehrend"]},
+        {"type": "text", "text": "ich noch das Ticket suchte."}
+      ],
+      "hint": "Gleichzeitigkeit"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Nachdem"], "tags": ["trigger:nachdem", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "der Arzt mich untersucht hatte, schrieb er ein Rezept."}
+      ],
+      "hint": "Vorzeitigkeit"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Bitte unterschreiben Sie nicht,"},
+        {"type": "blank", "id": "4a", "accept": ["bevor"], "tags": ["trigger:bevor"]},
+        {"type": "text", "text": "Sie den Vertrag gelesen haben."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich rufe dich an,"},
+        {"type": "blank", "id": "5a", "accept": ["sobald"], "tags": ["trigger:sobald"]},
+        {"type": "text", "text": "ich im Büro bin."}
+      ],
+      "hint": "Zeitpunkt"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "blank", "id": "6a", "accept": ["Seit", "Seitdem"], "tags": ["trigger:seit", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "ich in Hamburg lebe, habe ich keinen Stress mehr."}
+      ],
+      "hint": "Zeitraum bis heute"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wir gehen spazieren,"},
+        {"type": "blank", "id": "7a", "accept": ["solange"], "tags": ["trigger:solange"]},
+        {"type": "text", "text": "das Wetter so schön bleibt."}
+      ],
+      "hint": "Dauer"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich warte hier,"},
+        {"type": "blank", "id": "8a", "accept": ["bis"], "tags": ["trigger:bis"]},
+        {"type": "text", "text": "der Bus kommt."}
+      ],
+      "hint": "Endpunkt"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "blank", "id": "9a", "accept": ["Wenn"], "tags": ["trigger:wenn", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "ich abends nach Hause komme, koche ich erst einmal Tee."}
+      ],
+      "hint": "wiederholt, Gegenwart"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Nachdem er den Brief gelesen"},
+        {"type": "blank", "id": "10a", "accept": ["hatte"], "tags": ["trigger:nachdem", "word_order:verb_final", "form:plusquamperfekt"]},
+        {"type": "text", "text": ", rief er seine Mutter an."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Kinder spielten im Garten,"},
+        {"type": "blank", "id": "11a", "accept": ["während"], "tags": ["trigger:waehrend"]},
+        {"type": "text", "text": "wir den Tisch deckten."}
+      ],
+      "hint": "Gleichzeitigkeit"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "blank", "id": "12a", "accept": ["Bevor"], "tags": ["trigger:bevor", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "wir losfahren, tanken wir noch schnell."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich schreibe die Liste,"},
+        {"type": "blank", "id": "13a", "accept": ["bevor"], "tags": ["trigger:bevor"]},
+        {"type": "text", "text": "ich einkaufen gehe."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wir essen zusammen,"},
+        {"type": "blank", "id": "14a", "accept": ["sobald"], "tags": ["trigger:sobald"]},
+        {"type": "text", "text": "Papa nach Hause kommt."}
+      ],
+      "hint": "Zeitpunkt"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Ampel blieb rot,"},
+        {"type": "blank", "id": "15a", "accept": ["bis"], "tags": ["trigger:bis"]},
+        {"type": "text", "text": "das Auto vor uns losfuhr."}
+      ],
+      "hint": "Endpunkt"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "blank", "id": "16a", "accept": ["Als"], "tags": ["trigger:als", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "die Kinder klein waren, wohnten wir auf dem Land."}
+      ],
+      "hint": "Vergangenheit, Zeitraum"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich habe die Tür abgeschlossen,"},
+        {"type": "blank", "id": "17a", "accept": ["nachdem"], "tags": ["trigger:nachdem"]},
+        {"type": "text", "text": "alle das Haus verlassen hatten."}
+      ],
+      "hint": "Vorzeitigkeit"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe zu Hause,"},
+        {"type": "blank", "id": "18a", "accept": ["solange"], "tags": ["trigger:solange"]},
+        {"type": "text", "text": "mein Fieber nicht sinkt."}
+      ],
+      "hint": "Dauer"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir fahren immer in den Urlaub,"},
+        {"type": "blank", "id": "19a", "accept": ["wenn"], "tags": ["trigger:wenn"]},
+        {"type": "text", "text": "die Sommerferien beginnen."}
+      ],
+      "hint": "wiederholt, Gegenwart"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Sie war erleichtert,"},
+        {"type": "blank", "id": "20a", "accept": ["als"], "tags": ["trigger:als"]},
+        {"type": "text", "text": "der Test endlich vorbei war."}
+      ],
+      "hint": "Vergangenheit, einmal"
+    }
+  ]
+}

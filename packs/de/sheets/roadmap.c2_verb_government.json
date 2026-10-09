@@ -1,0 +1,26 @@
+{
+  "topic_id": "roadmap.c2_verb_government",
+  "language": "de",
+  "items": [
+    {"n": 1, "segments": [{"type": "text", "text": "Ich erinnere mich genau"}, {"type": "blank", "id": "1a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:accusative"]}, {"type": "text", "text": "dieses Gespräch im Bürgeramt."}], "hint": "sich erinnern"},
+    {"n": 2, "segments": [{"type": "text", "text": "Sie wartet seit einer Stunde"}, {"type": "blank", "id": "2a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]}, {"type": "text", "text": "ihren Freund vor dem Kino."}], "hint": "warten"},
+    {"n": 3, "segments": [{"type": "text", "text": "Er leidet"}, {"type": "blank", "id": "3a", "accept": ["unter"], "tags": ["trigger:preposition_unter", "case:dative"]}, {"type": "text", "text": "einer starken Erkältung."}], "hint": "leiden"},
+    {"n": 4, "segments": [{"type": "text", "text": "Wir gedenken"}, {"type": "blank", "id": "4a", "accept": ["der"], "tags": ["trigger:verb_genitive", "case:genitive", "number:plural"]}, {"type": "text", "text": "Opfer des Unglücks."}], "hint": "gedenken"},
+    {"n": 5, "segments": [{"type": "text", "text": "Er verzichtet"}, {"type": "blank", "id": "5a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]}, {"type": "text", "text": "den Nachtisch, weil er Diät macht."}], "hint": "verzichten"},
+    {"n": 6, "segments": [{"type": "text", "text": "Die Firma bedarf"}, {"type": "blank", "id": "6a", "accept": ["einer"], "tags": ["trigger:verb_genitive", "case:genitive"]}, {"type": "text", "text": "neuen Genehmigung."}], "hint": "bedürfen"},
+    {"n": 7, "segments": [{"type": "text", "text": "Ich zweifle"}, {"type": "blank", "id": "7a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:dative"]}, {"type": "text", "text": "seiner Aussage."}], "hint": "zweifeln"},
+    {"n": 8, "segments": [{"type": "text", "text": "Sie beschwert sich bei"}, {"type": "blank", "id": "8a", "accept": ["ihrem"], "tags": ["trigger:preposition_bei", "case:dative", "form:possessive"]}, {"type": "text", "text": "Vermieter über den Lärm."}], "hint": "sich beschweren"},
+    {"n": 9, "segments": [{"type": "text", "text": "Er ärgert sich"}, {"type": "blank", "id": "9a", "accept": ["über"], "tags": ["trigger:preposition_ueber", "case:accusative"]}, {"type": "text", "text": "die Verspätung des Zuges."}], "hint": "sich ärgern"},
+    {"n": 10, "segments": [{"type": "text", "text": "Wir sind angewiesen"}, {"type": "blank", "id": "10a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]}, {"type": "text", "text": "eine Antwort der Behörde."}], "hint": "angewiesen sein"},
+    {"n": 11, "segments": [{"type": "text", "text": "Er gratuliert"}, {"type": "blank", "id": "11a", "accept": ["seinem"], "tags": ["trigger:verb_dative", "case:dative", "form:possessive"]}, {"type": "text", "text": "Kollegen zur Beförderung."}], "hint": "gratulieren"},
+    {"n": 12, "segments": [{"type": "text", "text": "Das hängt"}, {"type": "blank", "id": "12a", "accept": ["von"], "tags": ["trigger:preposition_von", "case:dative"]}, {"type": "text", "text": "dem Wetter ab."}], "hint": "abhängen"},
+    {"n": 13, "segments": [{"type": "text", "text": "Sie kümmert sich"}, {"type": "blank", "id": "13a", "accept": ["um"], "tags": ["trigger:preposition_um", "case:accusative"]}, {"type": "text", "text": "ihre kranke Mutter."}], "hint": "sich kümmern"},
+    {"n": 14, "segments": [{"type": "text", "text": "Ich rechne"}, {"type": "blank", "id": "14a", "accept": ["mit"], "tags": ["trigger:preposition_mit", "case:dative"]}, {"type": "text", "text": "einer Verspätung von zehn Minuten."}], "hint": "rechnen"},
+    {"n": 15, "segments": [{"type": "text", "text": "Er profitiert"}, {"type": "blank", "id": "15a", "accept": ["von"], "tags": ["trigger:preposition_von", "case:dative"]}, {"type": "text", "text": "der neuen Regelung."}], "hint": "profitieren"},
+    {"n": 16, "segments": [{"type": "text", "text": "Wir haben uns"}, {"type": "blank", "id": "16a", "accept": ["für"], "tags": ["trigger:preposition_fuer", "case:accusative"]}, {"type": "text", "text": "die günstigere Wohnung entschieden."}], "hint": "sich entscheiden"},
+    {"n": 17, "segments": [{"type": "text", "text": "Man beschuldigt ihn"}, {"type": "blank", "id": "17a", "accept": ["des"], "tags": ["trigger:verb_genitive", "case:genitive"]}, {"type": "text", "text": "Diebstahls."}], "hint": "beschuldigen"},
+    {"n": 18, "segments": [{"type": "text", "text": "Bitte wenden Sie sich"}, {"type": "blank", "id": "18a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:accusative"]}, {"type": "text", "text": "die Hotline."}], "hint": "sich wenden"},
+    {"n": 19, "segments": [{"type": "text", "text": "Bitte bedienen Sie sich"}, {"type": "blank", "id": "19a", "accept": ["des"], "tags": ["trigger:verb_genitive", "case:genitive"]}, {"type": "text", "text": "Buffets."}], "hint": "sich bedienen"},
+    {"n": 20, "segments": [{"type": "text", "text": "Die Kinder erfreuen sich"}, {"type": "blank", "id": "20a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:dative"]}, {"type": "text", "text": "dem frischen Schnee."}], "hint": "sich erfreuen"}
+  ]
+}

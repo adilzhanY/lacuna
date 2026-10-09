@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1_indirect_speech",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Er sagt, er"},
+        {"type": "blank", "id": "1a", "accept": ["habe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "keine Zeit für den Umzug."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Sie erzählt, sie"},
+        {"type": "blank", "id": "2a", "accept": ["sei"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "morgen beim Zahnarzt."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Der Nachbar meint, das Paket"},
+        {"type": "blank", "id": "3a", "accept": ["sei"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "schon angekommen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder sagt, er"},
+        {"type": "blank", "id": "4a", "accept": ["komme"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "später zur Feier."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerin sagt, die Brötchen"},
+        {"type": "blank", "id": "5a", "accept": ["seien"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech", "number:plural"]},
+        {"type": "text", "text": "heute schon ausverkauft."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Arzt sagt, ich"},
+        {"type": "blank", "id": "6a", "accept": ["müsse"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "mehr trinken."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie sagt, sie"},
+        {"type": "blank", "id": "7a", "accept": ["könne"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "am Freitag nicht kommen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Der Vermieter schreibt, die Heizung"},
+        {"type": "blank", "id": "8a", "accept": ["werde"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "morgen repariert."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Er sagt, er"},
+        {"type": "blank", "id": "9a", "accept": ["fahre"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "morgen mit dem Zug nach Hamburg."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Kollegin sagt, sie"},
+        {"type": "blank", "id": "10a", "accept": ["gehe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "heute früher nach Hause."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Kassiererin fragt, ob ich eine Tüte"},
+        {"type": "blank", "id": "11a", "accept": ["wolle"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "."}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Mutter sagt, sie"},
+        {"type": "blank", "id": "12a", "accept": ["kaufe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "am Samstag ein."}
+      ],
+      "hint": "einkaufen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Mein Kollege sagt, er"},
+        {"type": "blank", "id": "13a", "accept": ["arbeite"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "nächste Woche von zu Hause."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Sie erklärt, sie"},
+        {"type": "blank", "id": "14a", "accept": ["wohne"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "seit zehn Jahren in Berlin."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Kellner sagt, er"},
+        {"type": "blank", "id": "15a", "accept": ["bringe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "gleich die Speisekarte."}
+      ],
+      "hint": "bringen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Sie erklärt, sie"},
+        {"type": "blank", "id": "16a", "accept": ["wisse"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "nichts von dem Termin."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Lehrer sagt, er"},
+        {"type": "blank", "id": "17a", "accept": ["helfe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "uns nach dem Unterricht."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Er erzählt, er"},
+        {"type": "blank", "id": "18a", "accept": ["spreche"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "schon gut Deutsch."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Der Pfleger sagt, er"},
+        {"type": "blank", "id": "19a", "accept": ["nehme"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "gleich Blut ab."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Mein Vater sagt, er"},
+        {"type": "blank", "id": "20a", "accept": ["gebe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "mir das Geld zurück."}
+      ],
+      "hint": "geben"
+    }
+  ]
+}

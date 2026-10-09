@@ -1,0 +1,183 @@
+{
+  "topic_id": "roadmap.a2_modal_verbs",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["kann"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "Deutsch ein bisschen sprechen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "2a", "accept": ["musst"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "heute nicht arbeiten."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "3a", "accept": ["darf"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "hier nicht parken."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["wollen"], "tags": ["form:modal_present", "number:plural"]},
+        {"type": "text", "text": "am Samstag ins Kino gehen."}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Wo"},
+        {"type": "blank", "id": "5a", "accept": ["kann"], "tags": ["form:modal_present", "word_order:verb_second"]},
+        {"type": "text", "text": "ich hier Geld wechseln?"}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ihr"},
+        {"type": "blank", "id": "6a", "accept": ["sollt"], "tags": ["form:modal_present", "number:plural"]},
+        {"type": "text", "text": "den Müll heute rausbringen."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "7a", "accept": ["möchte"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "einen Termin beim Arzt machen."}
+      ],
+      "hint": "möchten"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "8a", "accept": ["muss"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "morgen früh um sechs aufstehen."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "blank", "id": "9a", "accept": ["Könnt"], "tags": ["form:modal_present", "number:plural", "word_order:verb_second"]},
+        {"type": "text", "text": "ihr mir bitte helfen?"}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Man"},
+        {"type": "blank", "id": "10a", "accept": ["darf"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "in diesem Park keine Hunde frei laufen lassen."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder"},
+        {"type": "blank", "id": "11a", "accept": ["kann"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "sehr gut Klavier spielen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "12a", "accept": ["sollen"], "tags": ["form:modal_present", "number:plural"]},
+        {"type": "text", "text": "die Schuhe vor der Tür ausziehen."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "blank", "id": "13a", "accept": ["Mögt"], "tags": ["form:modal_present", "number:plural", "word_order:verb_second"]},
+        {"type": "text", "text": "ihr Kaffee oder Tee?"}
+      ],
+      "hint": "mögen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "14a", "accept": ["will"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "nächstes Jahr nach Berlin umziehen."}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "15a", "accept": ["muss"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "seinen Pass beim Bürgeramt abholen."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "16a", "accept": ["darfst"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "das Fenster nicht öffnen, es ist kalt."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "blank", "id": "17a", "accept": ["Können"], "tags": ["form:modal_present", "word_order:verb_second"]},
+        {"type": "text", "text": "Sie Ihren Namen bitte buchstabieren?"}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Heute"},
+        {"type": "blank", "id": "18a", "accept": ["kann"], "tags": ["form:modal_present", "word_order:verb_second"]},
+        {"type": "text", "text": "es im Norden regnen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "19a", "accept": ["möchte"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "bitte zwei Brötchen und ein Stück Kuchen."}
+      ],
+      "hint": "möchten"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Meine Tochter"},
+        {"type": "blank", "id": "20a", "accept": ["darf"], "tags": ["form:modal_present", "trigger:modal_verb"]},
+        {"type": "text", "text": "abends nicht länger als bis neun draußen bleiben."}
+      ],
+      "hint": "dürfen"
+    }
+  ]
+}

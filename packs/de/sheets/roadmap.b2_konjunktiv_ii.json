@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.b2_konjunktiv_ii",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["würde"], "tags": ["form:konjunktiv_ii", "form:wuerde_periphrase"]},
+        {"type": "text", "text": "gern in einer kleinen Stadt wohnen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "2a", "accept": ["hätte"], "tags": ["form:konjunktiv_ii", "trigger:polite_request"]},
+        {"type": "text", "text": "gern einen Termin am Donnerstag."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "3a", "accept": ["wäre"], "tags": ["form:konjunktiv_ii"]},
+        {"type": "text", "text": "froh, wenn der Zug pünktlich käme."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wenn ich in Hamburg wohnte,"},
+        {"type": "blank", "id": "4a", "accept": ["würde"], "tags": ["form:konjunktiv_ii", "form:wuerde_periphrase", "trigger:wenn_clause"]},
+        {"type": "text", "text": "ich oft ans Meer fahren."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Wenn das Wetter besser wäre,"},
+        {"type": "blank", "id": "5a", "accept": ["gingen"], "tags": ["form:konjunktiv_ii", "trigger:wenn_clause", "word_order:verb_second"]},
+        {"type": "text", "text": "wir heute an den See."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "blank", "id": "6a", "accept": ["Hätten"], "tags": ["form:konjunktiv_ii", "word_order:verb_first"]},
+        {"type": "text", "text": "wir mehr Geld, würden wir ein Haus kaufen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "7a", "accept": ["könnte"], "tags": ["form:konjunktiv_ii", "form:modal"]},
+        {"type": "text", "text": "dir helfen, aber ich habe keine Zeit."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "8a", "accept": ["solltest"], "tags": ["form:konjunktiv_ii", "form:modal", "trigger:advice"]},
+        {"type": "text", "text": "dich bei ihr entschuldigen."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "9a", "accept": ["müsste"], "tags": ["form:konjunktiv_ii", "form:modal"]},
+        {"type": "text", "text": "eigentlich schon lange zum Arzt gehen."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich wünschte, es"},
+        {"type": "blank", "id": "10a", "accept": ["gäbe"], "tags": ["form:konjunktiv_ii", "trigger:wish"]},
+        {"type": "text", "text": "hier mehr Parkplätze."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Sie spricht Deutsch, als"},
+        {"type": "blank", "id": "11a", "accept": ["wäre"], "tags": ["form:konjunktiv_ii", "trigger:als_ob"]},
+        {"type": "text", "text": "sie hier geboren."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "12a", "accept": ["hätte"], "tags": ["form:konjunktiv_ii", "form:plusquamperfekt"]},
+        {"type": "text", "text": "das früher gewusst."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "13a", "accept": ["wären"], "tags": ["form:konjunktiv_ii", "form:plusquamperfekt"]},
+        {"type": "text", "text": "gern früher gekommen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "14a", "accept": ["fände"], "tags": ["form:konjunktiv_ii", "trigger:wenn_clause"]},
+        {"type": "text", "text": "es schön, wenn wir uns öfter sehen."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "15a", "accept": ["bliebe"], "tags": ["form:konjunktiv_ii"]},
+        {"type": "text", "text": "gern noch länger, aber ich muss los."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "blank", "id": "16a", "accept": ["Könnten"], "tags": ["form:konjunktiv_ii", "word_order:verb_first", "trigger:polite_request"]},
+        {"type": "text", "text": "Sie mir bitte helfen?"}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Das"},
+        {"type": "blank", "id": "17a", "accept": ["wäre"], "tags": ["form:konjunktiv_ii"]},
+        {"type": "text", "text": "nett von dir, danke."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Meine Eltern"},
+        {"type": "blank", "id": "18a", "accept": ["würden"], "tags": ["form:konjunktiv_ii", "form:wuerde_periphrase"]},
+        {"type": "text", "text": "gern einmal nach Japan reisen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Kinder"},
+        {"type": "blank", "id": "19a", "accept": ["kämen"], "tags": ["form:konjunktiv_ii"]},
+        {"type": "text", "text": "gern am Samstag mit uns zum Schwimmen."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wenn du gestern angerufen hättest,"},
+        {"type": "blank", "id": "20a", "accept": ["wären"], "tags": ["form:konjunktiv_ii", "form:plusquamperfekt", "trigger:wenn_clause"]},
+        {"type": "text", "text": "wir zusammen ins Kino gegangen."}
+      ],
+      "hint": "sein"
+    }
+  ]
+}

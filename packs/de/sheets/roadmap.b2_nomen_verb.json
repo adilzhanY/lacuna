@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2_nomen_verb",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "1a", "accept": ["ziehen"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "eine Reise nach Italien in Betracht."}
+      ],
+      "hint": "in Betracht ziehen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "2a", "accept": ["gebe"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "dir Bescheid, sobald der Vertrag unterschrieben ist."}
+      ],
+      "hint": "Bescheid geben"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "3a", "accept": ["habe"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "Angst vor dem Gewitter heute Abend."}
+      ],
+      "hint": "Angst haben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir haben eine Entscheidung"},
+        {"type": "blank", "id": "4a", "accept": ["getroffen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und sagen euch morgen Bescheid."}
+      ],
+      "hint": "eine Entscheidung treffen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Chef"},
+        {"type": "blank", "id": "5a", "accept": ["übernimmt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "die Verantwortung für den Umbau."}
+      ],
+      "hint": "Verantwortung übernehmen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin hat uns beim Umzug große Hilfe"},
+        {"type": "blank", "id": "6a", "accept": ["geleistet"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und bringt morgen Kuchen."}
+      ],
+      "hint": "Hilfe leisten"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Stadt"},
+        {"type": "blank", "id": "7a", "accept": ["stellt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "den Raum kostenlos zur Verfügung."}
+      ],
+      "hint": "zur Verfügung stellen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Beamtin"},
+        {"type": "blank", "id": "8a", "accept": ["gibt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "gern Auskunft über die neuen Fristen."}
+      ],
+      "hint": "Auskunft geben"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "9a", "accept": ["mache"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "dir einen Vorschlag für den Samstag."}
+      ],
+      "hint": "einen Vorschlag machen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "10a", "accept": ["nahm"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "am Grab Abschied von ihrer Großmutter."}
+      ],
+      "hint": "Abschied nehmen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Bitte"},
+        {"type": "blank", "id": "11a", "accept": ["halten"], "tags": ["form:imperativ"]},
+        {"type": "text", "text": "Sie Abstand zu den Gleisen."}
+      ],
+      "hint": "Abstand halten"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Das Hochwasser hat in der Straße großen Schaden"},
+        {"type": "blank", "id": "12a", "accept": ["angerichtet"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und die Keller überflutet."}
+      ],
+      "hint": "Schaden anrichten"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Idee"},
+        {"type": "blank", "id": "13a", "accept": ["fand"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "bei allen im Team großen Anklang."}
+      ],
+      "hint": "Anklang finden"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "14a", "accept": ["unternahm"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "nach dem Sturz einen zweiten Versuch."}
+      ],
+      "hint": "einen Versuch unternehmen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "15a", "accept": ["hast"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "Recht, der Termin war zu früh."}
+      ],
+      "hint": "Recht haben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Minister wird morgen zum Thema Stellung"},
+        {"type": "blank", "id": "16a", "accept": ["nehmen"], "tags": ["form:futur"]},
+        {"type": "text", "text": "und Fragen beantworten."}
+      ],
+      "hint": "Stellung nehmen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Eltern wollen auf die Schulwahl Einfluss"},
+        {"type": "blank", "id": "17a", "accept": ["nehmen"], "tags": ["form:infinitiv"]},
+        {"type": "text", "text": "und reden viel darüber."}
+      ],
+      "hint": "Einfluss nehmen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "18a", "accept": ["führen"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "morgen ein wichtiges Gespräch mit dem Vermieter."}
+      ],
+      "hint": "ein Gespräch führen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir haben einen Termin beim Arzt"},
+        {"type": "blank", "id": "19a", "accept": ["vereinbart"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "für nächsten Dienstag."}
+      ],
+      "hint": "einen Termin vereinbaren"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "20a", "accept": ["trägt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "keine Schuld an dem Unfall."}
+      ],
+      "hint": "Schuld tragen"
+    }
+  ]
+}

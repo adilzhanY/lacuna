@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.ms_colloquial",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Das Konzert war"},
+        {"type": "blank", "id": "1a", "accept": ["krass"], "tags": ["form:colloquial_adjective"]},
+        {"type": "text", "text": "gestern Abend."}
+      ],
+      "hint": "beeindruckend, sehr stark"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "2a", "accept": ["ne"], "tags": ["form:colloquial_contraction"]},
+        {"type": "text", "text": "Geschichte, die wir kennen."}
+      ],
+      "hint": "eine"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "3a", "accept": ["quatscht"], "tags": ["form:colloquial_verb"]},
+        {"type": "text", "text": "in der Pause ständig mit allen."}
+      ],
+      "hint": "quatschen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "4a", "accept": ["keine Ahnung"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "wo mein Handy ist."}
+      ],
+      "hint": "nichts wissen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Typ"},
+        {"type": "blank", "id": "5a", "accept": ["nervt"], "tags": ["form:colloquial_verb"]},
+        {"type": "text", "text": "mich total."}
+      ],
+      "hint": "nerven"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "6a", "accept": ["halt"], "tags": ["form:colloquial_particle"]},
+        {"type": "text", "text": "so, wenn man spät kommt."}
+      ],
+      "hint": "eben, nun einmal"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "blank", "id": "7a", "accept": ["Eh"], "tags": ["form:filler"]},
+        {"type": "text", "text": "ich glaube, der Bus fährt schon."}
+      ],
+      "hint": "Füllwort beim Überlegen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Das ist mir"},
+        {"type": "blank", "id": "8a", "accept": ["Wurst"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "ehrlich gesagt."}
+      ],
+      "hint": "egal sein"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "9a", "accept": ["hab keinen Bock", "habe keinen Bock"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "auf Sport."}
+      ],
+      "hint": "keine Lust haben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Mach dir"},
+        {"type": "blank", "id": "10a", "accept": ["keinen Stress"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "das schaffen wir schon."}
+      ],
+      "hint": "sich nicht aufregen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Lass uns"},
+        {"type": "blank", "id": "11a", "accept": ["mal"], "tags": ["form:colloquial_particle"]},
+        {"type": "text", "text": "reden."}
+      ],
+      "hint": "einfach, kurz"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Das ist ja"},
+        {"type": "blank", "id": "12a", "accept": ["voll"], "tags": ["form:colloquial_particle"]},
+        {"type": "text", "text": "nett von dir."}
+      ],
+      "hint": "sehr, ganz"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "13a", "accept": ["hau"], "tags": ["form:colloquial_verb"]},
+        {"type": "text", "text": "jetzt ab."}
+      ],
+      "hint": "abhauen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Kaffee"},
+        {"type": "blank", "id": "14a", "accept": ["is"], "tags": ["form:colloquial_contraction"]},
+        {"type": "text", "text": "kalt."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Hast du"},
+        {"type": "blank", "id": "15a", "accept": ["'nen"], "tags": ["form:colloquial_contraction"]},
+        {"type": "text", "text": "Euro fürs Parkticket?"}
+      ],
+      "hint": "einen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Komm"},
+        {"type": "blank", "id": "16a", "accept": ["schon"], "tags": ["form:colloquial_particle"]},
+        {"type": "text", "text": "endlich, wir sind spät dran!"}
+      ],
+      "hint": "drängen, auffordern"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "17a", "accept": ["hab's"], "tags": ["form:colloquial_contraction"]},
+        {"type": "text", "text": "vergessen."}
+      ],
+      "hint": "haben, es"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich bin"},
+        {"type": "blank", "id": "18a", "accept": ["total durch"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "nach der Arbeit."}
+      ],
+      "hint": "erschöpft sein"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Lass"},
+        {"type": "blank", "id": "19a", "accept": ["gut"], "tags": ["form:idiom"]},
+        {"type": "text", "text": "sein, ich regle das."}
+      ],
+      "hint": "nicht weiter darüber reden"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Hä", "Häh"], "tags": ["form:interjection"]},
+        {"type": "text", "text": "was meinst du damit?"}
+      ],
+      "hint": "wie bitte, nicht verstanden"
+    }
+  ]
+}

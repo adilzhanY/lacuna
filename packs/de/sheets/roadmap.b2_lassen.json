@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.b2_lassen",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["lasse"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "mir die Haare schneiden."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Mein Vater"},
+        {"type": "blank", "id": "2a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "das Auto jeden Monat in der Werkstatt reparieren."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "3a", "accept": ["lassen"], "tags": ["form:present", "number:plural", "trigger:lassen"]},
+        {"type": "text", "text": "die Heizung im Keller prüfen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "4a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "das Kind nicht allein auf dem Spielplatz spielen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "5a", "accept": ["lasse"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "meinen Laptop morgen im Laden überprüfen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe mir den Zahn ziehen"},
+        {"type": "blank", "id": "6a", "accept": ["lassen"], "tags": ["form:perfekt", "trigger:lassen"]},
+        {"type": "text", "text": "und spüre jetzt nichts mehr."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er hat sein Auto reparieren"},
+        {"type": "blank", "id": "7a", "accept": ["lassen"], "tags": ["form:perfekt", "trigger:lassen"]},
+        {"type": "text", "text": "und ist jetzt zufrieden."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sie hat sich die Haare färben"},
+        {"type": "blank", "id": "8a", "accept": ["lassen"], "tags": ["form:perfekt", "trigger:lassen"]},
+        {"type": "text", "text": "und sieht jetzt viel jünger aus."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wir haben die Wohnung streichen"},
+        {"type": "blank", "id": "9a", "accept": ["lassen"], "tags": ["form:perfekt", "trigger:lassen"]},
+        {"type": "text", "text": "und das hat viel Geld gekostet."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wir lassen das Auto"},
+        {"type": "blank", "id": "10a", "accept": ["waschen"], "tags": ["form:infinitive", "trigger:lassen"]},
+        {"type": "text", "text": "und fahren dann in die Stadt."}
+      ],
+      "hint": "waschen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Mutter lässt ihre Kinder im Garten"},
+        {"type": "blank", "id": "11a", "accept": ["spielen"], "tags": ["form:infinitive", "trigger:lassen"]},
+        {"type": "text", "text": "und kocht in der Küche."}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Morgen"},
+        {"type": "blank", "id": "12a", "accept": ["lasse"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "ich mir einen neuen Pass ausstellen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Warum"},
+        {"type": "blank", "id": "13a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "sie ihr Auto nicht selbst waschen?"}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "14a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "mich morgen noch einmal untersuchen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Chef"},
+        {"type": "blank", "id": "15a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "uns am Freitag früher gehen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Meine Oma"},
+        {"type": "blank", "id": "16a", "accept": ["lässt"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "sich jede Woche die Haare machen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Eltern"},
+        {"type": "blank", "id": "17a", "accept": ["lassen"], "tags": ["form:present", "number:plural", "trigger:lassen"]},
+        {"type": "text", "text": "ihre Kinder im Sommer einen Sprachkurs machen."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Lass"], "tags": ["form:imperative", "trigger:lassen"]},
+        {"type": "text", "text": "das Essen nicht kalt werden."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Damals"},
+        {"type": "blank", "id": "19a", "accept": ["ließ"], "tags": ["form:praeteritum", "trigger:lassen"]},
+        {"type": "text", "text": "er sein Haus renovieren."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "20a", "accept": ["lasse"], "tags": ["form:present", "trigger:lassen"]},
+        {"type": "text", "text": "die Kinder heute bei meiner Mutter schlafen."}
+      ],
+      "hint": "lassen"
+    }
+  ]
+}

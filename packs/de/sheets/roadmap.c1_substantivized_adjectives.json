@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c1_substantivized_adjectives",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich helfe dem"},
+        {"type": "blank", "id": "1a", "accept": ["Alten"], "tags": ["case:dative", "declension:weak"]},
+        {"type": "text", "text": "beim Einkaufen."}
+      ],
+      "hint": "alt"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Arzt behandelt die"},
+        {"type": "blank", "id": "2a", "accept": ["Kranken"], "tags": ["number:plural", "case:accusative", "declension:weak"]},
+        {"type": "text", "text": "im Krankenhaus."}
+      ],
+      "hint": "krank"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ein"},
+        {"type": "blank", "id": "3a", "accept": ["Fremder"], "tags": ["gender:masculine", "case:nominative", "declension:mixed"]},
+        {"type": "text", "text": "fragt nach dem Weg."}
+      ],
+      "hint": "fremd"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich habe etwas"},
+        {"type": "blank", "id": "4a", "accept": ["Neues"], "tags": ["gender:neuter", "case:accusative", "declension:strong"]},
+        {"type": "text", "text": "gehört."}
+      ],
+      "hint": "neu"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Das ist nichts"},
+        {"type": "blank", "id": "5a", "accept": ["Wichtiges"], "tags": ["gender:neuter", "case:nominative", "declension:strong"]},
+        {"type": "text", "text": "für dich."}
+      ],
+      "hint": "wichtig"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich wünsche dir alles"},
+        {"type": "blank", "id": "6a", "accept": ["Gute"], "tags": ["gender:neuter", "case:accusative", "declension:strong"]},
+        {"type": "text", "text": "zum Geburtstag!"}
+      ],
+      "hint": "gut"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie ist eine"},
+        {"type": "blank", "id": "7a", "accept": ["Bekannte"], "tags": ["gender:feminine", "case:nominative", "declension:mixed"]},
+        {"type": "text", "text": "von meiner Mutter."}
+      ],
+      "hint": "bekannt"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Er ist ein"},
+        {"type": "blank", "id": "8a", "accept": ["Angestellter"], "tags": ["gender:masculine", "case:nominative", "declension:mixed"]},
+        {"type": "text", "text": "bei der Bank."}
+      ],
+      "hint": "angestellt"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Stadt sucht"},
+        {"type": "blank", "id": "9a", "accept": ["Freiwillige"], "tags": ["number:plural", "case:accusative", "declension:strong"]},
+        {"type": "text", "text": "für das Fest."}
+      ],
+      "hint": "freiwillig"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wir sprechen über das"},
+        {"type": "blank", "id": "10a", "accept": ["Neue"], "tags": ["gender:neuter", "case:accusative", "declension:weak"]},
+        {"type": "text", "text": "im Büro."}
+      ],
+      "hint": "neu"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Am Grab gedenken wir des"},
+        {"type": "blank", "id": "11a", "accept": ["Verstorbenen"], "tags": ["gender:masculine", "case:genitive", "declension:weak"]},
+        {"type": "text", "text": "mit einer Kerze."}
+      ],
+      "hint": "verstorben"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Stadt bietet den"},
+        {"type": "blank", "id": "12a", "accept": ["Jungen"], "tags": ["number:plural", "case:dative", "declension:weak"]},
+        {"type": "text", "text": "kostenlose Kurse an."}
+      ],
+      "hint": "jung"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Das ist das"},
+        {"type": "blank", "id": "13a", "accept": ["Beste"], "tags": ["gender:neuter", "case:nominative", "declension:weak"]},
+        {"type": "text", "text": "an der Sache."}
+      ],
+      "hint": "gut"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich habe keinen"},
+        {"type": "blank", "id": "14a", "accept": ["Verwandten"], "tags": ["gender:masculine", "case:accusative", "declension:mixed"]},
+        {"type": "text", "text": "in der Stadt."}
+      ],
+      "hint": "verwandt"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Es gibt viel"},
+        {"type": "blank", "id": "15a", "accept": ["Interessantes"], "tags": ["gender:neuter", "case:accusative", "declension:strong"]},
+        {"type": "text", "text": "zu erzählen."}
+      ],
+      "hint": "interessant"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "16a", "accept": ["Reisenden"], "tags": ["number:plural", "case:nominative", "declension:weak"]},
+        {"type": "text", "text": "warten am Gleis."}
+      ],
+      "hint": "reisend"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "17a", "accept": ["Schwangere"], "tags": ["gender:feminine", "case:nominative", "declension:weak"]},
+        {"type": "text", "text": "im Bus bekam einen Sitzplatz."}
+      ],
+      "hint": "schwanger"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Sohn hilft der"},
+        {"type": "blank", "id": "18a", "accept": ["Alten"], "tags": ["gender:feminine", "case:dative", "declension:weak"]},
+        {"type": "text", "text": "beim Umzug."}
+      ],
+      "hint": "alt"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich brauche etwas"},
+        {"type": "blank", "id": "19a", "accept": ["Warmes"], "tags": ["gender:neuter", "case:accusative", "declension:strong"]},
+        {"type": "text", "text": "zum Anziehen."}
+      ],
+      "hint": "warm"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der"},
+        {"type": "blank", "id": "20a", "accept": ["Verletzte"], "tags": ["gender:masculine", "case:nominative", "declension:weak"]},
+        {"type": "text", "text": "wurde ins Krankenhaus gebracht."}
+      ],
+      "hint": "verletzt"
+    }
+  ]
+}

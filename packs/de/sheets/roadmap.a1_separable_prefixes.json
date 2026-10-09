@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1_separable_prefixes",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich rufe dich morgen"},
+        {"type": "blank", "id": "1a", "accept": ["an"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und sage dir Bescheid."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Bus kommt um acht Uhr"},
+        {"type": "blank", "id": "2a", "accept": ["an"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und wir gehen sofort zur Haltestelle."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder holt mich am Bahnhof"},
+        {"type": "blank", "id": "3a", "accept": ["ab"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und wir fahren zusammen nach Hause."}
+      ],
+      "hint": "abholen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich stehe im Sommer früh"},
+        {"type": "blank", "id": "4a", "accept": ["auf"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und gehe am Fluss spazieren."}
+      ],
+      "hint": "aufstehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei macht um sechs"},
+        {"type": "blank", "id": "5a", "accept": ["auf"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und ich kaufe frische Brötchen."}
+      ],
+      "hint": "aufmachen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich schalte den Fernseher"},
+        {"type": "blank", "id": "6a", "accept": ["aus"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und gehe ins Bett."}
+      ],
+      "hint": "ausschalten"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Lehrer teilt die Gruppen"},
+        {"type": "blank", "id": "7a", "accept": ["ein"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und erklärt die Regeln."}
+      ],
+      "hint": "einteilen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wir fahren morgen früh"},
+        {"type": "blank", "id": "8a", "accept": ["los"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und kommen am Abend zurück."}
+      ],
+      "hint": "losfahren"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Vorlesung fängt um neun Uhr"},
+        {"type": "blank", "id": "9a", "accept": ["an"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und ich bin schon im Raum."}
+      ],
+      "hint": "anfangen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich räume am Abend die Küche"},
+        {"type": "blank", "id": "10a", "accept": ["auf"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und putze den Boden."}
+      ],
+      "hint": "aufräumen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der Vermieter kommt am Freitag"},
+        {"type": "blank", "id": "11a", "accept": ["vorbei"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und sieht sich die Wohnung an."}
+      ],
+      "hint": "vorbeikommen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir steigen in Köln"},
+        {"type": "blank", "id": "12a", "accept": ["um"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und fahren weiter nach Berlin."}
+      ],
+      "hint": "umsteigen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Das Konzert fällt leider"},
+        {"type": "blank", "id": "13a", "accept": ["aus"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und wir gehen nach Hause."}
+      ],
+      "hint": "ausfallen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Sie füllt das Formular"},
+        {"type": "blank", "id": "14a", "accept": ["aus"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und schickt es heute ab."}
+      ],
+      "hint": "ausfüllen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Chef ruft mich"},
+        {"type": "blank", "id": "15a", "accept": ["zurück"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und erklärt die Lage."}
+      ],
+      "hint": "zurückrufen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich lade meine Freunde"},
+        {"type": "blank", "id": "16a", "accept": ["ein"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und koche für sie."}
+      ],
+      "hint": "einladen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich schreibe die Nummer"},
+        {"type": "blank", "id": "17a", "accept": ["auf"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und lege den Zettel in die Tasche."}
+      ],
+      "hint": "aufschreiben"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Sie sieht mich lange"},
+        {"type": "blank", "id": "18a", "accept": ["an"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und lächelt."}
+      ],
+      "hint": "ansehen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir laden die Fotos"},
+        {"type": "blank", "id": "19a", "accept": ["hoch"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "und schicken den Link an Tom."}
+      ],
+      "hint": "hochladen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Kommst du heute Abend"},
+        {"type": "blank", "id": "20a", "accept": ["mit"], "tags": ["form:separable_prefix"]},
+        {"type": "text", "text": "ins Kino?"}
+      ],
+      "hint": "mitkommen"
+    }
+  ]
+}

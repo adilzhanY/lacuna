@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1_werden",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Morgen"},
+        {"type": "blank", "id": "1a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "es regnen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "2a", "accept": ["werde"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "nächste Woche meine Eltern besuchen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "3a", "accept": ["wirst"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "bestimmt die Prüfung bestehen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["werden"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "am Samstag zusammen einkaufen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Das Brot"},
+        {"type": "blank", "id": "5a", "accept": ["wird"], "tags": ["form:passive", "form:praesens", "number:singular"]},
+        {"type": "text", "text": "jeden Morgen frisch gebacken."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Die Post"},
+        {"type": "blank", "id": "6a", "accept": ["wird"], "tags": ["form:passive", "form:praesens", "number:singular"]},
+        {"type": "text", "text": "um zehn Uhr zugestellt."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Wohnungen"},
+        {"type": "blank", "id": "7a", "accept": ["werden"], "tags": ["form:passive", "form:praesens", "number:plural"]},
+        {"type": "text", "text": "im Sommer renoviert."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Fahrkarte"},
+        {"type": "blank", "id": "8a", "accept": ["wurde"], "tags": ["form:passive", "form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "gestern am Schalter verkauft."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der Vertrag"},
+        {"type": "blank", "id": "9a", "accept": ["wurde"], "tags": ["form:passive", "form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "letzte Woche unterschrieben."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Kinder"},
+        {"type": "blank", "id": "10a", "accept": ["wurden"], "tags": ["form:passive", "form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "von der Lehrerin gelobt."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Es"},
+        {"type": "blank", "id": "11a", "accept": ["wird"], "tags": ["form:praesens", "form:werden_main", "number:singular"]},
+        {"type": "text", "text": "langsam kalt."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Mein Sohn"},
+        {"type": "blank", "id": "12a", "accept": ["wird"], "tags": ["form:futur_1", "form:werden_main", "number:singular"]},
+        {"type": "text", "text": "nächstes Jahr Ingenieur."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Im Jahr 2010"},
+        {"type": "blank", "id": "13a", "accept": ["wurde"], "tags": ["form:praeteritum", "form:werden_main", "number:singular"]},
+        {"type": "text", "text": "sie Mutter."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Das Wetter"},
+        {"type": "blank", "id": "14a", "accept": ["wird"], "tags": ["form:praesens", "form:werden_main", "number:singular"]},
+        {"type": "text", "text": "am Wochenende besser."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Es"},
+        {"type": "blank", "id": "15a", "accept": ["wurde"], "tags": ["form:praeteritum", "form:werden_main", "number:singular"]},
+        {"type": "text", "text": "schon dunkel, als wir ankamen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "16a", "accept": ["würde"], "tags": ["form:konjunktiv_2", "number:singular"]},
+        {"type": "text", "text": "gern in Berlin wohnen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Wenn ich mehr Zeit hätte,"},
+        {"type": "blank", "id": "17a", "accept": ["würde"], "tags": ["form:konjunktiv_2", "number:singular"]},
+        {"type": "text", "text": "ich öfter Sport machen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ohne Hilfe"},
+        {"type": "blank", "id": "18a", "accept": ["würden"], "tags": ["form:konjunktiv_2", "number:plural"]},
+        {"type": "text", "text": "wir das nie schaffen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ihr"},
+        {"type": "blank", "id": "19a", "accept": ["werdet"], "tags": ["form:futur_1", "number:plural"]},
+        {"type": "text", "text": "sicher bald den Weg finden."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "20a", "accept": ["wird"], "tags": ["form:futur_1", "number:singular"]},
+        {"type": "text", "text": "wohl krank sein."}
+      ],
+      "hint": "werden"
+    }
+  ]
+}

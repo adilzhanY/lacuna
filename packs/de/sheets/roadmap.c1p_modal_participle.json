@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c1p_modal_participle",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Er hat gestern nicht mitkommen"},
+        {"type": "blank", "id": "1a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen der Arbeit."}
+      ],
+      "hint": "mitkommen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Sie hat den ganzen Tag nicht schlafen"},
+        {"type": "blank", "id": "2a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen des Lärms von der Baustelle."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich habe am Montag nicht anrufen"},
+        {"type": "blank", "id": "3a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen des kaputten Telefons."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich habe gestern nicht lange anstehen"},
+        {"type": "blank", "id": "4a", "accept": ["müssen"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "bei der Post."}
+      ],
+      "hint": "anstehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Sie hat ihren Vater im Krankenhaus nicht besuchen"},
+        {"type": "blank", "id": "5a", "accept": ["dürfen"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen der Ansteckungsgefahr."}
+      ],
+      "hint": "besuchen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Er hat auf der Hochzeit nicht tanzen"},
+        {"type": "blank", "id": "6a", "accept": ["wollen"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "trotz der Bitten seiner Frau."}
+      ],
+      "hint": "tanzen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er hat den Brief nicht lesen"},
+        {"type": "blank", "id": "7a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "ohne seine Brille."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Kinder haben nicht draußen spielen"},
+        {"type": "blank", "id": "8a", "accept": ["dürfen"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "bei dem Gewitter."}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Sie hat den Schlüssel nicht finden"},
+        {"type": "blank", "id": "9a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "im Dunkeln."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich habe die Tür nicht öffnen"},
+        {"type": "blank", "id": "10a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen des fehlenden Schlüssels."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Du hast gestern nicht zur Arbeit fahren"},
+        {"type": "blank", "id": "11a", "accept": ["müssen"], "tags": ["form:ersatzinfinitiv", "form:perfekt"]},
+        {"type": "text", "text": "wegen des Feiertags."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir hätten dir gern beim Umzug helfen"},
+        {"type": "blank", "id": "12a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:konjunktiv_ii"]},
+        {"type": "text", "text": "trotz der Arbeit."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Sie hätte am Abend gern länger bleiben"},
+        {"type": "blank", "id": "13a", "accept": ["können"], "tags": ["form:ersatzinfinitiv", "form:konjunktiv_ii"]},
+        {"type": "text", "text": "statt nach Hause zu gehen."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich bin nicht zur Party gegangen, weil ich das nicht"},
+        {"type": "blank", "id": "14a", "accept": ["gewollt"], "tags": ["form:modal_participle", "form:perfekt"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Sie hat den Job angenommen, obwohl sie es nicht"},
+        {"type": "blank", "id": "15a", "accept": ["gewollt"], "tags": ["form:modal_participle", "form:plusquamperfekt"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Lehrer war erstaunt, dass er das Gedicht auswendig"},
+        {"type": "blank", "id": "16a", "accept": ["gekonnt"], "tags": ["form:modal_participle", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Wir haben alles getan, was wir"},
+        {"type": "blank", "id": "17a", "accept": ["gekonnt"], "tags": ["form:modal_participle", "form:perfekt"]},
+        {"type": "text", "text": "haben."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich habe den Umweg genommen, obwohl ich das nicht"},
+        {"type": "blank", "id": "18a", "accept": ["gemusst"], "tags": ["form:modal_participle", "form:konjunktiv_ii"]},
+        {"type": "text", "text": "hätte."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Sie hat nicht erzählt, was sie"},
+        {"type": "blank", "id": "19a", "accept": ["gesollt"], "tags": ["form:modal_participle", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Ergebnis war nicht das, was wir"},
+        {"type": "blank", "id": "20a", "accept": ["gewollt"], "tags": ["form:modal_participle", "form:perfekt"]},
+        {"type": "text", "text": "haben."}
+      ],
+      "hint": "wollen"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.ms_fewer_errors",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Das Spiel fällt"},
+        {"type": "blank", "id": "1a", "accept": ["wegen"], "tags": ["trigger:preposition_wegen", "case:genitive"]},
+        {"type": "text", "text": "des starken Regens aus."}
+      ],
+      "hint": "Regen, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "blank", "id": "2a", "accept": ["Trotz"], "tags": ["trigger:preposition_trotz", "case:genitive"]},
+        {"type": "text", "text": "des Verkehrs bin ich pünktlich gekommen."}
+      ],
+      "hint": "Verkehr, m"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das Café liegt dem Bahnhof"},
+        {"type": "blank", "id": "3a", "accept": ["gegenüber"], "tags": ["trigger:postposition_gegenueber", "case:dative"]},
+        {"type": "text", "text": "und ist sehr beliebt."}
+      ],
+      "hint": "Bahnhof, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich wünschte, ich"},
+        {"type": "blank", "id": "4a", "accept": ["hätte"], "tags": ["form:konjunktiv_ii", "trigger:wuenschen"]},
+        {"type": "text", "text": "mehr Zeit."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Heute gibt es"},
+        {"type": "blank", "id": "5a", "accept": ["keinen"], "tags": ["case:accusative", "gender:masculine", "trigger:negation_kein"]},
+        {"type": "text", "text": "freien Termin mehr."}
+      ],
+      "hint": "Termin, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich warte"},
+        {"type": "blank", "id": "6a", "accept": ["auf"], "tags": ["trigger:verb_warten_auf", "case:accusative"]},
+        {"type": "text", "text": "den Bus seit zehn Minuten."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich bitte dich"},
+        {"type": "blank", "id": "7a", "accept": ["um"], "tags": ["trigger:verb_bitten_um", "case:accusative"]},
+        {"type": "text", "text": "Hilfe bei den Hausaufgaben."}
+      ],
+      "hint": "bitten"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich denke oft"},
+        {"type": "blank", "id": "8a", "accept": ["an"], "tags": ["trigger:verb_denken_an", "case:accusative"]},
+        {"type": "text", "text": "meine Eltern in Polen."}
+      ],
+      "hint": "denken"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der Kollege,"},
+        {"type": "blank", "id": "9a", "accept": ["dem"], "tags": ["case:dative", "form:relative_pronoun"]},
+        {"type": "text", "text": "ich letzte Woche geholfen habe, ist krank."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wir gehen den Fluss"},
+        {"type": "blank", "id": "10a", "accept": ["entlang"], "tags": ["trigger:postposition_entlang", "case:accusative"]},
+        {"type": "text", "text": "bis zur Brücke."}
+      ],
+      "hint": "Fluss, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Aufgrund"},
+        {"type": "blank", "id": "11a", "accept": ["des"], "tags": ["trigger:preposition_aufgrund", "case:genitive", "gender:neuter"]},
+        {"type": "text", "text": "schlechten Wetters bleibt der Markt heute geschlossen."}
+      ],
+      "hint": "Wetter, n"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Während"},
+        {"type": "blank", "id": "12a", "accept": ["der"], "tags": ["trigger:preposition_waehrend", "case:dative", "gender:feminine"]},
+        {"type": "text", "text": "Pause darf man nicht telefonieren."}
+      ],
+      "hint": "Pause, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wenn er doch nur früher"},
+        {"type": "blank", "id": "13a", "accept": ["gekommen"], "tags": ["form:plusquamperfekt_konjunktiv", "word_order:verb_final"]},
+        {"type": "text", "text": "wäre."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "14a", "accept": ["ist"], "tags": ["form:perfekt", "trigger:verb_fahren_sein"]},
+        {"type": "text", "text": "gestern nach Hamburg gefahren."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "15a", "accept": ["in"], "tags": ["trigger:fixed_phrase_in_ordnung", "case:dative"]},
+        {"type": "text", "text": "Ordnung, danke."}
+      ],
+      "hint": "Ordnung, f"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich frage mich,"},
+        {"type": "blank", "id": "16a", "accept": ["ob"], "tags": ["trigger:conjunction_ob"]},
+        {"type": "text", "text": "er morgen kommt."}
+      ],
+      "hint": "fragen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Es ist schade,"},
+        {"type": "blank", "id": "17a", "accept": ["dass"], "tags": ["trigger:conjunction_dass", "spelling:dass"]},
+        {"type": "text", "text": "du nicht kommen kannst."}
+      ],
+      "hint": "schade"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich lasse mir die Haare"},
+        {"type": "blank", "id": "18a", "accept": ["schneiden"], "tags": ["form:infinitive_without_zu", "trigger:verb_lassen"]},
+        {"type": "text", "text": "bei meiner Lieblingsfriseurin."}
+      ],
+      "hint": "lassen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Statt"},
+        {"type": "blank", "id": "19a", "accept": ["des"], "tags": ["trigger:preposition_statt", "case:genitive", "gender:masculine"]},
+        {"type": "text", "text": "Busses nehme ich das Fahrrad."}
+      ],
+      "hint": "Bus, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich verabschiede mich"},
+        {"type": "blank", "id": "20a", "accept": ["von"], "tags": ["trigger:verb_verabschieden_von", "case:dative"]},
+        {"type": "text", "text": "meinen Freunden."}
+      ],
+      "hint": "sich verabschieden"
+    }
+  ]
+}

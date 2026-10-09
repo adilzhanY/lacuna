@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1p_numbers_21_100",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Zug nach Hamburg kostet"},
+        {"type": "blank", "id": "1a", "accept": ["einundzwanzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "21"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Meine Oma ist schon"},
+        {"type": "blank", "id": "2a", "accept": ["dreiundachtzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahre alt."}
+      ],
+      "hint": "83"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung hat"},
+        {"type": "blank", "id": "3a", "accept": ["achtundvierzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Quadratmeter."}
+      ],
+      "hint": "48"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir fahren noch"},
+        {"type": "blank", "id": "4a", "accept": ["zweiundvierzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Minuten bis zum Flughafen."}
+      ],
+      "hint": "42"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerin hat heute"},
+        {"type": "blank", "id": "5a", "accept": ["hundert"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Brötchen verkauft."}
+      ],
+      "hint": "100"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das Sofa im Möbelhaus kostet"},
+        {"type": "blank", "id": "6a", "accept": ["siebenundsechzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "67"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Meine Tante wird im Juni"},
+        {"type": "blank", "id": "7a", "accept": ["fünfundsechzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahre alt."}
+      ],
+      "hint": "65"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Das Fahrrad im Secondhandladen kostet"},
+        {"type": "blank", "id": "8a", "accept": ["neunundneunzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "99"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Im Bioladen kostet das Kilo Äpfel"},
+        {"type": "blank", "id": "9a", "accept": ["sechsundzwanzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Cent."}
+      ],
+      "hint": "26"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Unsere Schule hat"},
+        {"type": "blank", "id": "10a", "accept": ["dreißig"], "tags": ["form:cardinal_number", "spelling:ss"]},
+        {"type": "text", "text": "Klassen."}
+      ],
+      "hint": "30"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Fahrt mit dem Regionalzug nach Köln dauert"},
+        {"type": "blank", "id": "11a", "accept": ["zweiundsiebzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Minuten."}
+      ],
+      "hint": "72"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Im Supermarkt kaufe ich"},
+        {"type": "blank", "id": "12a", "accept": ["fünfzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Eier."}
+      ],
+      "hint": "50"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Parkplatz hat"},
+        {"type": "blank", "id": "13a", "accept": ["achtzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Stellplätze."}
+      ],
+      "hint": "80"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mein Onkel ist seit"},
+        {"type": "blank", "id": "14a", "accept": ["vierzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahren Busfahrer."}
+      ],
+      "hint": "40"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Reparatur am Handy kostet"},
+        {"type": "blank", "id": "15a", "accept": ["sechsundneunzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "96"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Film dauert"},
+        {"type": "blank", "id": "16a", "accept": ["dreiundfünfzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Minuten."}
+      ],
+      "hint": "53"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "In der Klasse sitzen"},
+        {"type": "blank", "id": "17a", "accept": ["siebenundzwanzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Kinder."}
+      ],
+      "hint": "27"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Für die Party habe ich"},
+        {"type": "blank", "id": "18a", "accept": ["achtundsechzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Gäste eingeladen."}
+      ],
+      "hint": "68"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Der Bus fährt alle"},
+        {"type": "blank", "id": "19a", "accept": ["fünfundvierzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Minuten."}
+      ],
+      "hint": "45"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Es hat heute"},
+        {"type": "blank", "id": "20a", "accept": ["fünfunddreißig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Grad."}
+      ],
+      "hint": "35"
+    }
+  ]
+}

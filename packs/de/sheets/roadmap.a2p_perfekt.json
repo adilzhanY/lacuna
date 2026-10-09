@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.a2p_perfekt",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich habe Brot"},
+        {"type": "blank", "id": "1a", "accept": ["gekauft"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und die Milch vergessen."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "2a", "accept": ["bin"], "tags": ["form:auxiliary_sein", "word_order:verb_second"]},
+        {"type": "text", "text": "ich mit dem Bus nach Hause gefahren."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Hast"], "tags": ["form:auxiliary_haben", "word_order:verb_second"]},
+        {"type": "text", "text": "du schon mit dem Chef gesprochen?"}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["sind"], "tags": ["form:auxiliary_sein"]},
+        {"type": "text", "text": "gestern spät nach Hause gekommen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Zug ist heute früh"},
+        {"type": "blank", "id": "5a", "accept": ["ausgefallen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und ich bin zu spät gekommen."}
+      ],
+      "hint": "ausfallen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Am Wochenende"},
+        {"type": "blank", "id": "6a", "accept": ["haben"], "tags": ["form:auxiliary_haben", "word_order:verb_second"]},
+        {"type": "text", "text": "wir meine Eltern in Leipzig besucht."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Kinder haben im Hof"},
+        {"type": "blank", "id": "7a", "accept": ["gespielt"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und dabei ein Fenster zerbrochen."}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Hast du die Rechnung"},
+        {"type": "blank", "id": "8a", "accept": ["bezahlt"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und die Miete überwiesen?"}
+      ],
+      "hint": "bezahlen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin hat gestern Abend"},
+        {"type": "blank", "id": "9a", "accept": ["angerufen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und nach dir gefragt."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich bin heute zu Fuß zur Arbeit"},
+        {"type": "blank", "id": "10a", "accept": ["gegangen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und war pünktlich."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Wir haben gestern Abend"},
+        {"type": "blank", "id": "11a", "accept": ["ferngesehen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und dann sofort geschlafen."}
+      ],
+      "hint": "fernsehen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Der Arzt hat mich"},
+        {"type": "blank", "id": "12a", "accept": ["untersucht"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und ein Rezept geschrieben."}
+      ],
+      "hint": "untersuchen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder ist letzte Woche nach Berlin"},
+        {"type": "blank", "id": "13a", "accept": ["gezogen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und wohnt jetzt in Neukölln."}
+      ],
+      "hint": "ziehen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wir haben die Wohnung"},
+        {"type": "blank", "id": "14a", "accept": ["gesehen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und sofort den Vertrag unterschrieben."}
+      ],
+      "hint": "sehen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich habe mein Handy"},
+        {"type": "blank", "id": "15a", "accept": ["verloren"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und sofort die Bank angerufen."}
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerin hat mir zwei Brötchen"},
+        {"type": "blank", "id": "16a", "accept": ["eingepackt"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und einen Kaffee dazugegeben."}
+      ],
+      "hint": "einpacken"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich bin im Sommer in Wien"},
+        {"type": "blank", "id": "17a", "accept": ["geblieben"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und habe viel gelesen."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Kollege hat die E-Mail"},
+        {"type": "blank", "id": "18a", "accept": ["geschrieben"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und sie dem Chef geschickt."}
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Am Montag ist die Waschmaschine"},
+        {"type": "blank", "id": "19a", "accept": ["kaputtgegangen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und wir mussten zum Waschsalon."}
+      ],
+      "hint": "kaputtgehen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er sagt, dass er gestern in Köln"},
+        {"type": "blank", "id": "20a", "accept": ["angekommen"], "tags": ["form:perfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "ist."}
+      ],
+      "hint": "ankommen"
+    }
+  ]
+}

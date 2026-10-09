@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1p_accusative_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Das Geschenk ist für"},
+        {"type": "blank", "id": "1a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Vater."}
+      ],
+      "hint": "Vater, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich gehe heute Abend durch"},
+        {"type": "blank", "id": "2a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_durch"]},
+        {"type": "text", "text": "Park nach Hause."}
+      ],
+      "hint": "Park, m"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Er geht ohne"},
+        {"type": "blank", "id": "3a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_ohne", "declension:indefinite_article"]},
+        {"type": "text", "text": "Regenschirm aus dem Haus."}
+      ],
+      "hint": "Regenschirm, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir gehen abends um"},
+        {"type": "blank", "id": "4a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_um"]},
+        {"type": "text", "text": "Block."}
+      ],
+      "hint": "Block, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich lasse mich gegen"},
+        {"type": "blank", "id": "5a", "accept": ["die"], "tags": ["gender:feminine", "case:accusative", "trigger:preposition_gegen"]},
+        {"type": "text", "text": "Grippe impfen."}
+      ],
+      "hint": "Grippe, f"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe ein Geschenk für"},
+        {"type": "blank", "id": "6a", "accept": ["dich"], "tags": ["form:personal_pronoun", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "gekauft."}
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Im Sommer fahren wir durch"},
+        {"type": "blank", "id": "7a", "accept": ["die"], "tags": ["gender:feminine", "case:accusative", "trigger:preposition_durch"]},
+        {"type": "text", "text": "Schweiz."}
+      ],
+      "hint": "Schweiz, f"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Der Kuchen ist für"},
+        {"type": "blank", "id": "8a", "accept": ["die"], "tags": ["number:plural", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Kinder."}
+      ],
+      "hint": "Kinder, pl"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der Supermarkt ist gleich um"},
+        {"type": "blank", "id": "9a", "accept": ["die"], "tags": ["gender:feminine", "case:accusative", "trigger:preposition_um"]},
+        {"type": "text", "text": "Ecke."}
+      ],
+      "hint": "Ecke, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich habe kein Geld für"},
+        {"type": "blank", "id": "10a", "accept": ["das"], "tags": ["gender:neuter", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Taxi."}
+      ],
+      "hint": "Taxi, n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er fährt jeden Tag durch"},
+        {"type": "blank", "id": "11a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_durch"]},
+        {"type": "text", "text": "Tunnel."}
+      ],
+      "hint": "Tunnel, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Am Abend gehen wir"},
+        {"type": "blank", "id": "12a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_entlang"]},
+        {"type": "text", "text": "Fluss entlang."}
+      ],
+      "hint": "Fluss, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Mein Mann kauft ein Fahrrad für"},
+        {"type": "blank", "id": "13a", "accept": ["seine"], "tags": ["form:possessive", "gender:feminine", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Tochter."}
+      ],
+      "hint": "Tochter, f"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Hund läuft um"},
+        {"type": "blank", "id": "14a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_um"]},
+        {"type": "text", "text": "Teich."}
+      ],
+      "hint": "Teich, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Chef hat nichts gegen"},
+        {"type": "blank", "id": "15a", "accept": ["deinen"], "tags": ["form:possessive", "gender:masculine", "case:accusative", "trigger:preposition_gegen"]},
+        {"type": "text", "text": "Vorschlag."}
+      ],
+      "hint": "Vorschlag, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Geh nicht ohne"},
+        {"type": "blank", "id": "16a", "accept": ["eine"], "tags": ["gender:feminine", "case:accusative", "trigger:preposition_ohne", "declension:indefinite_article"]},
+        {"type": "text", "text": "Jacke raus."}
+      ],
+      "hint": "Jacke, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich habe einen Brief für"},
+        {"type": "blank", "id": "17a", "accept": ["meine"], "tags": ["form:possessive", "gender:feminine", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Mutter geschrieben."}
+      ],
+      "hint": "Mutter, f"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich bestelle einen Kaffee für"},
+        {"type": "blank", "id": "18a", "accept": ["meinen"], "tags": ["form:possessive", "gender:masculine", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "Kollegen."}
+      ],
+      "hint": "Kollege, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Unsere Mannschaft spielt am Samstag gegen"},
+        {"type": "blank", "id": "19a", "accept": ["die"], "tags": ["number:plural", "case:accusative", "trigger:preposition_gegen"]},
+        {"type": "text", "text": "Nachbarn."}
+      ],
+      "hint": "Nachbarn, pl"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Am Sonntag spazieren wir"},
+        {"type": "blank", "id": "20a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative", "trigger:preposition_entlang"]},
+        {"type": "text", "text": "Kanal entlang."}
+      ],
+      "hint": "Kanal, m"
+    }
+  ]
+}

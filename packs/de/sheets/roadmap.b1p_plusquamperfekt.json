@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1p_plusquamperfekt",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich wusste nicht, dass er die Miete schon"},
+        {"type": "blank", "id": "1a", "accept": ["bezahlt"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "bezahlen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "2a", "accept": ["war"], "tags": ["form:hilfsverb_sein", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "schon abgefahren, als ich am Bahnhof ankam."}
+      ],
+      "hint": "abfahren"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Vermieterin erzählte, dass wir die Wohnung schon"},
+        {"type": "blank", "id": "3a", "accept": ["besichtigt"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatten."}
+      ],
+      "hint": "besichtigen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "4a", "accept": ["hatte"], "tags": ["form:hilfsverb_haben", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "ich mein Fahrrad schon verkauft."}
+      ],
+      "hint": "verkaufen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Kinder fragten, wohin der Hund"},
+        {"type": "blank", "id": "5a", "accept": ["gelaufen"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "war."}
+      ],
+      "hint": "laufen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Als ich in die Praxis kam,"},
+        {"type": "blank", "id": "6a", "accept": ["war"], "tags": ["form:hilfsverb_sein", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "der Patient schon gegangen."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er sagte, dass er den Brief nie"},
+        {"type": "blank", "id": "7a", "accept": ["gelesen"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Nach dem Film"},
+        {"type": "blank", "id": "8a", "accept": ["hatten"], "tags": ["form:hilfsverb_haben", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "wir noch lange über das Ende gesprochen."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin erzählte, dass sie schon um sechs"},
+        {"type": "blank", "id": "9a", "accept": ["aufgestanden"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "war."}
+      ],
+      "hint": "aufstehen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Lehrerin fragte, warum du die Hausaufgaben nicht"},
+        {"type": "blank", "id": "10a", "accept": ["gemacht"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hattest."}
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Sie wollte wissen, wann der Zug in Berlin"},
+        {"type": "blank", "id": "11a", "accept": ["angekommen"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "war."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerin sagte, dass der Kunde den Kuchen schon"},
+        {"type": "blank", "id": "12a", "accept": ["bestellt"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich ging nach Hause, weil ich schon"},
+        {"type": "blank", "id": "13a", "accept": ["gegessen"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Am Morgen"},
+        {"type": "blank", "id": "14a", "accept": ["hatte"], "tags": ["form:hilfsverb_haben", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "er den Ausweis schon eingesteckt."}
+      ],
+      "hint": "einstecken"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er war sehr müde, weil er die ganze Nacht"},
+        {"type": "blank", "id": "15a", "accept": ["gearbeitet"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir kamen zu spät, weil der Bus schon"},
+        {"type": "blank", "id": "16a", "accept": ["losgefahren"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "war."}
+      ],
+      "hint": "losfahren"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Straße war nass, weil es die ganze Nacht"},
+        {"type": "blank", "id": "17a", "accept": ["geregnet"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Freundin"},
+        {"type": "blank", "id": "18a", "accept": ["hatte"], "tags": ["form:hilfsverb_haben", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "mir die Adresse schon per Nachricht geschickt."}
+      ],
+      "hint": "schicken"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich wusste nicht, wo mein Handy war, obwohl ich es am Morgen"},
+        {"type": "blank", "id": "19a", "accept": ["aufgeladen"], "tags": ["form:partizip_ii", "form:plusquamperfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hatte."}
+      ],
+      "hint": "aufladen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der Nachbar"},
+        {"type": "blank", "id": "20a", "accept": ["war"], "tags": ["form:hilfsverb_sein", "form:plusquamperfekt", "word_order:verb_second"]},
+        {"type": "text", "text": "gestern nach Spanien geflogen."}
+      ],
+      "hint": "fliegen"
+    }
+  ]
+}

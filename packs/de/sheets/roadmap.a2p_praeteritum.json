@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2p_praeteritum",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "1a", "accept": ["blieb"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "ich lange im Bett."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei"},
+        {"type": "blank", "id": "2a", "accept": ["öffnete"], "tags": ["form:praeteritum_regular"]},
+        {"type": "text", "text": "um sieben Uhr."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Letzte Woche"},
+        {"type": "blank", "id": "3a", "accept": ["waren"], "tags": ["form:praeteritum_haben_sein"]},
+        {"type": "text", "text": "wir in Hamburg."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "4a", "accept": ["hatte"], "tags": ["form:praeteritum_haben_sein"]},
+        {"type": "text", "text": "zwanzig Minuten Verspätung."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "5a", "accept": ["konnte"], "tags": ["form:praeteritum_modal"]},
+        {"type": "text", "text": "gestern nicht kommen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Warum"},
+        {"type": "blank", "id": "6a", "accept": ["wolltest"], "tags": ["form:praeteritum_modal"]},
+        {"type": "text", "text": "du nicht anrufen?"}
+      ],
+      "hint": "wollen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Meine Mutter"},
+        {"type": "blank", "id": "7a", "accept": ["rief"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "mich um acht Uhr an."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "8a", "accept": ["las"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "den Brief am Morgen zweimal."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "9a", "accept": ["arbeiteten"], "tags": ["form:praeteritum_regular"]},
+        {"type": "text", "text": "am Wochenende im Garten."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Das Konzert"},
+        {"type": "blank", "id": "10a", "accept": ["dauerte"], "tags": ["form:praeteritum_regular"]},
+        {"type": "text", "text": "bis Mitternacht."}
+      ],
+      "hint": "dauern"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der Vermieter"},
+        {"type": "blank", "id": "11a", "accept": ["renovierte"], "tags": ["form:praeteritum_regular"]},
+        {"type": "text", "text": "die Wohnung im Mai."}
+      ],
+      "hint": "renovieren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "12a", "accept": ["mussten"], "tags": ["form:praeteritum_modal"]},
+        {"type": "text", "text": "leider früh gehen."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Als Kind"},
+        {"type": "blank", "id": "13a", "accept": ["durfte"], "tags": ["form:praeteritum_modal"]},
+        {"type": "text", "text": "ich nicht allein in die Stadt."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "14a", "accept": ["nahm"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "den Bus um sieben Uhr."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "15a", "accept": ["gab"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "mir ein Rezept."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "16a", "accept": ["sah"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "dich gestern am Bahnhof."}
+      ],
+      "hint": "sehen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "17a", "accept": ["trafen"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "uns im Supermarkt."}
+      ],
+      "hint": "treffen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Im Juli"},
+        {"type": "blank", "id": "18a", "accept": ["war"], "tags": ["form:praeteritum_haben_sein"]},
+        {"type": "text", "text": "es in Berlin sehr heiß."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Kinder"},
+        {"type": "blank", "id": "19a", "accept": ["hatten"], "tags": ["form:praeteritum_haben_sein"]},
+        {"type": "text", "text": "keine Schule wegen des Schnees."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "20a", "accept": ["schrieb"], "tags": ["form:praeteritum_irregular"]},
+        {"type": "text", "text": "meiner Schwester einen langen Brief."}
+      ],
+      "hint": "schreiben"
+    }
+  ]
+}

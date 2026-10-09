@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.c2_rare_resources",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Zug fiel infolge"},
+        {"type": "blank", "id": "1a", "accept": ["eines"], "tags": ["trigger:genitive_preposition", "case:genitive", "declension:indefinite_article"]},
+        {"type": "text", "text": "Stromausfalls aus."}
+      ],
+      "hint": "Stromausfall, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er bedarf dringend"},
+        {"type": "blank", "id": "2a", "accept": ["absoluter"], "tags": ["trigger:verb_genitive", "case:genitive", "declension:strong"]},
+        {"type": "text", "text": "Ruhe."}
+      ],
+      "hint": "absolut"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin sagte, sie"},
+        {"type": "blank", "id": "3a", "accept": ["habe"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "morgen keine Zeit."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Bahn teilte mit, der Zug"},
+        {"type": "blank", "id": "4a", "accept": ["werde"], "tags": ["form:konjunktiv_1", "trigger:indirect_speech"]},
+        {"type": "text", "text": "mit zehn Minuten Verspätung eintreffen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Sofern"], "tags": ["trigger:conjunction", "word_order:verb_final"]},
+        {"type": "text", "text": "die Unterlagen vollständig sind, bearbeiten wir Ihren Antrag."}
+      ],
+      "hint": "falls"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das Wetter war schlecht,"},
+        {"type": "blank", "id": "6a", "accept": ["gleichwohl"], "tags": ["trigger:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "fuhren wir ans Meer."}
+      ],
+      "hint": "trotzdem"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wir bleiben zu Hause,"},
+        {"type": "blank", "id": "7a", "accept": ["zumal"], "tags": ["trigger:conjunction", "word_order:verb_final"]},
+        {"type": "text", "text": "es draußen stark regnet."}
+      ],
+      "hint": "weil, besonders"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "8a", "accept": ["steigenden"], "tags": ["declension:strong", "form:partizip_1"]},
+        {"type": "text", "text": "Preise belasten viele Haushalte."}
+      ],
+      "hint": "steigen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Richterin"},
+        {"type": "blank", "id": "9a", "accept": ["fällte"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "das Urteil am Nachmittag."}
+      ],
+      "hint": "fällen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Anlässlich"},
+        {"type": "blank", "id": "10a", "accept": ["des"], "tags": ["trigger:genitive_preposition", "case:genitive", "declension:definite_article"]},
+        {"type": "text", "text": "Jubiläums der Bäckerei gibt es Kuchen."}
+      ],
+      "hint": "Jubiläum, n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Forderung kam seitens"},
+        {"type": "blank", "id": "11a", "accept": ["des"], "tags": ["trigger:genitive_preposition", "case:genitive", "declension:definite_article"]},
+        {"type": "text", "text": "Vermieters."}
+      ],
+      "hint": "Vermieter, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ungeachtet"},
+        {"type": "blank", "id": "12a", "accept": ["des"], "tags": ["trigger:genitive_preposition", "case:genitive", "declension:definite_article"]},
+        {"type": "text", "text": "Regens findet das Fest im Park statt."}
+      ],
+      "hint": "Regen, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wir fahren morgen Rad, es"},
+        {"type": "blank", "id": "13a", "accept": ["sei"], "tags": ["form:konjunktiv_1", "trigger:es_sei_denn"]},
+        {"type": "text", "text": "denn, es regnet."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wäre das Angebot billiger gewesen,"},
+        {"type": "blank", "id": "14a", "accept": ["hätten"], "tags": ["form:konjunktiv_2", "word_order:verb_second"]},
+        {"type": "text", "text": "wir zugestimmt."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Je früher du kommst,"},
+        {"type": "blank", "id": "15a", "accept": ["desto"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "besser."}
+      ],
+      "hint": "je, Komparativ"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Er ist nicht nur klug,"},
+        {"type": "blank", "id": "16a", "accept": ["sondern"], "tags": ["trigger:nicht_nur_sondern"]},
+        {"type": "text", "text": "auch fleißig."}
+      ],
+      "hint": "nicht nur"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "In Ermangelung"},
+        {"type": "blank", "id": "17a", "accept": ["besserer"], "tags": ["trigger:genitive_preposition", "case:genitive", "declension:strong"]},
+        {"type": "text", "text": "Alternativen blieb uns nichts übrig."}
+      ],
+      "hint": "gut"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Frau,"},
+        {"type": "blank", "id": "18a", "accept": ["deren"], "tags": ["case:genitive", "form:relative_pronoun"]},
+        {"type": "text", "text": "Sohn im Ausland studiert, besucht uns oft."}
+      ],
+      "hint": "der"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Das Angebot entspricht nicht"},
+        {"type": "blank", "id": "19a", "accept": ["unseren"], "tags": ["case:dative", "declension:possessive", "trigger:verb_dative"]},
+        {"type": "text", "text": "Erwartungen."}
+      ],
+      "hint": "unser"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Verhandlungen verliefen"},
+        {"type": "blank", "id": "20a", "accept": ["ergebnislos"], "tags": ["form:adverb"]},
+        {"type": "text", "text": "und ohne Einigung."}
+      ],
+      "hint": "Ergebnis, n"
+    }
+  ]
+}

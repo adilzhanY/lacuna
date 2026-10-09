@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.a1_articles",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Wir kaufen"},
+        {"type": "blank", "id": "1a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Kuchen beim Bäcker."}
+      ],
+      "hint": "Kuchen, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Haben Sie"},
+        {"type": "blank", "id": "2a", "accept": ["eine"], "tags": ["gender:feminine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Frage zum Formular?"}
+      ],
+      "hint": "Frage, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "3a", "accept": ["ein"], "tags": ["gender:neuter", "case:nominative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Problem."}
+      ],
+      "hint": "Problem, n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wann fährt"},
+        {"type": "blank", "id": "4a", "accept": ["der"], "tags": ["gender:masculine", "case:nominative", "declension:definite_article"]},
+        {"type": "text", "text": "nächste Zug nach Hamburg?"}
+      ],
+      "hint": "Zug, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich brauche"},
+        {"type": "blank", "id": "5a", "accept": ["eine"], "tags": ["gender:feminine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Tüte für die Äpfel."}
+      ],
+      "hint": "Tüte, f"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Morgen kommt"},
+        {"type": "blank", "id": "6a", "accept": ["die"], "tags": ["gender:feminine", "case:nominative", "declension:definite_article"]},
+        {"type": "text", "text": "Post erst am Nachmittag."}
+      ],
+      "hint": "Post, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Kannst du mir"},
+        {"type": "blank", "id": "7a", "accept": ["ein"], "tags": ["gender:neuter", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Glas Wasser bringen?"}
+      ],
+      "hint": "Glas, n"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wir haben"},
+        {"type": "blank", "id": "8a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Tisch am Fenster reserviert."}
+      ],
+      "hint": "Tisch, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "9a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Bruder in Berlin."}
+      ],
+      "hint": "Bruder, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Der"], "tags": ["gender:masculine", "case:nominative", "declension:definite_article"]},
+        {"type": "text", "text": "Film beginnt um acht."}
+      ],
+      "hint": "Film, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Hier gibt es"},
+        {"type": "blank", "id": "11a", "accept": ["ein"], "tags": ["gender:neuter", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Café um die Ecke."}
+      ],
+      "hint": "Café, n"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Entschuldigung, wo ist"},
+        {"type": "blank", "id": "12a", "accept": ["die"], "tags": ["gender:feminine", "case:nominative", "declension:definite_article"]},
+        {"type": "text", "text": "Bäckerei?"}
+      ],
+      "hint": "Bäckerei, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich trinke"},
+        {"type": "blank", "id": "13a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Tee mit Milch."}
+      ],
+      "hint": "Tee, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mein Vater hat"},
+        {"type": "blank", "id": "14a", "accept": ["ein"], "tags": ["gender:neuter", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Auto aus Italien."}
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Im Park sitzt"},
+        {"type": "blank", "id": "15a", "accept": ["die"], "tags": ["gender:feminine", "case:nominative", "declension:definite_article"]},
+        {"type": "text", "text": "Frau mit dem Hund."}
+      ],
+      "hint": "Frau, f"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Er sucht"},
+        {"type": "blank", "id": "16a", "accept": ["eine"], "tags": ["gender:feminine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Wohnung mit Balkon."}
+      ],
+      "hint": "Wohnung, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Wie viel kostet"},
+        {"type": "blank", "id": "17a", "accept": ["das"], "tags": ["gender:neuter", "case:accusative", "declension:definite_article"]},
+        {"type": "text", "text": "Ticket nach Köln?"}
+      ],
+      "hint": "Ticket, n"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Ein"], "tags": ["gender:masculine", "case:nominative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Hund bellt im Garten."}
+      ],
+      "hint": "Hund, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich brauche"},
+        {"type": "blank", "id": "19a", "accept": ["einen"], "tags": ["gender:masculine", "case:accusative", "declension:indefinite_article"]},
+        {"type": "text", "text": "Termin beim Arzt."}
+      ],
+      "hint": "Termin, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der Sommer ist"},
+        {"type": "blank", "id": "20a", "accept": ["eine"], "tags": ["gender:feminine", "case:nominative", "declension:indefinite_article"]},
+        {"type": "text", "text": "schöne Zeit."}
+      ],
+      "hint": "Zeit, f"
+    }
+  ]
+}

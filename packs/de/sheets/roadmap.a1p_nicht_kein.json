@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.a1p_nicht_kein",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "1a", "accept": ["keinen"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Hunger, danke."}
+      ],
+      "hint": "Hunger, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Bus kommt heute"},
+        {"type": "blank", "id": "2a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "um acht Uhr."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Keine"], "tags": ["form:kein", "case:nominative", "number:plural"]},
+        {"type": "text", "text": "Kinder spielen heute im Hof."}
+      ],
+      "hint": "Kind, n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "4a", "accept": ["kein"], "tags": ["form:kein", "case:nominative"]},
+        {"type": "text", "text": "Problem, alles gut."}
+      ],
+      "hint": "Problem, n"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich verstehe das"},
+        {"type": "blank", "id": "5a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "ganz, kannst du es erklären?"}
+      ],
+      "hint": "verstehen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wir haben"},
+        {"type": "blank", "id": "6a", "accept": ["keine"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Zeit mehr für den Film."}
+      ],
+      "hint": "Zeit, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Das Restaurant hat"},
+        {"type": "blank", "id": "7a", "accept": ["keinen"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Parkplatz für Gäste."}
+      ],
+      "hint": "Parkplatz, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder wohnt"},
+        {"type": "blank", "id": "8a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "mehr in Berlin."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "9a", "accept": ["keine"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Lust auf Kino heute."}
+      ],
+      "hint": "Lust, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich fahre mit"},
+        {"type": "blank", "id": "10a", "accept": ["keinem"], "tags": ["form:kein", "case:dative"]},
+        {"type": "text", "text": "Auto, nur mit dem Rad."}
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Das Baby ist"},
+        {"type": "blank", "id": "11a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "mehr hungrig."}
+      ],
+      "hint": "hungrig"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Der Film war"},
+        {"type": "blank", "id": "12a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "schlecht, sondern lustig."}
+      ],
+      "hint": "schlecht"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Hast du"},
+        {"type": "blank", "id": "13a", "accept": ["keinen"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Stift für mich?"}
+      ],
+      "hint": "Stift, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mein Handy funktioniert"},
+        {"type": "blank", "id": "14a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "mehr richtig."}
+      ],
+      "hint": "funktionieren"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er hat"},
+        {"type": "blank", "id": "15a", "accept": ["keine"], "tags": ["form:kein", "case:accusative", "number:plural"]},
+        {"type": "text", "text": "Geschwister, er wohnt allein."}
+      ],
+      "hint": "Geschwister, pl"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Das Wetter ist"},
+        {"type": "blank", "id": "16a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "so schön wie gestern."}
+      ],
+      "hint": "schön"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Im Sommer haben wir"},
+        {"type": "blank", "id": "17a", "accept": ["keinen"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Urlaub gemacht."}
+      ],
+      "hint": "Urlaub, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "18a", "accept": ["keine"], "tags": ["form:kein", "case:nominative"]},
+        {"type": "text", "text": "gute Idee."}
+      ],
+      "hint": "Idee, f"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich esse"},
+        {"type": "blank", "id": "19a", "accept": ["nicht"], "tags": ["form:nicht"]},
+        {"type": "text", "text": "gern Fisch."}
+      ],
+      "hint": "gern"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Tür war offen, ich hatte"},
+        {"type": "blank", "id": "20a", "accept": ["keinen"], "tags": ["form:kein", "case:accusative"]},
+        {"type": "text", "text": "Schlüssel dabei."}
+      ],
+      "hint": "Schlüssel, m"
+    }
+  ]
+}

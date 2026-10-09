@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.b1_adjective_declension",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "blank", "id": "1a", "accept": ["Frisches"], "tags": ["case:nominative", "gender:neuter", "declension:strong"]},
+        {"type": "text", "text": "Brot schmeckt heute gut."}
+      ],
+      "hint": "frisch"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich kaufe einen"},
+        {"type": "blank", "id": "2a", "accept": ["grünen"], "tags": ["case:accusative", "gender:masculine", "declension:mixed"]},
+        {"type": "text", "text": "Apfel."}
+      ],
+      "hint": "grün"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das Hotel hat ein"},
+        {"type": "blank", "id": "3a", "accept": ["neues"], "tags": ["case:accusative", "gender:neuter", "declension:mixed"]},
+        {"type": "text", "text": "Restaurant."}
+      ],
+      "hint": "neu"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir wohnen in der"},
+        {"type": "blank", "id": "4a", "accept": ["kleinen"], "tags": ["case:dative", "gender:feminine", "declension:weak"]},
+        {"type": "text", "text": "Straße am Park."}
+      ],
+      "hint": "klein"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Wegen des"},
+        {"type": "blank", "id": "5a", "accept": ["starken"], "tags": ["case:genitive", "gender:masculine", "declension:weak"]},
+        {"type": "text", "text": "Regens bleiben wir zu Hause."}
+      ],
+      "hint": "stark"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "6a", "accept": ["jungen"], "tags": ["case:nominative", "number:plural", "declension:weak"]},
+        {"type": "text", "text": "Leute gehen heute Abend aus."}
+      ],
+      "hint": "jung"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie kauft eine"},
+        {"type": "blank", "id": "7a", "accept": ["teure"], "tags": ["case:accusative", "gender:feminine", "declension:mixed"]},
+        {"type": "text", "text": "Jacke im Laden."}
+      ],
+      "hint": "teuer"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich fahre mit den"},
+        {"type": "blank", "id": "8a", "accept": ["freundlichen"], "tags": ["case:dative", "number:plural", "declension:weak"]},
+        {"type": "text", "text": "Kollegen zur Arbeit."}
+      ],
+      "hint": "freundlich"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "blank", "id": "9a", "accept": ["Starker"], "tags": ["case:nominative", "gender:masculine", "declension:strong"]},
+        {"type": "text", "text": "Wind weht heute am Meer."}
+      ],
+      "hint": "stark"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich wohne mit einem"},
+        {"type": "blank", "id": "10a", "accept": ["netten"], "tags": ["case:dative", "gender:masculine", "declension:mixed"]},
+        {"type": "text", "text": "Mitbewohner zusammen."}
+      ],
+      "hint": "nett"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Trotz der"},
+        {"type": "blank", "id": "11a", "accept": ["schönen"], "tags": ["case:genitive", "gender:feminine", "declension:weak"]},
+        {"type": "text", "text": "Aussicht fahren wir nach Hause."}
+      ],
+      "hint": "schön"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir besuchen den"},
+        {"type": "blank", "id": "12a", "accept": ["alten"], "tags": ["case:accusative", "gender:masculine", "declension:weak"]},
+        {"type": "text", "text": "Freund im Krankenhaus."}
+      ],
+      "hint": "alt"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Das"},
+        {"type": "blank", "id": "13a", "accept": ["große"], "tags": ["case:nominative", "gender:neuter", "declension:weak"]},
+        {"type": "text", "text": "Zimmer ist sehr hell."}
+      ],
+      "hint": "groß"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er wohnt in einem"},
+        {"type": "blank", "id": "14a", "accept": ["ruhigen"], "tags": ["case:dative", "gender:neuter", "declension:mixed"]},
+        {"type": "text", "text": "Viertel am Stadtrand."}
+      ],
+      "hint": "ruhig"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Im Markt gibt es"},
+        {"type": "blank", "id": "15a", "accept": ["frische"], "tags": ["case:accusative", "number:plural", "declension:strong"]},
+        {"type": "text", "text": "Erdbeeren."}
+      ],
+      "hint": "frisch"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wasch die Hände mit"},
+        {"type": "blank", "id": "16a", "accept": ["kaltem"], "tags": ["case:dative", "gender:masculine", "declension:strong"]},
+        {"type": "text", "text": "Wasser."}
+      ],
+      "hint": "kalt"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Meine"},
+        {"type": "blank", "id": "17a", "accept": ["helle"], "tags": ["case:nominative", "gender:feminine", "declension:mixed"]},
+        {"type": "text", "text": "Wohnung hat zwei Zimmer."}
+      ],
+      "hint": "hell"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Bitte bring mir"},
+        {"type": "blank", "id": "18a", "accept": ["stilles"], "tags": ["case:accusative", "gender:neuter", "declension:strong"]},
+        {"type": "text", "text": "Wasser."}
+      ],
+      "hint": "still"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Während der"},
+        {"type": "blank", "id": "19a", "accept": ["langen"], "tags": ["case:genitive", "number:plural", "declension:weak"]},
+        {"type": "text", "text": "Ferien fahren wir ans Meer."}
+      ],
+      "hint": "lang"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich trinke Tee mit"},
+        {"type": "blank", "id": "20a", "accept": ["frischer"], "tags": ["case:dative", "gender:feminine", "declension:strong"]},
+        {"type": "text", "text": "Milch."}
+      ],
+      "hint": "frisch"
+    }
+  ]
+}

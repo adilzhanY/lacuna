@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1p_n_declension",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich habe gestern den"},
+        {"type": "blank", "id": "1a", "accept": ["Kollegen"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "im Büro getroffen."}
+      ],
+      "hint": "Kollege, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Die Verkäuferin erklärt dem"},
+        {"type": "blank", "id": "2a", "accept": ["Kunden"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "den Preis."}
+      ],
+      "hint": "Kunde, m"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich rufe den"},
+        {"type": "blank", "id": "3a", "accept": ["Nachbarn"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "an, weil die Musik zu laut ist."}
+      ],
+      "hint": "Nachbar, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Tochter des"},
+        {"type": "blank", "id": "4a", "accept": ["Präsidenten"], "tags": ["case:genitive", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "wohnt in Berlin."}
+      ],
+      "hint": "Präsident, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Bitte grüßen Sie"},
+        {"type": "blank", "id": "5a", "accept": ["Herrn"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "Müller von mir."}
+      ],
+      "hint": "Herr, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Arzt erklärt dem"},
+        {"type": "blank", "id": "6a", "accept": ["Patienten"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "die Tabletten."}
+      ],
+      "hint": "Patient, m"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich kenne keinen"},
+        {"type": "blank", "id": "7a", "accept": ["Journalisten"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "persönlich."}
+      ],
+      "hint": "Journalist, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich bin mit dem"},
+        {"type": "blank", "id": "8a", "accept": ["Assistenten"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "verabredet."}
+      ],
+      "hint": "Assistent, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der"},
+        {"type": "blank", "id": "9a", "accept": ["Pilot"], "tags": ["case:nominative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "spricht Englisch und Deutsch."}
+      ],
+      "hint": "Pilot, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich habe den"},
+        {"type": "blank", "id": "10a", "accept": ["Löwen"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "im Zoo gesehen."}
+      ],
+      "hint": "Löwe, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der"},
+        {"type": "blank", "id": "11a", "accept": ["Junge"], "tags": ["case:nominative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "spielt im Hof Fußball."}
+      ],
+      "hint": "Junge, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich suche den"},
+        {"type": "blank", "id": "12a", "accept": ["Experten"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "für Steuerfragen."}
+      ],
+      "hint": "Experte, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Kinder füttern den"},
+        {"type": "blank", "id": "13a", "accept": ["Hasen"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "im Garten."}
+      ],
+      "hint": "Hase, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich schicke die Einladung dem"},
+        {"type": "blank", "id": "14a", "accept": ["Diplomaten"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "aus Wien."}
+      ],
+      "hint": "Diplomat, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Man muss den"},
+        {"type": "blank", "id": "15a", "accept": ["Menschen"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "mit Respekt behandeln."}
+      ],
+      "hint": "Mensch, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Adresse des"},
+        {"type": "blank", "id": "16a", "accept": ["Studenten"], "tags": ["case:genitive", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "steht auf dem Formular."}
+      ],
+      "hint": "Student, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Reiseführer zeigt dem"},
+        {"type": "blank", "id": "17a", "accept": ["Touristen"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "die Altstadt."}
+      ],
+      "hint": "Tourist, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Er hat den"},
+        {"type": "blank", "id": "18a", "accept": ["Fotografen"], "tags": ["case:accusative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "nicht bezahlt."}
+      ],
+      "hint": "Fotograf, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich gebe das Paket dem"},
+        {"type": "blank", "id": "19a", "accept": ["Herrn"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "an der Kasse."}
+      ],
+      "hint": "Herr, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich zeige dem"},
+        {"type": "blank", "id": "20a", "accept": ["Polizisten"], "tags": ["case:dative", "declension:weak", "gender:masculine"]},
+        {"type": "text", "text": "meinen Ausweis."}
+      ],
+      "hint": "Polizist, m"
+    }
+  ]
+}

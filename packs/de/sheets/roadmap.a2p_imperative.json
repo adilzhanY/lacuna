@@ -1,0 +1,166 @@
+{
+  "topic_id": "roadmap.a2p_imperative",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "blank", "id": "1a", "accept": ["Komm"], "tags": ["form:imperative_du", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte rein, der Kaffee ist fertig."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "blank", "id": "2a", "accept": ["Warten"], "tags": ["form:imperative_sie", "word_order:verb_first"]},
+        {"type": "text", "text": "Sie bitte einen Moment, ich schaue nach."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Gib"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "mir bitte das Salz."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "blank", "id": "4a", "accept": ["Kommt"], "tags": ["form:imperative_ihr", "word_order:verb_first"]},
+        {"type": "text", "text": "Kinder, das Essen ist fertig!"}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Mach"], "tags": ["form:imperative_du", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte das Fenster zu, es zieht."}
+      ],
+      "hint": "zumachen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "blank", "id": "6a", "accept": ["Ruf"], "tags": ["form:imperative_du", "word_order:verb_first"]},
+        {"type": "text", "text": "mich morgen an, bitte."}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "blank", "id": "7a", "accept": ["Sprich"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte etwas langsamer, ich verstehe dich nicht."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "blank", "id": "8a", "accept": ["Nimm"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "den Regenschirm mit, es regnet heute."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "blank", "id": "9a", "accept": ["Lies"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "die Anleitung, bevor du anfängst."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Schau"], "tags": ["form:imperative_du", "word_order:verb_first"]},
+        {"type": "text", "text": "mal auf die Uhr, der Zug fährt gleich."}
+      ],
+      "hint": "schauen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "blank", "id": "11a", "accept": ["Fahr"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte bis zum Hauptbahnhof, dort steigst du um."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "blank", "id": "12a", "accept": ["Sei"], "tags": ["form:imperative_sein", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte pünktlich, der Termin beginnt um neun."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "blank", "id": "13a", "accept": ["Hab", "Habe"], "tags": ["form:imperative_haben", "word_order:verb_first"]},
+        {"type": "text", "text": "keine Angst, der Hund ist lieb."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "blank", "id": "14a", "accept": ["Setzen"], "tags": ["form:imperative_sie", "word_order:verb_first"]},
+        {"type": "text", "text": "Sie sich bitte, der Arzt kommt gleich."}
+      ],
+      "hint": "sich setzen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "blank", "id": "15a", "accept": ["Vergesst"], "tags": ["form:imperative_ihr", "word_order:verb_first"]},
+        {"type": "text", "text": "nicht, die Miete zu überweisen!"}
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "blank", "id": "16a", "accept": ["Zieh"], "tags": ["form:imperative_du", "form:stem_vowel_change", "word_order:verb_first"]},
+        {"type": "text", "text": "dir bitte Schuhe an, es ist kalt draußen."}
+      ],
+      "hint": "anziehen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "blank", "id": "17a", "accept": ["Parken"], "tags": ["form:imperative_sie", "word_order:verb_first"]},
+        {"type": "text", "text": "Sie hier nicht, das ist eine Einfahrt."}
+      ],
+      "hint": "parken"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Denk"], "tags": ["form:imperative_du", "word_order:verb_first"]},
+        {"type": "text", "text": "daran, die Post mitzunehmen."}
+      ],
+      "hint": "denken"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "blank", "id": "19a", "accept": ["Geben"], "tags": ["form:imperative_sie", "word_order:verb_first"]},
+        {"type": "text", "text": "Sie mir bitte zwei Brötchen und ein Stück Kuchen."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Bleibt"], "tags": ["form:imperative_ihr", "word_order:verb_first"]},
+        {"type": "text", "text": "bitte hier, ich bin gleich zurück."}
+      ],
+      "hint": "bleiben"
+    }
+  ]
+}

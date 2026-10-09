@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1p_genitiv",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Das Picknick fällt wegen"},
+        {"type": "blank", "id": "1a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "trigger:preposition_wegen"]},
+        {"type": "text", "text": "Regens aus."}
+      ],
+      "hint": "Regen, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich bin trotz"},
+        {"type": "blank", "id": "2a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "trigger:preposition_trotz"]},
+        {"type": "text", "text": "Staus pünktlich gekommen."}
+      ],
+      "hint": "Stau, m"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Während"},
+        {"type": "blank", "id": "3a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "trigger:preposition_waehrend"]},
+        {"type": "text", "text": "Urlaubs habe ich viel gelesen."}
+      ],
+      "hint": "Urlaub, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Statt"},
+        {"type": "blank", "id": "4a", "accept": ["der"], "tags": ["case:genitive", "gender:feminine", "trigger:preposition_statt"]},
+        {"type": "text", "text": "Bahn nehme ich das Fahrrad."}
+      ],
+      "hint": "Bahn, f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Außerhalb"},
+        {"type": "blank", "id": "5a", "accept": ["der"], "tags": ["case:genitive", "gender:feminine", "trigger:preposition_ausserhalb"]},
+        {"type": "text", "text": "Stadt gibt es kaum Busse."}
+      ],
+      "hint": "Stadt, f"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Innerhalb"},
+        {"type": "blank", "id": "6a", "accept": ["des"], "tags": ["case:genitive", "gender:neuter", "trigger:preposition_innerhalb"]},
+        {"type": "text", "text": "Hauses gibt es einen Garten."}
+      ],
+      "hint": "Haus, n"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Geschäfte sind wegen"},
+        {"type": "blank", "id": "7a", "accept": ["der"], "tags": ["case:genitive", "number:plural", "trigger:preposition_wegen"]},
+        {"type": "text", "text": "Ferien geschlossen."}
+      ],
+      "hint": "Ferien, pl"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Angesichts"},
+        {"type": "blank", "id": "8a", "accept": ["des"], "tags": ["case:genitive", "gender:neuter", "trigger:preposition_angesichts"]},
+        {"type": "text", "text": "Wetters bleiben wir zu Hause."}
+      ],
+      "hint": "Wetter, n"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wir wandern oberhalb"},
+        {"type": "blank", "id": "9a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "trigger:preposition_oberhalb"]},
+        {"type": "text", "text": "Sees."}
+      ],
+      "hint": "See, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Jenseits"},
+        {"type": "blank", "id": "10a", "accept": ["der"], "tags": ["case:genitive", "gender:feminine", "trigger:preposition_jenseits"]},
+        {"type": "text", "text": "Grenze liegt Polen."}
+      ],
+      "hint": "Grenze, f"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Aufgrund"},
+        {"type": "blank", "id": "11a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "trigger:preposition_aufgrund"]},
+        {"type": "text", "text": "Feiertags bleibt die Post geschlossen."}
+      ],
+      "hint": "Feiertag, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Statt"},
+        {"type": "blank", "id": "12a", "accept": ["des"], "tags": ["case:genitive", "gender:neuter", "trigger:preposition_statt"]},
+        {"type": "text", "text": "Brots kaufe ich heute Brötchen."}
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Dank"},
+        {"type": "blank", "id": "13a", "accept": ["des"], "tags": ["case:genitive", "gender:masculine", "declension:weak", "trigger:preposition_dank"]},
+        {"type": "text", "text": "Kollegen ist das Projekt fertig."}
+      ],
+      "hint": "Kollege, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Straße ist wegen"},
+        {"type": "blank", "id": "14a", "accept": ["eines"], "tags": ["case:genitive", "gender:masculine", "declension:indefinite_article", "trigger:preposition_wegen"]},
+        {"type": "text", "text": "Unfalls gesperrt."}
+      ],
+      "hint": "Unfall, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er geht trotz"},
+        {"type": "blank", "id": "15a", "accept": ["einer"], "tags": ["case:genitive", "gender:feminine", "declension:indefinite_article", "trigger:preposition_trotz"]},
+        {"type": "text", "text": "Krankheit zur Arbeit."}
+      ],
+      "hint": "Krankheit, f"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Den Kredit zahle ich innerhalb"},
+        {"type": "blank", "id": "16a", "accept": ["eines"], "tags": ["case:genitive", "gender:masculine", "declension:indefinite_article", "trigger:preposition_innerhalb"]},
+        {"type": "text", "text": "Monats zurück."}
+      ],
+      "hint": "Monat, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Antrag bedarf"},
+        {"type": "blank", "id": "17a", "accept": ["einer"], "tags": ["case:genitive", "gender:feminine", "declension:indefinite_article", "trigger:verb_beduerfen"]},
+        {"type": "text", "text": "Unterschrift."}
+      ],
+      "hint": "bedürfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Frau,"},
+        {"type": "blank", "id": "18a", "accept": ["deren"], "tags": ["case:genitive", "gender:feminine", "form:relative_pronoun"]},
+        {"type": "text", "text": "Tochter im Chor singt, wohnt nebenan."}
+      ],
+      "hint": "Frau, f"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Das Kind,"},
+        {"type": "blank", "id": "19a", "accept": ["dessen"], "tags": ["case:genitive", "gender:neuter", "form:relative_pronoun"]},
+        {"type": "text", "text": "Mutter Ärztin ist, spielt oft im Park."}
+      ],
+      "hint": "Kind, n"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Anstatt"},
+        {"type": "blank", "id": "20a", "accept": ["eines"], "tags": ["case:genitive", "gender:neuter", "declension:indefinite_article", "trigger:preposition_anstatt"]},
+        {"type": "text", "text": "Taxis nehmen wir den Bus."}
+      ],
+      "hint": "Taxi, n"
+    }
+  ]
+}

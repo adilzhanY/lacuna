@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.b1_demonstratives",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Welchen Mantel nimmst du?"},
+        {"type": "blank", "id": "1a", "accept": ["Dieser"], "tags": ["case:nominative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "hier ist warm genug."}
+      ],
+      "hint": "Mantel, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Den Schokoladenkuchen mag ich nicht,"},
+        {"type": "blank", "id": "2a", "accept": ["diesen"], "tags": ["case:accusative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "mit Erdbeeren schon."}
+      ],
+      "hint": "Kuchen, m"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Schuhe hier kosten achtzig Euro,"},
+        {"type": "blank", "id": "3a", "accept": ["die"], "tags": ["case:nominative", "number:plural", "form:demonstrative_der"]},
+        {"type": "text", "text": "dort am Eingang nur vierzig."}
+      ],
+      "hint": "Schuhe, pl"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Von den Brötchen nehme ich"},
+        {"type": "blank", "id": "4a", "accept": ["diese"], "tags": ["case:accusative", "number:plural", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "hier, die sind noch warm."}
+      ],
+      "hint": "Brötchen, pl"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Dieser Weg führt zum Bahnhof,"},
+        {"type": "blank", "id": "5a", "accept": ["jener"], "tags": ["case:nominative", "gender:masculine", "form:demonstrative_jener"]},
+        {"type": "text", "text": "zum Park."}
+      ],
+      "hint": "Weg, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wem gehört das Fahrrad?"},
+        {"type": "blank", "id": "6a", "accept": ["Dem"], "tags": ["case:dative", "gender:neuter", "form:demonstrative_der"]},
+        {"type": "text", "text": "da hinten."}
+      ],
+      "hint": "Fahrrad, n"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "blank", "id": "7a", "accept": ["Der"], "tags": ["case:nominative", "gender:masculine", "form:demonstrative_der"]},
+        {"type": "text", "text": "dort ist mein Chef."}
+      ],
+      "hint": "Chef, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich rede lieber mit Frau Berger als mit"},
+        {"type": "blank", "id": "8a", "accept": ["denen"], "tags": ["case:dative", "number:plural", "form:demonstrative_der"]},
+        {"type": "text", "text": "dort drüben."}
+      ],
+      "hint": "Kollegen, pl"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Fährst du mit dem Zug um acht oder mit"},
+        {"type": "blank", "id": "9a", "accept": ["diesem"], "tags": ["case:dative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "um neun?"}
+      ],
+      "hint": "Zug, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wir sprechen über die Wohnung im dritten Stock, nicht über"},
+        {"type": "blank", "id": "10a", "accept": ["diese"], "tags": ["case:accusative", "gender:feminine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "im ersten."}
+      ],
+      "hint": "Wohnung, f"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich schicke dir zwei Berichte."},
+        {"type": "blank", "id": "11a", "accept": ["Dieser"], "tags": ["case:nominative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "ist für Montag, jener für Freitag."}
+      ],
+      "hint": "Bericht, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Welchen Zug nehmen wir?"},
+        {"type": "blank", "id": "12a", "accept": ["Diesen"], "tags": ["case:accusative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "hier, den um neun schaffen wir nicht."}
+      ],
+      "hint": "Zug, m"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich habe zwei Bücher gekauft."},
+        {"type": "blank", "id": "13a", "accept": ["Dieses"], "tags": ["case:nominative", "gender:neuter", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "ist für Deutsch, jenes für Mathe."}
+      ],
+      "hint": "Buch, n"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Welches Hotel nehmen wir?"},
+        {"type": "blank", "id": "14a", "accept": ["Das"], "tags": ["case:accusative", "gender:neuter", "form:demonstrative_der"]},
+        {"type": "text", "text": "am Strand."}
+      ],
+      "hint": "Hotel, n"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Sie hat zwei Freundinnen."},
+        {"type": "blank", "id": "15a", "accept": ["Diese"], "tags": ["case:nominative", "gender:feminine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "wohnt in Berlin, jene in München."}
+      ],
+      "hint": "Freundin, f"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Rufen Sie mich unter der alten Nummer an, nicht unter"},
+        {"type": "blank", "id": "16a", "accept": ["jener"], "tags": ["case:dative", "gender:feminine", "form:demonstrative_jener"]},
+        {"type": "text", "text": "vom letzten Jahr."}
+      ],
+      "hint": "Nummer, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich habe zwei Salben bekommen, eine für das Knie und"},
+        {"type": "blank", "id": "17a", "accept": ["diese"], "tags": ["case:accusative", "gender:feminine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "für den Ellbogen."}
+      ],
+      "hint": "Salbe, f"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich suche einen Rucksack. Haben Sie"},
+        {"type": "blank", "id": "18a", "accept": ["diesen"], "tags": ["case:accusative", "gender:masculine", "form:demonstrative_dieser"]},
+        {"type": "text", "text": "auch in Schwarz?"}
+      ],
+      "hint": "Rucksack, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich schicke einen Brief an Herrn Klein und"},
+        {"type": "blank", "id": "19a", "accept": ["den"], "tags": ["case:accusative", "gender:masculine", "form:demonstrative_der"]},
+        {"type": "text", "text": "an Frau Berger."}
+      ],
+      "hint": "Brief, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Heute nehme ich den Schirm, nicht"},
+        {"type": "blank", "id": "20a", "accept": ["jenen"], "tags": ["case:accusative", "gender:masculine", "form:demonstrative_jener"]},
+        {"type": "text", "text": "dort."}
+      ],
+      "hint": "Schirm, m"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "topic_id": "roadmap.b1p_konjunktiv_present",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["hätte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern einen Termin am Donnerstag."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "2a", "accept": ["würde"], "tags": ["form:wuerde_infinitiv"]},
+        {"type": "text", "text": "gern öfter ins Kino gehen."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Wäre"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "das Wetter besser, würden wir ans Meer fahren."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "blank", "id": "4a", "accept": ["Könnten"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "Sie mir bitte den Weg zum Bahnhof zeigen?"}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "5a", "accept": ["solltest"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "unbedingt zum Arzt gehen."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Entschuldigung, ich"},
+        {"type": "blank", "id": "6a", "accept": ["müsste"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "kurz telefonieren."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "blank", "id": "7a", "accept": ["Hättest"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "du Lust auf einen Kaffee?"}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich wünschte, der Zug"},
+        {"type": "blank", "id": "8a", "accept": ["käme"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "endlich pünktlich."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "9a", "accept": ["könnten"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "am Samstag zusammen grillen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Gäbe"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "es hier einen Supermarkt in der Nähe?"}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "11a", "accept": ["wäre"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern Lehrer geworden."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "12a", "accept": ["möchte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "ein Brötchen mit Käse."}
+      ],
+      "hint": "mögen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "13a", "accept": ["dürfte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "eigentlich nicht so viel Kaffee trinken."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "14a", "accept": ["wüsste"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern, wann die Praxis öffnet."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung"},
+        {"type": "blank", "id": "15a", "accept": ["wäre"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "perfekt, wenn sie einen Balkon hätte."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "16a", "accept": ["käme"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "gern mit, aber morgen habe ich Schicht."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Man"},
+        {"type": "blank", "id": "17a", "accept": ["sollte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "das Fenster bei Regen lieber schließen."}
+      ],
+      "hint": "sollen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Hätte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "ich mehr Geld, würde ich eine größere Wohnung suchen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "19a", "accept": ["könnte"], "tags": ["form:konjunktiv_2"]},
+        {"type": "text", "text": "heute gern länger schlafen."}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Mit mehr Zeit"},
+        {"type": "blank", "id": "20a", "accept": ["würden"], "tags": ["form:wuerde_infinitiv"]},
+        {"type": "text", "text": "wir die Ausstellung ganz besichtigen."}
+      ],
+      "hint": "werden"
+    }
+  ]
+}

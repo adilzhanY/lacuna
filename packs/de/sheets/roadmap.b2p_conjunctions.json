@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.b2p_conjunctions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich nehme heute nicht den Bus,"},
+        {"type": "blank", "id": "1a", "accept": ["sondern"], "tags": ["trigger:sondern"]},
+        {"type": "text", "text": "das Fahrrad."}
+      ],
+      "hint": "Verneinung, Ersatz"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir essen heute im Park,"},
+        {"type": "blank", "id": "2a", "accept": ["denn"], "tags": ["trigger:denn", "word_order:verb_second"]},
+        {"type": "text", "text": "es ist warm."}
+      ],
+      "hint": "Grund, Hauptsatz"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Sie bleibt zu Hause,"},
+        {"type": "blank", "id": "3a", "accept": ["weil", "da"], "tags": ["trigger:weil", "word_order:verb_final"]},
+        {"type": "text", "text": "sie sehr müde ist."}
+      ],
+      "hint": "Grund, Nebensatz"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "blank", "id": "4a", "accept": ["Bevor"], "tags": ["trigger:bevor", "word_order:verb_final"]},
+        {"type": "text", "text": "wir essen, waschen wir die Hände."}
+      ],
+      "hint": "vorher"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Er wartete eine Stunde,"},
+        {"type": "blank", "id": "5a", "accept": ["bis"], "tags": ["trigger:bis", "word_order:verb_final"]},
+        {"type": "text", "text": "der Bus endlich kam."}
+      ],
+      "hint": "Zeitgrenze"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das Konzert findet statt,"},
+        {"type": "blank", "id": "6a", "accept": ["obwohl", "obgleich"], "tags": ["trigger:obwohl", "word_order:verb_final"]},
+        {"type": "text", "text": "es stark regnet."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich hoffe,"},
+        {"type": "blank", "id": "7a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss", "word_order:verb_final"]},
+        {"type": "text", "text": "du morgen Zeit hast."}
+      ],
+      "hint": "Nebensatz"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht,"},
+        {"type": "blank", "id": "8a", "accept": ["ob"], "tags": ["trigger:ob", "word_order:verb_final"]},
+        {"type": "text", "text": "er morgen kommt."}
+      ],
+      "hint": "indirekte Frage"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich schreibe dir eine Nachricht,"},
+        {"type": "blank", "id": "9a", "accept": ["damit"], "tags": ["trigger:damit", "word_order:verb_final"]},
+        {"type": "text", "text": "du nicht wartest."}
+      ],
+      "hint": "Zweck"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Verkehr war schlimm,"},
+        {"type": "blank", "id": "10a", "accept": ["sodass"], "tags": ["trigger:sodass", "spelling:ss", "word_order:verb_final"]},
+        {"type": "text", "text": "ich zu spät kam."}
+      ],
+      "hint": "Folge"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "blank", "id": "11a", "accept": ["Während"], "tags": ["trigger:waehrend", "word_order:verb_final"]},
+        {"type": "text", "text": "ich koche, höre ich Radio."}
+      ],
+      "hint": "gleichzeitig"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Möchtest du Tee"},
+        {"type": "blank", "id": "12a", "accept": ["oder"], "tags": ["trigger:oder"]},
+        {"type": "text", "text": "Kaffee?"}
+      ],
+      "hint": "Auswahl"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "blank", "id": "13a", "accept": ["Entweder"], "tags": ["trigger:entweder_oder"]},
+        {"type": "text", "text": "wir fahren mit dem Zug,"},
+        {"type": "blank", "id": "13b", "accept": ["oder"], "tags": ["trigger:entweder_oder"]},
+        {"type": "text", "text": "wir nehmen das Auto."}
+      ],
+      "hint": "Wahl, zwei Möglichkeiten"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Das Café ist nicht nur gemütlich,"},
+        {"type": "blank", "id": "14a", "accept": ["sondern"], "tags": ["trigger:nicht_nur_sondern_auch"]},
+        {"type": "text", "text": "auch günstig."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "blank", "id": "15a", "accept": ["Je"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "früher wir losfahren,"},
+        {"type": "blank", "id": "15b", "accept": ["desto", "umso"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "weniger Stau gibt es."}
+      ],
+      "hint": "Verhältnis"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich komme nur mit,"},
+        {"type": "blank", "id": "16a", "accept": ["falls", "wenn", "sofern"], "tags": ["trigger:falls", "word_order:verb_final"]},
+        {"type": "text", "text": "ich Zeit habe."}
+      ],
+      "hint": "Bedingung"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Man spart Geld,"},
+        {"type": "blank", "id": "17a", "accept": ["indem"], "tags": ["trigger:indem", "word_order:verb_final"]},
+        {"type": "text", "text": "man selbst kocht."}
+      ],
+      "hint": "Art und Weise"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Er hat weder Zeit"},
+        {"type": "blank", "id": "18a", "accept": ["noch"], "tags": ["trigger:weder_noch"]},
+        {"type": "text", "text": "Lust."}
+      ],
+      "hint": "Verneinung, Aufzählung"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Das Essen ist zwar teuer,"},
+        {"type": "blank", "id": "19a", "accept": ["aber", "doch"], "tags": ["trigger:zwar_aber"]},
+        {"type": "text", "text": "es schmeckt sehr gut."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Als"], "tags": ["trigger:als", "word_order:verb_final"]},
+        {"type": "text", "text": "ich klein war, wohnte ich in Berlin."}
+      ],
+      "hint": "Zeitpunkt, Vergangenheit"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.a1_praesens",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "1a", "accept": ["wohne"], "tags": ["form:praesens_1sg"]},
+        {"type": "text", "text": "seit drei Jahren in Berlin."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Was"},
+        {"type": "blank", "id": "2a", "accept": ["machst"], "tags": ["form:praesens_2sg"]},
+        {"type": "text", "text": "du heute Abend?"}
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "3a", "accept": ["arbeitet"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "bei einer Bank in Frankfurt."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["kaufen"], "tags": ["form:praesens_1pl"]},
+        {"type": "text", "text": "am Samstag Gemüse auf dem Markt."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Wartet"], "tags": ["form:praesens_2pl"]},
+        {"type": "text", "text": "ihr schon lange am Bahnsteig?"}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Meine Kinder"},
+        {"type": "blank", "id": "6a", "accept": ["lernen"], "tags": ["form:praesens_3pl"]},
+        {"type": "text", "text": "Deutsch in der Schule."}
+      ],
+      "hint": "lernen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wieso"},
+        {"type": "blank", "id": "7a", "accept": ["fragst"], "tags": ["form:praesens_2sg"]},
+        {"type": "text", "text": "du so viel?"}
+      ],
+      "hint": "fragen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "8a", "accept": ["höre"], "tags": ["form:praesens_1sg"]},
+        {"type": "text", "text": "gern Musik beim Kochen."}
+      ],
+      "hint": "hören"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder"},
+        {"type": "blank", "id": "9a", "accept": ["kocht"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "jeden Sonntag für die ganze Familie."}
+      ],
+      "hint": "kochen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarn"},
+        {"type": "blank", "id": "10a", "accept": ["machen"], "tags": ["form:praesens_3pl"]},
+        {"type": "text", "text": "am Freitag wieder Lärm."}
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Wann"},
+        {"type": "blank", "id": "11a", "accept": ["öffnet"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "die Bäckerei am Sonntag?"}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Ärztin"},
+        {"type": "blank", "id": "12a", "accept": ["antwortet"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "nach zwei Tagen per E-Mail."}
+      ],
+      "hint": "antworten"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Mein Chef"},
+        {"type": "blank", "id": "13a", "accept": ["zahlt"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "die Fahrkarte für die Dienstreise."}
+      ],
+      "hint": "zahlen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "14a", "accept": ["brauchen"], "tags": ["form:praesens_1pl"]},
+        {"type": "text", "text": "noch zwei Stühle für die Party."}
+      ],
+      "hint": "brauchen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Am Wochenende"},
+        {"type": "blank", "id": "15a", "accept": ["besuche"], "tags": ["form:praesens_1sg"]},
+        {"type": "text", "text": "ich meine Eltern in Leipzig."}
+      ],
+      "hint": "besuchen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Der Film"},
+        {"type": "blank", "id": "16a", "accept": ["beginnt"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "um acht Uhr."}
+      ],
+      "hint": "beginnen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Warum"},
+        {"type": "blank", "id": "17a", "accept": ["räumst"], "tags": ["form:praesens_2sg"]},
+        {"type": "text", "text": "du dein Zimmer nie auf?"}
+      ],
+      "hint": "aufräumen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Mein Vater"},
+        {"type": "blank", "id": "18a", "accept": ["repariert"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "das Fahrrad am Wochenende."}
+      ],
+      "hint": "reparieren"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "blank", "id": "19a", "accept": ["Spielt"], "tags": ["form:praesens_2pl"]},
+        {"type": "text", "text": "ihr heute Fußball?"}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Kind"},
+        {"type": "blank", "id": "20a", "accept": ["lacht"], "tags": ["form:praesens_3sg"]},
+        {"type": "text", "text": "laut beim Film."}
+      ],
+      "hint": "lachen"
+    }
+  ]
+}

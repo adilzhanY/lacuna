@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2p_relative_pronouns",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Kennst du den Mann,"},
+        {"type": "blank", "id": "1a", "accept": ["der"], "tags": ["gender:masculine", "case:nominative"]},
+        {"type": "text", "text": "dort am Fenster steht?"}
+      ],
+      "hint": "Mann, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Am Ende nehme ich eine Wohnung,"},
+        {"type": "blank", "id": "2a", "accept": ["die"], "tags": ["gender:feminine", "case:accusative"]},
+        {"type": "text", "text": "ich gestern gesehen habe."}
+      ],
+      "hint": "Wohnung, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Am Samstag treffe ich eine Nachbarin,"},
+        {"type": "blank", "id": "3a", "accept": ["der"], "tags": ["gender:feminine", "case:dative"]},
+        {"type": "text", "text": "ich schon lange helfe."}
+      ],
+      "hint": "Nachbarin, f"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Frau,"},
+        {"type": "blank", "id": "4a", "accept": ["deren"], "tags": ["gender:feminine", "case:genitive"]},
+        {"type": "text", "text": "Tasche auf dem Boden liegt, ist meine Chefin."}
+      ],
+      "hint": "Frau, f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Meine Neffen,"},
+        {"type": "blank", "id": "5a", "accept": ["die"], "tags": ["number:plural", "case:nominative"]},
+        {"type": "text", "text": "im Hof spielen, sind sehr laut."}
+      ],
+      "hint": "Neffen, pl"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe ein Brot gebacken,"},
+        {"type": "blank", "id": "6a", "accept": ["das"], "tags": ["gender:neuter", "case:accusative"]},
+        {"type": "text", "text": "meine Nachbarn sehr lecker finden."}
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Bauarbeiter, mit"},
+        {"type": "blank", "id": "7a", "accept": ["dem"], "tags": ["gender:masculine", "case:dative", "trigger:preposition_mit"]},
+        {"type": "text", "text": "ich gestern gesprochen habe, wohnt hier."}
+      ],
+      "hint": "Bauarbeiter, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Im Dorf gibt es ein altes Haus, in"},
+        {"type": "blank", "id": "8a", "accept": ["dem"], "tags": ["gender:neuter", "case:dative", "trigger:preposition_in"]},
+        {"type": "text", "text": "meine Großeltern wohnen."}
+      ],
+      "hint": "Haus, n"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Das sind die Lehrer, mit"},
+        {"type": "blank", "id": "9a", "accept": ["denen"], "tags": ["number:plural", "case:dative", "trigger:preposition_mit"]},
+        {"type": "text", "text": "ich arbeite."}
+      ],
+      "hint": "Lehrer, pl"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wo ist der Schlüssel,"},
+        {"type": "blank", "id": "10a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative"]},
+        {"type": "text", "text": "ich gestern verloren habe?"}
+      ],
+      "hint": "Schlüssel, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der Nachbar,"},
+        {"type": "blank", "id": "11a", "accept": ["dessen"], "tags": ["gender:masculine", "case:genitive"]},
+        {"type": "text", "text": "Auto vor der Tür steht, ist Arzt."}
+      ],
+      "hint": "Nachbar, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich habe ein Konzert besucht,"},
+        {"type": "blank", "id": "12a", "accept": ["das"], "tags": ["gender:neuter", "case:nominative"]},
+        {"type": "text", "text": "sehr laut war."}
+      ],
+      "hint": "Konzert, n"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich habe ein Fahrrad gekauft, mit"},
+        {"type": "blank", "id": "13a", "accept": ["dem"], "tags": ["gender:neuter", "case:dative", "trigger:preposition_mit"]},
+        {"type": "text", "text": "ich zur Arbeit fahre."}
+      ],
+      "hint": "Fahrrad, n"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Wir haben viele Probleme,"},
+        {"type": "blank", "id": "14a", "accept": ["die", "welche"], "tags": ["number:plural", "case:nominative"]},
+        {"type": "text", "text": "niemand lösen kann."}
+      ],
+      "hint": "Probleme, pl"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich kaufe eine Lampe, für"},
+        {"type": "blank", "id": "15a", "accept": ["die"], "tags": ["gender:feminine", "case:accusative", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "ich lange gespart habe."}
+      ],
+      "hint": "Lampe, f"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich esse gern Äpfel,"},
+        {"type": "blank", "id": "16a", "accept": ["die"], "tags": ["number:plural", "case:accusative"]},
+        {"type": "text", "text": "meine Mutter kauft."}
+      ],
+      "hint": "Äpfel, pl"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Kollege,"},
+        {"type": "blank", "id": "17a", "accept": ["den"], "tags": ["gender:masculine", "case:accusative"]},
+        {"type": "text", "text": "wir gestern besucht haben, ist krank."}
+      ],
+      "hint": "Kollege, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das sind die Kinder,"},
+        {"type": "blank", "id": "18a", "accept": ["deren"], "tags": ["number:plural", "case:genitive"]},
+        {"type": "text", "text": "Eltern ich kenne."}
+      ],
+      "hint": "Kinder, pl"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Im Park sitzt ein Mann,"},
+        {"type": "blank", "id": "19a", "accept": ["dessen"], "tags": ["gender:masculine", "case:genitive"]},
+        {"type": "text", "text": "Hund laut bellt."}
+      ],
+      "hint": "Mann, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das ist die Stadt, in"},
+        {"type": "blank", "id": "20a", "accept": ["der"], "tags": ["gender:feminine", "case:dative", "trigger:preposition_in"]},
+        {"type": "text", "text": "ich geboren bin."}
+      ],
+      "hint": "Stadt, f"
+    }
+  ]
+}

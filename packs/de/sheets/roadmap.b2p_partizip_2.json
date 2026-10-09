@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2p_partizip_2",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht, ob du den Brief schon"},
+        {"type": "blank", "id": "1a", "accept": ["abgeschickt"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "hast."}
+      ],
+      "hint": "abschicken"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Weil der Zug schon vor zehn Minuten"},
+        {"type": "blank", "id": "2a", "accept": ["abgefahren"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "ist, warte ich am Bahnsteig."}
+      ],
+      "hint": "abfahren"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich habe gehört, dass die Miete vom Vermieter"},
+        {"type": "blank", "id": "3a", "accept": ["erhöht"], "tags": ["form:partizip_2", "form:passiv"]},
+        {"type": "text", "text": "wurde."}
+      ],
+      "hint": "erhöhen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich glaube, dass sie meine Nachricht nicht"},
+        {"type": "blank", "id": "4a", "accept": ["verstanden"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "verstehen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Nachdem ich den ganzen Tag im Büro"},
+        {"type": "blank", "id": "5a", "accept": ["gesessen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "habe, gehe ich joggen."}
+      ],
+      "hint": "sitzen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe meinem Bruder eine Nachricht"},
+        {"type": "blank", "id": "6a", "accept": ["geschickt"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "und habe ihn gestern angerufen."}
+      ],
+      "hint": "schicken"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die frisch"},
+        {"type": "blank", "id": "7a", "accept": ["gebackenen"], "tags": ["form:partizip_2", "declension:weak"]},
+        {"type": "text", "text": "Brötchen sind noch warm."}
+      ],
+      "hint": "backen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Tür ist gestern"},
+        {"type": "blank", "id": "8a", "accept": ["repariert"], "tags": ["form:partizip_2", "form:passiv"]},
+        {"type": "text", "text": "worden."}
+      ],
+      "hint": "reparieren"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Wir sind gestern spät in Berlin"},
+        {"type": "blank", "id": "9a", "accept": ["angekommen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "und haben im Hotel gegessen."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Das Formular muss bis Freitag"},
+        {"type": "blank", "id": "10a", "accept": ["ausgefüllt"], "tags": ["form:partizip_2", "form:passiv"]},
+        {"type": "text", "text": "werden."}
+      ],
+      "hint": "ausfüllen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Hast du das Buch, das ich dir geliehen habe, schon"},
+        {"type": "blank", "id": "11a", "accept": ["gelesen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "?"}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Obwohl der Termin schon zweimal"},
+        {"type": "blank", "id": "12a", "accept": ["verschoben"], "tags": ["form:partizip_2", "form:passiv"]},
+        {"type": "text", "text": "worden ist, ärgere ich mich trotzdem."}
+      ],
+      "hint": "verschieben"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich wusste nicht, wer den Schlüssel"},
+        {"type": "blank", "id": "13a", "accept": ["verloren"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Brief vom Finanzamt, den ich gestern"},
+        {"type": "blank", "id": "14a", "accept": ["bekommen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "habe, ist wichtig."}
+      ],
+      "hint": "bekommen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Lisa hat beim Schachturnier"},
+        {"type": "blank", "id": "15a", "accept": ["gewonnen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "und feiert heute mit uns."}
+      ],
+      "hint": "gewinnen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich habe heute Nacht kaum"},
+        {"type": "blank", "id": "16a", "accept": ["geschlafen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "wegen der Baustelle nebenan."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Hast du schon das Essen"},
+        {"type": "blank", "id": "17a", "accept": ["bestellt"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "?"}
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Film hat um zehn Uhr"},
+        {"type": "blank", "id": "18a", "accept": ["angefangen"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "und war sehr lang."}
+      ],
+      "hint": "anfangen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Obwohl ich lange Deutsch"},
+        {"type": "blank", "id": "19a", "accept": ["gelernt"], "tags": ["form:partizip_2", "form:perfekt"]},
+        {"type": "text", "text": "habe, verstehe ich die Briefe vom Amt nicht."}
+      ],
+      "hint": "lernen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Wenn ich das früher"},
+        {"type": "blank", "id": "20a", "accept": ["gewusst"], "tags": ["form:partizip_2", "form:plusquamperfekt"]},
+        {"type": "text", "text": "hätte, wäre ich gleich zum Amt gegangen."}
+      ],
+      "hint": "wissen"
+    }
+  ]
+}

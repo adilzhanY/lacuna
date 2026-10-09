@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2p_nouns_governed",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Er hat Angst vor"},
+        {"type": "blank", "id": "1a", "accept": ["dem"], "tags": ["case:dative", "trigger:angst_vor"]},
+        {"type": "text", "text": "Hund im Garten."}
+      ],
+      "hint": "Hund, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Hast du schon eine Antwort auf"},
+        {"type": "blank", "id": "2a", "accept": ["die"], "tags": ["case:accusative", "trigger:antwort_auf"]},
+        {"type": "text", "text": "Mail von Tom geschrieben?"}
+      ],
+      "hint": "Mail, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Sie hat großes Interesse an"},
+        {"type": "blank", "id": "3a", "accept": ["dem"], "tags": ["case:dative", "trigger:interesse_an"]},
+        {"type": "text", "text": "Kurs für Fotografie."}
+      ],
+      "hint": "Kurs, m"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich habe keine Lust auf"},
+        {"type": "blank", "id": "4a", "accept": ["den"], "tags": ["case:accusative", "trigger:lust_auf"]},
+        {"type": "text", "text": "Stau am Morgen."}
+      ],
+      "hint": "Stau, m"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Wir brauchen einen Platz für"},
+        {"type": "blank", "id": "5a", "accept": ["das"], "tags": ["case:accusative", "trigger:platz_fuer"]},
+        {"type": "text", "text": "Kinderbett im Flur."}
+      ],
+      "hint": "Kinderbett, n"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Grund für"},
+        {"type": "blank", "id": "6a", "accept": ["die"], "tags": ["case:accusative", "trigger:grund_fuer"]},
+        {"type": "text", "text": "Verspätung war der Schnee."}
+      ],
+      "hint": "Verspätung, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Sie hat meine Bitte um"},
+        {"type": "blank", "id": "7a", "accept": ["den"], "tags": ["case:accusative", "trigger:bitte_um"]},
+        {"type": "text", "text": "Rückruf ignoriert."}
+      ],
+      "hint": "Rückruf, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Er hat keinen Zugang zu"},
+        {"type": "blank", "id": "8a", "accept": ["dem"], "tags": ["case:dative", "trigger:zugang_zu"]},
+        {"type": "text", "text": "Keller, weil der Schlüssel fehlt."}
+      ],
+      "hint": "Keller, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Liebe zu"},
+        {"type": "blank", "id": "9a", "accept": ["der"], "tags": ["case:dative", "trigger:liebe_zu"]},
+        {"type": "text", "text": "Musik hat er von seinem Vater geerbt."}
+      ],
+      "hint": "Musik, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich bin auf der Suche nach"},
+        {"type": "blank", "id": "10a", "accept": ["einem"], "tags": ["case:dative", "trigger:suche_nach", "declension:indefinite_article"]},
+        {"type": "text", "text": "Parkplatz für das Auto."}
+      ],
+      "hint": "Parkplatz, m"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er hat großen Respekt vor"},
+        {"type": "blank", "id": "11a", "accept": ["dem"], "tags": ["case:dative", "trigger:respekt_vor"]},
+        {"type": "text", "text": "Chef, auch wenn er streng ist."}
+      ],
+      "hint": "Chef, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich habe keine Ahnung von"},
+        {"type": "blank", "id": "12a", "accept": ["der"], "tags": ["case:dative", "trigger:ahnung_von"]},
+        {"type": "text", "text": "Technik in diesem Gerät."}
+      ],
+      "hint": "Technik, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Sein Verständnis für"},
+        {"type": "blank", "id": "13a", "accept": ["die"], "tags": ["case:accusative", "number:plural", "trigger:verstaendnis_fuer"]},
+        {"type": "text", "text": "Probleme anderer Leute ist gering."}
+      ],
+      "hint": "Probleme, pl"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er hat Sorge um"},
+        {"type": "blank", "id": "14a", "accept": ["den"], "tags": ["case:accusative", "trigger:sorge_um"]},
+        {"type": "text", "text": "Vater, der seit Tagen krank ist."}
+      ],
+      "hint": "Vater, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Wir haben keinen Anspruch auf"},
+        {"type": "blank", "id": "15a", "accept": ["das"], "tags": ["case:accusative", "trigger:anspruch_auf"]},
+        {"type": "text", "text": "Geld vom Amt."}
+      ],
+      "hint": "Geld, n"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ein gültiger Pass ist eine Voraussetzung für"},
+        {"type": "blank", "id": "16a", "accept": ["die"], "tags": ["case:accusative", "trigger:voraussetzung_fuer"]},
+        {"type": "text", "text": "Teilnahme am Kurs."}
+      ],
+      "hint": "Teilnahme, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich sehe keinen Zusammenhang mit"},
+        {"type": "blank", "id": "17a", "accept": ["dem"], "tags": ["case:dative", "trigger:zusammenhang_mit"]},
+        {"type": "text", "text": "Wetter von gestern."}
+      ],
+      "hint": "Wetter, n"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Sie hat eine Vorliebe für"},
+        {"type": "blank", "id": "18a", "accept": ["den"], "tags": ["case:accusative", "trigger:vorliebe_fuer"]},
+        {"type": "text", "text": "Käse aus Bayern."}
+      ],
+      "hint": "Käse, m"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Schuld an"},
+        {"type": "blank", "id": "19a", "accept": ["dem"], "tags": ["case:dative", "trigger:schuld_an"]},
+        {"type": "text", "text": "Unfall hat er nicht."}
+      ],
+      "hint": "Unfall, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich habe eine schöne Erinnerung an"},
+        {"type": "blank", "id": "20a", "accept": ["den"], "tags": ["case:accusative", "trigger:erinnerung_an"]},
+        {"type": "text", "text": "Urlaub am Meer."}
+      ],
+      "hint": "Urlaub, m"
+    }
+  ]
+}

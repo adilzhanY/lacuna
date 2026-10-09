@@ -1,0 +1,182 @@
+{
+  "topic_id": "roadmap.b1_causal_clauses",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe heute zu Hause,"},
+        {"type": "blank", "id": "1a", "accept": ["weil"], "tags": ["trigger:weil"]},
+        {"type": "text", "text": "es draußen regnet."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "blank", "id": "2a", "accept": ["Weil"], "tags": ["trigger:weil", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "der Bus heute ausgefallen ist, komme ich zu spät."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich bin spät dran, weil ich den Wecker nicht"},
+        {"type": "blank", "id": "3a", "accept": ["gehört"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "hören"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Sie kann heute nicht kommen, weil sie sich am Knie"},
+        {"type": "blank", "id": "4a", "accept": ["verletzt"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "sich verletzen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Da", "Weil"], "tags": ["trigger:da", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "der Laden schon geschlossen hat, kaufe ich das Brot morgen."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich kann nicht bezahlen,"},
+        {"type": "blank", "id": "6a", "accept": ["weil"], "tags": ["trigger:weil"]},
+        {"type": "text", "text": "meine Karte zu Hause liegt."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Bäcker hat heute zu, weil er nach Italien"},
+        {"type": "blank", "id": "7a", "accept": ["gefahren"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "ist."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich nehme heute das Taxi, weil ich den ganzen Tag"},
+        {"type": "blank", "id": "8a", "accept": ["gearbeitet"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der Chef ist sauer, da der Bericht noch nicht"},
+        {"type": "blank", "id": "9a", "accept": ["geschrieben"], "tags": ["trigger:da", "word_order:verb_final", "form:passive"]},
+        {"type": "text", "text": "wurde."}
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Da", "Weil"], "tags": ["trigger:da", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "morgen Feiertag ist, haben die Geschäfte heute länger auf."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich esse heute kein Fleisch mehr,"},
+        {"type": "blank", "id": "11a", "accept": ["weil"], "tags": ["trigger:weil"]},
+        {"type": "text", "text": "ich das Leid der Tiere nicht unterstützen möchte."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Weil der Weg so lang ist,"},
+        {"type": "blank", "id": "12a", "accept": ["nimmt"], "tags": ["word_order:verb_second", "trigger:weil"]},
+        {"type": "text", "text": "er das Fahrrad."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Sie sucht den ganzen Tag ihre Brille, weil sie sie beim Schwimmen"},
+        {"type": "blank", "id": "13a", "accept": ["verloren"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "blank", "id": "14a", "accept": ["Da", "Weil"], "tags": ["trigger:da", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "das Konzert schon ausverkauft ist, fahren wir zum Fußballspiel."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Tür bleibt zu, weil das Schloss seit gestern"},
+        {"type": "blank", "id": "15a", "accept": ["kaputtgegangen"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "ist."}
+      ],
+      "hint": "kaputtgehen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir bleiben heute lieber im Hotel, da es draußen stark"},
+        {"type": "blank", "id": "16a", "accept": ["geregnet"], "tags": ["trigger:da", "word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Kurs fällt aus,"},
+        {"type": "blank", "id": "17a", "accept": ["da", "weil"], "tags": ["trigger:da"]},
+        {"type": "text", "text": "die Lehrerin krank ist."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich kann nicht mitkommen,"},
+        {"type": "blank", "id": "18a", "accept": ["weil"], "tags": ["trigger:weil"]},
+        {"type": "text", "text": "ich am Samstag arbeiten muss."}
+      ],
+      "hint": "Grund, Konjunktion"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir müssen heute zu Fuß gehen, weil die Heizung im Bad"},
+        {"type": "blank", "id": "19a", "accept": ["ausgefallen"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "ist."}
+      ],
+      "hint": "ausfallen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich bin total erschöpft, weil ich gestern bis Mitternacht"},
+        {"type": "blank", "id": "20a", "accept": ["gelernt"], "tags": ["word_order:verb_final", "form:perfekt"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "lernen"
+    }
+  ]
+}

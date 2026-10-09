@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c1_nominalization",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "1a", "accept": ["Erneuerung"], "tags": ["form:nominalization", "gender:feminine"]},
+        {"type": "text", "text": "der Straße dauert ein Jahr."}
+      ],
+      "hint": "erneuern"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Die Stadt"},
+        {"type": "blank", "id": "2a", "accept": ["erneuert"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "die Straße im Sommer."}
+      ],
+      "hint": "Erneuerung, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir warten nach der"},
+        {"type": "blank", "id": "3a", "accept": ["Entscheidung"], "tags": ["form:nominalization", "gender:feminine", "trigger:preposition_nach"]},
+        {"type": "text", "text": "des Vermieters."}
+      ],
+      "hint": "entscheiden"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "4a", "accept": ["untersucht"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "meinen Rücken gründlich."}
+      ],
+      "hint": "Untersuchung, f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Bei der"},
+        {"type": "blank", "id": "5a", "accept": ["Anmeldung"], "tags": ["form:nominalization", "gender:feminine", "trigger:preposition_bei"]},
+        {"type": "text", "text": "müssen Sie Ihren Pass zeigen."}
+      ],
+      "hint": "anmelden"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "6a", "accept": ["melde"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "mich für den Kurs an."}
+      ],
+      "hint": "Anmeldung, f"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "7a", "accept": ["Verbesserung"], "tags": ["form:nominalization", "gender:feminine"]},
+        {"type": "text", "text": "der Internetverbindung dauert noch lange."}
+      ],
+      "hint": "verbessern"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Der Techniker"},
+        {"type": "blank", "id": "8a", "accept": ["verbessert"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "die Verbindung im Haus."}
+      ],
+      "hint": "Verbesserung, f"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Nach der"},
+        {"type": "blank", "id": "9a", "accept": ["Übernahme"], "tags": ["form:nominalization", "gender:feminine", "trigger:preposition_nach"]},
+        {"type": "text", "text": "der Firma gibt es neue Regeln."}
+      ],
+      "hint": "übernehmen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Firma"},
+        {"type": "blank", "id": "10a", "accept": ["übernimmt"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "den kleinen Laden im Viertel."}
+      ],
+      "hint": "Übernahme, f"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "11a", "accept": ["Lieferung"], "tags": ["form:nominalization", "gender:feminine"]},
+        {"type": "text", "text": "des Pakets verzögert sich."}
+      ],
+      "hint": "liefern"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Der Händler"},
+        {"type": "blank", "id": "12a", "accept": ["liefert"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "das Sofa am Freitag."}
+      ],
+      "hint": "Lieferung, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "13a", "accept": ["Ankunft"], "tags": ["form:nominalization", "gender:feminine"]},
+        {"type": "text", "text": "des Zuges ist um neun Uhr."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "14a", "accept": ["kommt"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "um neun Uhr in Berlin an."}
+      ],
+      "hint": "Ankunft, f"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das"},
+        {"type": "blank", "id": "15a", "accept": ["Rauchen"], "tags": ["form:nominalization", "gender:neuter"]},
+        {"type": "text", "text": "ist im Treppenhaus verboten."}
+      ],
+      "hint": "rauchen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Miete"},
+        {"type": "blank", "id": "16a", "accept": ["steigt"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "im Herbst wieder."}
+      ],
+      "hint": "Anstieg, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "17a", "accept": ["Rückzahlung"], "tags": ["form:nominalization", "gender:feminine"]},
+        {"type": "text", "text": "der Kaution dauert zwei Wochen."}
+      ],
+      "hint": "zurückzahlen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Bank"},
+        {"type": "blank", "id": "18a", "accept": ["zahlt"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "die Kaution nach zwei Wochen zurück."}
+      ],
+      "hint": "Rückzahlung, f"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Nach der"},
+        {"type": "blank", "id": "19a", "accept": ["Bestellung"], "tags": ["form:nominalization", "gender:feminine", "trigger:preposition_nach"]},
+        {"type": "text", "text": "dauert die Lieferung drei Tage."}
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "20a", "accept": ["bestelle"], "tags": ["form:verbalization", "number:singular"]},
+        {"type": "text", "text": "den Tisch online bei dem Möbelhaus."}
+      ],
+      "hint": "Bestellung, f"
+    }
+  ]
+}

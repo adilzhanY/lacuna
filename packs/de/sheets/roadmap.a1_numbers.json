@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1_numbers",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich brauche"},
+        {"type": "blank", "id": "1a", "accept": ["zwei"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Brötchen, bitte."}
+      ],
+      "hint": "2"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Es ist"},
+        {"type": "blank", "id": "2a", "accept": ["drei"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Uhr, wir müssen los."}
+      ],
+      "hint": "3"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Meine Tochter ist"},
+        {"type": "blank", "id": "3a", "accept": ["vier"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahre alt."}
+      ],
+      "hint": "4"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir haben"},
+        {"type": "blank", "id": "4a", "accept": ["fünf"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Zimmer in der Wohnung."}
+      ],
+      "hint": "5"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Kurs dauert"},
+        {"type": "blank", "id": "5a", "accept": ["sechs"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Wochen."}
+      ],
+      "hint": "6"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das Hemd kostet"},
+        {"type": "blank", "id": "6a", "accept": ["sieben"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "7"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Bahn hat"},
+        {"type": "blank", "id": "7a", "accept": ["acht"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Minuten Verspätung."}
+      ],
+      "hint": "8"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich wohne seit"},
+        {"type": "blank", "id": "8a", "accept": ["neun"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahren in Berlin."}
+      ],
+      "hint": "9"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Party beginnt um"},
+        {"type": "blank", "id": "9a", "accept": ["zehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Uhr abends."}
+      ],
+      "hint": "10"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Fußballmannschaft hat"},
+        {"type": "blank", "id": "10a", "accept": ["elf"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Spieler."}
+      ],
+      "hint": "11"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Torte kostet"},
+        {"type": "blank", "id": "11a", "accept": ["zwölf"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "12"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Der Kurs hat"},
+        {"type": "blank", "id": "12a", "accept": ["dreizehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Teilnehmer."}
+      ],
+      "hint": "13"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Nachtfahrt dauert"},
+        {"type": "blank", "id": "13a", "accept": ["vierzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Stunden."}
+      ],
+      "hint": "14"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Mein Sohn hat"},
+        {"type": "blank", "id": "14a", "accept": ["fünfzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Freunde im Verein."}
+      ],
+      "hint": "15"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Brief kommt in"},
+        {"type": "blank", "id": "15a", "accept": ["sechzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Tagen."}
+      ],
+      "hint": "16"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Meine Schwester ist"},
+        {"type": "blank", "id": "16a", "accept": ["siebzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahre alt."}
+      ],
+      "hint": "17"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Klasse hat"},
+        {"type": "blank", "id": "17a", "accept": ["achtzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Schüler."}
+      ],
+      "hint": "18"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "18a", "accept": ["neunzehn"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Jahre in Bremen gelebt."}
+      ],
+      "hint": "19"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Im Park gibt es"},
+        {"type": "blank", "id": "19a", "accept": ["zwanzig"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "Bänke."}
+      ],
+      "hint": "20"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er ist die Nummer"},
+        {"type": "blank", "id": "20a", "accept": ["eins"], "tags": ["form:cardinal_number"]},
+        {"type": "text", "text": "im Team."}
+      ],
+      "hint": "1"
+    }
+  ]
+}

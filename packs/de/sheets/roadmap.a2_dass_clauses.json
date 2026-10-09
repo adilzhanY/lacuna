@@ -1,0 +1,171 @@
+{
+  "topic_id": "roadmap.a2_dass_clauses",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich glaube, dass der Bus heute"},
+        {"type": "blank", "id": "1a", "accept": ["fährt"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Sie sagt, dass ihr Vater morgen früh"},
+        {"type": "blank", "id": "2a", "accept": ["anruft"], "tags": ["word_order:verb_final", "word_order:separable_prefix"]}
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Mein Chef meint, dass Herr Kaya das Projekt bis Freitag"},
+        {"type": "blank", "id": "3a", "accept": ["fertigstellt"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "fertigstellen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Ärztin sagt, dass ich mehr Wasser"},
+        {"type": "blank", "id": "4a", "accept": ["trinke"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Er findet, dass man im Winter warme Schuhe tragen"},
+        {"type": "blank", "id": "5a", "accept": ["muss"], "tags": ["word_order:verb_final", "form:modal"]}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich bin mir sicher, dass Lena das neue Buch gelesen"},
+        {"type": "blank", "id": "6a", "accept": ["hat"], "tags": ["word_order:verb_final", "form:perfekt"]}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarn sagen, dass der Paketbote heute früh gekommen"},
+        {"type": "blank", "id": "7a", "accept": ["ist"], "tags": ["word_order:verb_final", "form:perfekt"]}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich finde es schön,"},
+        {"type": "blank", "id": "8a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss"]},
+        {"type": "text", "text": "du uns am Wochenende besuchst."}
+      ],
+      "hint": "Konjunktion"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe gehört,"},
+        {"type": "blank", "id": "9a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss"]},
+        {"type": "text", "text": "der Bäcker am Montag geschlossen ist."}
+      ],
+      "hint": "Konjunktion"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Meine Freundin sagt, dass sie im Juli nach Istanbul"},
+        {"type": "blank", "id": "10a", "accept": ["fliegt"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "fliegen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Verkäuferin meint, dass diese Jacke dir gut"},
+        {"type": "blank", "id": "11a", "accept": ["steht"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "stehen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Es ist wichtig,"},
+        {"type": "blank", "id": "12a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss"]},
+        {"type": "text", "text": "du den Termin beim Bürgeramt nicht vergisst."}
+      ],
+      "hint": "Konjunktion"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Lehrer hat gesagt, dass Tim die Hausaufgaben bis Montag"},
+        {"type": "blank", "id": "13a", "accept": ["abgibt"], "tags": ["word_order:verb_final", "word_order:separable_prefix"]}
+      ],
+      "hint": "abgeben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich hoffe, dass dir auf der Reise nichts Schlimmes passiert"},
+        {"type": "blank", "id": "14a", "accept": ["ist"], "tags": ["word_order:verb_final", "form:perfekt"]}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er sagt, dass er die Miete diesen Monat nicht bezahlen"},
+        {"type": "blank", "id": "15a", "accept": ["kann"], "tags": ["word_order:verb_final", "form:modal"]}
+      ],
+      "hint": "können"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Ärzte haben festgestellt,"},
+        {"type": "blank", "id": "16a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss"]},
+        {"type": "text", "text": "der Patient wieder gesund ist."}
+      ],
+      "hint": "Konjunktion"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich verstehe nicht, dass du so spät"},
+        {"type": "blank", "id": "17a", "accept": ["kommst"], "tags": ["word_order:verb_final", "form:present"]}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Kellner bestätigt, dass die Bestellung noch nicht angekommen"},
+        {"type": "blank", "id": "18a", "accept": ["ist"], "tags": ["word_order:verb_final", "form:perfekt"]}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich wünsche dir,"},
+        {"type": "blank", "id": "19a", "accept": ["dass"], "tags": ["trigger:dass", "spelling:ss"]},
+        {"type": "text", "text": "viel Glück bei der Prüfung."}
+      ],
+      "hint": "Konjunktion"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Er glaubt, dass das Wetter am Wochenende besser"},
+        {"type": "blank", "id": "20a", "accept": ["wird"], "tags": ["word_order:verb_final", "form:future"]}
+      ],
+      "hint": "werden"
+    }
+  ]
+}

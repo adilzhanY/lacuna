@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.ms_no_pauses",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Bus fiel aus."},
+        {"type": "blank", "id": "1a", "accept": ["Deshalb"], "tags": ["form:connector_result", "word_order:verb_second"]},
+        {"type": "text", "text": "bin ich zu spät gekommen."}
+      ],
+      "hint": "Folge"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich wollte ins Kino gehen,"},
+        {"type": "blank", "id": "2a", "accept": ["aber"], "tags": ["form:connector_contrast"]},
+        {"type": "text", "text": "ich hatte kein Geld."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Du bist"},
+        {"type": "blank", "id": "3a", "accept": ["ja"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "spät dran!"}
+      ],
+      "hint": "Partikel"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Was machst du"},
+        {"type": "blank", "id": "4a", "accept": ["eigentlich"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "am Wochenende?"}
+      ],
+      "hint": "Partikel"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Er kommt"},
+        {"type": "blank", "id": "5a", "accept": ["wohl"], "tags": ["form:hedge"]},
+        {"type": "text", "text": "morgen, aber ich bin nicht sicher."}
+      ],
+      "hint": "Vermutung"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "6a", "accept": ["keine"], "tags": ["form:set_phrase"]},
+        {"type": "text", "text": "Ahnung, wo der Schlüssel ist."}
+      ],
+      "hint": "Redewendung"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Moment, ich schaue"},
+        {"type": "blank", "id": "7a", "accept": ["mal"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "nach."}
+      ],
+      "hint": "Partikel"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist hell."},
+        {"type": "blank", "id": "8a", "accept": ["Außerdem"], "tags": ["form:connector_addition", "word_order:verb_second"]},
+        {"type": "text", "text": "ist sie günstig."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich lese die Post."},
+        {"type": "blank", "id": "9a", "accept": ["Danach"], "tags": ["form:connector_sequence", "word_order:verb_second"]},
+        {"type": "text", "text": "rufe ich meine Mutter an."}
+      ],
+      "hint": "Reihenfolge"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Es regnet,"},
+        {"type": "blank", "id": "10a", "accept": ["trotzdem"], "tags": ["form:connector_concession", "word_order:verb_second"]},
+        {"type": "text", "text": "gehen wir spazieren."}
+      ],
+      "hint": "Einräumung"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich fahre nicht mit dem Auto,"},
+        {"type": "blank", "id": "11a", "accept": ["sondern"], "tags": ["form:connector_contrast"]},
+        {"type": "text", "text": "mit dem Zug."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Das Essen war,"},
+        {"type": "blank", "id": "12a", "accept": ["ehrlich"], "tags": ["form:set_phrase"]},
+        {"type": "text", "text": "gesagt, sehr gut."}
+      ],
+      "hint": "Redewendung"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Entschuldigung, das macht"},
+        {"type": "blank", "id": "13a", "accept": ["nichts"], "tags": ["form:set_phrase"]}
+      ],
+      "hint": "machen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich gehe schlafen. Gute"},
+        {"type": "blank", "id": "14a", "accept": ["Nacht"], "tags": ["form:set_phrase"]}
+      ],
+      "hint": "Redewendung"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "15a", "accept": ["schon"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "richtig, aber nicht ganz."}
+      ],
+      "hint": "Partikel"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Gut,"},
+        {"type": "blank", "id": "16a", "accept": ["also"], "tags": ["form:discourse_marker", "word_order:verb_second"]},
+        {"type": "text", "text": "fahren wir los."}
+      ],
+      "hint": "Schluss"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe zu Hause,"},
+        {"type": "blank", "id": "17a", "accept": ["weil"], "tags": ["form:connector_reason", "word_order:verb_end"]},
+        {"type": "text", "text": "ich krank bin."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich glaube,"},
+        {"type": "blank", "id": "18a", "accept": ["dass"], "tags": ["form:subordinator", "word_order:verb_end"]},
+        {"type": "text", "text": "er morgen kommt."}
+      ],
+      "hint": "Nebensatz"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Komm vorbei,"},
+        {"type": "blank", "id": "19a", "accept": ["wenn"], "tags": ["form:subordinator", "word_order:verb_end"]},
+        {"type": "text", "text": "du Zeit hast."}
+      ],
+      "hint": "Bedingung"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich hatte heute einen langen Tag."},
+        {"type": "blank", "id": "20a", "accept": ["Übrigens"], "tags": ["form:discourse_marker", "word_order:verb_second"]},
+        {"type": "text", "text": "hast du schon gegessen?"}
+      ],
+      "hint": "Themenwechsel"
+    }
+  ]
+}

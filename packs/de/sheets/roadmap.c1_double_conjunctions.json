@@ -1,0 +1,181 @@
+{
+  "topic_id": "roadmap.c1_double_conjunctions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Sie spricht sowohl Deutsch"},
+        {"type": "blank", "id": "1a", "accept": ["als"], "tags": ["trigger:sowohl_als_auch"]},
+        {"type": "text", "text": "auch Englisch."}
+      ],
+      "hint": "sowohl ... auch"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Park ist sowohl im Sommer"},
+        {"type": "blank", "id": "2a", "accept": ["als"], "tags": ["trigger:sowohl_als_auch"]},
+        {"type": "text", "text": "auch im Winter schön."}
+      ],
+      "hint": "sowohl ... auch"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "blank", "id": "3a", "accept": ["Sowohl"], "tags": ["trigger:sowohl_als_auch"]},
+        {"type": "text", "text": "die Bäckerei als auch der Supermarkt sind heute offen."}
+      ],
+      "hint": "... als auch"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Ärztin hat sowohl im Krankenhaus gearbeitet als"},
+        {"type": "blank", "id": "4a", "accept": ["auch"], "tags": ["trigger:sowohl_als_auch"]},
+        {"type": "text", "text": "in einer Praxis."}
+      ],
+      "hint": "sowohl ... als"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich habe weder Geld"},
+        {"type": "blank", "id": "5a", "accept": ["noch"], "tags": ["trigger:weder_noch"]},
+        {"type": "text", "text": "Zeit für den Umzug."}
+      ],
+      "hint": "weder ..."
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "blank", "id": "6a", "accept": ["Weder"], "tags": ["trigger:weder_noch"]},
+        {"type": "text", "text": "der Bus noch die U-Bahn fuhr gestern."}
+      ],
+      "hint": "... noch"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er hat"},
+        {"type": "blank", "id": "7a", "accept": ["weder"], "tags": ["trigger:weder_noch"]},
+        {"type": "text", "text": "Zeit noch Lust, mit ins Kino zu kommen."}
+      ],
+      "hint": "... noch"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wir nehmen entweder den Bus"},
+        {"type": "blank", "id": "8a", "accept": ["oder"], "tags": ["trigger:entweder_oder"]},
+        {"type": "text", "text": "die Bahn zum Flughafen."}
+      ],
+      "hint": "entweder ..."
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "blank", "id": "9a", "accept": ["Entweder"], "tags": ["trigger:entweder_oder", "word_order:verb_second"]},
+        {"type": "text", "text": "gehen wir jetzt zum Arzt, oder wir warten bis morgen."}
+      ],
+      "hint": "... oder"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Das Paket kommt"},
+        {"type": "blank", "id": "10a", "accept": ["entweder"], "tags": ["trigger:entweder_oder"]},
+        {"type": "text", "text": "heute oder morgen."}
+      ],
+      "hint": "... oder"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist nicht nur zu klein,"},
+        {"type": "blank", "id": "11a", "accept": ["sondern"], "tags": ["trigger:nicht_nur_sondern_auch"]},
+        {"type": "text", "text": "auch zu laut."}
+      ],
+      "hint": "nicht nur ... auch"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Sie hat"},
+        {"type": "blank", "id": "12a", "accept": ["nicht"], "tags": ["trigger:nicht_nur_sondern_auch"]},
+        {"type": "text", "text": "nur Brot, sondern auch Milch gekauft."}
+      ],
+      "hint": "... nur ... sondern auch"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Stadt ist nicht nur schön, sondern"},
+        {"type": "blank", "id": "13a", "accept": ["auch"], "tags": ["trigger:nicht_nur_sondern_auch"]},
+        {"type": "text", "text": "günstig."}
+      ],
+      "hint": "nicht nur ... sondern"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Weg ist zwar weit,"},
+        {"type": "blank", "id": "14a", "accept": ["aber"], "tags": ["trigger:zwar_aber"]},
+        {"type": "text", "text": "der Zug fährt oft."}
+      ],
+      "hint": "zwar ..."
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "blank", "id": "15a", "accept": ["Zwar"], "tags": ["trigger:zwar_aber", "word_order:verb_second"]},
+        {"type": "text", "text": "ist der Laden klein, aber das Brot ist sehr gut."}
+      ],
+      "hint": "... aber"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Je früher wir losfahren,"},
+        {"type": "blank", "id": "16a", "accept": ["desto", "umso"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "weniger Stau gibt es."}
+      ],
+      "hint": "je ..."
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Je näher wir der Küste kommen,"},
+        {"type": "blank", "id": "17a", "accept": ["umso", "desto"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "frischer wird die Luft."}
+      ],
+      "hint": "je ..."
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "blank", "id": "18a", "accept": ["Je"], "tags": ["trigger:je_desto"]},
+        {"type": "text", "text": "mehr Leute kommen, desto lauter wird es."}
+      ],
+      "hint": "... , desto ..."
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich möchte"},
+        {"type": "blank", "id": "19a", "accept": ["sowohl"], "tags": ["trigger:sowohl_als_auch"]},
+        {"type": "text", "text": "meinen Vater als auch meine Mutter anrufen."}
+      ],
+      "hint": "... als auch"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Kinder dürfen"},
+        {"type": "blank", "id": "20a", "accept": ["weder"], "tags": ["trigger:weder_noch"]},
+        {"type": "text", "text": "auf der Straße spielen noch im Hof rennen."}
+      ],
+      "hint": "... noch"
+    }
+  ]
+}

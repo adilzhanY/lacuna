@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.ms_shades",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "1a", "accept": ["wirkt"], "tags": ["form:wirken_auf", "trigger:wirken"]},
+        {"type": "text", "text": "auf mich sehr sympathisch."}
+      ],
+      "hint": "wirken"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "2a", "accept": ["scheint"], "tags": ["form:scheinen_zu", "trigger:scheinen"]},
+        {"type": "text", "text": "müde zu sein, er hat kaum gesprochen."}
+      ],
+      "hint": "scheinen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Du hast es mir"},
+        {"type": "blank", "id": "3a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "versprochen."}
+      ],
+      "hint": "Modalpartikel, Erinnerung"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Kommen Sie"},
+        {"type": "blank", "id": "4a", "accept": ["bitte"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "herein."}
+      ],
+      "hint": "Höflichkeit"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich bin"},
+        {"type": "blank", "id": "5a", "accept": ["gerade"], "tags": ["form:gerade_now"]},
+        {"type": "text", "text": "in der Küche."}
+      ],
+      "hint": "Zeit: jetzt"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "6a", "accept": ["eben"], "tags": ["form:eben_resigned"]},
+        {"type": "text", "text": "so, da kann man nichts machen."}
+      ],
+      "hint": "Resignation"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "blank", "id": "7a", "accept": ["Wahrscheinlich"], "tags": ["form:wahrscheinlich_adverb"]},
+        {"type": "text", "text": "regnet es morgen."}
+      ],
+      "hint": "Wahrscheinlichkeit, Adverb"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich kann mir das nicht"},
+        {"type": "blank", "id": "8a", "accept": ["leisten"], "tags": ["form:sich_leisten", "trigger:sich_leisten"]},
+        {"type": "text", "text": "und brauche es auch nicht."}
+      ],
+      "hint": "sich leisten"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "So etwas"},
+        {"type": "blank", "id": "9a", "accept": ["erlaubt"], "tags": ["form:sich_erlauben", "trigger:sich_erlauben"]},
+        {"type": "text", "text": "man sich als Gast nicht."}
+      ],
+      "hint": "sich erlauben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "10a", "accept": ["weiß"], "tags": ["form:wissen_fact"]},
+        {"type": "text", "text": "nicht, wann der Laden schließt."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "11a", "accept": ["kenne"], "tags": ["form:kennen_person_place"]},
+        {"type": "text", "text": "die Bäckerei am Markt gut."}
+      ],
+      "hint": "kennen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "12a", "accept": ["hoffe"], "tags": ["form:hoffen_auf"]},
+        {"type": "text", "text": "auf besseres Wetter am Wochenende."}
+      ],
+      "hint": "hoffen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "13a", "accept": ["warte"], "tags": ["form:warten_auf"]},
+        {"type": "text", "text": "schon seit zwanzig Minuten auf den Bus."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "14a", "accept": ["bitte"], "tags": ["form:bitten_um"]},
+        {"type": "text", "text": "den Nachbarn um einen Gefallen."}
+      ],
+      "hint": "bitten"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Meine Schwester"},
+        {"type": "blank", "id": "15a", "accept": ["studiert"], "tags": ["form:studieren_university"]},
+        {"type": "text", "text": "an der Universität Medizin."}
+      ],
+      "hint": "studieren"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich bleibe zu Hause,"},
+        {"type": "blank", "id": "16a", "accept": ["denn"], "tags": ["word_order:verb_second", "trigger:denn"]},
+        {"type": "text", "text": "ich bin krank."}
+      ],
+      "hint": "Grund, Hauptsatz"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich komme nicht heute,"},
+        {"type": "blank", "id": "17a", "accept": ["sondern"], "tags": ["trigger:sondern"]},
+        {"type": "text", "text": "morgen."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "18a", "accept": ["schaffe"], "tags": ["form:schaffen_pass"]},
+        {"type": "text", "text": "die Prüfung im ersten Versuch."}
+      ],
+      "hint": "schaffen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich habe meinen Schlüssel"},
+        {"type": "blank", "id": "19a", "accept": ["verlegt"], "tags": ["form:verlegen_misplaced"]},
+        {"type": "text", "text": "und suche ihn seit einer Stunde."}
+      ],
+      "hint": "verlegen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich habe meinen Geldbeutel im Zug"},
+        {"type": "blank", "id": "20a", "accept": ["verloren"], "tags": ["form:verlieren_lost"]},
+        {"type": "text", "text": "und musste eine neue Karte bestellen."}
+      ],
+      "hint": "verlieren"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1p_und_aber",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich kaufe Brot"},
+        {"type": "blank", "id": "1a", "accept": ["und"], "tags": ["form:und"]},
+        {"type": "text", "text": "Milch im Supermarkt."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Das Brötchen ist frisch,"},
+        {"type": "blank", "id": "2a", "accept": ["aber"], "tags": ["form:aber"]},
+        {"type": "text", "text": "es ist sehr teuer."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir bleiben heute zu Hause,"},
+        {"type": "blank", "id": "3a", "accept": ["denn"], "tags": ["form:denn"]},
+        {"type": "text", "text": "es regnet seit dem Morgen."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Möchtest du Kaffee"},
+        {"type": "blank", "id": "4a", "accept": ["oder"], "tags": ["form:oder"]},
+        {"type": "text", "text": "lieber Tee?"}
+      ],
+      "hint": "Alternative"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist hell"},
+        {"type": "blank", "id": "5a", "accept": ["und"], "tags": ["form:und"]},
+        {"type": "text", "text": "ruhig."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich habe Hunger,"},
+        {"type": "blank", "id": "6a", "accept": ["aber"], "tags": ["form:aber"]},
+        {"type": "text", "text": "ich habe kein Geld."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich kann nicht kommen,"},
+        {"type": "blank", "id": "7a", "accept": ["denn"], "tags": ["form:denn"]},
+        {"type": "text", "text": "ich bin krank."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Fahren wir mit dem Bus"},
+        {"type": "blank", "id": "8a", "accept": ["oder"], "tags": ["form:oder"]},
+        {"type": "text", "text": "nehmen wir die U-Bahn?"}
+      ],
+      "hint": "Alternative"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder wohnt in Berlin"},
+        {"type": "blank", "id": "9a", "accept": ["und"], "tags": ["form:und"]},
+        {"type": "text", "text": "meine Schwester in München."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Zug fährt pünktlich,"},
+        {"type": "blank", "id": "10a", "accept": ["aber"], "tags": ["form:aber"]},
+        {"type": "text", "text": "heute fällt er leider aus."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Er lernt Deutsch,"},
+        {"type": "blank", "id": "11a", "accept": ["denn"], "tags": ["form:denn"]},
+        {"type": "text", "text": "er möchte in Hamburg arbeiten."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir können im Park spazieren gehen"},
+        {"type": "blank", "id": "12a", "accept": ["oder"], "tags": ["form:oder"]},
+        {"type": "text", "text": "ins Kino gehen."}
+      ],
+      "hint": "Alternative"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wir fahren morgen mit dem Zug"},
+        {"type": "blank", "id": "13a", "accept": ["und"], "tags": ["form:und"]},
+        {"type": "text", "text": "kommen am Abend zurück."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Miete ist niedrig,"},
+        {"type": "blank", "id": "14a", "accept": ["aber"], "tags": ["form:aber"]},
+        {"type": "text", "text": "die Wohnung ist sehr klein."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Nimm einen Regenschirm mit,"},
+        {"type": "blank", "id": "15a", "accept": ["denn"], "tags": ["form:denn"]},
+        {"type": "text", "text": "es regnet später."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Zahlen Sie bar"},
+        {"type": "blank", "id": "16a", "accept": ["oder"], "tags": ["form:oder"]},
+        {"type": "text", "text": "mit Karte?"}
+      ],
+      "hint": "Alternative"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Arzt ist freundlich"},
+        {"type": "blank", "id": "17a", "accept": ["und"], "tags": ["form:und"]},
+        {"type": "text", "text": "er hat wenig Zeit."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das Wetter ist schön,"},
+        {"type": "blank", "id": "18a", "accept": ["aber"], "tags": ["form:aber"]},
+        {"type": "text", "text": "wir bleiben im Büro."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Sie geht früh ins Bett,"},
+        {"type": "blank", "id": "19a", "accept": ["denn"], "tags": ["form:denn"]},
+        {"type": "text", "text": "sie muss morgen um sechs aufstehen."}
+      ],
+      "hint": "Grund"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Kommst du heute"},
+        {"type": "blank", "id": "20a", "accept": ["oder"], "tags": ["form:oder"]},
+        {"type": "text", "text": "erst morgen?"}
+      ],
+      "hint": "Alternative"
+    }
+  ]
+}

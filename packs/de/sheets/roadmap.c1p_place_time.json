@@ -1,0 +1,184 @@
+{
+  "topic_id": "roadmap.c1p_place_time",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Die Bahn fährt"},
+        {"type": "blank", "id": "1a", "accept": ["während"], "tags": ["trigger:preposition_waehrend", "case:genitive"]},
+        {"type": "text", "text": "des Feiertags nur eingeschränkt."}
+      ],
+      "hint": "während"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir wohnen"},
+        {"type": "blank", "id": "2a", "accept": ["außerhalb"], "tags": ["trigger:preposition_ausserhalb", "case:genitive"]},
+        {"type": "text", "text": "der Stadt in einem kleinen Dorf."}
+      ],
+      "hint": "außerhalb"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Post liegt"},
+        {"type": "blank", "id": "3a", "accept": ["gegenüber"], "tags": ["trigger:preposition_gegenueber", "case:dative"]},
+        {"type": "text", "text": "dem Supermarkt, gleich um die Ecke."}
+      ],
+      "hint": "gegenüber"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Stell das Fahrrad bitte"},
+        {"type": "blank", "id": "4a", "accept": ["hinter"], "tags": ["trigger:preposition_hinter", "case:accusative"]},
+        {"type": "text", "text": "das Haus, nicht davor."}
+      ],
+      "hint": "hinter"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Mieterversammlung findet"},
+        {"type": "blank", "id": "5a", "accept": ["innerhalb"], "tags": ["trigger:preposition_innerhalb", "case:genitive"]},
+        {"type": "text", "text": "eines Monats statt."}
+      ],
+      "hint": "innerhalb"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich wohne hier"},
+        {"type": "blank", "id": "6a", "accept": ["seit"], "tags": ["trigger:preposition_seit", "case:dative"]},
+        {"type": "text", "text": "meiner Geburt."}
+      ],
+      "hint": "seit"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wir gehen den Rhein"},
+        {"type": "blank", "id": "7a", "accept": ["entlang"], "tags": ["trigger:preposition_entlang", "case:accusative"]},
+        {"type": "text", "text": "bis zur Brücke."}
+      ],
+      "hint": "entlang"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "blank", "id": "8a", "accept": ["Ab"], "tags": ["trigger:preposition_ab", "case:dative", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "nächster Woche gilt die neue Regel."}
+      ],
+      "hint": "ab"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Das Café liegt"},
+        {"type": "blank", "id": "9a", "accept": ["jenseits"], "tags": ["trigger:preposition_jenseits", "case:genitive"]},
+        {"type": "text", "text": "der Brücke, direkt am Fluss."}
+      ],
+      "hint": "jenseits"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Zug kommt"},
+        {"type": "blank", "id": "10a", "accept": ["gegen"], "tags": ["trigger:preposition_gegen"]},
+        {"type": "text", "text": "Mitternacht an."}
+      ],
+      "hint": "gegen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Katze schläft"},
+        {"type": "blank", "id": "11a", "accept": ["unter"], "tags": ["trigger:preposition_unter", "case:dative"]},
+        {"type": "text", "text": "dem Schreibtisch."}
+      ],
+      "hint": "unter"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir fahren"},
+        {"type": "blank", "id": "12a", "accept": ["über"], "tags": ["trigger:preposition_ueber", "case:accusative"]},
+        {"type": "text", "text": "die Autobahn, weil die Landstraße gesperrt ist."}
+      ],
+      "hint": "über"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Praxis schließt"},
+        {"type": "blank", "id": "13a", "accept": ["um"], "tags": ["trigger:preposition_um"]},
+        {"type": "text", "text": "halb sechs."}
+      ],
+      "hint": "um"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "blank", "id": "14a", "accept": ["Nach"], "tags": ["trigger:preposition_nach", "case:dative", "capitalisation:sentence_start"]},
+        {"type": "text", "text": "dem Termin gehen wir essen."}
+      ],
+      "hint": "nach"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Die Hütte liegt"},
+        {"type": "blank", "id": "15a", "accept": ["oberhalb"], "tags": ["trigger:preposition_oberhalb", "case:genitive"]},
+        {"type": "text", "text": "des Dorfes, auf etwa 1200 Metern."}
+      ],
+      "hint": "oberhalb"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich arbeite"},
+        {"type": "blank", "id": "16a", "accept": ["bei"], "tags": ["trigger:preposition_bei", "case:dative"]},
+        {"type": "text", "text": "einer Bank in der Innenstadt."}
+      ],
+      "hint": "bei"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich habe dich"},
+        {"type": "blank", "id": "17a", "accept": ["vor"], "tags": ["trigger:preposition_vor", "case:dative"]},
+        {"type": "text", "text": "einer Stunde angerufen."}
+      ],
+      "hint": "vor"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Der Park liegt"},
+        {"type": "blank", "id": "18a", "accept": ["zwischen"], "tags": ["trigger:preposition_zwischen", "case:dative"]},
+        {"type": "text", "text": "dem Bahnhof und der Schule."}
+      ],
+      "hint": "zwischen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Läden sind"},
+        {"type": "blank", "id": "19a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:dative", "number:plural"]},
+        {"type": "text", "text": "Sonntagen geschlossen."}
+      ],
+      "hint": "an"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Rechnung muss"},
+        {"type": "blank", "id": "20a", "accept": ["binnen"], "tags": ["trigger:preposition_binnen"]},
+        {"type": "text", "text": "zwei Wochen bezahlt werden."}
+      ],
+      "hint": "binnen"
+    }
+  ]
+}

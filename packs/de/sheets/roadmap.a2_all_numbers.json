@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2_all_numbers",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Mein Geburtstag ist am"},
+        {"type": "blank", "id": "1a", "accept": ["fünfzehnten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Mai."}
+      ],
+      "hint": "15. Mai"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "2a", "accept": ["zwei"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Katzen und einen Hund."}
+      ],
+      "hint": "2"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Der Bus fährt alle"},
+        {"type": "blank", "id": "3a", "accept": ["zehn"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Minuten zum Bahnhof."}
+      ],
+      "hint": "10"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Das ist meine"},
+        {"type": "blank", "id": "4a", "accept": ["dritte"], "tags": ["form:ordinal", "case:nominative"]},
+        {"type": "text", "text": "Wohnung in dieser Stadt."}
+      ],
+      "hint": "3. Wohnung, f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Kurs beginnt am"},
+        {"type": "blank", "id": "5a", "accept": ["ersten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Montag im Oktober."}
+      ],
+      "hint": "1. Montag"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich brauche"},
+        {"type": "blank", "id": "6a", "accept": ["drei"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Eier für den Kuchen."}
+      ],
+      "hint": "3"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich wohne im"},
+        {"type": "blank", "id": "7a", "accept": ["vierten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Stock ohne Aufzug."}
+      ],
+      "hint": "4. Stock, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Brezel kostet"},
+        {"type": "blank", "id": "8a", "accept": ["zwei"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Euro achtzig."}
+      ],
+      "hint": "2,80 Euro"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Im Bürgeramt habe ich die Nummer"},
+        {"type": "blank", "id": "9a", "accept": ["siebenundzwanzig"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "gezogen."}
+      ],
+      "hint": "27"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Zug fährt um"},
+        {"type": "blank", "id": "10a", "accept": ["sechzehn"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Uhr dreißig ab."}
+      ],
+      "hint": "16:30"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich bin schon seit"},
+        {"type": "blank", "id": "11a", "accept": ["drei"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Tagen erkältet."}
+      ],
+      "hint": "3"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung hat"},
+        {"type": "blank", "id": "12a", "accept": ["zwei"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Zimmer, eine Küche und ein Bad."}
+      ],
+      "hint": "2"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Heute ist der"},
+        {"type": "blank", "id": "13a", "accept": ["zwölfte"], "tags": ["form:ordinal", "case:nominative"]},
+        {"type": "text", "text": "März."}
+      ],
+      "hint": "12. März"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich möchte"},
+        {"type": "blank", "id": "14a", "accept": ["fünf"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Äpfel und ein Kilo Bananen."}
+      ],
+      "hint": "5"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das Meeting ist im"},
+        {"type": "blank", "id": "15a", "accept": ["zweiten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Stock, Raum vierzehn."}
+      ],
+      "hint": "2. Stock, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Klasse beginnt um"},
+        {"type": "blank", "id": "16a", "accept": ["acht"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Uhr."}
+      ],
+      "hint": "8"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Es hat heute"},
+        {"type": "blank", "id": "17a", "accept": ["zwanzig"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Grad."}
+      ],
+      "hint": "20"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich fliege am"},
+        {"type": "blank", "id": "18a", "accept": ["neunten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Juli nach Hause."}
+      ],
+      "hint": "9. Juli"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Der Zug fährt vom"},
+        {"type": "blank", "id": "19a", "accept": ["siebten"], "tags": ["form:ordinal", "case:dative"]},
+        {"type": "text", "text": "Gleis ab."}
+      ],
+      "hint": "7. Gleis, n"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Fahrrad kostet"},
+        {"type": "blank", "id": "20a", "accept": ["zweihundert"], "tags": ["form:cardinal"]},
+        {"type": "text", "text": "Euro."}
+      ],
+      "hint": "200"
+    }
+  ]
+}

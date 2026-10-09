@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2_dative_prepositions",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich fahre mit"},
+        {"type": "blank", "id": "1a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_mit", "declension:definite_article"]},
+        {"type": "text", "text": "Bus zur Arbeit."}
+      ],
+      "hint": "Bus, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir kommen gerade aus"},
+        {"type": "blank", "id": "2a", "accept": ["der"], "tags": ["case:dative", "trigger:preposition_aus", "declension:definite_article"]},
+        {"type": "text", "text": "Schule nach Hause."}
+      ],
+      "hint": "Schule, f"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich wohne seit"},
+        {"type": "blank", "id": "3a", "accept": ["einem"], "tags": ["case:dative", "trigger:preposition_seit", "declension:indefinite_article"]},
+        {"type": "text", "text": "Jahr in Berlin."}
+      ],
+      "hint": "Jahr, n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Nach"},
+        {"type": "blank", "id": "4a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_nach", "declension:definite_article"]},
+        {"type": "text", "text": "Essen gehen wir spazieren."}
+      ],
+      "hint": "Essen, n"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Das Geschenk ist von"},
+        {"type": "blank", "id": "5a", "accept": ["meiner"], "tags": ["case:dative", "trigger:preposition_von", "form:possessive"]},
+        {"type": "text", "text": "Mutter."}
+      ],
+      "hint": "meine Mutter"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Kommst du zu"},
+        {"type": "blank", "id": "6a", "accept": ["mir"], "tags": ["case:dative", "trigger:preposition_zu", "form:personal_pronoun"]},
+        {"type": "text", "text": "heute Abend?"}
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich wohne bei"},
+        {"type": "blank", "id": "7a", "accept": ["meinen"], "tags": ["case:dative", "trigger:preposition_bei", "number:plural", "form:possessive"]},
+        {"type": "text", "text": "Eltern."}
+      ],
+      "hint": "Eltern, pl"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei ist gegenüber"},
+        {"type": "blank", "id": "8a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_gegenueber", "declension:definite_article"]},
+        {"type": "text", "text": "Bahnhof."}
+      ],
+      "hint": "Bahnhof, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich komme gerade von"},
+        {"type": "blank", "id": "9a", "accept": ["der"], "tags": ["case:dative", "trigger:preposition_von", "declension:definite_article"]},
+        {"type": "text", "text": "Arbeit."}
+      ],
+      "hint": "Arbeit, f"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Er fährt mit"},
+        {"type": "blank", "id": "10a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_mit", "declension:definite_article"]},
+        {"type": "text", "text": "Fahrrad zur Schule."}
+      ],
+      "hint": "Fahrrad, n"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Wir gehen nach"},
+        {"type": "blank", "id": "11a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_nach", "declension:definite_article"]},
+        {"type": "text", "text": "Kino noch etwas trinken."}
+      ],
+      "hint": "Kino, n"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Sie wartet seit"},
+        {"type": "blank", "id": "12a", "accept": ["einer"], "tags": ["case:dative", "trigger:preposition_seit", "declension:indefinite_article"]},
+        {"type": "text", "text": "Stunde am Bahnsteig."}
+      ],
+      "hint": "Stunde, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Kinder spielen bei"},
+        {"type": "blank", "id": "13a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_bei", "declension:definite_article"]},
+        {"type": "text", "text": "schönen Wetter im Park."}
+      ],
+      "hint": "Wetter, n"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Das Paket kommt aus"},
+        {"type": "blank", "id": "14a", "accept": ["der"], "tags": ["case:dative", "trigger:preposition_aus", "declension:definite_article"]},
+        {"type": "text", "text": "Türkei."}
+      ],
+      "hint": "Türkei, f"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Kannst du mir mit"},
+        {"type": "blank", "id": "15a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_mit", "declension:definite_article"]},
+        {"type": "text", "text": "Koffer helfen?"}
+      ],
+      "hint": "Koffer, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Er kommt von"},
+        {"type": "blank", "id": "16a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_von", "declension:definite_article"]},
+        {"type": "text", "text": "Flughafen zurück."}
+      ],
+      "hint": "Flughafen, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Seit"},
+        {"type": "blank", "id": "17a", "accept": ["dem"], "tags": ["case:dative", "trigger:preposition_seit", "declension:definite_article"]},
+        {"type": "text", "text": "Umzug wohnen wir in Leipzig."}
+      ],
+      "hint": "Umzug, m"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich fahre zu"},
+        {"type": "blank", "id": "18a", "accept": ["meiner"], "tags": ["case:dative", "trigger:preposition_zu", "form:possessive"]},
+        {"type": "text", "text": "Oma nach Hamburg."}
+      ],
+      "hint": "meine Oma"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Jacke ist aus"},
+        {"type": "blank", "id": "19a", "accept": ["einem"], "tags": ["case:dative", "trigger:preposition_aus", "declension:indefinite_article"]},
+        {"type": "text", "text": "warmen Stoff."}
+      ],
+      "hint": "Stoff, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich wohne mit"},
+        {"type": "blank", "id": "20a", "accept": ["meinem"], "tags": ["case:dative", "trigger:preposition_mit", "form:possessive"]},
+        {"type": "text", "text": "Freund zusammen."}
+      ],
+      "hint": "mein Freund"
+    }
+  ]
+}

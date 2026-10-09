@@ -1,0 +1,187 @@
+{
+  "topic_id": "roadmap.ms_position",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "blank", "id": "1a", "accept": ["Einerseits"], "tags": ["form:correlative_einerseits", "word_order:verb_second"]},
+        {"type": "text", "text": "verstehe ich die Sorge der Anwohner wegen des Lärms,"},
+        {"type": "blank", "id": "1b", "accept": ["andererseits"], "tags": ["form:correlative_andererseits", "word_order:verb_second"]},
+        {"type": "text", "text": "halte ich ein Tempolimit für unnötig."}
+      ],
+      "hint": "Gegenüberstellung"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "blank", "id": "2a", "accept": ["Zum einen"], "tags": ["form:correlative_zum_einen", "word_order:verb_second"]},
+        {"type": "text", "text": "ist der Radweg günstig,"},
+        {"type": "blank", "id": "2b", "accept": ["zum anderen"], "tags": ["form:correlative_zum_anderen", "word_order:verb_second"]},
+        {"type": "text", "text": "ist er für Kinder sicherer."}
+      ],
+      "hint": "Aufzählung"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das Argument ist nachvollziehbar."},
+        {"type": "blank", "id": "3a", "accept": ["Dennoch"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "bin ich dagegen."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Miete steigt jedes Jahr."},
+        {"type": "blank", "id": "4a", "accept": ["Folglich"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "müssen viele Familien aus der Stadt wegziehen."}
+      ],
+      "hint": "Folge"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Im Hinblick auf"},
+        {"type": "blank", "id": "5a", "accept": ["die"], "tags": ["case:accusative", "trigger:preposition_auf"]},
+        {"type": "text", "text": "Kosten ist das Projekt zu teuer."}
+      ],
+      "hint": "Kosten, pl"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Bus fährt nur alle zwanzig Minuten."},
+        {"type": "blank", "id": "6a", "accept": ["Zudem"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "fehlen Bänke an der Haltestelle."}
+      ],
+      "hint": "Zusatz"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Das Konzept klingt gut."},
+        {"type": "blank", "id": "7a", "accept": ["Allerdings"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "fehlt ein Plan für die Finanzierung."}
+      ],
+      "hint": "Gegensatz"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Im Gegensatz zu"},
+        {"type": "blank", "id": "8a", "accept": ["meinem"], "tags": ["case:dative", "trigger:preposition_zu"]},
+        {"type": "text", "text": "Nachbarn bin ich für mehr Homeoffice."}
+      ],
+      "hint": "Nachbar, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Schule liegt nah am Park."},
+        {"type": "blank", "id": "9a", "accept": ["Ferner"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "gibt es eine gute Busverbindung."}
+      ],
+      "hint": "Hinzufügung"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Kasse ist fast leer."},
+        {"type": "blank", "id": "10a", "accept": ["Daher"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "müssen wir die Beiträge erhöhen."}
+      ],
+      "hint": "Folge"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "blank", "id": "11a", "accept": ["Sowohl"], "tags": ["form:correlative_sowohl"]},
+        {"type": "text", "text": "die Eltern"},
+        {"type": "blank", "id": "11b", "accept": ["als auch"], "tags": ["form:correlative_als_auch"]},
+        {"type": "text", "text": "die Lehrer sollten bei der Entscheidung dabei sein."}
+      ],
+      "hint": "Gleichrangigkeit"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir haben viele Argumente gehört."},
+        {"type": "blank", "id": "12a", "accept": ["Schließlich"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "ist die Entscheidung eine Frage des Geldes."}
+      ],
+      "hint": "Abschluss"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "blank", "id": "13a", "accept": ["Wenngleich"], "tags": ["form:conjunction_concessive", "word_order:verb_final"]},
+        {"type": "text", "text": "der Vorschlag Geld kostet, lohnt er sich langfristig."}
+      ],
+      "hint": "Einräumung"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Idee ist neu."},
+        {"type": "blank", "id": "14a", "accept": ["Außerdem"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "spart sie Zeit."}
+      ],
+      "hint": "Ergänzung"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Aufgrund"},
+        {"type": "blank", "id": "15a", "accept": ["des"], "tags": ["case:genitive", "trigger:preposition_aufgrund"]},
+        {"type": "text", "text": "starken Regens fällt das Fest aus."}
+      ],
+      "hint": "Regen, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Trotz"},
+        {"type": "blank", "id": "16a", "accept": ["des"], "tags": ["case:genitive", "trigger:preposition_trotz"]},
+        {"type": "text", "text": "Protests wird der Park im Herbst gebaut."}
+      ],
+      "hint": "Protest, m"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Der Vorschlag hilft nicht nur den Familien,"},
+        {"type": "blank", "id": "17a", "accept": ["sondern auch"], "tags": ["form:correlative_nicht_nur"]},
+        {"type": "text", "text": "den Rentnern."}
+      ],
+      "hint": "Steigerung"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Bahn ist oft zu spät."},
+        {"type": "blank", "id": "18a", "accept": ["Ohnehin"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "fahre ich lieber mit dem Rad."}
+      ],
+      "hint": "Bekräftigung"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Hinsichtlich"},
+        {"type": "blank", "id": "19a", "accept": ["der"], "tags": ["case:genitive", "trigger:preposition_hinsichtlich"]},
+        {"type": "text", "text": "Verkehrssicherheit sind wir uns einig."}
+      ],
+      "hint": "Verkehrssicherheit, f"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Abschließend"], "tags": ["form:adverb_connector", "word_order:verb_second"]},
+        {"type": "text", "text": "möchte ich mich bei allen bedanken."}
+      ],
+      "hint": "Schluss"
+    }
+  ]
+}

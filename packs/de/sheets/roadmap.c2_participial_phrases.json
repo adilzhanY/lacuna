@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.c2_participial_phrases",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der"},
+        {"type": "blank", "id": "1a", "accept": ["wartende"], "tags": ["form:partizip_i", "declension:weak", "case:nominative"]},
+        {"type": "text", "text": "Kunde am Schalter wird langsam ungeduldig."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er verließ das Amt mit"},
+        {"type": "blank", "id": "2a", "accept": ["gesenktem"], "tags": ["form:partizip_ii", "declension:strong", "case:dative", "trigger:preposition_mit"]},
+        {"type": "text", "text": "Kopf."}
+      ],
+      "hint": "senken"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die vor einer Woche"},
+        {"type": "blank", "id": "3a", "accept": ["gekaufte"], "tags": ["form:partizip_ii", "declension:weak", "case:nominative"]},
+        {"type": "text", "text": "Milch ist schon sauer."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich sehe den"},
+        {"type": "blank", "id": "4a", "accept": ["schlafenden"], "tags": ["form:partizip_i", "declension:weak", "case:accusative"]},
+        {"type": "text", "text": "Hund unter dem Tisch."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Spielende"], "tags": ["form:partizip_i", "declension:strong", "case:nominative", "number:plural"]},
+        {"type": "text", "text": "Kinder füllen den Hof am Nachmittag."}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Sie tritt vor einem"},
+        {"type": "blank", "id": "6a", "accept": ["wartenden"], "tags": ["form:partizip_i", "declension:mixed", "case:dative", "trigger:preposition_vor"]},
+        {"type": "text", "text": "Publikum auf."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der gestern"},
+        {"type": "blank", "id": "7a", "accept": ["angekommene"], "tags": ["form:partizip_ii", "declension:weak", "case:nominative"]},
+        {"type": "text", "text": "Zug hat zwanzig Minuten Verspätung."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Von dem"},
+        {"type": "blank", "id": "8a", "accept": ["gestohlenen"], "tags": ["form:partizip_ii", "declension:weak", "case:dative"]},
+        {"type": "text", "text": "Fahrrad fehlt jede Spur."}
+      ],
+      "hint": "stehlen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Auf der"},
+        {"type": "blank", "id": "9a", "accept": ["verstopften"], "tags": ["form:partizip_ii", "declension:weak", "case:dative"]},
+        {"type": "text", "text": "Autobahn stehen wir seit einer Stunde."}
+      ],
+      "hint": "verstopfen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Eine"},
+        {"type": "blank", "id": "10a", "accept": ["beruhigende"], "tags": ["form:partizip_i", "declension:strong", "case:nominative"]},
+        {"type": "text", "text": "Stimme am Telefon half mir."}
+      ],
+      "hint": "beruhigen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Den"},
+        {"type": "blank", "id": "11a", "accept": ["vergessenen"], "tags": ["form:partizip_ii", "declension:weak", "case:accusative"]},
+        {"type": "text", "text": "Schlüssel finde ich nirgends."}
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Mit"},
+        {"type": "blank", "id": "12a", "accept": ["klopfendem"], "tags": ["form:partizip_i", "declension:strong", "case:dative", "trigger:preposition_mit"]},
+        {"type": "text", "text": "Herzen wartete sie vor der Tür."}
+      ],
+      "hint": "klopfen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Das"},
+        {"type": "blank", "id": "13a", "accept": ["gebrochene"], "tags": ["form:partizip_ii", "declension:weak", "case:nominative"]},
+        {"type": "text", "text": "Fenster muss bis Freitag ersetzt werden."}
+      ],
+      "hint": "brechen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Sie gibt dem"},
+        {"type": "blank", "id": "14a", "accept": ["bellenden"], "tags": ["form:partizip_i", "declension:weak", "case:dative"]},
+        {"type": "text", "text": "Hund ein Stück Brot."}
+      ],
+      "hint": "bellen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Nach dem"},
+        {"type": "blank", "id": "15a", "accept": ["verlorenen"], "tags": ["form:partizip_ii", "declension:weak", "case:dative", "trigger:preposition_nach"]},
+        {"type": "text", "text": "Fußballspiel ist die Stimmung schlecht."}
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "16a", "accept": ["ausgebuchten"], "tags": ["form:partizip_ii", "declension:weak", "case:nominative", "number:plural"]},
+        {"type": "text", "text": "Hotels in der Stadt sind teuer."}
+      ],
+      "hint": "ausbuchen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Sie sucht einen"},
+        {"type": "blank", "id": "17a", "accept": ["ausgebildeten"], "tags": ["form:partizip_ii", "declension:mixed", "case:accusative"]},
+        {"type": "text", "text": "Elektriker für die Küche."}
+      ],
+      "hint": "ausbilden"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "18a", "accept": ["zu erledigenden"], "tags": ["form:zu_partizip", "declension:weak", "case:nominative", "number:plural"]},
+        {"type": "text", "text": "Aufgaben stapeln sich auf dem Schreibtisch."}
+      ],
+      "hint": "erledigen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "In der"},
+        {"type": "blank", "id": "19a", "accept": ["geöffneten"], "tags": ["form:partizip_ii", "declension:weak", "case:dative"]},
+        {"type": "text", "text": "Schublade liegt ein Brief."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich lese den"},
+        {"type": "blank", "id": "20a", "accept": ["übersetzten"], "tags": ["form:partizip_ii", "declension:weak", "case:accusative"]},
+        {"type": "text", "text": "Brief noch einmal."}
+      ],
+      "hint": "übersetzen"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "topic_id": "roadmap.c1_subject_object_clauses",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht,"},
+        {"type": "blank", "id": "1a", "accept": ["ob"], "tags": ["trigger:indirect_yesno", "word_order:verb_final"]},
+        {"type": "text", "text": "er morgen Zeit hat."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Vermieter bestätigt,"},
+        {"type": "blank", "id": "2a", "accept": ["dass"], "tags": ["trigger:object_clause_dass", "spelling:ss", "word_order:verb_final"]},
+        {"type": "text", "text": "die Kaution zurückgezahlt wird."}
+      ],
+      "hint": "bestätigen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Es ist noch unklar,"},
+        {"type": "blank", "id": "3a", "accept": ["ob"], "tags": ["trigger:indirect_yesno", "word_order:verb_final"]},
+        {"type": "text", "text": "der Zug heute fährt."}
+      ],
+      "hint": "unklar"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "blank", "id": "4a", "accept": ["Dass"], "tags": ["trigger:subject_clause_dass", "spelling:ss", "word_order:verb_final"]},
+        {"type": "text", "text": "er den Job bekommt, ist sehr wahrscheinlich."}
+      ],
+      "hint": "wahrscheinlich"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich finde"},
+        {"type": "blank", "id": "5a", "accept": ["es"], "tags": ["form:korrelat_es", "trigger:verb_finden"]},
+        {"type": "text", "text": "wichtig, dass du ehrlich bist."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wer den Schaden verursacht hat,"},
+        {"type": "blank", "id": "6a", "accept": ["steht"], "tags": ["word_order:verb_second", "trigger:subject_clause_wh"]},
+        {"type": "text", "text": "noch nicht fest."}
+      ],
+      "hint": "feststehen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Kannst du mir sagen,"},
+        {"type": "blank", "id": "7a", "accept": ["wann"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "der Bus fährt?"}
+      ],
+      "hint": "sagen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sie fragt mich,"},
+        {"type": "blank", "id": "8a", "accept": ["wie"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "lange ich schon hier arbeite."}
+      ],
+      "hint": "fragen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich bezweifle,"},
+        {"type": "blank", "id": "9a", "accept": ["ob"], "tags": ["trigger:indirect_yesno", "word_order:verb_final"]},
+        {"type": "text", "text": "er rechtzeitig ankommt."}
+      ],
+      "hint": "bezweifeln"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Hausmeister erklärt nicht,"},
+        {"type": "blank", "id": "10a", "accept": ["warum"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "der Aufzug schon wieder kaputt ist."}
+      ],
+      "hint": "erklären"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "blank", "id": "11a", "accept": ["Wer"], "tags": ["trigger:subject_clause_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "die Wohnung renoviert, ist noch nicht entschieden."}
+      ],
+      "hint": "renovieren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Er hat vergessen,"},
+        {"type": "blank", "id": "12a", "accept": ["wo"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "er den Schlüssel hingelegt hat."}
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Sie erzählt, dass sie gestern im Park einen alten Freund"},
+        {"type": "blank", "id": "13a", "accept": ["getroffen"], "tags": ["form:perfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "treffen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich habe nicht gewusst,"},
+        {"type": "blank", "id": "14a", "accept": ["wer"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "den Brief geschrieben hat."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich weiß, dass ich morgen früh"},
+        {"type": "blank", "id": "15a", "accept": ["aufstehen"], "tags": ["word_order:verb_final", "trigger:object_clause_dass"]},
+        {"type": "text", "text": "muss."}
+      ],
+      "hint": "müssen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "blank", "id": "16a", "accept": ["Was"], "tags": ["trigger:subject_clause_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "er gestern gesagt hat, war nicht richtig."}
+      ],
+      "hint": "sagen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Niemand weiß,"},
+        {"type": "blank", "id": "17a", "accept": ["ob"], "tags": ["trigger:indirect_yesno", "word_order:verb_final"]},
+        {"type": "text", "text": "die Straße morgen gesperrt bleibt."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich glaube, dass der Hausmeister den Schlüssel"},
+        {"type": "blank", "id": "18a", "accept": ["gefunden"], "tags": ["form:perfekt", "word_order:verb_final"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "finden"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "blank", "id": "19a", "accept": ["Warum"], "tags": ["trigger:subject_clause_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "sie gekündigt hat, ist allen ein Rätsel."}
+      ],
+      "hint": "kündigen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Ärztin erklärt mir,"},
+        {"type": "blank", "id": "20a", "accept": ["wie"], "tags": ["trigger:indirect_wh", "word_order:verb_final"]},
+        {"type": "text", "text": "das Medikament wirkt."}
+      ],
+      "hint": "erklären"
+    }
+  ]
+}

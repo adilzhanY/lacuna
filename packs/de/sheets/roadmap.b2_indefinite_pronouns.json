@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.b2_indefinite_pronouns",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Wie sagt"},
+        {"type": "blank", "id": "1a", "accept": ["man"], "tags": ["case:nominative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "das auf Deutsch?"}
+      ],
+      "hint": "sagen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Hier darf"},
+        {"type": "blank", "id": "2a", "accept": ["man"], "tags": ["case:nominative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "nicht parken."}
+      ],
+      "hint": "dürfen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Kann mir"},
+        {"type": "blank", "id": "3a", "accept": ["jemand"], "tags": ["case:nominative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "bei den Koffern helfen?"}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "4a", "accept": ["niemanden"], "tags": ["case:accusative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "im Treppenhaus gesehen."}
+      ],
+      "hint": "niemand"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Mit"},
+        {"type": "blank", "id": "5a", "accept": ["niemandem"], "tags": ["case:dative", "trigger:preposition_mit", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "möchte ich darüber reden."}
+      ],
+      "hint": "niemand"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich gebe"},
+        {"type": "blank", "id": "6a", "accept": ["jedem"], "tags": ["case:dative", "declension:strong", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "Kind ein Stück Kuchen."}
+      ],
+      "hint": "jeder"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Im Kühlschrank ist"},
+        {"type": "blank", "id": "7a", "accept": ["nichts"], "tags": ["case:nominative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "mehr."}
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "8a", "accept": ["alles"], "tags": ["case:accusative", "gender:neuter", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "gegeben, was ich hatte."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Von den Bussen fährt"},
+        {"type": "blank", "id": "9a", "accept": ["keiner"], "tags": ["case:nominative", "gender:masculine", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "am Sonntag."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich suche"},
+        {"type": "blank", "id": "10a", "accept": ["jemanden"], "tags": ["case:accusative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "mit Auto für den Umzug."}
+      ],
+      "hint": "jemand"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Der alte Drucker ist kaputt, ich brauche"},
+        {"type": "blank", "id": "11a", "accept": ["einen"], "tags": ["case:accusative", "gender:masculine", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "neuen."}
+      ],
+      "hint": "ein"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Kannst du"},
+        {"type": "blank", "id": "12a", "accept": ["jemandem"], "tags": ["case:dative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "Bescheid sagen, dass ich später komme?"}
+      ],
+      "hint": "jemand"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Hast du"},
+        {"type": "blank", "id": "13a", "accept": ["etwas"], "tags": ["case:accusative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "zu trinken dabei?"}
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Im Winter"},
+        {"type": "blank", "id": "14a", "accept": ["man"], "tags": ["case:nominative", "form:indefinite_pronoun", "word_order:verb_second"]},
+        {"type": "text", "text": "friert schnell."}
+      ],
+      "hint": "frieren"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Film gefällt"},
+        {"type": "blank", "id": "15a", "accept": ["allen"], "tags": ["case:dative", "number:plural", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "in unserer Gruppe."}
+      ],
+      "hint": "alle"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich rufe"},
+        {"type": "blank", "id": "16a", "accept": ["jeden"], "tags": ["case:accusative", "declension:strong", "gender:masculine"]},
+        {"type": "text", "text": "Tag meine Mutter an."}
+      ],
+      "hint": "jeder"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Mit"},
+        {"type": "blank", "id": "17a", "accept": ["allem"], "tags": ["case:dative", "gender:neuter", "trigger:preposition_mit", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "bin ich zufrieden."}
+      ],
+      "hint": "alles"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das hat"},
+        {"type": "blank", "id": "18a", "accept": ["niemand"], "tags": ["case:nominative", "form:indefinite_pronoun"]},
+        {"type": "text", "text": "erwartet."}
+      ],
+      "hint": "erwarten"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Auf dem Markt kostet"},
+        {"type": "blank", "id": "19a", "accept": ["jede"], "tags": ["case:nominative", "gender:feminine", "declension:strong"]},
+        {"type": "text", "text": "Tomate einen Euro."}
+      ],
+      "hint": "jeder"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Jeder"], "tags": ["case:nominative", "gender:masculine", "declension:strong"]},
+        {"type": "text", "text": "im Haus hat einen Schlüssel."}
+      ],
+      "hint": "haben"
+    }
+  ]
+}

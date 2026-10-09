@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c2_irregular_verbs",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Als die Tür knallte,"},
+        {"type": "blank", "id": "1a", "accept": ["erschrak"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "ich heftig."}
+      ],
+      "hint": "erschrecken"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Trotz aller Mühe ist der Versuch"},
+        {"type": "blank", "id": "2a", "accept": ["misslungen"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "und das Team war frustriert."}
+      ],
+      "hint": "misslingen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Der Chef hat ihm"},
+        {"type": "blank", "id": "3a", "accept": ["befohlen"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "sofort das Gebäude zu verlassen."}
+      ],
+      "hint": "befehlen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die Milch ist über Nacht"},
+        {"type": "blank", "id": "4a", "accept": ["verdorben"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "und stinkt jetzt."}
+      ],
+      "hint": "verderben"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Seit dem Streit"},
+        {"type": "blank", "id": "5a", "accept": ["meidet"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "er mich völlig."}
+      ],
+      "hint": "meiden"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Architekt"},
+        {"type": "blank", "id": "6a", "accept": ["schuf"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "ein Gebäude aus Glas und Stahl."}
+      ],
+      "hint": "schaffen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Bohnen"},
+        {"type": "blank", "id": "7a", "accept": ["quollen"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "über Nacht im Wasser auf."}
+      ],
+      "hint": "quellen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Der Sohn"},
+        {"type": "blank", "id": "8a", "accept": ["glich"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "seinem Vater aufs Haar."}
+      ],
+      "hint": "gleichen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe ihm den Fehler nie"},
+        {"type": "blank", "id": "9a", "accept": ["verziehen"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "und wir sprechen seitdem nicht mehr."}
+      ],
+      "hint": "verzeihen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Das Bild"},
+        {"type": "blank", "id": "10a", "accept": ["hing"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "schief an der Wand im Flur."}
+      ],
+      "hint": "hängen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Plötzlich"},
+        {"type": "blank", "id": "11a", "accept": ["erlosch"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "das Licht im ganzen Treppenhaus."}
+      ],
+      "hint": "erlöschen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Der Schaffner"},
+        {"type": "blank", "id": "12a", "accept": ["pfiff"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "laut, und der Zug fuhr los."}
+      ],
+      "hint": "pfeifen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der erste Eindruck"},
+        {"type": "blank", "id": "13a", "accept": ["trügt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "oft, das weiß ich aus Erfahrung."}
+      ],
+      "hint": "trügen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Der Kran"},
+        {"type": "blank", "id": "14a", "accept": ["hob"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "die Kiste auf den Lastwagen."}
+      ],
+      "hint": "heben"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er hat mir die ganze Zeit"},
+        {"type": "blank", "id": "15a", "accept": ["gelogen"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "und ich habe es nicht gemerkt."}
+      ],
+      "hint": "lügen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Katze"},
+        {"type": "blank", "id": "16a", "accept": ["schlich"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "lautlos um den Tisch herum."}
+      ],
+      "hint": "schleichen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Sie hat ihrer Tochter die Haare"},
+        {"type": "blank", "id": "17a", "accept": ["geflochten"], "tags": ["form:partizip_ii"]},
+        {"type": "text", "text": "bevor sie zur Schule ging."}
+      ],
+      "hint": "flechten"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die neuen Schuhe"},
+        {"type": "blank", "id": "18a", "accept": ["kniffen"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "an den Zehen."}
+      ],
+      "hint": "kneifen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Regel"},
+        {"type": "blank", "id": "19a", "accept": ["gilt"], "tags": ["form:praesens"]},
+        {"type": "text", "text": "auch für die Gäste."}
+      ],
+      "hint": "gelten"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Paket"},
+        {"type": "blank", "id": "20a", "accept": ["wog"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "fast zehn Kilo."}
+      ],
+      "hint": "wiegen"
+    }
+  ]
+}

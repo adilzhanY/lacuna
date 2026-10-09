@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.a1p_regular_irregular",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder"},
+        {"type": "blank", "id": "1a", "accept": ["arbeitet"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "in einer Bäckerei."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wann"},
+        {"type": "blank", "id": "2a", "accept": ["öffnet"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "die Apotheke am Samstag?"}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "3a", "accept": ["fährst"], "tags": ["form:stem_change_a_ae"]},
+        {"type": "text", "text": "jeden Morgen mit dem Rad zur Schule."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "4a", "accept": ["weiß"], "tags": ["form:present_irregular"]},
+        {"type": "text", "text": "nicht, wo der Schlüssel ist."}
+      ],
+      "hint": "wissen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Mein Vater"},
+        {"type": "blank", "id": "5a", "accept": ["kocht"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "am Sonntag immer Suppe."}
+      ],
+      "hint": "kochen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Meine Freundin"},
+        {"type": "blank", "id": "6a", "accept": ["kommt"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "um acht Uhr zu uns."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "7a", "accept": ["liest"], "tags": ["form:stem_change_e_ie"]},
+        {"type": "text", "text": "jeden Abend die Zeitung."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Wie"},
+        {"type": "blank", "id": "8a", "accept": ["sagt"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "man das auf Deutsch?"}
+      ],
+      "hint": "sagen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "9a", "accept": ["nimmst"], "tags": ["form:stem_change_e_i"]},
+        {"type": "text", "text": "den Bus oder die U-Bahn?"}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "10a", "accept": ["wohne"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "seit zwei Jahren in Berlin."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Meine Mutter"},
+        {"type": "blank", "id": "11a", "accept": ["hat"], "tags": ["form:present_irregular"]},
+        {"type": "text", "text": "heute frei."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "12a", "accept": ["sind"], "tags": ["form:present_irregular"]},
+        {"type": "text", "text": "am Samstag im Kino."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Mein Chef"},
+        {"type": "blank", "id": "13a", "accept": ["spricht"], "tags": ["form:stem_change_e_i"]},
+        {"type": "text", "text": "gut Englisch."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Tasche"},
+        {"type": "blank", "id": "14a", "accept": ["kostet"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "fünfzig Euro."}
+      ],
+      "hint": "kosten"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Am Sonntag"},
+        {"type": "blank", "id": "15a", "accept": ["schläft"], "tags": ["form:stem_change_a_ae"]},
+        {"type": "text", "text": "er bis zehn Uhr."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wie lange"},
+        {"type": "blank", "id": "16a", "accept": ["wartet"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "ihr schon?"}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Mein Opa"},
+        {"type": "blank", "id": "17a", "accept": ["sieht"], "tags": ["form:stem_change_e_ie"]},
+        {"type": "text", "text": "schlecht ohne Brille."}
+      ],
+      "hint": "sehen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "18a", "accept": ["brauche"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "einen neuen Pass."}
+      ],
+      "hint": "brauchen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Das Museum"},
+        {"type": "blank", "id": "19a", "accept": ["schließt"], "tags": ["form:present_regular"]},
+        {"type": "text", "text": "um achtzehn Uhr."}
+      ],
+      "hint": "schließen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Musst"], "tags": ["form:present_irregular"]},
+        {"type": "text", "text": "du morgen früh arbeiten?"}
+      ],
+      "hint": "müssen"
+    }
+  ]
+}

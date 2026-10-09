@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1_strong_weak_praeteritum",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "1a", "accept": ["kaufte"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "ich im Supermarkt Brot und Milch."}
+      ],
+      "hint": "kaufen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Am Morgen"},
+        {"type": "blank", "id": "2a", "accept": ["fuhr"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "ich mit dem Rad zur Arbeit."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei"},
+        {"type": "blank", "id": "3a", "accept": ["öffnete"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "um sieben Uhr."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "4a", "accept": ["saßen"], "tags": ["form:praeteritum", "form:praeteritum_strong", "spelling:ss"]},
+        {"type": "text", "text": "lange im Park und redeten."}
+      ],
+      "hint": "sitzen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Mein Vater"},
+        {"type": "blank", "id": "5a", "accept": ["arbeitete"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "früher in einer Fabrik."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "6a", "accept": ["kam"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "pünktlich am Hauptbahnhof an."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "7a", "accept": ["wohnte"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "drei Jahre in Berlin."}
+      ],
+      "hint": "wohnen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "8a", "accept": ["las"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "den Brief zweimal, bevor sie antwortete."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Kinder"},
+        {"type": "blank", "id": "9a", "accept": ["spielten"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "im Hof bis zum Abend."}
+      ],
+      "hint": "spielen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "10a", "accept": ["schrieb"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "seiner Mutter eine lange Nachricht."}
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Miete"},
+        {"type": "blank", "id": "11a", "accept": ["stieg"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "im letzten Jahr um hundert Euro."}
+      ],
+      "hint": "steigen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "12a", "accept": ["suchten"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "stundenlang nach einem Parkplatz."}
+      ],
+      "hint": "suchen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "13a", "accept": ["verstand"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "den Arzt leider nicht sofort."}
+      ],
+      "hint": "verstehen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Am Samstag"},
+        {"type": "blank", "id": "14a", "accept": ["regnete"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "es den ganzen Nachmittag."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Lehrer"},
+        {"type": "blank", "id": "15a", "accept": ["gab"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "uns am Montag eine schwere Prüfung."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Meine Oma"},
+        {"type": "blank", "id": "16a", "accept": ["erzählte"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "uns jeden Sonntag eine neue Geschichte."}
+      ],
+      "hint": "erzählen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "17a", "accept": ["trank"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "zum Frühstück einen starken Kaffee."}
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarn"},
+        {"type": "blank", "id": "18a", "accept": ["legten"], "tags": ["form:praeteritum", "form:praeteritum_weak"]},
+        {"type": "text", "text": "das Paket für mich in den Flur."}
+      ],
+      "hint": "legen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "19a", "accept": ["liefen"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "vom Bahnhof bis zum Hotel."}
+      ],
+      "hint": "laufen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Konzert"},
+        {"type": "blank", "id": "20a", "accept": ["begann"], "tags": ["form:praeteritum", "form:praeteritum_strong"]},
+        {"type": "text", "text": "pünktlich um acht Uhr."}
+      ],
+      "hint": "beginnen"
+    }
+  ]
+}

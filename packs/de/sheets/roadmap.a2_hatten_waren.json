@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2_hatten_waren",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "1a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "ich keine Zeit für den Einkauf."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Die Bäckerei"},
+        {"type": "blank", "id": "2a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "um acht Uhr schon geschlossen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir"},
+        {"type": "blank", "id": "3a", "accept": ["hatten"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "im Urlaub Glück mit dem Wetter."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Der Zug"},
+        {"type": "blank", "id": "4a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "nach zehn Minuten wieder pünktlich."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder"},
+        {"type": "blank", "id": "5a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "letzte Woche Fieber und blieb im Bett."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "6a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "am Montag beim Bürgeramt und musste lange warten."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung"},
+        {"type": "blank", "id": "7a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "einen kleinen Balkon zum Hof."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Am Bahnhof"},
+        {"type": "blank", "id": "8a", "accept": ["waren"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "viele Leute wegen des Streiks."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "9a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "keine Zeit für mich, also kam ich am nächsten Tag wieder."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Die Kinder"},
+        {"type": "blank", "id": "10a", "accept": ["waren"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "nach dem Schwimmbad sehr müde."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "11a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "den Schlüssel vergessen und saß draußen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die Hotline"},
+        {"type": "blank", "id": "12a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "den ganzen Vormittag besetzt."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "13a", "accept": ["hatten"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "wir Besuch von meinen Eltern."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Es"},
+        {"type": "blank", "id": "14a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "schon spät, als wir nach Hause kamen."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Kellner"},
+        {"type": "blank", "id": "15a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "leider kein Wechselgeld dabei."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Meine Nachbarn"},
+        {"type": "blank", "id": "16a", "accept": ["waren"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "im Winter in Spanien."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "17a", "accept": ["hatte"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "Kopfschmerzen und bin früh ins Bett gegangen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das Konzert"},
+        {"type": "blank", "id": "18a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "ausverkauft, deshalb gingen wir ins Kino."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Mieter"},
+        {"type": "blank", "id": "19a", "accept": ["hatten"], "tags": ["form:praeteritum", "number:plural"]},
+        {"type": "text", "text": "einen Streit wegen der Mülltonnen."}
+      ],
+      "hint": "haben"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die Straße"},
+        {"type": "blank", "id": "20a", "accept": ["war"], "tags": ["form:praeteritum", "number:singular"]},
+        {"type": "text", "text": "wegen der Baustelle gesperrt."}
+      ],
+      "hint": "sein"
+    }
+  ]
+}

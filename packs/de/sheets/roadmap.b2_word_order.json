@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2_word_order",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Es regnet seit dem Morgen, deshalb"},
+        {"type": "blank", "id": "1a", "accept": ["bleiben"], "tags": ["word_order:verb_second", "trigger:deshalb"]},
+        {"type": "text", "text": "wir heute zu Hause."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Der Bus fällt heute aus. Trotzdem"},
+        {"type": "blank", "id": "2a", "accept": ["komme"], "tags": ["word_order:verb_second", "trigger:trotzdem"]},
+        {"type": "text", "text": "ich pünktlich zur Arbeit."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Obwohl es schon spät ist,"},
+        {"type": "blank", "id": "3a", "accept": ["bestelle"], "tags": ["word_order:verb_second", "trigger:obwohl"]},
+        {"type": "text", "text": "ich noch eine Pizza."}
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich bin sehr müde, weil ich das ganze Buch"},
+        {"type": "blank", "id": "4a", "accept": ["gelesen"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:weil"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Sohn erzählt, dass er die Prüfung"},
+        {"type": "blank", "id": "5a", "accept": ["bestanden"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:dass"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "bestehen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich kann heute nicht kommen, weil ich morgen früh zur Arbeit"},
+        {"type": "blank", "id": "6a", "accept": ["fahren"], "tags": ["word_order:verb_final", "form:modal", "trigger:weil"]},
+        {"type": "text", "text": "muss."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich sage dem Kollegen, dass er den Termin"},
+        {"type": "blank", "id": "7a", "accept": ["verschieben"], "tags": ["word_order:verb_final", "form:modal", "trigger:dass"]},
+        {"type": "text", "text": "muss."}
+      ],
+      "hint": "verschieben"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung ist zu teuer, deshalb"},
+        {"type": "blank", "id": "8a", "accept": ["suchen"], "tags": ["word_order:verb_second", "trigger:deshalb"]},
+        {"type": "text", "text": "wir eine kleinere."}
+      ],
+      "hint": "suchen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe Hunger, also"},
+        {"type": "blank", "id": "9a", "accept": ["esse"], "tags": ["word_order:verb_second", "trigger:also"]},
+        {"type": "text", "text": "ich jetzt eine Banane."}
+      ],
+      "hint": "essen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Arzt hat gesagt, dass ich drei Tage im Bett"},
+        {"type": "blank", "id": "10a", "accept": ["bleiben"], "tags": ["word_order:verb_final", "form:modal", "trigger:dass"]},
+        {"type": "text", "text": "soll."}
+      ],
+      "hint": "bleiben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Das Essen schmeckte gut, außerdem"},
+        {"type": "blank", "id": "11a", "accept": ["war"], "tags": ["word_order:verb_second", "trigger:ausserdem"]},
+        {"type": "text", "text": "die Bedienung sehr freundlich."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich kaufe morgen Blumen. Danach"},
+        {"type": "blank", "id": "12a", "accept": ["besuche"], "tags": ["word_order:verb_second", "trigger:danach"]},
+        {"type": "text", "text": "ich meine Mutter."}
+      ],
+      "hint": "besuchen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Chef hat abgesagt, weil er krank"},
+        {"type": "blank", "id": "13a", "accept": ["geworden"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:weil"]},
+        {"type": "text", "text": "ist."}
+      ],
+      "hint": "werden"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Nachdem ich die Wäsche"},
+        {"type": "blank", "id": "14a", "accept": ["gewaschen"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:nachdem"]},
+        {"type": "text", "text": "habe, gehe ich einkaufen."}
+      ],
+      "hint": "waschen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich lerne Deutsch, damit ich im Büro"},
+        {"type": "blank", "id": "15a", "accept": ["arbeiten"], "tags": ["word_order:verb_final", "form:modal", "trigger:damit"]},
+        {"type": "text", "text": "kann."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich nehme den Bus nicht, weil ich den Schlüssel"},
+        {"type": "blank", "id": "16a", "accept": ["vergessen"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:weil"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Bahn fährt heute nicht. Deswegen"},
+        {"type": "blank", "id": "17a", "accept": ["nehmen"], "tags": ["word_order:verb_second", "trigger:deswegen"]},
+        {"type": "text", "text": "wir den Bus."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Wenn das Wetter schön ist,"},
+        {"type": "blank", "id": "18a", "accept": ["gehen"], "tags": ["word_order:verb_second", "trigger:wenn"]},
+        {"type": "text", "text": "wir am Sonntag in den Park."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Die Miete ist gestiegen. Daher"},
+        {"type": "blank", "id": "19a", "accept": ["ziehen"], "tags": ["word_order:verb_second", "trigger:daher"]},
+        {"type": "text", "text": "wir nach Leipzig."}
+      ],
+      "hint": "ziehen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der Film war langweilig, sodass wir früh"},
+        {"type": "blank", "id": "20a", "accept": ["gegangen"], "tags": ["word_order:verb_final", "form:perfekt", "trigger:sodass"]},
+        {"type": "text", "text": "sind."}
+      ],
+      "hint": "gehen"
+    }
+  ]
+}

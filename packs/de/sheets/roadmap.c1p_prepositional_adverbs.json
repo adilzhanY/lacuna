@@ -1,0 +1,182 @@
+{
+  "topic_id": "roadmap.c1p_prepositional_adverbs",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich freue mich schon sehr"},
+        {"type": "blank", "id": "1a", "accept": ["darauf"], "tags": ["form:pronominal_adverb", "trigger:preposition_auf"]},
+        {"type": "text", "text": ", dass du endlich kommst."}
+      ],
+      "hint": "sich freuen auf"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "blank", "id": "2a", "accept": ["Worüber"], "tags": ["form:interrogative_adverb", "trigger:preposition_uber"]},
+        {"type": "text", "text": "hast du dich so geärgert?"}
+      ],
+      "hint": "sich ärgern über"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Sag mir,"},
+        {"type": "blank", "id": "3a", "accept": ["wofür"], "tags": ["form:interrogative_adverb", "trigger:preposition_fuer"]},
+        {"type": "text", "text": "du dich so interessierst."}
+      ],
+      "hint": "sich interessieren für"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich warte seit einer Stunde"},
+        {"type": "blank", "id": "4a", "accept": ["darauf"], "tags": ["form:pronominal_adverb", "trigger:preposition_auf"]},
+        {"type": "text", "text": ", dass der Handwerker endlich kommt."}
+      ],
+      "hint": "warten auf"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "blank", "id": "5a", "accept": ["Woran"], "tags": ["form:interrogative_adverb", "trigger:preposition_an"]},
+        {"type": "text", "text": "denkst du gerade?"}
+      ],
+      "hint": "denken an"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wir haben uns"},
+        {"type": "blank", "id": "6a", "accept": ["dagegen"], "tags": ["form:pronominal_adverb", "trigger:preposition_gegen"]},
+        {"type": "text", "text": "entschieden, die Wohnung zu nehmen."}
+      ],
+      "hint": "sich entscheiden gegen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Meine Tochter ist sehr stolz"},
+        {"type": "blank", "id": "7a", "accept": ["darauf"], "tags": ["form:pronominal_adverb", "trigger:preposition_auf"]},
+        {"type": "text", "text": ", dass sie die Prüfung bestanden hat."}
+      ],
+      "hint": "stolz sein auf"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarin hat sich"},
+        {"type": "blank", "id": "8a", "accept": ["darüber"], "tags": ["form:pronominal_adverb", "trigger:preposition_uber"]},
+        {"type": "text", "text": "beschwert, dass die Musik zu laut war."}
+      ],
+      "hint": "sich beschweren über"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Lass uns"},
+        {"type": "blank", "id": "9a", "accept": ["darüber"], "tags": ["form:pronominal_adverb", "trigger:preposition_uber"]},
+        {"type": "text", "text": "morgen beim Frühstück reden."}
+      ],
+      "hint": "reden über"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Karton ist leer, ich habe nachgeschaut. Es liegt wirklich nichts"},
+        {"type": "blank", "id": "10a", "accept": ["darin"], "tags": ["form:pronominal_adverb", "trigger:preposition_in"]},
+        {"type": "text", "text": "."}
+      ],
+      "hint": "liegen in"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich habe kein Werkzeug. Wie soll ich"},
+        {"type": "blank", "id": "11a", "accept": ["damit"], "tags": ["form:pronominal_adverb", "trigger:preposition_mit"]},
+        {"type": "text", "text": "arbeiten?"}
+      ],
+      "hint": "arbeiten mit"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Nach drei Monaten habe ich mich"},
+        {"type": "blank", "id": "12a", "accept": ["daran"], "tags": ["form:pronominal_adverb", "trigger:preposition_an"]},
+        {"type": "text", "text": "gewöhnt, dass der Zug immer spät ist."}
+      ],
+      "hint": "sich gewöhnen an"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Arzt besteht"},
+        {"type": "blank", "id": "13a", "accept": ["darauf"], "tags": ["form:pronominal_adverb", "trigger:preposition_auf"]},
+        {"type": "text", "text": ", dass ich nächste Woche wiederkomme."}
+      ],
+      "hint": "bestehen auf"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Im Gespräch geht es vor allem"},
+        {"type": "blank", "id": "14a", "accept": ["darum"], "tags": ["form:pronominal_adverb", "trigger:preposition_um"]},
+        {"type": "text", "text": "wer die Kosten trägt."}
+      ],
+      "hint": "es geht um"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich habe keine Lust"},
+        {"type": "blank", "id": "15a", "accept": ["dazu"], "tags": ["form:pronominal_adverb", "trigger:preposition_zu"]},
+        {"type": "text", "text": "heute noch einkaufen zu gehen."}
+      ],
+      "hint": "Lust haben zu"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich habe Angst"},
+        {"type": "blank", "id": "16a", "accept": ["davor"], "tags": ["form:pronominal_adverb", "trigger:preposition_vor"]},
+        {"type": "text", "text": ", zu spät zu kommen."}
+      ],
+      "hint": "Angst haben vor"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Stadt baut eine neue Brücke. Ich habe schon viel"},
+        {"type": "blank", "id": "17a", "accept": ["davon"], "tags": ["form:pronominal_adverb", "trigger:preposition_von"]},
+        {"type": "text", "text": "gehört."}
+      ],
+      "hint": "hören von"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich bedanke mich"},
+        {"type": "blank", "id": "18a", "accept": ["dafür"], "tags": ["form:pronominal_adverb", "trigger:preposition_fuer"]},
+        {"type": "text", "text": ", dass du mir geholfen hast."}
+      ],
+      "hint": "sich bedanken für"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "blank", "id": "19a", "accept": ["Womit"], "tags": ["form:interrogative_adverb", "trigger:preposition_mit"]},
+        {"type": "text", "text": "fährst du zur Arbeit?"}
+      ],
+      "hint": "fahren mit"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "blank", "id": "20a", "accept": ["Worauf"], "tags": ["form:interrogative_adverb", "trigger:preposition_auf"]},
+        {"type": "text", "text": "wartest du noch?"}
+      ],
+      "hint": "warten auf"
+    }
+  ]
+}

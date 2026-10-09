@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c2_verbal_to_nominal",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Nach dem"},
+        {"type": "blank", "id": "1a", "accept": ["Abschluss"], "tags": ["form:nominalization", "case:dative", "gender:masculine"]},
+        {"type": "text", "text": "des Mietvertrags können wir einziehen."}
+      ],
+      "hint": "abschließen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Bei der"},
+        {"type": "blank", "id": "2a", "accept": ["Ankunft"], "tags": ["form:nominalization", "case:dative", "gender:feminine", "trigger:preposition_bei"]},
+        {"type": "text", "text": "am Bahnhof zeigen Sie bitte Ihren Ausweis."}
+      ],
+      "hint": "ankommen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "3a", "accept": ["Entscheidung"], "tags": ["form:nominalization", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "über die Sanierung des Hauses fällt im Juni."}
+      ],
+      "hint": "entscheiden"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Trotz der"},
+        {"type": "blank", "id": "4a", "accept": ["Verspätung"], "tags": ["form:nominalization", "case:genitive", "gender:feminine", "trigger:preposition_trotz"]},
+        {"type": "text", "text": "des Zuges kamen wir pünktlich an."}
+      ],
+      "hint": "verspäten"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Zur"},
+        {"type": "blank", "id": "5a", "accept": ["Verbesserung"], "tags": ["form:nominalization", "case:dative", "gender:feminine", "trigger:preposition_zu"]},
+        {"type": "text", "text": "der Luftqualität wurde ein neues Gesetz beschlossen."}
+      ],
+      "hint": "verbessern"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Unter"},
+        {"type": "blank", "id": "6a", "accept": ["Berücksichtigung"], "tags": ["form:nominalization", "case:dative", "gender:feminine", "trigger:preposition_unter"]},
+        {"type": "text", "text": "der aktuellen Lage wird der Termin verschoben."}
+      ],
+      "hint": "berücksichtigen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "7a", "accept": ["Rückerstattung"], "tags": ["form:nominalization", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "des Betrags erfolgt innerhalb von zwei Wochen."}
+      ],
+      "hint": "erstatten"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Mit"},
+        {"type": "blank", "id": "8a", "accept": ["Beginn"], "tags": ["form:nominalization", "case:dative", "gender:masculine", "trigger:preposition_mit"]},
+        {"type": "text", "text": "der Vorstellung werden die Türen geschlossen."}
+      ],
+      "hint": "beginnen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Auf"},
+        {"type": "blank", "id": "9a", "accept": ["Wunsch"], "tags": ["form:nominalization", "case:dative", "gender:masculine", "trigger:preposition_auf"]},
+        {"type": "text", "text": "des Kunden wird die Ware direkt nach Hause geliefert."}
+      ],
+      "hint": "wünschen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Nach"},
+        {"type": "blank", "id": "10a", "accept": ["Prüfung"], "tags": ["form:nominalization", "case:dative", "gender:feminine", "trigger:preposition_nach"]},
+        {"type": "text", "text": "der Unterlagen melden wir uns bei Ihnen."}
+      ],
+      "hint": "prüfen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Ich habe erst gestern davon"},
+        {"type": "blank", "id": "11a", "accept": ["Kenntnis"], "tags": ["form:nominalization", "case:accusative", "gender:feminine"]},
+        {"type": "text", "text": "erhalten."}
+      ],
+      "hint": "erfahren"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "12a", "accept": ["Nutzung"], "tags": ["form:nominalization", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "der Waschküche ist nur bis 20 Uhr erlaubt."}
+      ],
+      "hint": "nutzen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Wegen des"},
+        {"type": "blank", "id": "13a", "accept": ["Umbaus"], "tags": ["form:nominalization", "case:genitive", "gender:masculine", "trigger:preposition_wegen"]},
+        {"type": "text", "text": "bleibt die Bäckerei geschlossen."}
+      ],
+      "hint": "umbauen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Eine"},
+        {"type": "blank", "id": "14a", "accept": ["Anmeldung"], "tags": ["form:nominalization", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "ist bis Freitag nötig."}
+      ],
+      "hint": "anmelden"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Nach"},
+        {"type": "blank", "id": "15a", "accept": ["Ablauf"], "tags": ["form:nominalization", "case:dative", "gender:masculine", "trigger:preposition_nach"]},
+        {"type": "text", "text": "der Frist erlischt das Angebot."}
+      ],
+      "hint": "ablaufen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "16a", "accept": ["Anerkennung"], "tags": ["form:nominalization", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "ausländischer Abschlüsse dauert oft Monate."}
+      ],
+      "hint": "anerkennen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Während der"},
+        {"type": "blank", "id": "17a", "accept": ["Abwesenheit"], "tags": ["form:nominalization", "case:genitive", "gender:feminine", "trigger:preposition_waehrend"]},
+        {"type": "text", "text": "des Chefs übernimmt Frau Kurz die Leitung."}
+      ],
+      "hint": "abwesend sein"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das"},
+        {"type": "blank", "id": "18a", "accept": ["Rauchen"], "tags": ["form:nominalization", "case:nominative", "gender:neuter"]},
+        {"type": "text", "text": "im Treppenhaus ist verboten."}
+      ],
+      "hint": "rauchen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Durch die"},
+        {"type": "blank", "id": "19a", "accept": ["Zusammenarbeit"], "tags": ["form:nominalization", "case:accusative", "gender:feminine", "trigger:preposition_durch"]},
+        {"type": "text", "text": "mit der Stadt konnten wir den Park retten."}
+      ],
+      "hint": "zusammenarbeiten"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ohne"},
+        {"type": "blank", "id": "20a", "accept": ["Genehmigung"], "tags": ["form:nominalization", "case:accusative", "gender:feminine", "trigger:preposition_ohne"]},
+        {"type": "text", "text": "des Vermieters darf man nicht untervermieten."}
+      ],
+      "hint": "genehmigen"
+    }
+  ]
+}

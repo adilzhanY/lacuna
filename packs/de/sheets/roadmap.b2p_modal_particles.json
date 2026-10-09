@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2p_modal_particles",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Du hast"},
+        {"type": "blank", "id": "1a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "gesagt, dass der Laden um acht schließt."}
+      ],
+      "hint": "Modalpartikel, Erinnerung"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Komm"},
+        {"type": "blank", "id": "2a", "accept": ["mal"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "her und hilf mir mit dem Koffer."}
+      ],
+      "hint": "Modalpartikel, Aufforderung"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "3a", "accept": ["ja"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "wirklich teuer hier!"}
+      ],
+      "hint": "Modalpartikel, Feststellung"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wo habe ich"},
+        {"type": "blank", "id": "4a", "accept": ["bloß"], "tags": ["form:modal_particle", "spelling:ss"]},
+        {"type": "text", "text": "meinen Schlüssel hingelegt?"}
+      ],
+      "hint": "Modalpartikel, Verwunderung"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Es wird"},
+        {"type": "blank", "id": "5a", "accept": ["wohl"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "bald regnen, der Himmel ist schon ganz dunkel."}
+      ],
+      "hint": "Modalpartikel, Vermutung"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wo warst du"},
+        {"type": "blank", "id": "6a", "accept": ["denn"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "so lange?"}
+      ],
+      "hint": "Modalpartikel, Nachfrage"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "7a", "accept": ["eben"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "keine Zeit, ich muss arbeiten."}
+      ],
+      "hint": "Modalpartikel, Begründung"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sag"},
+        {"type": "blank", "id": "8a", "accept": ["ruhig"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "was du denkst."}
+      ],
+      "hint": "Modalpartikel, Erlaubnis"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Bahn hat"},
+        {"type": "blank", "id": "9a", "accept": ["halt"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "wieder Verspätung."}
+      ],
+      "hint": "Modalpartikel, Resignation"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Wir waren"},
+        {"type": "blank", "id": "10a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "gestern schon im Kino."}
+      ],
+      "hint": "Modalpartikel, Erinnerung"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Jetzt hör"},
+        {"type": "blank", "id": "11a", "accept": ["nun"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "endlich auf zu weinen!"}
+      ],
+      "hint": "Modalpartikel, Ungeduld"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich komme"},
+        {"type": "blank", "id": "12a", "accept": ["schon"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "vorbei."}
+      ],
+      "hint": "Modalpartikel, Beruhigung"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Kannst du mir"},
+        {"type": "blank", "id": "13a", "accept": ["mal"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "das Salz reichen?"}
+      ],
+      "hint": "Modalpartikel, Bitte"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "14a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "nicht dein Ernst!"}
+      ],
+      "hint": "Modalpartikel, Empörung"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Er hat sich"},
+        {"type": "blank", "id": "15a", "accept": ["wohl"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "verlaufen."}
+      ],
+      "hint": "Modalpartikel, Vermutung"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Du bist"},
+        {"type": "blank", "id": "16a", "accept": ["aber"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "spät dran!"}
+      ],
+      "hint": "Modalpartikel, Verwunderung"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Lass"},
+        {"type": "blank", "id": "17a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "das Fenster offen, es ist warm."}
+      ],
+      "hint": "Modalpartikel, Vorschlag"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ruf"},
+        {"type": "blank", "id": "18a", "accept": ["doch"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "Lena an, sie weiß es sicher."}
+      ],
+      "hint": "Modalpartikel, Vorschlag"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Warum hast du das"},
+        {"type": "blank", "id": "19a", "accept": ["denn"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "gemacht?"}
+      ],
+      "hint": "Modalpartikel, Nachfrage"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das musst du"},
+        {"type": "blank", "id": "20a", "accept": ["ja"], "tags": ["form:modal_particle"]},
+        {"type": "text", "text": "nicht sofort entscheiden."}
+      ],
+      "hint": "Modalpartikel, Beruhigung"
+    }
+  ]
+}

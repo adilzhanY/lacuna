@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b2p_partizip_1",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Im Zug sitzt ein"},
+        {"type": "blank", "id": "1a", "accept": ["lesender"], "tags": ["form:partizip_1", "case:nominative", "gender:masculine", "declension:indefinite_article"]},
+        {"type": "text", "text": "Mann mit einer Zeitung."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Vor dem Haus steht ein"},
+        {"type": "blank", "id": "2a", "accept": ["parkender"], "tags": ["form:partizip_1", "case:nominative", "gender:masculine", "declension:indefinite_article"]},
+        {"type": "text", "text": "Lieferwagen mit offener Tür."}
+      ],
+      "hint": "parken"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "3a", "accept": ["fallenden"], "tags": ["form:partizip_1", "case:nominative", "number:plural", "declension:definite_article"]},
+        {"type": "text", "text": "Blätter bedecken den Gehweg."}
+      ],
+      "hint": "fallen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich sehe die"},
+        {"type": "blank", "id": "4a", "accept": ["lachenden"], "tags": ["form:partizip_1", "case:accusative", "number:plural", "declension:definite_article"]},
+        {"type": "text", "text": "Kinder auf dem Spielplatz."}
+      ],
+      "hint": "lachen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich brauche ein"},
+        {"type": "blank", "id": "5a", "accept": ["kochendes"], "tags": ["form:partizip_1", "case:accusative", "gender:neuter", "declension:indefinite_article"]},
+        {"type": "text", "text": "Wasser für die Nudeln."}
+      ],
+      "hint": "kochen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Ich helfe dem"},
+        {"type": "blank", "id": "6a", "accept": ["weinenden"], "tags": ["form:partizip_1", "case:dative", "gender:neuter", "declension:definite_article"]},
+        {"type": "text", "text": "Kind beim Anziehen."}
+      ],
+      "hint": "weinen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich rede mit dem"},
+        {"type": "blank", "id": "7a", "accept": ["schimpfenden"], "tags": ["form:partizip_1", "case:dative", "gender:masculine", "declension:definite_article"]},
+        {"type": "text", "text": "Nachbarn über den Lärm."}
+      ],
+      "hint": "schimpfen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "8a", "accept": ["singende"], "tags": ["form:partizip_1", "case:nominative", "gender:feminine", "declension:definite_article"]},
+        {"type": "text", "text": "Frau am Bahnhof kennt jeder hier."}
+      ],
+      "hint": "singen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Trotz des"},
+        {"type": "blank", "id": "9a", "accept": ["regnenden"], "tags": ["form:partizip_1", "case:genitive", "gender:neuter", "trigger:preposition_trotz"]},
+        {"type": "text", "text": "Wetters gehen wir spazieren."}
+      ],
+      "hint": "regnen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Am Ufer entdecke ich eine"},
+        {"type": "blank", "id": "10a", "accept": ["schwimmende"], "tags": ["form:partizip_1", "case:accusative", "gender:feminine", "declension:indefinite_article"]},
+        {"type": "text", "text": "Ente."}
+      ],
+      "hint": "schwimmen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Viele"},
+        {"type": "blank", "id": "11a", "accept": ["wartende"], "tags": ["form:partizip_1", "case:nominative", "number:plural", "declension:strong"]},
+        {"type": "text", "text": "Eltern stehen vor der Schule."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ein Mann steht mit einem"},
+        {"type": "blank", "id": "12a", "accept": ["klingelnden"], "tags": ["form:partizip_1", "case:dative", "gender:neuter", "declension:indefinite_article"]},
+        {"type": "text", "text": "Handy vor der Tür."}
+      ],
+      "hint": "klingeln"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Er kommt"},
+        {"type": "blank", "id": "13a", "accept": ["pfeifend"], "tags": ["form:partizip_1", "trigger:adverbial_use"]},
+        {"type": "text", "text": "vom Markt nach Hause."}
+      ],
+      "hint": "pfeifen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Sie geht"},
+        {"type": "blank", "id": "14a", "accept": ["summend"], "tags": ["form:partizip_1", "trigger:adverbial_use"]},
+        {"type": "text", "text": "durch den Park."}
+      ],
+      "hint": "summen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das Baby liegt"},
+        {"type": "blank", "id": "15a", "accept": ["schlafend"], "tags": ["form:partizip_1", "trigger:adverbial_use"]},
+        {"type": "text", "text": "im Wagen."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich habe einen"},
+        {"type": "blank", "id": "16a", "accept": ["bellenden"], "tags": ["form:partizip_1", "case:accusative", "gender:masculine", "declension:indefinite_article"]},
+        {"type": "text", "text": "Hund auf der Straße gesehen."}
+      ],
+      "hint": "bellen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ein"},
+        {"type": "blank", "id": "17a", "accept": ["tropfender"], "tags": ["form:partizip_1", "case:nominative", "gender:masculine", "declension:indefinite_article"]},
+        {"type": "text", "text": "Wasserhahn in der Küche nervt mich."}
+      ],
+      "hint": "tropfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Wir helfen den"},
+        {"type": "blank", "id": "18a", "accept": ["arbeitenden"], "tags": ["form:partizip_1", "case:dative", "number:plural", "declension:definite_article"]},
+        {"type": "text", "text": "Menschen in der Stadt."}
+      ],
+      "hint": "arbeiten"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wegen der"},
+        {"type": "blank", "id": "19a", "accept": ["steigenden"], "tags": ["form:partizip_1", "case:genitive", "number:plural", "trigger:preposition_wegen"]},
+        {"type": "text", "text": "Mieten suchen wir eine kleinere Wohnung."}
+      ],
+      "hint": "steigen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich grüße den"},
+        {"type": "blank", "id": "20a", "accept": ["lächelnden"], "tags": ["form:partizip_1", "case:accusative", "gender:masculine", "declension:definite_article"]},
+        {"type": "text", "text": "Verkäufer am Kiosk."}
+      ],
+      "hint": "lächeln"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2_irregular_verbs",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Bus ist heute nicht"},
+        {"type": "blank", "id": "1a", "accept": ["gefahren"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "wegen des Schnees."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Weißt du, warum er den Termin"},
+        {"type": "blank", "id": "2a", "accept": ["vergessen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "hat?"}
+      ],
+      "hint": "vergessen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Nachbarn sind nicht"},
+        {"type": "blank", "id": "3a", "accept": ["gekommen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "zu unserer Feier."}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Im Sommer bin ich jeden Morgen"},
+        {"type": "blank", "id": "4a", "accept": ["gelaufen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "am Fluss entlang."}
+      ],
+      "hint": "laufen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich habe die E-Mail erst am Abend"},
+        {"type": "blank", "id": "5a", "accept": ["gelesen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und sofort geantwortet."}
+      ],
+      "hint": "lesen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Mein Vater"},
+        {"type": "blank", "id": "6a", "accept": ["fährt"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "jeden Tag mit dem Rad zur Arbeit."}
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Du"},
+        {"type": "blank", "id": "7a", "accept": ["siehst"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "heute müde aus."}
+      ],
+      "hint": "sehen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "8a", "accept": ["nimmt"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "den Bus um sieben Uhr."}
+      ],
+      "hint": "nehmen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Mein Freund"},
+        {"type": "blank", "id": "9a", "accept": ["trifft"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "sich jeden Freitag mit seinen Kollegen."}
+      ],
+      "hint": "treffen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Gestern"},
+        {"type": "blank", "id": "10a", "accept": ["gab"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "es keinen Strom im Haus."}
+      ],
+      "hint": "geben"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Kinder haben im Chor"},
+        {"type": "blank", "id": "11a", "accept": ["gesungen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und alle waren stolz."}
+      ],
+      "hint": "singen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht, wer den Brief"},
+        {"type": "blank", "id": "12a", "accept": ["geschrieben"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "schreiben"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Der Arzt"},
+        {"type": "blank", "id": "13a", "accept": ["spricht"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "heute nur Deutsch und Englisch."}
+      ],
+      "hint": "sprechen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Das Kind"},
+        {"type": "blank", "id": "14a", "accept": ["schlief"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "schon seit zwei Stunden."}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Wir sind um zehn nach Hause"},
+        {"type": "blank", "id": "15a", "accept": ["gegangen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und gleich ins Bett."}
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Es war schwer, weil ich den Dialekt nicht"},
+        {"type": "blank", "id": "16a", "accept": ["verstanden"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "habe."}
+      ],
+      "hint": "verstehen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Er"},
+        {"type": "blank", "id": "17a", "accept": ["half"], "tags": ["form:praeteritum"]},
+        {"type": "text", "text": "seinem Nachbarn beim Umzug."}
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Sie"},
+        {"type": "blank", "id": "18a", "accept": ["wirft"], "tags": ["form:present_stem_change"]},
+        {"type": "text", "text": "den alten Joghurt in den Müll."}
+      ],
+      "hint": "werfen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Im Frühling sind die Bäume"},
+        {"type": "blank", "id": "19a", "accept": ["gewachsen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "und die Tage wurden länger."}
+      ],
+      "hint": "wachsen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich wusste nicht, dass der Kurs schon"},
+        {"type": "blank", "id": "20a", "accept": ["angefangen"], "tags": ["form:perfekt"]},
+        {"type": "text", "text": "hat."}
+      ],
+      "hint": "anfangen"
+    }
+  ]
+}

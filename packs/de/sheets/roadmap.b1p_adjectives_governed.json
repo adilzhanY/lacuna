@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.b1p_adjectives_governed",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich bin sehr stolz auf"},
+        {"type": "blank", "id": "1a", "accept": ["meinen"], "tags": ["case:accusative", "trigger:adjective_stolz_auf"]},
+        {"type": "text", "text": "Sohn, er hat dieses Jahr Abitur gemacht."}
+      ],
+      "hint": "stolz auf"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Wir sind zufrieden mit"},
+        {"type": "blank", "id": "2a", "accept": ["dem"], "tags": ["case:dative", "trigger:adjective_zufrieden_mit"]},
+        {"type": "text", "text": "Ergebnis der Prüfung."}
+      ],
+      "hint": "zufrieden mit"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Die Straße ist heute frei von"},
+        {"type": "blank", "id": "3a", "accept": ["vom"], "tags": ["case:dative", "trigger:adjective_frei_von"]},
+        {"type": "text", "text": "Schnee."}
+      ],
+      "hint": "frei von"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Wir sind sehr gespannt auf"},
+        {"type": "blank", "id": "4a", "accept": ["die"], "tags": ["case:accusative", "number:plural", "trigger:adjective_gespannt_auf"]},
+        {"type": "text", "text": "Ergebnisse der Untersuchung."}
+      ],
+      "hint": "gespannt auf"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Die Miete ist stark abhängig von"},
+        {"type": "blank", "id": "5a", "accept": ["der"], "tags": ["case:dative", "trigger:adjective_abhaengig_von"]},
+        {"type": "text", "text": "Lage."}
+      ],
+      "hint": "abhängig von"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Sie ist schon lange verliebt in"},
+        {"type": "blank", "id": "6a", "accept": ["den"], "tags": ["case:accusative", "trigger:adjective_verliebt_in"]},
+        {"type": "text", "text": "Nachbarn von oben."}
+      ],
+      "hint": "verliebt in"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Der Fahrer ist schuld an"},
+        {"type": "blank", "id": "7a", "accept": ["dem"], "tags": ["case:dative", "trigger:adjective_schuld_an"]},
+        {"type": "text", "text": "Unfall."}
+      ],
+      "hint": "schuld an"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich bin dankbar für"},
+        {"type": "blank", "id": "8a", "accept": ["die"], "tags": ["case:accusative", "trigger:adjective_dankbar_fuer"]},
+        {"type": "text", "text": "Hilfe meiner Eltern."}
+      ],
+      "hint": "dankbar für"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Der See ist reich an"},
+        {"type": "blank", "id": "9a", "accept": ["vielen"], "tags": ["case:dative", "number:plural", "trigger:adjective_reich_an"]},
+        {"type": "text", "text": "Fischen."}
+      ],
+      "hint": "reich an"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder ist neidisch auf"},
+        {"type": "blank", "id": "10a", "accept": ["den"], "tags": ["case:accusative", "trigger:adjective_neidisch_auf"]},
+        {"type": "text", "text": "neuen Wagen meines Nachbarn."}
+      ],
+      "hint": "neidisch auf"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Nach drei Jahren bin ich an"},
+        {"type": "blank", "id": "11a", "accept": ["das"], "tags": ["case:accusative", "trigger:adjective_gewoehnt_an"]},
+        {"type": "text", "text": "Leben hier gewöhnt."}
+      ],
+      "hint": "gewöhnt an"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich bin von"},
+        {"type": "blank", "id": "12a", "accept": ["dieser"], "tags": ["case:dative", "form:demonstrative", "trigger:adjective_ueberzeugt_von"]},
+        {"type": "text", "text": "Idee nicht überzeugt."}
+      ],
+      "hint": "überzeugt von"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Diese Wohnung ist nicht geeignet für"},
+        {"type": "blank", "id": "13a", "accept": ["eine"], "tags": ["case:accusative", "declension:indefinite_article", "trigger:adjective_geeignet_fuer"]},
+        {"type": "text", "text": "Familie mit Kindern."}
+      ],
+      "hint": "geeignet für"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er ist bereit zu"},
+        {"type": "blank", "id": "14a", "accept": ["einem"], "tags": ["case:dative", "declension:indefinite_article", "trigger:adjective_bereit_zu"]},
+        {"type": "text", "text": "Kompromiss."}
+      ],
+      "hint": "bereit zu"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich bin mir"},
+        {"type": "blank", "id": "15a", "accept": ["der"], "tags": ["case:genitive", "trigger:adjective_bewusst"]},
+        {"type": "text", "text": "Gefahr bewusst."}
+      ],
+      "hint": "bewusst"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Er sieht"},
+        {"type": "blank", "id": "16a", "accept": ["seinem"], "tags": ["case:dative", "form:possessive", "trigger:adjective_aehnlich"]},
+        {"type": "text", "text": "Vater sehr ähnlich."}
+      ],
+      "hint": "ähnlich"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich bin müde von"},
+        {"type": "blank", "id": "17a", "accept": ["dem"], "tags": ["case:dative", "trigger:adjective_muede_von"]},
+        {"type": "text", "text": "langen Tag."}
+      ],
+      "hint": "müde von"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Wer ist für"},
+        {"type": "blank", "id": "18a", "accept": ["die"], "tags": ["case:accusative", "trigger:adjective_verantwortlich_fuer"]},
+        {"type": "text", "text": "Kaffeemaschine verantwortlich?"}
+      ],
+      "hint": "verantwortlich für"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wir sind froh über"},
+        {"type": "blank", "id": "19a", "accept": ["den"], "tags": ["case:accusative", "trigger:adjective_froh_ueber"]},
+        {"type": "text", "text": "Besuch der Oma."}
+      ],
+      "hint": "froh über"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der Film ist"},
+        {"type": "blank", "id": "20a", "accept": ["den"], "tags": ["case:accusative", "trigger:adjective_wert"]},
+        {"type": "text", "text": "Kinobesuch wert."}
+      ],
+      "hint": "wert"
+    }
+  ]
+}

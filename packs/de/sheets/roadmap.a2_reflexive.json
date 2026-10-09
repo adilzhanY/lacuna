@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2_reflexive",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich freue"},
+        {"type": "blank", "id": "1a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "sehr auf den Urlaub."}
+      ],
+      "hint": "sich freuen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Du musst"},
+        {"type": "blank", "id": "2a", "accept": ["dich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "beeilen, sonst verpasst du den Zug."}
+      ],
+      "hint": "sich beeilen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir treffen"},
+        {"type": "blank", "id": "3a", "accept": ["uns"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "heute Abend im Kino."}
+      ],
+      "hint": "sich treffen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder interessiert"},
+        {"type": "blank", "id": "4a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "sehr für Fußball."}
+      ],
+      "hint": "sich interessieren für"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Ich erhole"},
+        {"type": "blank", "id": "5a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "am Wochenende im Park."}
+      ],
+      "hint": "sich erholen"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Kannst du"},
+        {"type": "blank", "id": "6a", "accept": ["dich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "bitte bei ihm entschuldigen?"}
+      ],
+      "hint": "sich entschuldigen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Habt ihr"},
+        {"type": "blank", "id": "7a", "accept": ["euch"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "schon für den Kurs angemeldet?"}
+      ],
+      "hint": "sich anmelden"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Der Zug verspätet"},
+        {"type": "blank", "id": "8a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "wieder um zehn Minuten."}
+      ],
+      "hint": "sich verspäten"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich bewerbe"},
+        {"type": "blank", "id": "9a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "auf die Stelle im Krankenhaus."}
+      ],
+      "hint": "sich bewerben"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Hast du"},
+        {"type": "blank", "id": "10a", "accept": ["dich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "schon auf die Prüfung vorbereitet?"}
+      ],
+      "hint": "sich vorbereiten auf"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Kinder waschen"},
+        {"type": "blank", "id": "11a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "vor dem Essen."}
+      ],
+      "hint": "sich waschen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich wasche"},
+        {"type": "blank", "id": "12a", "accept": ["mir"], "tags": ["case:dative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "die Hände, bevor ich koche."}
+      ],
+      "hint": "sich waschen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich kann"},
+        {"type": "blank", "id": "13a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "heute schlecht auf die Arbeit konzentrieren."}
+      ],
+      "hint": "sich konzentrieren auf"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Er verliebt"},
+        {"type": "blank", "id": "14a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "in seine Nachbarin."}
+      ],
+      "hint": "sich verlieben in"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Wir leisten"},
+        {"type": "blank", "id": "15a", "accept": ["uns"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "dieses Jahr einen Urlaub in Italien."}
+      ],
+      "hint": "sich leisten"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Die Mutter ruht"},
+        {"type": "blank", "id": "16a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "am Nachmittag aus."}
+      ],
+      "hint": "sich ausruhen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich ziehe"},
+        {"type": "blank", "id": "17a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "warm an, es ist kalt draußen."}
+      ],
+      "hint": "sich anziehen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Meine Eltern ärgern"},
+        {"type": "blank", "id": "18a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "über den Lärm vom Nachbarn."}
+      ],
+      "hint": "sich ärgern über"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Warum haben Sie"},
+        {"type": "blank", "id": "19a", "accept": ["sich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "beim Vermieter beschwert?"}
+      ],
+      "hint": "sich beschweren"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Ich erinnere"},
+        {"type": "blank", "id": "20a", "accept": ["mich"], "tags": ["case:accusative", "form:reflexive_pronoun"]},
+        {"type": "text", "text": "nicht mehr an deinen Namen."}
+      ],
+      "hint": "sich erinnern an"
+    }
+  ]
+}

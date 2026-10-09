@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a2p_comparison",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Der Bus ist heute"},
+        {"type": "blank", "id": "1a", "accept": ["pünktlicher"], "tags": ["form:comparative"]},
+        {"type": "text", "text": "als gestern."}
+      ],
+      "hint": "pünktlich"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Die Wohnung im dritten Stock ist"},
+        {"type": "blank", "id": "2a", "accept": ["größer"], "tags": ["form:comparative", "form:umlaut"]},
+        {"type": "text", "text": "als unsere alte."}
+      ],
+      "hint": "groß"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Das Brot ist beim Bäcker"},
+        {"type": "blank", "id": "3a", "accept": ["frischer"], "tags": ["form:comparative"]},
+        {"type": "text", "text": "als im Supermarkt."}
+      ],
+      "hint": "frisch"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Die U-Bahn ist"},
+        {"type": "blank", "id": "4a", "accept": ["schneller"], "tags": ["form:comparative"]},
+        {"type": "text", "text": "als der Bus."}
+      ],
+      "hint": "schnell"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Im Winter ist es hier"},
+        {"type": "blank", "id": "5a", "accept": ["kälter"], "tags": ["form:comparative", "form:umlaut"]},
+        {"type": "text", "text": "als in Hamburg."}
+      ],
+      "hint": "kalt"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Meine Mutter spricht"},
+        {"type": "blank", "id": "6a", "accept": ["besser"], "tags": ["form:irregular_comparative"]},
+        {"type": "text", "text": "Englisch als ich."}
+      ],
+      "hint": "gut"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "7a", "accept": ["mehr"], "tags": ["form:irregular_comparative"]},
+        {"type": "text", "text": "Zeit als gestern."}
+      ],
+      "hint": "viel"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Das ist das"},
+        {"type": "blank", "id": "8a", "accept": ["beste"], "tags": ["form:superlative"]},
+        {"type": "text", "text": "Café in der Stadt."}
+      ],
+      "hint": "gut"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Die Brötchen sind hier am"},
+        {"type": "blank", "id": "9a", "accept": ["günstigsten"], "tags": ["form:superlative"]},
+        {"type": "text", "text": "in unserer Straße."}
+      ],
+      "hint": "günstig"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Der Park ist im Sommer am"},
+        {"type": "blank", "id": "10a", "accept": ["schönsten"], "tags": ["form:superlative"]},
+        {"type": "text", "text": "in der ganzen Stadt."}
+      ],
+      "hint": "schön"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Welche Linie ist die"},
+        {"type": "blank", "id": "11a", "accept": ["schnellste"], "tags": ["form:superlative"]},
+        {"type": "text", "text": "in der Stadt?"}
+      ],
+      "hint": "schnell"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Das ist der"},
+        {"type": "blank", "id": "12a", "accept": ["nächste"], "tags": ["form:irregular_superlative"]},
+        {"type": "text", "text": "Bahnhof von hier?"}
+      ],
+      "hint": "nah"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Die Bahn kommt heute"},
+        {"type": "blank", "id": "13a", "accept": ["später"], "tags": ["form:comparative", "form:adverb"]},
+        {"type": "text", "text": "als geplant."}
+      ],
+      "hint": "spät"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Miete ist hier nicht so"},
+        {"type": "blank", "id": "14a", "accept": ["hoch"], "tags": ["form:positive", "trigger:so_wie"]},
+        {"type": "text", "text": "wie in München."}
+      ],
+      "hint": "hoch"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Das Wetter wird im Mai immer"},
+        {"type": "blank", "id": "15a", "accept": ["wärmer"], "tags": ["form:comparative", "form:umlaut"]},
+        {"type": "text", "text": "und sonniger."}
+      ],
+      "hint": "warm"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Je"},
+        {"type": "blank", "id": "16a", "accept": ["schneller"], "tags": ["form:comparative", "trigger:je_desto"]},
+        {"type": "text", "text": "du fährst, desto früher bist du da."}
+      ],
+      "hint": "schnell"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Ich fahre"},
+        {"type": "blank", "id": "17a", "accept": ["lieber"], "tags": ["form:irregular_comparative", "form:adverb"]},
+        {"type": "text", "text": "mit dem Rad als mit dem Auto."}
+      ],
+      "hint": "gern"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Am"},
+        {"type": "blank", "id": "18a", "accept": ["liebsten"], "tags": ["form:irregular_superlative", "form:adverb"]},
+        {"type": "text", "text": "esse ich Pizza."}
+      ],
+      "hint": "gern"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Wer hat die"},
+        {"type": "blank", "id": "19a", "accept": ["meisten"], "tags": ["form:irregular_superlative"]},
+        {"type": "text", "text": "Fehler im Test gemacht?"}
+      ],
+      "hint": "viel"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Der Kaffee ist heute noch"},
+        {"type": "blank", "id": "20a", "accept": ["teurer"], "tags": ["form:comparative"]},
+        {"type": "text", "text": "geworden."}
+      ],
+      "hint": "teuer"
+    }
+  ]
+}

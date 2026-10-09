@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.ms_sprachgefuehl",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich warte"},
+        {"type": "blank", "id": "1a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]},
+        {"type": "text", "text": "den Bus."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Er denkt oft"},
+        {"type": "blank", "id": "2a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:accusative"]},
+        {"type": "text", "text": "seine alte Heimat."}
+      ],
+      "hint": "denken"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Ich habe keine Lust"},
+        {"type": "blank", "id": "3a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]},
+        {"type": "text", "text": "Sport heute."}
+      ],
+      "hint": "Lust, f"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Das hängt"},
+        {"type": "blank", "id": "4a", "accept": ["vom"], "tags": ["trigger:preposition_von", "case:dative"]},
+        {"type": "text", "text": "Wetter ab."}
+      ],
+      "hint": "abhängen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Sie kümmert sich"},
+        {"type": "blank", "id": "5a", "accept": ["um"], "tags": ["trigger:preposition_um", "case:accusative"]},
+        {"type": "text", "text": "ihre kranke Oma."}
+      ],
+      "hint": "sich kümmern"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Das erinnert mich"},
+        {"type": "blank", "id": "6a", "accept": ["an"], "tags": ["trigger:preposition_an", "case:accusative"]},
+        {"type": "text", "text": "meine Kindheit."}
+      ],
+      "hint": "erinnern"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wir sind sehr"},
+        {"type": "blank", "id": "7a", "accept": ["mit"], "tags": ["trigger:preposition_mit", "case:dative"]},
+        {"type": "text", "text": "dem Ergebnis zufrieden."}
+      ],
+      "hint": "zufrieden"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich bin"},
+        {"type": "blank", "id": "8a", "accept": ["von"], "tags": ["trigger:preposition_von", "case:dative"]},
+        {"type": "text", "text": "der Idee nicht überzeugt."}
+      ],
+      "hint": "überzeugt sein"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Das gehört nicht"},
+        {"type": "blank", "id": "9a", "accept": ["zum"], "tags": ["case:dative", "declension:definite_article"]},
+        {"type": "text", "text": "Thema."}
+      ],
+      "hint": "Thema, n"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich weiß nicht, ob er heute schon"},
+        {"type": "blank", "id": "10a", "accept": ["gekommen ist"], "tags": ["word_order:verb_final", "form:perfekt"]}
+      ],
+      "hint": "kommen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "11a", "accept": ["eigentlich"], "tags": ["word_order:adverb_position"]},
+        {"type": "text", "text": "nicht so schlimm, wie du denkst."}
+      ],
+      "hint": null
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Leider"},
+        {"type": "blank", "id": "12a", "accept": ["habe"], "tags": ["word_order:verb_second", "form:perfekt"]},
+        {"type": "text", "text": "ich gestern meinen Zug verpasst."}
+      ],
+      "hint": "verpassen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Hey, hast du"},
+        {"type": "blank", "id": "13a", "accept": ["mal"], "tags": ["form:colloquial"]},
+        {"type": "text", "text": "kurz Zeit?"}
+      ],
+      "hint": null
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Könnten Sie"},
+        {"type": "blank", "id": "14a", "accept": ["bitte"], "tags": ["form:formal_register"]},
+        {"type": "text", "text": "kurz warten?"}
+      ],
+      "hint": null
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Der Film war"},
+        {"type": "blank", "id": "15a", "accept": ["total"], "tags": ["form:colloquial"]},
+        {"type": "text", "text": "langweilig."}
+      ],
+      "hint": null
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich freue mich"},
+        {"type": "blank", "id": "16a", "accept": ["auf"], "tags": ["trigger:preposition_auf", "case:accusative"]},
+        {"type": "text", "text": "den Urlaub."}
+      ],
+      "hint": "sich freuen"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Wir haben lange"},
+        {"type": "blank", "id": "17a", "accept": ["über"], "tags": ["trigger:preposition_uber", "case:accusative"]},
+        {"type": "text", "text": "die Miete diskutiert."}
+      ],
+      "hint": "diskutieren"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Ich"},
+        {"type": "blank", "id": "18a", "accept": ["rufe"], "tags": ["word_order:verb_second", "form:present"]},
+        {"type": "text", "text": "dich später zurück."}
+      ],
+      "hint": "zurückrufen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "19a", "accept": ["nicht"], "tags": ["word_order:negation_position"]},
+        {"type": "text", "text": "meine Schuld."}
+      ],
+      "hint": null
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Es"},
+        {"type": "blank", "id": "20a", "accept": ["tut"], "tags": ["form:idiom", "form:present"]},
+        {"type": "text", "text": "mir leid, dass ich zu spät komme."}
+      ],
+      "hint": "leid tun"
+    }
+  ]
+}

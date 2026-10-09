@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.c2_partizipien_adjektiv",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Ich suche das"},
+        {"type": "blank", "id": "1a", "accept": ["verlorene"], "tags": ["form:participle_ii", "declension:weak", "case:accusative", "gender:neuter"]},
+        {"type": "text", "text": "Portemonnaie."}
+      ],
+      "hint": "verlieren"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Auf dem Tisch liegt ein"},
+        {"type": "blank", "id": "2a", "accept": ["geöffneter"], "tags": ["form:participle_ii", "declension:mixed", "case:nominative", "gender:masculine"]},
+        {"type": "text", "text": "Brief."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Wir sitzen mit den"},
+        {"type": "blank", "id": "3a", "accept": ["wartenden"], "tags": ["form:participle_i", "declension:weak", "case:dative", "number:plural"]},
+        {"type": "text", "text": "Gästen im Café."}
+      ],
+      "hint": "warten"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Haben Sie die"},
+        {"type": "blank", "id": "4a", "accept": ["bestellten"], "tags": ["form:participle_ii", "declension:weak", "case:accusative", "number:plural"]},
+        {"type": "text", "text": "Bücher schon abgeholt?"}
+      ],
+      "hint": "bestellen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Im Winter ist der"},
+        {"type": "blank", "id": "5a", "accept": ["gefrorene"], "tags": ["form:participle_ii", "declension:weak", "case:nominative", "gender:masculine"]},
+        {"type": "text", "text": "See gefährlich."}
+      ],
+      "hint": "gefrieren"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Wir wohnen in einer"},
+        {"type": "blank", "id": "6a", "accept": ["renovierten"], "tags": ["form:participle_ii", "declension:mixed", "case:dative", "gender:feminine"]},
+        {"type": "text", "text": "Altbauwohnung."}
+      ],
+      "hint": "renovieren"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Siehst du das"},
+        {"type": "blank", "id": "7a", "accept": ["schlafende"], "tags": ["form:participle_i", "declension:weak", "case:accusative", "gender:neuter"]},
+        {"type": "text", "text": "Kind dort?"}
+      ],
+      "hint": "schlafen"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Ich habe einen"},
+        {"type": "blank", "id": "8a", "accept": ["geerbten"], "tags": ["form:participle_ii", "declension:mixed", "case:accusative", "gender:masculine"]},
+        {"type": "text", "text": "Schrank von meiner Oma."}
+      ],
+      "hint": "erben"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Vorsicht vor dem"},
+        {"type": "blank", "id": "9a", "accept": ["bellenden"], "tags": ["form:participle_i", "declension:weak", "case:dative", "gender:masculine"]},
+        {"type": "text", "text": "Hund."}
+      ],
+      "hint": "bellen"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Im Park sitzt ein"},
+        {"type": "blank", "id": "10a", "accept": ["lachendes"], "tags": ["form:participle_i", "declension:mixed", "case:nominative", "gender:neuter"]},
+        {"type": "text", "text": "Kind im Sandkasten."}
+      ],
+      "hint": "lachen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Die Oma backt einen"},
+        {"type": "blank", "id": "11a", "accept": ["duftenden"], "tags": ["form:participle_i", "declension:mixed", "case:accusative", "gender:masculine"]},
+        {"type": "text", "text": "Apfelkuchen."}
+      ],
+      "hint": "duften"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Wegen des"},
+        {"type": "blank", "id": "12a", "accept": ["gestohlenen"], "tags": ["form:participle_ii", "declension:weak", "case:genitive", "gender:neuter"]},
+        {"type": "text", "text": "Fahrrads rufen wir die Polizei."}
+      ],
+      "hint": "stehlen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Bei einem"},
+        {"type": "blank", "id": "13a", "accept": ["geöffneten"], "tags": ["form:participle_ii", "declension:mixed", "case:dative", "gender:neuter"]},
+        {"type": "text", "text": "Fenster zieht es stark."}
+      ],
+      "hint": "öffnen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Die Verkäuferin holt mir die"},
+        {"type": "blank", "id": "14a", "accept": ["gewünschte"], "tags": ["form:participle_ii", "declension:weak", "case:accusative", "gender:feminine"]},
+        {"type": "text", "text": "Größe."}
+      ],
+      "hint": "wünschen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Ich habe leider keinen"},
+        {"type": "blank", "id": "15a", "accept": ["passenden"], "tags": ["form:participle_i", "declension:mixed", "case:accusative", "gender:masculine"]},
+        {"type": "text", "text": "Parkplatz gefunden."}
+      ],
+      "hint": "passen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir beobachten die"},
+        {"type": "blank", "id": "16a", "accept": ["startenden"], "tags": ["form:participle_i", "declension:weak", "case:accusative", "number:plural"]},
+        {"type": "text", "text": "Flugzeuge vom Balkon."}
+      ],
+      "hint": "starten"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Die Mieterin hat den"},
+        {"type": "blank", "id": "17a", "accept": ["verstopften"], "tags": ["form:participle_ii", "declension:weak", "case:accusative", "gender:masculine"]},
+        {"type": "text", "text": "Abfluss repariert."}
+      ],
+      "hint": "verstopfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Das ist die"},
+        {"type": "blank", "id": "18a", "accept": ["versprochene"], "tags": ["form:participle_ii", "declension:weak", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "Hilfe."}
+      ],
+      "hint": "versprechen"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Trotz der"},
+        {"type": "blank", "id": "19a", "accept": ["gesperrten"], "tags": ["form:participle_ii", "declension:weak", "case:genitive", "gender:feminine"]},
+        {"type": "text", "text": "Brücke kommen wir pünktlich an."}
+      ],
+      "hint": "sperren"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Die"},
+        {"type": "blank", "id": "20a", "accept": ["vermisste"], "tags": ["form:participle_ii", "declension:weak", "case:nominative", "gender:feminine"]},
+        {"type": "text", "text": "Katze ist wieder da."}
+      ],
+      "hint": "vermissen"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "topic_id": "roadmap.a1_pronouns",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Nein,"},
+        {"type": "blank", "id": "1a", "accept": ["ich"], "tags": ["form:personal_pronoun", "case:nominative"]},
+        {"type": "text", "text": "bin Marta."}
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Trinkst"},
+        {"type": "blank", "id": "2a", "accept": ["du"], "tags": ["form:personal_pronoun", "case:nominative"]},
+        {"type": "text", "text": "schon einen Kaffee?"}
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Kannst du"},
+        {"type": "blank", "id": "3a", "accept": ["mir"], "tags": ["form:personal_pronoun", "case:dative"]},
+        {"type": "text", "text": "helfen? Der Koffer ist schwer."}
+      ],
+      "hint": "ich"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Ich rufe"},
+        {"type": "blank", "id": "4a", "accept": ["dich"], "tags": ["form:personal_pronoun", "case:accusative"]},
+        {"type": "text", "text": "an, wenn das Taxi da ist."}
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Der Chef ist krank, aber ich kenne"},
+        {"type": "blank", "id": "5a", "accept": ["ihn"], "tags": ["form:personal_pronoun", "case:accusative"]},
+        {"type": "text", "text": "nicht gut."}
+      ],
+      "hint": "er"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Mein Bruder wohnt in Berlin, aber"},
+        {"type": "blank", "id": "6a", "accept": ["er"], "tags": ["form:personal_pronoun", "case:nominative"]},
+        {"type": "text", "text": "kommt oft nach Hause."}
+      ],
+      "hint": "Bruder, m"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "Wo ist"},
+        {"type": "blank", "id": "7a", "accept": ["mein"], "tags": ["form:possessive", "gender:masculine", "case:nominative"]},
+        {"type": "text", "text": "Schlüssel?"}
+      ],
+      "hint": "Schlüssel, m"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Das ist"},
+        {"type": "blank", "id": "8a", "accept": ["meine"], "tags": ["form:possessive", "gender:feminine", "case:nominative"]},
+        {"type": "text", "text": "Tasche, oder?"}
+      ],
+      "hint": "Tasche, f"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Ich habe"},
+        {"type": "blank", "id": "9a", "accept": ["mein"], "tags": ["form:possessive", "gender:neuter", "case:accusative"]},
+        {"type": "text", "text": "Handy vergessen."}
+      ],
+      "hint": "Handy, n"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "blank", "id": "10a", "accept": ["Meine"], "tags": ["form:possessive", "number:plural", "case:nominative"]},
+        {"type": "text", "text": "Eltern wohnen in Dresden."}
+      ],
+      "hint": "Eltern, pl"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Kennst du"},
+        {"type": "blank", "id": "11a", "accept": ["deinen"], "tags": ["form:possessive", "gender:masculine", "case:accusative"]},
+        {"type": "text", "text": "Nachbarn?"}
+      ],
+      "hint": "Nachbar, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "Ich suche"},
+        {"type": "blank", "id": "12a", "accept": ["deine"], "tags": ["form:possessive", "gender:feminine", "case:accusative"]},
+        {"type": "text", "text": "Mütze."}
+      ],
+      "hint": "Mütze, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich schenke"},
+        {"type": "blank", "id": "13a", "accept": ["meinem"], "tags": ["form:possessive", "gender:masculine", "case:dative"]},
+        {"type": "text", "text": "Vater eine Krawatte."}
+      ],
+      "hint": "Vater, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Ich helfe"},
+        {"type": "blank", "id": "14a", "accept": ["meiner"], "tags": ["form:possessive", "gender:feminine", "case:dative"]},
+        {"type": "text", "text": "Mutter beim Kochen."}
+      ],
+      "hint": "Mutter, f"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "Frag Peter, wie"},
+        {"type": "blank", "id": "15a", "accept": ["sein"], "tags": ["form:possessive", "gender:masculine", "case:nominative"]},
+        {"type": "text", "text": "Hund heißt."}
+      ],
+      "hint": "Hund, m"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Wir besuchen"},
+        {"type": "blank", "id": "16a", "accept": ["seine"], "tags": ["form:possessive", "gender:feminine", "case:accusative"]},
+        {"type": "text", "text": "Schwester in Hamburg."}
+      ],
+      "hint": "Schwester, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Er gibt"},
+        {"type": "blank", "id": "17a", "accept": ["seinem"], "tags": ["form:possessive", "gender:neuter", "case:dative"]},
+        {"type": "text", "text": "Kind ein Buch."}
+      ],
+      "hint": "Kind, n"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Herr Müller ist alt, aber"},
+        {"type": "blank", "id": "18a", "accept": ["seine"], "tags": ["form:possessive", "number:plural", "case:nominative"]},
+        {"type": "text", "text": "Kinder sind jung."}
+      ],
+      "hint": "Kinder, pl"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "Ich zeige"},
+        {"type": "blank", "id": "19a", "accept": ["dir"], "tags": ["form:personal_pronoun", "case:dative"]},
+        {"type": "text", "text": "gern das Bad."}
+      ],
+      "hint": "du"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "Das Buch gehört Tom, ich gebe"},
+        {"type": "blank", "id": "20a", "accept": ["ihm"], "tags": ["form:personal_pronoun", "case:dative"]},
+        {"type": "text", "text": "es morgen zurück."}
+      ],
+      "hint": "er"
+    }
+  ]
+}

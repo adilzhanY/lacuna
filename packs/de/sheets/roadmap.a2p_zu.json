@@ -1,0 +1,468 @@
+{
+  "topic_id": "roadmap.a2p_zu",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe heute keine Zeit"
+        },
+        {
+          "type": "blank",
+          "id": "1a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "kochen."
+        }
+      ],
+      "hint": "kochen"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Die Aufgabe ist schwer"
+        },
+        {
+          "type": "blank",
+          "id": "2a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lösen und dauert lange."
+        }
+      ],
+      "hint": "lösen"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "3a",
+          "accept": [
+            "Früh aufzustehen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fällt mir schwer."
+        }
+      ],
+      "hint": "aufstehen"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "4a",
+          "accept": [
+            "Die Milch einzukaufen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "hat er vergessen."
+        }
+      ],
+      "hint": "einkaufen"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir planen, nächsten Sommer nach Italien"
+        },
+        {
+          "type": "blank",
+          "id": "5a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fahren."
+        }
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hast du Lust, heute Abend ins Kino"
+        },
+        {
+          "type": "blank",
+          "id": "6a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "gehen?"
+        }
+      ],
+      "hint": "gehen"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es ist wichtig, pünktlich"
+        },
+        {
+          "type": "blank",
+          "id": "7a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "sein."
+        }
+      ],
+      "hint": "sein"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "8a",
+          "accept": [
+            "Dich wiederzusehen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "freut mich sehr."
+        }
+      ],
+      "hint": "wiedersehen"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Der Arzt hat mir geraten, mehr Wasser"
+        },
+        {
+          "type": "blank",
+          "id": "9a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "trinken."
+        }
+      ],
+      "hint": "trinken"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sie hat beschlossen, nach Berlin"
+        },
+        {
+          "type": "blank",
+          "id": "10a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ziehen."
+        }
+      ],
+      "hint": "ziehen"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Wir haben angefangen, Deutsch"
+        },
+        {
+          "type": "blank",
+          "id": "11a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "lernen."
+        }
+      ],
+      "hint": "lernen"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "12a",
+          "accept": [
+            "Die Tür abzuschließen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ist wichtig."
+        }
+      ],
+      "hint": "abschließen"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Im Bürgeramt ist es schwer, einen Termin"
+        },
+        {
+          "type": "blank",
+          "id": "13a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "bekommen."
+        }
+      ],
+      "hint": "bekommen"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "14a",
+          "accept": [
+            "Dich anzurufen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "habe ich leider vergessen."
+        }
+      ],
+      "hint": "anrufen"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hier ist es verboten"
+        },
+        {
+          "type": "blank",
+          "id": "15a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "rauchen."
+        }
+      ],
+      "hint": "rauchen"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ich habe noch viel"
+        },
+        {
+          "type": "blank",
+          "id": "16a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "tun."
+        }
+      ],
+      "hint": "tun"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mein Freund hat versprochen, mir beim Umzug"
+        },
+        {
+          "type": "blank",
+          "id": "17a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "helfen."
+        }
+      ],
+      "hint": "helfen"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Das Kind lernt gerade, Fahrrad"
+        },
+        {
+          "type": "blank",
+          "id": "18a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "fahren."
+        }
+      ],
+      "hint": "fahren"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {
+          "type": "blank",
+          "id": "19a",
+          "accept": [
+            "Das Sofa umzustellen"
+          ],
+          "tags": [
+            "form:zu_infinitive",
+            "form:separable_verb"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "ist nicht leicht."
+        }
+      ],
+      "hint": "umstellen"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {
+          "type": "text",
+          "text": "Es fängt an"
+        },
+        {
+          "type": "blank",
+          "id": "20a",
+          "accept": [
+            "zu"
+          ],
+          "tags": [
+            "form:zu_infinitive"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "regnen."
+        }
+      ],
+      "hint": "regnen"
+    }
+  ]
+}

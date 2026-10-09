@@ -1,0 +1,186 @@
+{
+  "topic_id": "roadmap.a1p_plural",
+  "language": "de",
+  "items": [
+    {
+      "n": 1,
+      "segments": [
+        {"type": "text", "text": "Im Garten stehen drei"},
+        {"type": "blank", "id": "1a", "accept": ["Bäume"], "tags": ["number:plural"]},
+        {"type": "text", "text": "am Haus."}
+      ],
+      "hint": "Baum, m"
+    },
+    {
+      "n": 2,
+      "segments": [
+        {"type": "text", "text": "Ich kaufe zwei"},
+        {"type": "blank", "id": "2a", "accept": ["Brote"], "tags": ["number:plural"]},
+        {"type": "text", "text": "beim Bäcker."}
+      ],
+      "hint": "Brot, n"
+    },
+    {
+      "n": 3,
+      "segments": [
+        {"type": "text", "text": "Auf dem Parkplatz stehen viele"},
+        {"type": "blank", "id": "3a", "accept": ["Autos"], "tags": ["number:plural"]},
+        {"type": "text", "text": "vor dem Supermarkt."}
+      ],
+      "hint": "Auto, n"
+    },
+    {
+      "n": 4,
+      "segments": [
+        {"type": "text", "text": "Am Wochenende besuchen wir zwei"},
+        {"type": "blank", "id": "4a", "accept": ["Städte"], "tags": ["number:plural"]},
+        {"type": "text", "text": "in Italien."}
+      ],
+      "hint": "Stadt, f"
+    },
+    {
+      "n": 5,
+      "segments": [
+        {"type": "text", "text": "Mein Nachbar hat zwei"},
+        {"type": "blank", "id": "5a", "accept": ["Hunde"], "tags": ["number:plural"]},
+        {"type": "text", "text": "und eine Katze."}
+      ],
+      "hint": "Hund, m"
+    },
+    {
+      "n": 6,
+      "segments": [
+        {"type": "text", "text": "Auf dem Markt kaufe ich frische"},
+        {"type": "blank", "id": "6a", "accept": ["Äpfel"], "tags": ["number:plural"]},
+        {"type": "text", "text": "und Bananen."}
+      ],
+      "hint": "Apfel, m"
+    },
+    {
+      "n": 7,
+      "segments": [
+        {"type": "text", "text": "In der Schule lernen wir viele neue"},
+        {"type": "blank", "id": "7a", "accept": ["Wörter"], "tags": ["number:plural"]},
+        {"type": "text", "text": "jede Woche."}
+      ],
+      "hint": "Wort, n"
+    },
+    {
+      "n": 8,
+      "segments": [
+        {"type": "text", "text": "Im Zoo sehen wir viele"},
+        {"type": "blank", "id": "8a", "accept": ["Affen"], "tags": ["number:plural"]},
+        {"type": "text", "text": "und Löwen."}
+      ],
+      "hint": "Affe, m"
+    },
+    {
+      "n": 9,
+      "segments": [
+        {"type": "text", "text": "Am Bahnhof stehen viele"},
+        {"type": "blank", "id": "9a", "accept": ["Busse"], "tags": ["number:plural"]},
+        {"type": "text", "text": "bereit."}
+      ],
+      "hint": "Bus, m"
+    },
+    {
+      "n": 10,
+      "segments": [
+        {"type": "text", "text": "Ich brauche drei"},
+        {"type": "blank", "id": "10a", "accept": ["Tassen"], "tags": ["number:plural"]},
+        {"type": "text", "text": "für den Besuch."}
+      ],
+      "hint": "Tasse, f"
+    },
+    {
+      "n": 11,
+      "segments": [
+        {"type": "text", "text": "Mein Onkel hat drei"},
+        {"type": "blank", "id": "11a", "accept": ["Söhne"], "tags": ["number:plural"]},
+        {"type": "text", "text": "und eine Tochter."}
+      ],
+      "hint": "Sohn, m"
+    },
+    {
+      "n": 12,
+      "segments": [
+        {"type": "text", "text": "In diesem Haus wohnen acht"},
+        {"type": "blank", "id": "12a", "accept": ["Familien"], "tags": ["number:plural"]},
+        {"type": "text", "text": "unter einem Dach."}
+      ],
+      "hint": "Familie, f"
+    },
+    {
+      "n": 13,
+      "segments": [
+        {"type": "text", "text": "Ich habe diese Woche zwei"},
+        {"type": "blank", "id": "13a", "accept": ["Termine"], "tags": ["number:plural"]},
+        {"type": "text", "text": "beim Zahnarzt."}
+      ],
+      "hint": "Termin, m"
+    },
+    {
+      "n": 14,
+      "segments": [
+        {"type": "text", "text": "Auf dem Tisch liegen drei"},
+        {"type": "blank", "id": "14a", "accept": ["Briefe"], "tags": ["number:plural"]},
+        {"type": "text", "text": "für dich."}
+      ],
+      "hint": "Brief, m"
+    },
+    {
+      "n": 15,
+      "segments": [
+        {"type": "text", "text": "In Berlin gibt es viele"},
+        {"type": "blank", "id": "15a", "accept": ["Museen"], "tags": ["number:plural"]},
+        {"type": "text", "text": "zu sehen."}
+      ],
+      "hint": "Museum, n"
+    },
+    {
+      "n": 16,
+      "segments": [
+        {"type": "text", "text": "Ich treffe zwei alte"},
+        {"type": "blank", "id": "16a", "accept": ["Freundinnen"], "tags": ["number:plural"]},
+        {"type": "text", "text": "im Café."}
+      ],
+      "hint": "Freundin, f"
+    },
+    {
+      "n": 17,
+      "segments": [
+        {"type": "text", "text": "Auf dem Feld sehen wir zwei"},
+        {"type": "blank", "id": "17a", "accept": ["Pferde"], "tags": ["number:plural"]},
+        {"type": "text", "text": "am Waldrand."}
+      ],
+      "hint": "Pferd, n"
+    },
+    {
+      "n": 18,
+      "segments": [
+        {"type": "text", "text": "Auf meinem Handy habe ich viele"},
+        {"type": "blank", "id": "18a", "accept": ["Fotos"], "tags": ["number:plural"]},
+        {"type": "text", "text": "vom Urlaub."}
+      ],
+      "hint": "Foto, n"
+    },
+    {
+      "n": 19,
+      "segments": [
+        {"type": "text", "text": "In der Küche stehen zwei"},
+        {"type": "blank", "id": "19a", "accept": ["Stühle"], "tags": ["number:plural"]},
+        {"type": "text", "text": "am Fenster."}
+      ],
+      "hint": "Stuhl, m"
+    },
+    {
+      "n": 20,
+      "segments": [
+        {"type": "text", "text": "In dieser Straße stehen viele"},
+        {"type": "blank", "id": "20a", "accept": ["Häuser"], "tags": ["number:plural"]},
+        {"type": "text", "text": "aus der alten Zeit."}
+      ],
+      "hint": "Haus, n"
+    }
+  ]
+}
