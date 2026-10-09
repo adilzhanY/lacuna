@@ -59,6 +59,10 @@ pub struct Topic {
     pub title: String,
     pub goal: String,
     pub status: TopicStatus,
+    /// A page about the topic, from the roadmap it was taken from.
+    pub link: Option<String>,
+    /// True when the roadmap says the topic may be taken before or after its level.
+    pub flexible: bool,
 }
 
 /// The raw shape of one `[[topic]]` entry in `topics.toml`.
@@ -73,6 +77,10 @@ struct TopicDef {
     goal: String,
     #[serde(default)]
     status: TopicStatus,
+    #[serde(default)]
+    link: Option<String>,
+    #[serde(default)]
+    flexible: bool,
 }
 
 #[derive(Debug, Deserialize)]
@@ -144,6 +152,15 @@ impl Pack {
                     ));
                 }
             }
+            // The link ends up in an href, so only https is allowed through.
+            if let Some(link) = &def.link {
+                if !link.starts_with("https://") {
+                    return Err(PackError::invalid(
+                        language,
+                        format!("topic `{}` has a link that is not https", def.id),
+                    ));
+                }
+            }
         }
 
         // Stages must be a gapless 1..n run inside each level, otherwise the
@@ -179,6 +196,8 @@ impl Pack {
                 title: d.title,
                 goal: d.goal,
                 status: d.status,
+                link: d.link,
+                flexible: d.flexible,
             })
             .collect();
         topics.sort_by(|a, b| a.cefr.cmp(&b.cefr).then(a.stage.cmp(&b.stage)));
@@ -239,6 +258,8 @@ mod tests {
             title: "Dative case".to_string(),
             goal: "Practice when to use the dative".to_string(),
             status: TopicStatus::Known,
+            link: None,
+            flexible: false,
         }
     }
 
@@ -301,8 +322,16 @@ mod tests {
     fn loads_the_real_german_pack() {
         let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("../packs");
         let pack = Pack::load(&root, "de").expect("the shipped German pack must load");
-        assert_eq!(pack.topics.len(), 43);
+        assert_eq!(pack.topics.len(), 43 + 75);
         assert_eq!(pack.topics[0].id, "articles.definite");
         assert!(pack.topic("cases.dative").is_some());
+    }
+
+    #[test]
+    fn rejects_a_link_that_is_not_https() {
+        let mut bad = def("cases.a", Level::A1, 1);
+        bad.link = Some("javascript:alert(1)".to_string());
+        let err = Pack::from_defs("de", vec![bad]).unwrap_err();
+        assert!(err.to_string().contains("not https"));
     }
 }

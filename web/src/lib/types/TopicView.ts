@@ -3,6 +3,14 @@ import type { Level } from "./Level";
 
 export type TopicView = { id: string, cefr: Level, stage: number, category: string, title: string, goal: string, 
 /**
+ * A page about the topic from the roadmap, `null` when there is none.
+ */
+link: string | null, 
+/**
+ * True when the roadmap allows the topic before or after its level.
+ */
+flexible: boolean, 
+/**
  * `null` until the topic has been studied once.
  */
 due: string | null, reps: number, lapses: number, is_due: boolean, is_new: boolean, 

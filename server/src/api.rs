@@ -81,6 +81,10 @@ pub struct TopicView {
     pub category: String,
     pub title: String,
     pub goal: String,
+    /// A page about the topic from the roadmap, `null` when there is none.
+    pub link: Option<String>,
+    /// True when the roadmap allows the topic before or after its level.
+    pub flexible: bool,
     /// `null` until the topic has been studied once.
     pub due: Option<String>,
     #[ts(type = "number")]
@@ -126,6 +130,8 @@ async fn topic_views(state: &SharedState) -> anyhow::Result<Vec<TopicView>> {
             category: topic.category.clone(),
             title: topic.title.clone(),
             goal: topic.goal.clone(),
+            link: topic.link.clone(),
+            flexible: topic.flexible,
             due: s.and_then(|s| s.due).map(|d| d.to_string()),
             reps: s.map(|s| s.reps).unwrap_or(0),
             lapses: s.map(|s| s.lapses).unwrap_or(0),

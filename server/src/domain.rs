@@ -10,36 +10,69 @@ use std::str::FromStr;
 use serde::{Deserialize, Serialize};
 use ts_rs::TS;
 
-/// CEFR level, as labelled by the source curriculum.
+/// A level of the roadmap, from A1 up to native speaker.
+///
+/// The CEFR bands are split with a "+" step in between, as on the ROADMAP:deutsch
+/// poster. Declaration order is the teaching order, so `Ord` sorts by it.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Serialize, Deserialize, TS)]
 #[ts(export, export_to = "../../web/src/lib/types/")]
 pub enum Level {
+    #[serde(rename = "A1")]
     A1,
+    #[serde(rename = "A1+")]
+    A1Plus,
+    #[serde(rename = "A2")]
     A2,
+    #[serde(rename = "A2+")]
+    A2Plus,
+    #[serde(rename = "B1")]
     B1,
+    #[serde(rename = "B1+")]
+    B1Plus,
+    #[serde(rename = "B2")]
     B2,
+    #[serde(rename = "B2+")]
+    B2Plus,
+    #[serde(rename = "C1")]
     C1,
+    #[serde(rename = "C1+")]
+    C1Plus,
+    #[serde(rename = "C2")]
     C2,
+    #[serde(rename = "Muttersprache")]
+    Muttersprache,
 }
 
 impl Level {
-    pub const ALL: [Level; 6] = [
+    pub const ALL: [Level; 12] = [
         Level::A1,
+        Level::A1Plus,
         Level::A2,
+        Level::A2Plus,
         Level::B1,
+        Level::B1Plus,
         Level::B2,
+        Level::B2Plus,
         Level::C1,
+        Level::C1Plus,
         Level::C2,
+        Level::Muttersprache,
     ];
 
     pub fn as_str(self) -> &'static str {
         match self {
             Level::A1 => "A1",
+            Level::A1Plus => "A1+",
             Level::A2 => "A2",
+            Level::A2Plus => "A2+",
             Level::B1 => "B1",
+            Level::B1Plus => "B1+",
             Level::B2 => "B2",
+            Level::B2Plus => "B2+",
             Level::C1 => "C1",
+            Level::C1Plus => "C1+",
             Level::C2 => "C2",
+            Level::Muttersprache => "Muttersprache",
         }
     }
 }
@@ -54,15 +87,10 @@ impl FromStr for Level {
     type Err = String;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
-        match s.to_ascii_uppercase().as_str() {
-            "A1" => Ok(Level::A1),
-            "A2" => Ok(Level::A2),
-            "B1" => Ok(Level::B1),
-            "B2" => Ok(Level::B2),
-            "C1" => Ok(Level::C1),
-            "C2" => Ok(Level::C2),
-            other => Err(format!("unknown CEFR level `{other}`")),
-        }
+        Level::ALL
+            .into_iter()
+            .find(|level| level.as_str().eq_ignore_ascii_case(s))
+            .ok_or_else(|| format!("unknown level `{s}`"))
     }
 }
 

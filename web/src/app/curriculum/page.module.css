@@ -77,6 +77,30 @@
   text-underline-offset: 3px;
 }
 
+.source,
+.link {
+  color: var(--select);
+}
+
+.source:hover,
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  margin-top: 2px;
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+.flexible {
+  font-style: italic;
+}
+
 .date {
   font-size: var(--text-xs);
   color: var(--muted);

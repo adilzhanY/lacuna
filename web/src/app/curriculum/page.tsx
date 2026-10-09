@@ -8,7 +8,20 @@ import { Centered, Chip, Section } from "@/components/ui/Section";
 import { api, type Level, type TopicView } from "@/lib/api";
 import styles from "./page.module.css";
 
-const LEVELS: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const LEVELS: Level[] = [
+  "A1",
+  "A1+",
+  "A2",
+  "A2+",
+  "B1",
+  "B1+",
+  "B2",
+  "B2+",
+  "C1",
+  "C1+",
+  "C2",
+  "Muttersprache",
+];
 
 export default function Curriculum() {
   const [topics, setTopics] = useState<TopicView[] | null>(null);
@@ -41,8 +54,17 @@ export default function Curriculum() {
     <Shell>
       <h1 className={styles.title}>Curriculum</h1>
       <p className={styles.intro}>
-        Every topic in the German pack, in the order it should be taught.
-        Numbers on the left are the teaching stage inside the level.
+        Levels and topics follow ROADMAP:deutsch by the{" "}
+        <a
+          href="https://t.me/sheimande"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.source}
+        >
+          t.me/sheimande
+        </a>{" "}
+        channel. Numbers on the left are the teaching stage inside the level.
+        Topics without a sheet yet are listed but cannot be drilled.
       </p>
 
       {!topics && <p className="label">Loading topics</p>}
@@ -76,6 +98,25 @@ export default function Curriculum() {
                         topic.title
                       )}
                       <small>{topic.goal}</small>
+                      {(topic.link || topic.flexible) && (
+                        <span className={styles.meta}>
+                          {topic.link && (
+                            <a
+                              href={topic.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.link}
+                            >
+                              {hostOf(topic.link)}
+                            </a>
+                          )}
+                          {topic.flexible && (
+                            <span className={styles.flexible}>
+                              can come before or after this level
+                            </span>
+                          )}
+                        </span>
+                      )}
                     </span>
                     <State topic={topic} />
                   </div>
@@ -87,6 +128,10 @@ export default function Curriculum() {
       </div>
     </Shell>
   );
+}
+
+function hostOf(url: string): string {
+  return new URL(url).hostname.replace(/^www\./, "");
 }
 
 function State({ topic }: { topic: TopicView }) {

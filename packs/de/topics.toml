@@ -1,6 +1,7 @@
 # lacuna German pack: topic tree
 #
-# cefr    = level as labelled in the source curriculum (Busuu)
+# cefr    = level, from A1 to Muttersprache, as on the ROADMAP:deutsch poster.
+#           Busuu topics keep the CEFR label of the source curriculum.
 # stage   = suggested teaching order inside that level, which is not always the
 #           same as the source order (see the notes at the bottom)
 # status  = "new" when the topic has never been studied yet
@@ -359,12 +360,792 @@ title = "Konjunktiv I: Present"
 goal = "Practice using the Konjunktiv I in the present tense"
 status = "new"
 
+# ============================================= ROADMAP:deutsch
+#
+# Topics from the ROADMAP:deutsch poster (t.me/sheimande). Ids start with
+# `roadmap.`. Stages in A1, A2 and B1 continue after the Busuu topics above.
+# `flexible = true` is the poster's blue: the topic may come before or after
+# its level. `link` is the page the poster points to for that topic.
+
+# =============================================================== A1
+
+[[topic]]
+id = "roadmap.a1_pronouns"
+cefr = "A1"
+stage = 28
+category = "Pronouns"
+title = "Personal and possessive pronouns"
+goal = "Use ich, du and er, and mein, dein and sein"
+status = "new"
+link = "https://deutschonline.ru/articles/prityazhatelnye-mestoimeniya-v-nemeckom/"
+
+[[topic]]
+id = "roadmap.a1_word_order"
+cefr = "A1"
+stage = 29
+category = "Discourse, sentence, and phrase types"
+title = "Word order in a sentence"
+goal = "Place the verb and the other parts of a main clause"
+status = "new"
+link = "https://deutschonline.ru/articles/poryadok-slov-v-nemeckom-predlozhenii/"
+
+[[topic]]
+id = "roadmap.a1_articles"
+cefr = "A1"
+stage = 30
+category = "Articles"
+title = "Articles"
+goal = "Use der, die, das and ein"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-7-artikli-v-nemeckom-jazyke/"
+
+[[topic]]
+id = "roadmap.a1_praesens"
+cefr = "A1"
+stage = 31
+category = "Verbs: present"
+title = "Präsens"
+goal = "Conjugate regular verbs in the present tense"
+status = "new"
+link = "https://www.de-online.ru/prasens"
+
+[[topic]]
+id = "roadmap.a1_numbers"
+cefr = "A1"
+stage = 32
+category = "Numbers"
+title = "Numbers 1 to 20"
+goal = "Count and use the numbers from 1 to 20"
+status = "new"
+link = "https://deutschonline.ru/articles/cifry-i-chisla-na-nemeckom-yazyke/"
+
+[[topic]]
+id = "roadmap.a1_haben_sein"
+cefr = "A1"
+stage = 33
+category = "Verbs: present"
+title = "Haben and sein"
+goal = "Conjugate haben and sein"
+status = "new"
+link = "https://www.de-online.ru/glagoly-sein-i-haben"
+
+[[topic]]
+id = "roadmap.a1_separable_prefixes"
+cefr = "A1"
+stage = 34
+category = "Verbs: present"
+title = "Separable verb prefixes"
+goal = "Use verbs with separable prefixes"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-20-glagoly-s-otdeljaemymi-pristavkami-v-nemeckom-jazyke/"
+
+# =============================================================== A1+
+
+[[topic]]
+id = "roadmap.a1p_numbers_21_100"
+cefr = "A1+"
+stage = 1
+category = "Numbers"
+title = "Numbers 21 to 100"
+goal = "Count and use the numbers from 21 to 100"
+status = "new"
+link = "https://speakasap.com/de/grammar/chislitelnye/"
+
+[[topic]]
+id = "roadmap.a1p_nicht_kein"
+cefr = "A1+"
+stage = 2
+category = "The negative"
+title = "nicht or kein"
+goal = "Choose between nicht and kein"
+status = "new"
+link = "https://www.de-online.ru/index/0-61"
+
+[[topic]]
+id = "roadmap.a1p_plural"
+cefr = "A1+"
+stage = 3
+category = "Nouns"
+title = "Plural of nouns"
+goal = "Form the plural of nouns"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-10-mnozhestvennoe-chislo-imjon-sushhestvitelnyh-v-nemeckom-jazyke/"
+
+[[topic]]
+id = "roadmap.a1p_und_aber"
+cefr = "A1+"
+stage = 4
+category = "Connectors"
+title = "und, aber, denn and oder"
+goal = "Join clauses with und, aber, denn and oder"
+status = "new"
+link = "https://german.ovcharov.me/articles/urovni/a1/grammatika/soiuzy-und-aber-oder-denn/"
+
+[[topic]]
+id = "roadmap.a1p_regular_irregular"
+cefr = "A1+"
+stage = 5
+category = "Verbs: present"
+title = "Regular and irregular verbs"
+goal = "Tell regular and irregular verbs apart in the present"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-2-sprjazhenie-pravilnyh-glagolov-v-nemeckom-jazyke/"
+
+[[topic]]
+id = "roadmap.a1p_accusative_prepositions"
+cefr = "A1+"
+stage = 6
+category = "Cases"
+title = "Accusative prepositions"
+goal = "Use prepositions that take the accusative"
+status = "new"
+link = "https://www.de-online.ru/vinitelnyj-padezh-v-nemeckom-jazyke"
+
+[[topic]]
+id = "roadmap.a1p_futur_1"
+cefr = "A1+"
+stage = 7
+category = "Verbs: future"
+title = "Futur I"
+goal = "Form and use the Futur I"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-39-budushhee-vremja-futur-i-v-nemeckom-jazyke/"
+
+# =============================================================== A2
+
+[[topic]]
+id = "roadmap.a2_irregular_verbs"
+cefr = "A2"
+stage = 10
+category = "Verbs: irregular"
+title = "Irregular verbs"
+goal = "Learn the most common irregular verbs"
+status = "new"
+link = "https://www.de-online.ru/samyj_polnyj_spisok_nepravilnykh_glagolov"
+
+[[topic]]
+id = "roadmap.a2_hatten_waren"
+cefr = "A2"
+stage = 11
+category = "Verbs: past tenses"
+title = "Hatte and war"
+goal = "Use hatte and war in the Präteritum"
+status = "new"
+link = "https://deutsch-lernen.zum.de/wiki/Sein_und_haben_-_im_Pr%C3%A4teritum_(Interaktive_%C3%9Cbungen)"
+
+[[topic]]
+id = "roadmap.a2_modal_verbs"
+cefr = "A2"
+stage = 12
+category = "Verbs: modal"
+title = "Modal verbs"
+goal = "Use the modal verbs in the present"
+status = "new"
+link = "https://deutschonline.ru/articles/modalnye-glagoly-v-nemeckom-yazyke/"
+
+[[topic]]
+id = "roadmap.a2_dass_clauses"
+cefr = "A2"
+stage = 13
+category = "Discourse, sentence, and phrase types"
+title = "Subordinate clauses with dass"
+goal = "Build clauses that start with dass"
+status = "new"
+link = "https://a1c2deutschonline.com/grammatika-nemeckogo-a2/pridatochnye-predlozheniya-s-soyuzom-dass"
+flexible = true
+
+[[topic]]
+id = "roadmap.a2_all_numbers"
+cefr = "A2"
+stage = 14
+category = "Numbers"
+title = "All numbers"
+goal = "Use cardinal and ordinal numbers"
+status = "new"
+
+[[topic]]
+id = "roadmap.a2_dative_prepositions"
+cefr = "A2"
+stage = 15
+category = "Cases"
+title = "Dative prepositions"
+goal = "Use prepositions that take the dative"
+status = "new"
+link = "https://www.de-online.ru/dativ"
+
+[[topic]]
+id = "roadmap.a2_reflexive"
+cefr = "A2"
+stage = 16
+category = "Pronouns"
+title = "Reflexive verbs with sich"
+goal = "Use reflexive verbs with sich"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-18-vozvratnye-glagoly-v-nemeckom-jazyke/"
+
+# =============================================================== A2+
+
+[[topic]]
+id = "roadmap.a2p_comparison"
+cefr = "A2+"
+stage = 1
+category = "Adjectives"
+title = "Degrees of comparison"
+goal = "Compare with adjectives and adverbs"
+status = "new"
+link = "https://deutschonline.ru/articles/stepeni-sravneniya-prilagatelnyh-v-nemeckom-yazyke/"
+
+[[topic]]
+id = "roadmap.a2p_verbs_with_cases"
+cefr = "A2+"
+stage = 2
+category = "Verbs: with cases"
+title = "Verbs with a case"
+goal = "Use verbs that take a fixed case"
+status = "new"
+link = "https://www.de-online.ru/glagoly-s-upravleniem"
+flexible = true
+
+[[topic]]
+id = "roadmap.a2p_zu"
+cefr = "A2+"
+stage = 3
+category = "Verbs"
+title = "The particle zu"
+goal = "Use zu with infinitives"
+status = "new"
+link = "https://www.youtube.com/watch?v=VKPahFap-cI"
+
+[[topic]]
+id = "roadmap.a2p_relative_pronouns"
+cefr = "A2+"
+stage = 4
+category = "Pronouns"
+title = "Relative pronouns"
+goal = "Build clauses with relative pronouns"
+status = "new"
+link = "https://www.youtube.com/watch?v=nciBnN68TJs"
+flexible = true
+
+[[topic]]
+id = "roadmap.a2p_perfekt"
+cefr = "A2+"
+stage = 5
+category = "Verbs: past tenses"
+title = "Perfekt"
+goal = "Form and use the Perfekt"
+status = "new"
+link = "https://www.youtube.com/watch?v=uuPszpA12QA"
+
+[[topic]]
+id = "roadmap.a2p_praeteritum"
+cefr = "A2+"
+stage = 6
+category = "Verbs: past tenses"
+title = "Präteritum"
+goal = "Form and use the Präteritum"
+status = "new"
+link = "https://www.youtube.com/watch?v=cYI3Q4n0dqk"
+
+[[topic]]
+id = "roadmap.a2p_imperative"
+cefr = "A2+"
+stage = 7
+category = "Verbs"
+title = "Imperative"
+goal = "Give instructions and commands"
+status = "new"
+link = "https://www.youtube.com/watch?v=R_sGBMayNm4"
+
+# =============================================================== B1
+
+[[topic]]
+id = "roadmap.b1_adjective_declension"
+cefr = "B1"
+stage = 8
+category = "Adjectives"
+title = "Adjective endings"
+goal = "Decline adjectives in every case"
+status = "new"
+link = "https://www.de-online.ru/index/sklonenie_prilagatelnykh_v_nemeckom_jazyke/0-68"
+
+[[topic]]
+id = "roadmap.b1_strong_weak_praeteritum"
+cefr = "B1"
+stage = 9
+category = "Verbs: past tenses"
+title = "Strong and weak verbs in the Präteritum"
+goal = "Tell strong and weak verbs apart in the Präteritum"
+status = "new"
+link = "https://www.de-online.ru/samyj_polnyj_spisok_nepravilnykh_glagolov"
+
+[[topic]]
+id = "roadmap.b1_indirect_speech"
+cefr = "B1"
+stage = 10
+category = "Discourse, sentence, and phrase types"
+title = "Indirect speech"
+goal = "Report what someone said"
+status = "new"
+link = "https://deutsch-sprechen.ru/%D0%BA%D0%BE%D1%81%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D1%87%D1%8C/"
+flexible = true
+
+[[topic]]
+id = "roadmap.b1_werden"
+cefr = "B1"
+stage = 11
+category = "Verbs"
+title = "The verb werden"
+goal = "Use werden as an auxiliary and as a main verb"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-46-glagol-werden-v-nemeckom-jazyke/"
+
+[[topic]]
+id = "roadmap.b1_demonstratives"
+cefr = "B1"
+stage = 12
+category = "Pronouns"
+title = "Demonstrative pronouns"
+goal = "Use dieser, jener and der as pointers"
+status = "new"
+link = "https://deutschonline.ru/articles/ukazatelnye-mestoimeniya-v-nemeckom-yazyke/"
+flexible = true
+
+[[topic]]
+id = "roadmap.b1_temporal_clauses"
+cefr = "B1"
+stage = 13
+category = "Discourse, sentence, and phrase types"
+title = "Temporal clauses"
+goal = "Build clauses of time"
+status = "new"
+link = "https://www.de-online.ru/pridatochniye-vremeni"
+
+[[topic]]
+id = "roadmap.b1_causal_clauses"
+cefr = "B1"
+stage = 14
+category = "Discourse, sentence, and phrase types"
+title = "Causal clauses"
+goal = "Build clauses of reason"
+status = "new"
+link = "https://www.de-online.ru/pridatochnye-predlozheniya-v-nemeckom"
+
+# =============================================================== B1+
+
+[[topic]]
+id = "roadmap.b1p_konjunktiv_present"
+cefr = "B1+"
+stage = 1
+category = "Verbs: subjunctive"
+title = "Konjunktiv in the present"
+goal = "Use the Konjunktiv in the present and with modal verbs"
+status = "new"
+link = "https://www.de-online.ru/index/konjunktiv_1_uslovnaja_forma_1/0-111"
+
+[[topic]]
+id = "roadmap.b1p_plusquamperfekt"
+cefr = "B1+"
+stage = 2
+category = "Verbs: past tenses"
+title = "Plusquamperfekt"
+goal = "Form and use the Plusquamperfekt"
+status = "new"
+link = "https://www.youtube.com/watch?v=6Ts2WrjtJ_c"
+
+[[topic]]
+id = "roadmap.b1p_genitiv"
+cefr = "B1+"
+stage = 3
+category = "Cases"
+title = "Genitive and genitive prepositions"
+goal = "Use the genitive case"
+status = "new"
+link = "https://www.de-online.ru/genitiv"
+
+[[topic]]
+id = "roadmap.b1p_passiv"
+cefr = "B1+"
+stage = 4
+category = "Verbs: passive"
+title = "Passive voice"
+goal = "Form and use the Passiv"
+status = "new"
+link = "https://www.youtube.com/watch?v=ugvQkf8RmFI"
+
+[[topic]]
+id = "roadmap.b1p_adjectives_governed"
+cefr = "B1+"
+stage = 5
+category = "Adjectives"
+title = "Adjectives with a case"
+goal = "Use adjectives that take a fixed case"
+status = "new"
+link = "https://berlinerdeutsch.ru/blog/tpost/vs6emzzmc1-chto-takoe-upravlyaemie-prilagatelnie-v"
+
+[[topic]]
+id = "roadmap.b1p_n_declension"
+cefr = "B1+"
+stage = 6
+category = "Nouns"
+title = "N-declension"
+goal = "Decline weak masculine nouns"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-31-slaboe-sklonenie-imen-sushhestvitelnyh-v-nemeckom-jazyke-n-deklination/"
+
+# =============================================================== B2
+
+[[topic]]
+id = "roadmap.b2_konjunktiv_ii"
+cefr = "B2"
+stage = 1
+category = "Verbs: subjunctive"
+title = "Konjunktiv II"
+goal = "Form and use the Konjunktiv II"
+status = "new"
+link = "https://www.youtube.com/watch?v=e2pyHLZgU8g"
+
+[[topic]]
+id = "roadmap.b2_lassen"
+cefr = "B2"
+stage = 2
+category = "Verbs"
+title = "The verb lassen"
+goal = "Use lassen with an infinitive"
+status = "new"
+link = "https://deutsch-mit-yehor.com/grammatika/urok-47-glagol-lassen-v-nemeckom-jazyke/"
+
+[[topic]]
+id = "roadmap.b2_indefinite_pronouns"
+cefr = "B2"
+stage = 3
+category = "Pronouns"
+title = "Indefinite pronouns"
+goal = "Use man, jemand, niemand and similar words"
+status = "new"
+link = "https://deutschonline.ru/articles/neopredelennye-mestoimeniya-v-nemeckom-yazyke/"
+flexible = true
+
+[[topic]]
+id = "roadmap.b2_word_order"
+cefr = "B2"
+stage = 4
+category = "Discourse, sentence, and phrase types"
+title = "Word order in sentences"
+goal = "Place the parts of a sentence correctly after connectors"
+status = "new"
+link = "https://www.de-online.ru/poryadok-slov-v-nemetskom-predlozhenii"
+
+[[topic]]
+id = "roadmap.b2_all_subordinate"
+cefr = "B2"
+stage = 5
+category = "Discourse, sentence, and phrase types"
+title = "All subordinate clauses"
+goal = "Build every kind of subordinate clause"
+status = "new"
+link = "https://www.de-online.ru/pridatochnye-predlozheniya-v-nemeckom"
+
+[[topic]]
+id = "roadmap.b2_nomen_verb"
+cefr = "B2"
+stage = 6
+category = "Verbs"
+title = "Nomen-verb combinations"
+goal = "Use fixed noun and verb combinations"
+status = "new"
+link = "https://a1c2deutschonline.com/grammatika-nemeckogo-b2/ustoychivye-glagolno-imennye-slovosochetaniya-nomen-verb-verbindungen"
+
+# =============================================================== B2+
+
+[[topic]]
+id = "roadmap.b2p_modal_particles"
+cefr = "B2+"
+stage = 1
+category = "Particles"
+title = "Modal particles"
+goal = "Use doch, ja, mal and similar particles"
+status = "new"
+link = "https://www.youtube.com/watch?v=0PUUkTu5vMw"
+
+[[topic]]
+id = "roadmap.b2p_partizip_1"
+cefr = "B2+"
+stage = 2
+category = "Participles"
+title = "Partizip I"
+goal = "Form and use Partizip I"
+status = "new"
+link = "https://www.youtube.com/watch?v=qqQv1032xZs"
+
+[[topic]]
+id = "roadmap.b2p_partizip_2"
+cefr = "B2+"
+stage = 3
+category = "Participles"
+title = "Partizip II"
+goal = "Use Partizip II in a sentence"
+status = "new"
+link = "https://www.youtube.com/watch?v=qqQv1032xZs"
+
+[[topic]]
+id = "roadmap.b2p_conjunctions"
+cefr = "B2+"
+stage = 4
+category = "Connectors"
+title = "Conjunctions"
+goal = "Use conjunctions that link words and clauses"
+status = "new"
+link = "https://www.de-online.ru/soyuzy-v-nemetskom-yazyke"
+
+[[topic]]
+id = "roadmap.b2p_nouns_governed"
+cefr = "B2+"
+stage = 5
+category = "Cases"
+title = "Nouns with a case"
+goal = "Use nouns that take a fixed case"
+status = "new"
+link = "https://berlinerdeutsch.ru/blog/tpost/jzhn100ab1-chto-takoe-upravlyaemie-suschestvitelnie"
+flexible = true
+
+[[topic]]
+id = "roadmap.b2p_um_zu"
+cefr = "B2+"
+stage = 6
+category = "Connectors"
+title = "Um zu, als dass and so dass"
+goal = "Express purpose, result and consequence"
+status = "new"
+link = "https://www.de-online.ru/index/vyrazhenie_pozitivnogo_so_dass_tak_chto_nechto_proiskhodit_i_negativnogo_als_dass_tak_chto_dejst/0-128"
+
+# =============================================================== C1
+
+[[topic]]
+id = "roadmap.c1_place_time_prepositions"
+cefr = "C1"
+stage = 1
+category = "Prepositions"
+title = "Prepositions of place and time"
+goal = "Use prepositions of place and time"
+status = "new"
+link = "https://berlinerdeutsch.ru/blog/tpost/7fead5no31-lokale-prpositionen-predlogi-mesta-v-nem"
+
+[[topic]]
+id = "roadmap.c1_double_conjunctions"
+cefr = "C1"
+stage = 2
+category = "Connectors"
+title = "Double conjunctions"
+goal = "Use paired conjunctions such as sowohl ... als auch"
+status = "new"
+link = "https://www.youtube.com/watch?v=wv_xX_RV19I"
+flexible = true
+
+[[topic]]
+id = "roadmap.c1_substantivized_adjectives"
+cefr = "C1"
+stage = 3
+category = "Adjectives"
+title = "Nominalized adjectives"
+goal = "Use adjectives as nouns"
+status = "new"
+link = "https://www.studygerman.ru/handbook/substantivirovannye-prilagatelnye"
+
+[[topic]]
+id = "roadmap.c1_conjunctions"
+cefr = "C1"
+stage = 4
+category = "Connectors"
+title = "Conjunctions at C1"
+goal = "Use the conjunctions expected at this level"
+status = "new"
+
+[[topic]]
+id = "roadmap.c1_subject_object_clauses"
+cefr = "C1"
+stage = 5
+category = "Discourse, sentence, and phrase types"
+title = "Subject and object clauses"
+goal = "Build subject and object clauses"
+status = "new"
+link = "https://videouroki.net/video/45-nebens-tze-subjekt-und-objekts-tze-temporals-tze-konzessivs-tze.html"
+
+[[topic]]
+id = "roadmap.c1_nominalization"
+cefr = "C1"
+stage = 6
+category = "Style"
+title = "Nominalization and verbalization"
+goal = "Switch between verb style and noun style"
+status = "new"
+link = "https://mein-deutschbuch.de/nominalisierung.html"
+
+# =============================================================== C1+
+
+[[topic]]
+id = "roadmap.c1p_place_time"
+cefr = "C1+"
+stage = 1
+category = "Prepositions"
+title = "Place and time expressions"
+goal = "Express place and time precisely"
+status = "new"
+link = "https://www.sofatutor.com/deutsch/videos/orts-und-zeitangaben"
+flexible = true
+
+[[topic]]
+id = "roadmap.c1p_prepositional_adverbs"
+cefr = "C1+"
+stage = 2
+category = "Adverbs"
+title = "Prepositional adverbs"
+goal = "Use worüber, wofür and similar words"
+status = "new"
+link = "https://www.youtube.com/watch?v=HuLLkv3uP5c"
+
+[[topic]]
+id = "roadmap.c1p_modal_participle"
+cefr = "C1+"
+stage = 3
+category = "Participles"
+title = "Modal participle"
+goal = "Use the modal participle"
+status = "new"
+link = "https://a1c2deutschonline.com/uroven-c1-po-nemeckomu-yazyku/grammatika-nemeckogo-c1/konstrukciya-gerundiy-modales-partizip-v"
+
+# =============================================================== C2
+
+[[topic]]
+id = "roadmap.c2_verbal_to_nominal"
+cefr = "C2"
+stage = 1
+category = "Style"
+title = "From verbal to nominal style"
+goal = "Switch from verb phrases to noun phrases"
+status = "new"
+
+[[topic]]
+id = "roadmap.c2_participial_phrases"
+cefr = "C2"
+stage = 2
+category = "Participles"
+title = "Participial phrases"
+goal = "Use participial constructions"
+status = "new"
+link = "https://online-teacher.ru/blog/%D0%B4%D0%B5%D0%B5%D0%BF%D1%80%D0%B8%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%B5-%D0%B2-%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%BE%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5"
+flexible = true
+
+[[topic]]
+id = "roadmap.c2_rare_resources"
+cefr = "C2"
+stage = 3
+category = "Style"
+title = "Rare language resources"
+goal = "Use rare words and structures with precision"
+status = "new"
+
+[[topic]]
+id = "roadmap.c2_irregular_verbs"
+cefr = "C2"
+stage = 4
+category = "Verbs: irregular"
+title = "Irregular verbs of C2"
+goal = "Know the irregular verbs expected at C2"
+status = "new"
+link = "https://a1c2deutschonline.com/grammatika-nemeckogo-c2/spisok-nepravilnyh-glagolov-dlya-urovnya-s2"
+
+[[topic]]
+id = "roadmap.c2_partizipien_adjektiv"
+cefr = "C2"
+stage = 5
+category = "Participles"
+title = "Participles as adjectives"
+goal = "Use participles as adjectives"
+status = "new"
+link = "https://mein-deutschbuch.de/partizipien-als-adjektive.html"
+
+[[topic]]
+id = "roadmap.c2_verb_government"
+cefr = "C2"
+stage = 6
+category = "Verbs"
+title = "Verb government"
+goal = "Use verbs with their fixed prepositions and cases"
+status = "new"
+link = "https://a1c2deutschonline.com/uroven-c2-po-nemeckomu-yazyku/grammatika-nemeckogo-c2/upravlenie-glagolov"
+
+# =============================================================== Muttersprache
+
+[[topic]]
+id = "roadmap.ms_fewer_errors"
+cefr = "Muttersprache"
+stage = 1
+category = "Accuracy"
+title = "Fewer errors, but some remain"
+goal = "Keep the remaining mistakes rare"
+status = "new"
+link = "https://a1c2deutschonline.com/testy-po-nemeckomu-yazyku/chto-nuzhno-znat-dlya-urovnya-c2-nemeckiy"
+
+[[topic]]
+id = "roadmap.ms_no_pauses"
+cefr = "Muttersprache"
+stage = 2
+category = "Fluency"
+title = "Speaking without pauses"
+goal = "Speak without searching for words"
+status = "new"
+
+[[topic]]
+id = "roadmap.ms_sprachgefuehl"
+cefr = "Muttersprache"
+stage = 3
+category = "Fluency"
+title = "Sprachgefühl"
+goal = "Feel what sounds natural in German"
+status = "new"
+
+[[topic]]
+id = "roadmap.ms_colloquial"
+cefr = "Muttersprache"
+stage = 4
+category = "Speaking"
+title = "Everyday spoken expressions"
+goal = "Know and use colloquial expressions"
+status = "new"
+
+[[topic]]
+id = "roadmap.ms_position"
+cefr = "Muttersprache"
+stage = 5
+category = "Speaking"
+title = "Detailed presentation of a position"
+goal = "Present and argue a point of view in detail"
+status = "new"
+
+[[topic]]
+id = "roadmap.ms_shades"
+cefr = "Muttersprache"
+stage = 6
+category = "Speaking"
+title = "Shades of meaning"
+goal = "Express fine differences in meaning"
+status = "new"
+
+[[topic]]
+id = "roadmap.ms_retelling"
+cefr = "Muttersprache"
+stage = 7
+category = "Speaking"
+title = "Retelling"
+goal = "Retell what you heard or read"
+status = "new"
+
 # =============================================================== notes
 #
-# B2, C1 and C2 are empty. The source curriculum stops at B1. Missing for the
-# higher levels: Genitiv, Relativsätze, Passiv, Konjunktiv II past, Futur I and
-# II, Präteritum of regular and irregular verbs in general, indirect speech,
-# Partizipialkonstruktionen, Nominalstil.
+# The Busuu topics stop at B1. Everything from A1+ upwards, and the roadmap topics
+# in A1, A2 and B1, come from ROADMAP:deutsch. Where a Busuu topic and a roadmap
+# topic cover the same grammar, both are kept, so some topics appear twice.
 #
 # Where the stage order differs from the source order and why:
 #

@@ -30,6 +30,9 @@ Ticked items are done and committed.
 - [x] `packs/de/topics.toml`, 43 topics across A1, A2, B1, with teaching order
 - [x] A seed sheet for every one of the 43 topics, 860 sentences, 900 blanks
 - [x] Pack loader that fails to start the server on a malformed or unknown topic id
+- [x] ROADMAP:deutsch levels (A1 to Muttersprache, with the + steps) and its 75 topics, with the poster's links
+- [ ] Seed or generate sheets for the 75 `roadmap.` topics (listed in the curriculum, not drillable yet)
+- [ ] Re-check the 3 poster links that did not return 200 (two 404 on mein-deutschbuch.de, one 403 on berlinerdeutsch.ru)
 - [ ] Per topic: a short rule summary shown next to the sheet
 - [ ] Per topic: generation hints, the everyday German situations that fit it
       (bakery, Bürgeramt, train ticket, doctor, flat viewing, phone call)
