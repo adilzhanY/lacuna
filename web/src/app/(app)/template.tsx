@@ -17,11 +17,11 @@ export default function PageTransition({ children }: { children: ReactNode }) {
   useGSAP(() => {
     if (reducedMotion()) return;
     gsap.from(page.current, {
-      autoAlpha: 0,
+      opacity: 0,
       y: 10,
       duration: 0.35,
       ease: EASE,
-      clearProps: "opacity,visibility,transform",
+      clearProps: "opacity,transform",
     });
   });
 

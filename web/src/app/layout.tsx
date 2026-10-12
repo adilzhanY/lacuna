@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 
 // Speaks: titles, big numbers, the main button.
@@ -27,6 +28,31 @@ const mono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/*
+ * Some browser extensions stamp their own attributes (`bis_skin_checked`,
+ * `__processed_...`) onto every element before React hydrates, and React then
+ * reports the page as not matching the server. This strips those attributes as
+ * they appear, until the page has loaded, then stops watching so it costs
+ * nothing while the app runs and animates.
+ */
+const STRIP_EXTENSION_ATTRIBUTES = `(() => {
+  const foreign = (name) => name.startsWith("bis_") || name.startsWith("__processed_");
+  const clean = (el) => {
+    if (!el.attributes) return;
+    for (const { name } of [...el.attributes]) if (foreign(name)) el.removeAttribute(name);
+  };
+  const sweep = (root) => { clean(root); root.querySelectorAll?.("*").forEach(clean); };
+  const watcher = new MutationObserver((changes) => {
+    for (const change of changes) {
+      if (change.type === "attributes") { if (foreign(change.attributeName)) clean(change.target); }
+      else change.addedNodes.forEach((node) => node.nodeType === 1 && sweep(node));
+    }
+  });
+  watcher.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+  sweep(document.documentElement);
+  addEventListener("load", () => setTimeout(() => watcher.disconnect(), 2000), { once: true });
+})();`;
+
 export const metadata: Metadata = {
   title: "lacuna",
   description: "Grammar practice by filling in the gaps",
@@ -38,7 +64,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${display.variable} ${sans.variable} ${mono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Script id="strip-extension-attributes" strategy="beforeInteractive">
+          {STRIP_EXTENSION_ATTRIBUTES}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }

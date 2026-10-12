@@ -45,13 +45,13 @@ export function useReveal(
       const parts = root.querySelectorAll("[data-reveal]");
       if (parts.length) {
         gsap.from(parts, {
-          autoAlpha: 0,
+          opacity: 0,
           y: 14,
           duration: 0.5,
           ease: EASE,
           // A long list should not take seconds to arrive: cap the whole run.
           stagger: Math.min(0.05, 0.6 / parts.length),
-          clearProps: "opacity,visibility,transform",
+          clearProps: "opacity,transform",
         });
       }
 
@@ -93,13 +93,13 @@ export function useReveal(
 
       root.querySelectorAll("[data-wave]").forEach((wave) => {
         gsap.from(wave.querySelectorAll(":scope span"), {
-          autoAlpha: 0,
+          opacity: 0,
           scale: 0.4,
           duration: 0.35,
           ease: EASE,
           delay: 0.2,
           stagger: { amount: 0.8 },
-          clearProps: "opacity,visibility,transform",
+          clearProps: "opacity,transform",
         });
       });
     },
@@ -143,7 +143,7 @@ export function slideTo(
 ) {
   if (!indicator) return;
   if (!target) {
-    gsap.to(indicator, { autoAlpha: 0, duration: 0.2 });
+    gsap.to(indicator, { opacity: 0, duration: 0.2 });
     return;
   }
   const place = { x: target.offsetLeft, width: target.offsetWidth };

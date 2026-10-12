@@ -49,7 +49,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
         .forEach((blank) => shake(blank));
       if (reducedMotion()) return;
       gsap.from(form.current.querySelectorAll("[data-correction]"), {
-        autoAlpha: 0,
+        opacity: 0,
         y: 6,
         duration: 0.3,
         ease: EASE,
@@ -102,6 +102,13 @@ export default function Sheet({ topicId }: { topicId: string }) {
 
   const filled = Object.values(answers).filter((a) => a.trim() !== "").length;
   const totalBlanks = order.length;
+
+  // The sheet opens with the first blank ready, so twenty items need no mouse.
+  useEffect(() => {
+    if (sheet && !checked) inputs.current[order[0]]?.focus();
+    // Only on load: refocusing on every answer would fight the reader.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sheet]);
 
   const check = useCallback(
     async (ratingOverride?: Rating) => {

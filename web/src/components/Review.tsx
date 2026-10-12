@@ -93,12 +93,12 @@ export default function Review() {
     () => {
       if (!sentence.current || reducedMotion()) return;
       gsap.from(sentence.current.children, {
-        autoAlpha: 0,
+        opacity: 0,
         y: 12,
         duration: 0.35,
         ease: EASE,
         stagger: 0.035,
-        clearProps: "opacity,visibility,transform",
+        clearProps: "opacity,transform",
       });
     },
     { dependencies: [sheet, index] },
@@ -117,7 +117,7 @@ export default function Review() {
         shake(sentence.current);
         if (correctionRef.current && !reducedMotion()) {
           gsap.from(correctionRef.current, {
-            autoAlpha: 0,
+            opacity: 0,
             y: 8,
             duration: 0.3,
             ease: EASE,
@@ -141,6 +141,26 @@ export default function Review() {
     const first = blankIds[0];
     if (first) inputs.current[first]?.focus();
     // blankIds is derived from item, so item and phase are the real inputs here.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [item, phase]);
+
+  // Typing always lands in the blank. If focus wandered off it (a click on the
+  // page, the dev overlay, another window), the next key brings it back, and
+  // since focus moves before the key is handled, the letter goes in too.
+  useEffect(() => {
+    if (!item || phase !== "typing") return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
+      if (event.key.length !== 1 && event.key !== "Enter") return;
+      const fields = blankIds.map((id) => inputs.current[id]);
+      if (fields.includes(document.activeElement as HTMLInputElement)) return;
+      const target = fields.find((field) => field && !field.value) ?? fields[0];
+      if (!target) return;
+      target.focus();
+      if (event.key === "Enter") event.preventDefault();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item, phase]);
 
