@@ -1,5 +1,7 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
@@ -14,6 +16,8 @@ import {
 import { Button } from "@/components/ui/Button";
 import { Segmented } from "@/components/ui/Segmented";
 import { Centered, Chip, ReadOnly, Section } from "@/components/ui/Section";
+import { EASE, reducedMotion, shake, useReveal } from "@/lib/motion";
+import { refreshAll } from "@/lib/store";
 import styles from "./Sheet.module.css";
 
 const RATINGS: { value: Rating; label: string }[] = [
@@ -33,6 +37,28 @@ export default function Sheet({ topicId }: { topicId: string }) {
   /** True once Enter has been pressed on the last blank, so the next one checks. */
   const [armed, setArmed] = useState(false);
   const inputs = useRef<Record<string, HTMLInputElement | null>>({});
+  const form = useRef<HTMLFormElement>(null);
+  useReveal(form, Boolean(sheet));
+
+  // Checking the sheet: every wrong blank shakes and its correct form rises in.
+  useGSAP(
+    () => {
+      if (!checked || !form.current) return;
+      form.current
+        .querySelectorAll("[data-wrong]")
+        .forEach((blank) => shake(blank));
+      if (reducedMotion()) return;
+      gsap.from(form.current.querySelectorAll("[data-correction]"), {
+        autoAlpha: 0,
+        y: 6,
+        duration: 0.3,
+        ease: EASE,
+        delay: 0.15,
+        stagger: { amount: 0.3 },
+      });
+    },
+    { dependencies: [checked], scope: form },
+  );
 
   // The page remounts this component per topic (see the `key` on <Sheet>), so
   // the effect only has to fetch. Nothing here resets state by hand.
@@ -82,6 +108,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
       if (!sheet) return;
       try {
         setChecked(await api.check(sheet.sheet_id, answers, ratingOverride));
+        refreshAll();
       } catch (e) {
         setError((e as Error).message);
       }
@@ -140,12 +167,12 @@ export default function Sheet({ topicId }: { topicId: string }) {
   const percent = checked ? Math.round(checked.graded.score * 100) : null;
 
   return (
-    <form onSubmit={onSubmit} className={styles.layout}>
+    <form onSubmit={onSubmit} className={styles.layout} ref={form}>
       <div>
-        <div className={styles.head}>
+        <div className={styles.head} data-reveal>
           <h1 className={styles.title}>{sheet.topic_title}</h1>
         </div>
-        <p className={styles.meta}>
+        <p className={styles.meta} data-reveal>
           <Chip tone="neutral">{sheet.cefr}</Chip>
           <span>{sheet.topic_id}</span>
           <span>{totalBlanks} blanks</span>
@@ -153,7 +180,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
 
         <div className={styles.items}>
           {sheet.items.map((item) => (
-            <div key={item.n} className={styles.item}>
+            <div key={item.n} className={styles.item} data-reveal>
               <span className={styles.n}>
                 {String(item.n).padStart(2, "0")}
               </span>
@@ -207,7 +234,7 @@ export default function Sheet({ topicId }: { topicId: string }) {
         )}
       </div>
 
-      <aside className={styles.rail}>
+      <aside className={styles.rail} data-reveal>
         <div className={styles.progress}>
           <i
             style={{
@@ -312,6 +339,7 @@ function Blank({
     <span className={styles.blankWrap}>
       <input
         ref={register}
+        data-wrong={wrong || undefined}
         className={className}
         aria-label={`blank ${id}`}
         style={{ width: `${Math.max(7.5, value.length + 1)}ch` }}
@@ -325,7 +353,9 @@ function Blank({
       />
       {wrong && result.verdict === "wrong" && (
         <>
-          <span className={styles.correction}>{result.expected}</span>
+          <span className={styles.correction} data-correction>
+            {result.expected}
+          </span>
           {value.trim() !== "" && (
             <button type="button" className={styles.accept} onClick={onAccept}>
               also accept

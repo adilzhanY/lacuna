@@ -1,5 +1,7 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ArrowRight, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -12,6 +14,8 @@ import {
 } from "@/lib/api";
 import { Button, LinkButton } from "@/components/ui/Button";
 import { Centered, Chip } from "@/components/ui/Section";
+import { EASE, pop, reducedMotion, shake, useReveal } from "@/lib/motion";
+import { refreshAll } from "@/lib/store";
 import styles from "./Review.module.css";
 
 /*
@@ -45,6 +49,9 @@ export default function Review() {
   const attempts = useRef<ItemAttempt[]>([]);
   const inputs = useRef<Record<string, HTMLInputElement | null>>({});
   const busy = useRef(false);
+  const sentence = useRef<HTMLParagraphElement>(null);
+  const correctionRef = useRef<HTMLSpanElement>(null);
+  const summary = useRef<HTMLDivElement>(null);
 
   const load = useCallback(() => {
     api
@@ -80,6 +87,49 @@ export default function Review() {
   }, []);
 
   const item: ClientItem | undefined = sheet?.items[index];
+
+  // A new sentence assembles word by word, the blank last among its words.
+  useGSAP(
+    () => {
+      if (!sentence.current || reducedMotion()) return;
+      gsap.from(sentence.current.children, {
+        autoAlpha: 0,
+        y: 12,
+        duration: 0.35,
+        ease: EASE,
+        stagger: 0.035,
+        clearProps: "opacity,visibility,transform",
+      });
+    },
+    { dependencies: [sheet, index] },
+  );
+
+  // Feedback: a right answer swells the blanks, a wrong one shakes the sentence
+  // and slides the correct form in under it.
+  useGSAP(
+    () => {
+      if (phase === "right") {
+        sentence.current
+          ?.querySelectorAll("input")
+          .forEach((input) => pop(input));
+      }
+      if (phase === "wrong") {
+        shake(sentence.current);
+        if (correctionRef.current && !reducedMotion()) {
+          gsap.from(correctionRef.current, {
+            autoAlpha: 0,
+            y: 8,
+            duration: 0.3,
+            ease: EASE,
+            delay: 0.15,
+          });
+        }
+      }
+    },
+    { dependencies: [phase] },
+  );
+
+  useReveal(summary, Boolean(done), done);
   const blankIds =
     item?.segments.filter((s) => s.type === "blank").map((s) => s.id) ?? [];
 
@@ -135,6 +185,7 @@ export default function Review() {
         }
         try {
           setDone(await api.reviewFinish(sheet.sheet_id, attempts.current));
+          refreshAll();
         } catch (e) {
           setError((e as Error).message);
         }
@@ -185,14 +236,17 @@ export default function Review() {
       <div className={styles.screen}>
         <div className={styles.stage}>
           <div className={styles.card}>
-            <div className={styles.summary}>
-              <p className="label">{done.topic_title}</p>
+            <div className={styles.summary} ref={summary}>
+              <p className="label" data-reveal>
+                {done.topic_title}
+              </p>
               <p
+                data-reveal
                 className={`${styles.rating} ${perfect ? styles.ratingOk : styles.ratingMark}`}
               >
                 {done.rating}
               </p>
-              <p className={styles.line}>
+              <p className={styles.line} data-reveal>
                 {done.correct} of {done.total} blanks right. Back in{" "}
                 {done.interval_days} {done.interval_days === 1 ? "day" : "days"}
                 , on {done.due}.
@@ -200,7 +254,7 @@ export default function Review() {
                   ? ` ${done.remaining} ${done.remaining === 1 ? "topic" : "topics"} still due.`
                   : " Nothing else due today."}
               </p>
-              <div className={styles.actions}>
+              <div className={styles.actions} data-reveal>
                 {done.remaining > 0 ? (
                   <Button
                     variant="primary"
@@ -264,8 +318,7 @@ export default function Review() {
 
       <div className={styles.stage}>
         <div className={styles.card}>
-          {/* The key restarts the arrival animation on every sentence. */}
-          <p className={styles.sentence} key={item.n}>
+          <p className={styles.sentence} key={item.n} ref={sentence}>
             {item.segments.map((segment, position) =>
               segment.type === "text" ? (
                 <span key={position}>{segment.text}</span>
@@ -304,7 +357,11 @@ export default function Review() {
           {item.hint && <span className={styles.hint}>{item.hint}</span>}
 
           {phase === "wrong" && correction && (
-            <span className={styles.correction} role="status">
+            <span
+              className={styles.correction}
+              role="status"
+              ref={correctionRef}
+            >
               correct form <b>{correction}</b>
             </span>
           )}

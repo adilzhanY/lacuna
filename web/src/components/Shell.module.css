@@ -38,12 +38,27 @@
 }
 
 .nav {
+  position: relative;
   display: flex;
   gap: 2px;
   min-width: 0;
 }
 
+/* The active page's pill, one element that slides between links. */
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: var(--radius-pill);
+  background: var(--panel-2);
+  opacity: 0;
+  visibility: hidden;
+}
+
 .link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.375rem;
@@ -64,7 +79,6 @@
 }
 
 .link.active {
-  background: var(--panel-2);
   color: var(--ink);
 }
 

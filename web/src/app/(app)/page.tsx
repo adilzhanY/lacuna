@@ -2,13 +2,14 @@
 
 import { Flame } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
-import Shell from "@/components/Shell";
 import { LinkButton } from "@/components/ui/Button";
 import { Centered, ReadOnly } from "@/components/ui/Section";
-import { api, type DayPoint, type Stats, type TodayPlan } from "@/lib/api";
+import type { DayPoint } from "@/lib/api";
 import { levelSlug } from "@/lib/levels";
+import { useReveal } from "@/lib/motion";
+import { useData } from "@/lib/store";
 import styles from "./page.module.css";
 
 const WEEKDAYS = ["M", "", "W", "", "F", "", "S"];
@@ -20,25 +21,11 @@ const SENTENCES_PER_TOPIC = 20;
 
 export default function Today() {
   const router = useRouter();
-  const [stats, setStats] = useState<Stats | null>(null);
-  const [plan, setPlan] = useState<TodayPlan | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    Promise.all([api.stats(), api.plan()])
-      .then(([loadedStats, loadedPlan]) => {
-        if (cancelled) return;
-        setStats(loadedStats);
-        setPlan(loadedPlan);
-      })
-      .catch((e: Error) => {
-        if (!cancelled) setError(e.message);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const { data: stats, error: statsError } = useData("stats");
+  const { data: plan, error: planError } = useData("plan");
+  const error = statsError ?? planError;
+  const root = useRef<HTMLDivElement>(null);
+  useReveal(root, Boolean(stats && plan));
 
   const queue = useMemo(
     () => (plan ? [...plan.reviews, ...plan.new_topics] : []),
@@ -61,18 +48,10 @@ export default function Today() {
   const weeks = useMemo(() => chunk(stats?.year ?? [], 7), [stats]);
 
   if (error) {
-    return (
-      <Shell>
-        <Centered title="Could not load" body={error} error />
-      </Shell>
-    );
+    return <Centered title="Could not load" body={error} error />;
   }
   if (!stats || !plan) {
-    return (
-      <Shell>
-        <p className="label">Loading</p>
-      </Shell>
-    );
+    return <p className="label">Loading</p>;
   }
 
   const reviews = plan.reviews.length;
@@ -87,8 +66,8 @@ export default function Today() {
     stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
 
   return (
-    <Shell>
-      <header className={styles.dayHead}>
+    <div ref={root}>
+      <header className={styles.dayHead} data-reveal>
         <h1 className={styles.day}>
           {DAY_NAMES[date.getDay()]}
           {stats.streak_days > 0 && (
@@ -105,7 +84,7 @@ export default function Today() {
 
       <div className={styles.grid}>
         <div className={styles.main}>
-          <section className={styles.hero}>
+          <section className={styles.hero} data-reveal>
             <span className="label">
               Today · <span className={styles.accent}>Level {plan.level}</span>
             </span>
@@ -143,7 +122,7 @@ export default function Today() {
             )}
           </section>
 
-          <section className={styles.block}>
+          <section className={styles.block} data-reveal>
             <span className="label">
               This week ·{" "}
               <span className={styles.accent}>
@@ -157,6 +136,7 @@ export default function Today() {
                 return (
                   <div
                     key={day.date}
+                    data-reveal
                     className={`${styles.weekDay} ${day.count > 0 ? styles.did : ""} ${
                       isToday ? styles.now : ""
                     }`}
@@ -173,27 +153,31 @@ export default function Today() {
         </div>
 
         <aside className={styles.side}>
-          <span className="label">Where you stand</span>
+          <span className="label" data-reveal>
+            Where you stand
+          </span>
           <div className={styles.nums}>
-            <a href={levelHref} className={styles.num}>
+            <a href={levelHref} className={styles.num} data-reveal>
               <b>
-                {plan.level_started}
+                <span data-count={plan.level_started}>{plan.level_started}</span>
                 <em>/{plan.level_total}</em>
               </b>
               <span>{plan.level} topics</span>
               <Bar share={plan.level_total ? plan.level_started / plan.level_total : 0} />
             </a>
-            <div className={styles.num}>
+            <div className={styles.num} data-reveal>
               <b>
-                {Math.round(stats.accuracy * 100)}
+                <span data-count={Math.round(stats.accuracy * 100)}>
+                  {Math.round(stats.accuracy * 100)}
+                </span>
                 <em>%</em>
               </b>
               <span>accuracy</span>
               <Bar share={stats.accuracy} />
             </div>
-            <div className={styles.num}>
+            <div className={styles.num} data-reveal>
               <b>
-                {stats.streak_days}
+                <span data-count={stats.streak_days}>{stats.streak_days}</span>
                 <em>d</em>
               </b>
               <span>streak, best {stats.longest_streak}</span>
@@ -203,7 +187,7 @@ export default function Today() {
             </div>
           </div>
 
-          <div className={styles.block}>
+          <div className={styles.block} data-reveal>
             <span className="label">Today so far</span>
             <div className={styles.rows}>
               <ReadOnly label="Blanks answered" value={String(stats.today_blanks)} />
@@ -221,7 +205,7 @@ export default function Today() {
         </aside>
       </div>
 
-      <section className={styles.block}>
+      <section className={styles.block} data-reveal>
         <span className="label">
           This year · {Math.round(stats.days_learned * 100)}% of days
         </span>
@@ -232,7 +216,7 @@ export default function Today() {
             ))}
           </div>
           <div>
-            <div className={styles.weeks}>
+            <div className={styles.weeks} data-wave>
               {weeks.map((week, index) => (
                 <div key={index} className={styles.weekCol}>
                   {week.map((day) => (
@@ -259,7 +243,7 @@ export default function Today() {
           </div>
         </div>
       </section>
-    </Shell>
+    </div>
   );
 }
 
@@ -267,7 +251,10 @@ export default function Today() {
 function Bar({ share }: { share: number }) {
   return (
     <span className={styles.bar}>
-      <span style={{ width: `${Math.min(1, Math.max(0, share)) * 100}%` }} />
+      <span
+        data-grow
+        style={{ width: `${Math.min(1, Math.max(0, share)) * 100}%` }}
+      />
     </span>
   );
 }

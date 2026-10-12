@@ -2,12 +2,17 @@
 
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { Centered, Chip } from "@/components/ui/Section";
 import { api, type Level, type TopicView } from "@/lib/api";
 import { LEVELS, levelShort, levelSlug } from "@/lib/levels";
+import { slideTo, useReveal } from "@/lib/motion";
+import { setCached, useData } from "@/lib/store";
+
+/** Where the underline sat on the last level page, so the next one slides from it. */
+let lastUnderline: { x: number; width: number } | null = null;
 import styles from "./Levels.module.css";
 
 /**
@@ -16,35 +21,30 @@ import styles from "./Levels.module.css";
  * the explicit button does.
  */
 export default function Levels({ level }: { level: Level }) {
-  const [topics, setTopics] = useState<TopicView[] | null>(null);
-  const [mine, setMine] = useState<Level | null>(null);
-  const [next, setNext] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const { data: topics, error: topicsError } = useData("topics");
+  const { data: plan, error: planError } = useData("plan");
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const error = topicsError ?? planError ?? saveError;
+  const mine = plan?.level ?? null;
+  const next = plan?.new_topics[0]?.id ?? null;
+  const root = useRef<HTMLDivElement>(null);
+  const tabs = useRef<HTMLElement>(null);
+  const underline = useRef<HTMLSpanElement>(null);
+  useReveal(root, Boolean(topics), level);
 
   useEffect(() => {
-    let cancelled = false;
-    Promise.all([api.topics(), api.plan()])
-      .then(([loaded, plan]) => {
-        if (cancelled) return;
-        setTopics(loaded);
-        setMine(plan.level);
-        setNext(plan.new_topics[0]?.id ?? null);
-      })
-      .catch((e: Error) => {
-        if (!cancelled) setError(e.message);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+    const active = tabs.current?.querySelector<HTMLElement>('[aria-current="page"]') ?? null;
+    if (!active) return;
+    active.scrollIntoView({ block: "nearest", inline: "nearest" });
+    slideTo(underline.current, active, lastUnderline);
+    lastUnderline = { x: active.offsetLeft, width: active.offsetWidth };
+  }, [level]);
 
   const makeMine = async () => {
     try {
-      const plan = await api.setLevel(level);
-      setMine(plan.level);
-      setNext(plan.new_topics[0]?.id ?? null);
+      setCached("plan", await api.setLevel(level));
     } catch (e) {
-      setError((e as Error).message);
+      setSaveError((e as Error).message);
     }
   };
 
@@ -54,8 +54,9 @@ export default function Levels({ level }: { level: Level }) {
   const started = inLevel.filter((t) => t.reps > 0).length;
 
   return (
-    <>
-      <nav aria-label="Levels" className={styles.tabs}>
+    <div ref={root}>
+      <nav aria-label="Levels" className={styles.tabs} ref={tabs}>
+        <span className={styles.underline} ref={underline} aria-hidden="true" />
         {LEVELS.map((tab) => {
           const all = topics?.filter((t) => t.cefr === tab) ?? [];
           const done = all.filter((t) => t.reps > 0).length;
@@ -78,7 +79,7 @@ export default function Levels({ level }: { level: Level }) {
         })}
       </nav>
 
-      <header className={styles.head}>
+      <header className={styles.head} data-reveal>
         <div>
           <h1 className={styles.title}>{level}</h1>
           <p className={styles.intro}>
@@ -98,6 +99,7 @@ export default function Levels({ level }: { level: Level }) {
         {inLevel.map((topic) => (
           <div
             key={topic.id}
+            data-reveal
             className={`${styles.row} ${topic.id === next ? styles.next : ""}`}
           >
             <span className={styles.stage}>
@@ -136,7 +138,7 @@ export default function Levels({ level }: { level: Level }) {
         ))}
       </div>
 
-      <p className={styles.source}>
+      <p className={styles.source} data-reveal>
         Levels and topics follow ROADMAP:deutsch by the{" "}
         <a
           href="https://t.me/sheimande"
@@ -148,7 +150,7 @@ export default function Levels({ level }: { level: Level }) {
         </a>{" "}
         channel.
       </p>
-    </>
+    </div>
   );
 }
 

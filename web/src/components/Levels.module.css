@@ -6,6 +6,7 @@
  * sideways on a narrow screen rather than wrapping into two rows.
  */
 .tabs {
+  position: relative;
   display: flex;
   margin-bottom: 1.75rem;
   border-bottom: 1px solid var(--hair);
@@ -37,15 +38,17 @@
   color: var(--ink);
 }
 
-.tab.active::after {
-  content: "";
+/* One underline for the whole row, slid under the open tab by GSAP. */
+.underline {
   position: absolute;
-  left: 0.5rem;
-  right: 0.5rem;
+  left: 0;
   bottom: -1px;
+  width: 0;
   height: 2px;
   border-radius: 2px;
   background: var(--select);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .tabBar {

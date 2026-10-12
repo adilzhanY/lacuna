@@ -107,18 +107,8 @@
   font-weight: 500;
   line-height: 1.7;
   margin: 0;
-  animation: arrive 0.12s ease-out;
 }
 
-/* Only feedback moves: a new sentence fades in over 120 ms. */
-@keyframes arrive {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /* The blank is the slot from the logo: 8px corners, a heavy bottom edge. */
 .blank {
@@ -170,7 +160,6 @@
   font-size: var(--text-base);
   color: var(--mark);
   margin-top: 1rem;
-  animation: arrive 0.12s ease-out;
 }
 
 .correction b {
@@ -221,11 +210,6 @@
 
 /* Motion is decoration here, not information. */
 @media (prefers-reduced-motion: reduce) {
-  .sentence,
-  .correction {
-    animation: none;
-  }
-
   .screen.wrong {
     animation: none;
     background-color: var(--mark-soft);

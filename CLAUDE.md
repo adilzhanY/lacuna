@@ -72,6 +72,13 @@ All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a compo
   is reserved for the one thing to act on, like the session card on Today.
 - **The logo** is the Slot mark (`web/src/components/Logo.tsx`): an ink tile with two
   lines of text and one accent blank. `web/src/app/icon.svg` is the same mark.
+- **Motion is GSAP, through `web/src/lib/motion.ts` only.** Pages opt in with data
+  attributes (`data-reveal`, `data-grow`, `data-rise`, `data-count`, `data-wave`) and
+  `useReveal`; feedback uses `pop`, `shake` and `slideTo`. One ease, short durations,
+  and nothing moves when the system asks for reduced motion.
+- **Navigation never waits.** The shell lives in `web/src/app/(app)/layout.tsx` so it
+  mounts once, and pages read `useData` from `web/src/lib/store.ts`, which hands back
+  the last value at once and refreshes it in the background.
 - **Every size is in rem, never px**, apart from hairlines under 4px (borders, small
   radii) which stay crisp in px. The root font size in `globals.css` is the zoom dial
   for the whole app: 17px, stepping up to 18, 19 and 21 on wider screens. Media query

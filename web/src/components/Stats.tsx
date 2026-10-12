@@ -1,29 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useRef } from "react";
 
-import { api, type DayPoint, type Stats as StatsData } from "@/lib/api";
+import type { DayPoint } from "@/lib/api";
 import { Centered, Section } from "@/components/ui/Section";
+import { useReveal } from "@/lib/motion";
+import { useData } from "@/lib/store";
 import styles from "./Stats.module.css";
 
 export default function Stats() {
-  const [stats, setStats] = useState<StatsData | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    api
-      .stats()
-      .then((loaded) => {
-        if (!cancelled) setStats(loaded);
-      })
-      .catch((e: Error) => {
-        if (!cancelled) setError(e.message);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const { data: stats, error } = useData("stats");
+  const root = useRef<HTMLDivElement>(null);
+  useReveal(root, Boolean(stats));
 
   if (error) return <Centered title="Could not load" body={error} error />;
   if (!stats) return <p className="label">Loading statistics</p>;
@@ -31,9 +19,11 @@ export default function Stats() {
   const nothingYet = stats.reviews_total === 0;
 
   return (
-    <div className={styles.page}>
-      <h1 className={styles.title}>Statistics</h1>
-      <p className={styles.intro}>
+    <div className={styles.page} ref={root}>
+      <h1 className={styles.title} data-reveal>
+        Statistics
+      </h1>
+      <p className={styles.intro} data-reveal>
         Everything here comes from sheets you have actually answered. Accuracy
         counts blanks, not sheets, so one bad sheet of twenty moves it by the
         right amount.
@@ -72,20 +62,20 @@ export default function Stats() {
       </div>
 
       <div className={styles.grid2}>
-        <div className={styles.card}>
+        <div className={styles.card} data-reveal>
           <Section title="Last 30 days" action="sheets checked per day" first>
             <Columns points={stats.activity} kind="past" />
           </Section>
         </div>
 
-        <div className={styles.card}>
+        <div className={styles.card} data-reveal>
           <Section title="Next 14 days" action="topics falling due" first>
             <Columns points={stats.forecast} kind="future" />
           </Section>
         </div>
       </div>
 
-      <div className={styles.card}>
+      <div className={styles.card} data-reveal>
         <Section title="Progress by level" action="topics started" first>
           <div className={styles.rows}>
             {stats.by_level.map((level) => (
@@ -99,6 +89,7 @@ export default function Stats() {
                   aria-label={`${level.studied} of ${level.total} topics started at ${level.level}`}
                 >
                   <div
+                    data-grow
                     className={styles.fill}
                     style={{ width: `${(level.studied / level.total) * 100}%` }}
                   />
@@ -112,7 +103,7 @@ export default function Stats() {
         </Section>
       </div>
 
-      <div className={styles.card}>
+      <div className={styles.card} data-reveal>
         <Section
           title="Weakest points"
           action="wrong answers by what they were testing"
@@ -133,6 +124,7 @@ export default function Stats() {
                     aria-label={`${weak.tag}, ${weak.count} wrong`}
                   >
                     <div
+                      data-grow
                       className={`${styles.fill} ${styles.weak}`}
                       style={{
                         width: `${(weak.count / stats.weakest[0].count) * 100}%`,
@@ -147,7 +139,7 @@ export default function Stats() {
         </Section>
       </div>
 
-      <div className={styles.card}>
+      <div className={styles.card} data-reveal>
         <Section title="Hardest topics" action="lowest accuracy first" first>
           {stats.hardest.length === 0 ? (
             <p className={styles.empty}>No topic has been reviewed yet.</p>
@@ -194,10 +186,21 @@ function Tile({
   value: string;
   note: string;
 }) {
+  // A value like "87%" counts up its number and keeps the unit as it is.
+  const number = /^(\d+)(.*)$/.exec(value);
   return (
-    <div className={styles.tile}>
+    <div className={styles.tile} data-reveal>
       <p className="label">{label}</p>
-      <p className={styles.tileValue}>{value}</p>
+      <p className={styles.tileValue}>
+        {number ? (
+          <>
+            <span data-count={number[1]}>{number[1]}</span>
+            {number[2]}
+          </>
+        ) : (
+          value
+        )}
+      </p>
       <p className={styles.tileNote}>{note}</p>
     </div>
   );
@@ -232,6 +235,7 @@ function Columns({
               className={`${styles.bar} ${kind === "future" ? styles.future : ""} ${
                 point.count === 0 ? styles.zero : ""
               }`}
+              data-rise
               style={{ height: `${(point.count / max) * 100}%` }}
               role="img"
               aria-label={`${point.date}: ${point.count}`}
