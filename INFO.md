@@ -13,7 +13,7 @@ German first, other languages later. The name is the mechanic: a lacuna is a gap
 | Scheduler | `fsrs-rs`, the same algorithm Anki uses |
 | Exercise unit | A sheet: one topic, 20 items |
 | UI language | English only |
-| Design direction | "Bauwerk": drawing-office neutrals, Archivo headings, Manrope body text, pill controls and rounded cards |
+| Design direction | "Slot" (2026-10-12): fused from Torq, Bauwerk and Portfolio. Space Grotesk, Open Runde and Geist Mono, warm paper or near-black, one cobalt accent, cardless pages, the Slot logo |
 | Anki role | Read only, vocabulary staleness source. No grammar deck in Anki |
 
 ## Why Rust for the backend

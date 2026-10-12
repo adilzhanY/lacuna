@@ -1,0 +1,38 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mark {
+  width: 1.625rem;
+  height: 1.625rem;
+  flex: none;
+}
+
+.tile {
+  fill: var(--ink);
+}
+
+.text {
+  fill: var(--paper);
+  opacity: 0.9;
+}
+
+.textDim {
+  fill: var(--paper);
+  opacity: 0.5;
+}
+
+.blank {
+  fill: var(--select);
+}
+
+.word {
+  font-family: var(--display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+}

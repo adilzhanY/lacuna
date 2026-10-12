@@ -1,18 +1,25 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { Flame } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 import Shell from "@/components/Shell";
 import { LinkButton } from "@/components/ui/Button";
-import { Centered, Chip, ReadOnly, Section } from "@/components/ui/Section";
+import { Centered, ReadOnly } from "@/components/ui/Section";
 import { api, type DayPoint, type Stats, type TodayPlan } from "@/lib/api";
 import { levelSlug } from "@/lib/levels";
 import styles from "./page.module.css";
 
 const WEEKDAYS = ["M", "", "W", "", "F", "", "S"];
+const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+/** Every sheet is twenty sentences, so a topic in the queue is twenty to answer. */
+const SENTENCES_PER_TOPIC = 20;
 
 export default function Today() {
+  const router = useRouter();
   const [stats, setStats] = useState<Stats | null>(null);
   const [plan, setPlan] = useState<TodayPlan | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -32,6 +39,24 @@ export default function Today() {
       cancelled = true;
     };
   }, []);
+
+  const queue = useMemo(
+    () => (plan ? [...plan.reviews, ...plan.new_topics] : []),
+    [plan],
+  );
+
+  // Enter starts the session from anywhere on the page, as the key hint says.
+  useEffect(() => {
+    if (queue.length === 0) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Enter" || event.defaultPrevented) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest("a, button, input, textarea")) return;
+      router.push("/review");
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [queue, router]);
 
   const weeks = useMemo(() => chunk(stats?.year ?? [], 7), [stats]);
 
@@ -53,145 +78,206 @@ export default function Today() {
   const reviews = plan.reviews.length;
   const fresh = plan.new_topics[0];
   const levelHref = `/levels/${levelSlug(plan.level)}`;
-  const started =
-    plan.level_total > 0 ? (plan.level_started / plan.level_total) * 100 : 0;
+  const date = new Date(`${stats.today}T00:00:00`);
+  const lastWeek = stats.year.slice(-7);
+  const activeDays = lastWeek.filter((day) => day.count > 0).length;
+  const categories = [...new Set(queue.map((topic) => topic.category))].slice(0, 3);
   const minutes = stats.today_ms / 60000;
   const perBlank =
     stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
 
   return (
     <Shell>
-      <div className={styles.page}>
-        <section className={styles.focus}>
-          <Chip>Level {plan.level}</Chip>
-          <h1 className={styles.title}>{headline(reviews, fresh?.title)}</h1>
-          <p className={styles.sub}>
-            {fresh
-              ? `Next new topic: ${fresh.title}. One sentence at a time, type the missing word and press Enter.`
-              : reviews > 0
-                ? "One sentence at a time. Type the missing word and press Enter."
-                : "Everything is scheduled ahead. Come back tomorrow, or browse your level and start a topic early."}
-          </p>
-          {reviews > 0 || fresh ? (
-            <LinkButton
-              href="/review"
-              variant="primary"
-              large
-              icon={<ArrowRight size={16} />}
-            >
-              Start session
-            </LinkButton>
-          ) : (
-            <LinkButton href={levelHref} large>
-              Browse {plan.level}
-            </LinkButton>
+      <header className={styles.dayHead}>
+        <h1 className={styles.day}>
+          {DAY_NAMES[date.getDay()]}
+          {stats.streak_days > 0 && (
+            <span className={styles.streak} title="Days in a row">
+              <Flame size={20} />
+              {stats.streak_days}
+            </span>
           )}
-          <a href={levelHref} className={styles.progress}>
-            <span className={styles.progressText}>
-              <span>{plan.level} progress</span>
-              <span>
-                {plan.level_started} of {plan.level_total} topics started
+        </h1>
+        <p className={styles.date}>
+          {date.getDate()} {MONTH_NAMES[date.getMonth()]}
+        </p>
+      </header>
+
+      <div className={styles.grid}>
+        <div className={styles.main}>
+          <section className={styles.hero}>
+            <span className="label">
+              Today · <span className={styles.accent}>Level {plan.level}</span>
+            </span>
+            <h2 className={styles.title}>{headline(reviews, fresh?.title)}</h2>
+            <p className={styles.meta}>
+              {queue.length > 0
+                ? `${queue.length} ${queue.length === 1 ? "topic" : "topics"} · ${
+                    queue.length * SENTENCES_PER_TOPIC
+                  } sentences · one at a time`
+                : "Everything is scheduled ahead. Come back tomorrow, or browse your level and start a topic early."}
+            </p>
+            {categories.length > 0 && (
+              <div className={styles.tags}>
+                {categories.map((category) => (
+                  <span key={category} className={styles.tag}>
+                    {category}
+                  </span>
+                ))}
+              </div>
+            )}
+            {queue.length > 0 ? (
+              <LinkButton
+                href="/review"
+                variant="primary"
+                large
+                className={styles.start}
+              >
+                Start session
+                <span className={`kbd ${styles.keyOnAccent}`}>Enter</span>
+              </LinkButton>
+            ) : (
+              <LinkButton href={levelHref} large className={styles.start}>
+                Browse {plan.level}
+              </LinkButton>
+            )}
+          </section>
+
+          <section className={styles.block}>
+            <span className="label">
+              This week ·{" "}
+              <span className={styles.accent}>
+                {activeDays} of 7 days
               </span>
             </span>
-            <span className={styles.progressBar}>
-              <span style={{ width: `${started}%` }} />
-            </span>
-          </a>
-        </section>
+            <div className={styles.week}>
+              {lastWeek.map((day) => {
+                const when = new Date(`${day.date}T00:00:00`);
+                const isToday = day.date === stats.today;
+                return (
+                  <div
+                    key={day.date}
+                    className={`${styles.weekDay} ${day.count > 0 ? styles.did : ""} ${
+                      isToday ? styles.now : ""
+                    }`}
+                    title={`${day.date}: ${day.count} ${day.count === 1 ? "sheet" : "sheets"}`}
+                  >
+                    <small>{DAY_NAMES[when.getDay()][0]}</small>
+                    <b>{when.getDate()}</b>
+                    <small>{isToday ? "today" : day.count > 0 ? day.count : "-"}</small>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        </div>
 
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <Section title="This year" action="sheets per day" first>
-              <p className={styles.todayLine}>
-                {stats.today_blanks > 0 ? (
-                  <>
-                    Studied <b>{stats.today_blanks}</b> blanks in{" "}
-                    {minutes.toFixed(1)} minutes today{" "}
-                    <span className={styles.quiet}>
-                      ({perBlank.toFixed(1)}s each)
-                    </span>
-                  </>
-                ) : (
-                  <span className={styles.quiet}>
-                    Nothing studied yet today
-                  </span>
-                )}
-              </p>
+        <aside className={styles.side}>
+          <span className="label">Where you stand</span>
+          <div className={styles.nums}>
+            <a href={levelHref} className={styles.num}>
+              <b>
+                {plan.level_started}
+                <em>/{plan.level_total}</em>
+              </b>
+              <span>{plan.level} topics</span>
+              <Bar share={plan.level_total ? plan.level_started / plan.level_total : 0} />
+            </a>
+            <div className={styles.num}>
+              <b>
+                {Math.round(stats.accuracy * 100)}
+                <em>%</em>
+              </b>
+              <span>accuracy</span>
+              <Bar share={stats.accuracy} />
+            </div>
+            <div className={styles.num}>
+              <b>
+                {stats.streak_days}
+                <em>d</em>
+              </b>
+              <span>streak, best {stats.longest_streak}</span>
+              <Bar
+                share={stats.longest_streak ? stats.streak_days / stats.longest_streak : 0}
+              />
+            </div>
+          </div>
 
-              <div className={styles.heatWrap}>
-                <div className={styles.days}>
-                  {WEEKDAYS.map((day, index) => (
-                    <span key={index}>{day}</span>
+          <div className={styles.block}>
+            <span className="label">Today so far</span>
+            <div className={styles.rows}>
+              <ReadOnly label="Blanks answered" value={String(stats.today_blanks)} />
+              <ReadOnly label="Time" value={`${minutes.toFixed(1)} min`} />
+              <ReadOnly
+                label="Per blank"
+                value={perBlank > 0 ? `${perBlank.toFixed(1)} s` : "-"}
+              />
+              <ReadOnly
+                label="Topics started"
+                value={`${stats.topics_studied} of ${stats.topics_total}`}
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section className={styles.block}>
+        <span className="label">
+          This year · {Math.round(stats.days_learned * 100)}% of days
+        </span>
+        <div className={styles.heatWrap}>
+          <div className={styles.days}>
+            {WEEKDAYS.map((day, index) => (
+              <span key={index}>{day}</span>
+            ))}
+          </div>
+          <div>
+            <div className={styles.weeks}>
+              {weeks.map((week, index) => (
+                <div key={index} className={styles.weekCol}>
+                  {week.map((day) => (
+                    <span
+                      key={day.date}
+                      className={`${styles.cell} ${levelClass(day.count)} ${
+                        day.date === stats.today ? styles.today : ""
+                      }`}
+                      title={`${day.date}: ${day.count} ${
+                        day.count === 1 ? "sheet" : "sheets"
+                      }`}
+                    />
                   ))}
                 </div>
-                <div>
-                  <div className={styles.weeks}>
-                    {weeks.map((week, index) => (
-                      <div key={index} className={styles.week}>
-                        {week.map((day) => (
-                          <span
-                            key={day.date}
-                            className={`${styles.cell} ${levelClass(day.count)} ${
-                              day.date === stats.today ? styles.today : ""
-                            }`}
-                            title={`${day.date}: ${day.count} ${
-                              day.count === 1 ? "sheet" : "sheets"
-                            }`}
-                          />
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                  <div className={styles.months}>
-                    {monthLabels(weeks).map((label, index) => (
-                      <span key={index} className={styles.month}>
-                        {label}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Section>
-          </div>
-
-          <div className={styles.card}>
-            <Section title="Showing up" first>
-              <div className={styles.rows}>
-                <ReadOnly
-                  label="Days learned"
-                  value={`${Math.round(stats.days_learned * 100)}%`}
-                />
-                <ReadOnly
-                  label="Current streak"
-                  value={`${stats.streak_days} days`}
-                />
-                <ReadOnly
-                  label="Longest streak"
-                  value={`${stats.longest_streak} days`}
-                />
-                <ReadOnly
-                  label="Accuracy"
-                  value={`${Math.round(stats.accuracy * 100)}%`}
-                />
-                <ReadOnly
-                  label="Topics started"
-                  value={`${stats.topics_studied} of ${stats.topics_total}`}
-                />
-              </div>
-            </Section>
+              ))}
+            </div>
+            <div className={styles.months}>
+              {monthLabels(weeks).map((label, index) => (
+                <span key={index} className={styles.month}>
+                  {label}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </Shell>
+  );
+}
+
+/** A thin progress line under a big number. */
+function Bar({ share }: { share: number }) {
+  return (
+    <span className={styles.bar}>
+      <span style={{ width: `${Math.min(1, Math.max(0, share)) * 100}%` }} />
+    </span>
   );
 }
 
 /** What the session holds, said the way a person would say it. */
 function headline(reviews: number, fresh: string | undefined): string {
   const r = `${reviews} ${reviews === 1 ? "review" : "reviews"}`;
-  if (reviews > 0 && fresh) return `${r}, then one new topic`;
+  if (reviews > 0 && fresh) return `${r}, then ${fresh}`;
   if (reviews > 0) return `${r} today`;
-  if (fresh) return "One new topic today";
+  if (fresh) return `New today: ${fresh}`;
   return "Nothing due today";
 }
 

@@ -148,7 +148,6 @@
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
 }
 
 .row {
@@ -169,9 +168,9 @@
   color: var(--muted);
 }
 
-/* The editor's slider track: a hairline with an ink fill. */
+/* A thin track with the accent filling it. */
 .track {
-  height: 2px;
+  height: 3px;
   background: var(--line);
   border-radius: var(--radius-pill);
   overflow: hidden;
@@ -180,7 +179,7 @@
 .fill {
   height: 100%;
   border-radius: var(--radius-pill);
-  background: var(--ink);
+  background: var(--select);
   min-width: 2px;
 }
 

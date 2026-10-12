@@ -1,124 +1,231 @@
 /*
- * Today. One question answered above the fold: is there anything to do, and
- * have I been showing up.
+ * Today. Torq's layout on the bare page: the day as a title, one card with the
+ * session in it, the week as a strip, and where you stand as big numbers with
+ * a small accent unit. The year sits at the bottom.
  */
 
-.page {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.accent {
+  color: var(--select);
 }
 
-/* ---------------------------------------------------------------- focus */
+/* ---------------------------------------------------------------- day */
 
-/*
- * One card that answers "what do I do now": the count, the next new topic, one
- * button, and how far along your level is. Everything else sits below it.
- */
-.focus {
+.dayHead {
+  margin: 0.5rem 0 1.75rem;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--select);
+}
+
+.date {
+  margin: 0.5rem 0 0;
+  font-size: var(--text-lg);
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.main,
+.side {
+  min-width: 0;
+}
+
+.block {
+  margin-top: 2rem;
+}
+
+/* ---------------------------------------------------------------- hero */
+
+/* The only card on the page, tinted with the accent. */
+.hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.875rem;
+  gap: 1rem;
   padding: 1.5rem;
-  border-radius: var(--radius-inner);
-  border: 1px solid var(--line);
-  background: var(--paper);
+  border-radius: var(--radius-card);
+  border: 1px solid color-mix(in srgb, var(--select) 35%, var(--line));
+  background:
+    linear-gradient(160deg, var(--select-soft), transparent 70%),
+    var(--panel);
 }
 
-.progress {
+.title {
+  margin: 0;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-lg);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.tag {
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--radius-soft);
+  background: var(--panel-2);
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.start {
   align-self: stretch;
+  gap: 0.75rem;
+}
+
+/* The key hint on the accent button reads as part of it. */
+.keyOnAccent {
+  border-color: color-mix(in srgb, var(--select-ink) 30%, transparent);
+  background: color-mix(in srgb, var(--select-ink) 14%, transparent);
+  color: var(--select-ink);
+}
+
+/* ---------------------------------------------------------------- week */
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+}
+
+.weekDay {
   display: flex;
   flex-direction: column;
-  gap: 0.375rem;
-  margin-top: 0.5rem;
-  max-width: 32rem;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.5rem 0 0.4375rem;
+  border-radius: var(--radius-ctrl);
+  background: var(--panel-2);
+  min-width: 0;
 }
 
-.progressText {
-  display: flex;
-  justify-content: space-between;
+.weekDay b {
+  font-family: var(--display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.weekDay small {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+.weekDay.did {
+  background: var(--select-soft);
+}
+
+.weekDay.did b,
+.weekDay.did small {
+  color: var(--select);
+}
+
+.weekDay.now {
+  box-shadow: inset 0 0 0 1.5px var(--select);
+}
+
+/* ---------------------------------------------------------------- numbers */
+
+.nums {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.num {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.num b {
+  font-family: var(--display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.num b em {
+  margin-left: 0.125rem;
+  font-style: normal;
+  font-size: var(--text-base);
+  letter-spacing: 0;
+  color: var(--select);
+}
+
+.num > span:not(.bar) {
+  margin-top: 0.25rem;
   font-size: var(--text-xs);
   color: var(--muted);
 }
 
-.progress:hover .progressText {
+a.num:hover > span:not(.bar) {
   color: var(--ink);
 }
 
-.progressBar {
-  height: 0.375rem;
+.bar {
+  height: 4px;
+  margin-top: 0.5rem;
   border-radius: var(--radius-pill);
   background: var(--panel-2);
   overflow: hidden;
 }
 
-.progressBar span {
+.bar span {
   display: block;
   height: 100%;
   border-radius: inherit;
   background: var(--select);
 }
 
-.title {
-  font-family: var(--display);
-  font-size: var(--text-title);
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-}
-
-.sub {
-  color: var(--muted);
-  font-size: var(--text-base);
-  margin: 0;
-  max-width: 52ch;
-}
-
-/* ---------------------------------------------------------------- cards */
-
-.grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
-}
-
-@media (min-width: 1100px) {
-  .grid {
-    grid-template-columns: minmax(0, 1fr) 18rem;
-  }
-}
-
-.card {
-  border-radius: var(--radius-inner);
-  border: 1px solid var(--line);
-  background: var(--paper);
-  padding: 0 1.25rem 0.25rem;
-}
-
-.card > section {
-  padding-top: 0.5rem;
-}
-
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
-}
-
-.todayLine {
-  font-size: var(--text-sm);
-  margin: 0;
-  color: var(--ink);
-}
-
-.todayLine b {
-  font-weight: 600;
-}
-
-.todayLine .quiet {
-  color: var(--muted);
+  margin-top: 0.25rem;
 }
 
 /* ---------------------------------------------------------------- heatmap */
@@ -126,6 +233,7 @@
 .heatWrap {
   display: flex;
   gap: 0.5rem;
+  margin-top: 0.75rem;
   overflow-x: auto;
   padding-bottom: 0.25rem;
 }
@@ -138,9 +246,10 @@
 }
 
 .days span {
+  font-family: var(--mono);
   font-size: 0.5625rem;
   line-height: 0.75rem;
-  color: var(--muted);
+  color: var(--faint);
 }
 
 .weeks {
@@ -148,13 +257,13 @@
   gap: 3px;
 }
 
-.week {
+.weekCol {
   display: grid;
   grid-template-rows: repeat(7, 0.75rem);
   gap: 3px;
 }
 
-/* The empty step is the surface, so a quiet year does not read as a wall of blue. */
+/* The empty step is the surface, so a quiet year does not read as a wall of colour. */
 .cell {
   width: 0.75rem;
   height: 0.75rem;
@@ -189,7 +298,8 @@
 .month {
   width: 0.75rem;
   min-width: 0.75rem;
+  font-family: var(--mono);
   font-size: 0.625rem;
-  color: var(--muted);
+  color: var(--faint);
   white-space: nowrap;
 }

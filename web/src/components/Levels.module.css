@@ -1,76 +1,78 @@
 /* ---------------------------------------------------------------- tabs */
 
 /*
- * Twelve compact tabs, one per level, each with a thin line showing how much of
- * it has been started. The row wraps on narrow screens instead of scrolling.
+ * Bauwerk's underline tabs in mono, one per level, each with a thin line
+ * under it for how much of that level has been started. The row scrolls
+ * sideways on a narrow screen rather than wrapping into two rows.
  */
 .tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  margin-bottom: 1.5rem;
-  border-radius: var(--radius-inner);
-  border: 1px solid var(--line);
-  background: var(--paper);
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--hair);
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .tab {
   position: relative;
-  flex: 1 0 3.25rem;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.375rem 0.5rem 0.4375rem;
-  border-radius: var(--radius-soft);
-  color: var(--muted);
+  gap: 0.375rem;
+  min-width: 3.25rem;
+  padding: 0.5rem 0.75rem 0.625rem;
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: var(--text-sm);
   font-weight: 600;
-  transition:
-    background-color 0.12s,
-    color 0.12s;
+  transition: color 0.12s;
 }
 
 .tab:hover {
-  background: var(--panel-2);
   color: var(--ink);
 }
 
 .tab.active {
-  background: var(--ink);
-  color: var(--paper);
+  color: var(--ink);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: -1px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--select);
 }
 
 .tabBar {
-  width: 100%;
+  width: 1.75rem;
   height: 3px;
   border-radius: var(--radius-pill);
-  background: var(--line);
+  background: var(--panel-2);
   overflow: hidden;
 }
 
 .tabBar span {
   display: block;
   height: 100%;
-  background: var(--select);
-}
-
-.active .tabBar {
-  background: var(--line-strong);
+  background: var(--faint);
 }
 
 .active .tabBar span {
-  background: var(--paper);
+  background: var(--select);
 }
 
 /* Marks the level you are working on, whichever tab is open. */
 .mineDot {
   position: absolute;
-  top: 0.3125rem;
-  right: 0.3125rem;
-  width: 0.375rem;
-  height: 0.375rem;
+  top: 0.375rem;
+  right: 0.375rem;
+  width: 0.3125rem;
+  height: 0.3125rem;
   border-radius: 50%;
   background: var(--select);
 }
@@ -88,9 +90,11 @@
 
 .title {
   font-family: var(--display);
-  font-size: var(--text-title);
-  font-weight: 600;
-  margin: 0 0 0.125rem;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
 }
 
 .intro {
@@ -99,38 +103,37 @@
   margin: 0;
 }
 
+/* Spec rows on the bare page: number, title and goal, the poster link, state. */
 .rows {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 0.375rem;
-  border-radius: var(--radius-inner);
-  border: 1px solid var(--line);
-  background: var(--paper);
 }
 
 .row {
   display: grid;
-  grid-template-columns: 1.5rem minmax(0, 1fr) auto;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.625rem;
-  padding: 0.5rem 0.625rem;
-  border-radius: var(--radius-soft);
-  transition: background-color 0.12s;
+  gap: 0.75rem;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--hair);
 }
 
-.row:hover {
-  background: var(--panel-2);
+/* Today's new topic, washed with the accent. */
+.row.next {
+  border-radius: var(--radius-ctrl);
+  border-bottom-color: transparent;
+  background: linear-gradient(90deg, var(--select-soft), transparent 75%);
 }
 
 .stage {
+  font-family: var(--mono);
   font-size: var(--text-xs);
-  color: var(--muted);
+  color: var(--faint);
 }
 
 .rowTitle {
-  font-size: var(--text-sm);
-  font-weight: 500;
+  font-size: var(--text-base);
+  font-weight: 600;
   min-width: 0;
 }
 
@@ -143,7 +146,7 @@
 }
 
 .ready {
-  color: var(--select);
+  color: var(--ink);
 }
 
 .ready:hover,
@@ -153,6 +156,10 @@
 }
 
 .link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1875rem;
+  font-family: var(--mono);
   color: var(--select);
 }
 
@@ -166,7 +173,8 @@
 }
 
 .flexible {
-  font-style: italic;
+  font-family: var(--mono);
+  color: var(--faint);
 }
 
 .date {

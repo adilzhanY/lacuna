@@ -46,30 +46,40 @@ These are not preferences. Breaking one costs a migration or a rewrite later.
    regenerated, never repaired by hand at read time.
 7. **Anki not running must never block a session.** Degrade to no recycled words.
 
-## UI direction: "Schema"
+## UI direction: "Slot"
 
-Swiss grid, cool neutrals, one saturated accent. A tool you use daily, not a dashboard
-and not a document. It replaced the earlier "Papier" serif look on 2026-08-16, because
-that palette was generic and the serif made a twenty item sheet scroll for ages.
+One system fused from three sibling projects on 2026-10-12, replacing the Bauwerk copy:
+Torq gave the dark set, one loud accent, content on the bare page and big numbers with
+a small accent unit; Bauwerk gave mono labels, hairline spec rows, underline tabs and
+key hints; Portfolio gave Open Runde, the floating glass pill and the warm light paper.
+The blank you type into is the shape it is built on, starting with the logo.
 
 All tokens live in `web/src/app/globals.css`. Never hardcode a colour in a component.
 
-- Geist for all text, German included. Geist Mono for numbers, topic ids and hints.
-  **No serif anywhere.**
-- light: ground `#F3F3F1`, panel `#FFFFFF`, ink `#101215`, dim `#606672`,
-  line `#DEDEDA`, accent `#1E43C8`, right `#106B45`, wrong `#B4232B`
-- dark: ground `#0F1114`, panel `#16191E`, ink `#E8EAED`, accent `#7D97FF`
-- **One accent.** Cobalt marks focus, progress and the active nav. Nothing else is
-  coloured except a right or wrong answer.
-- **One radius**, 3px, everywhere.
+- **Three fonts, one job each.** Space Grotesk speaks (titles, big numbers, the main
+  button). Open Runde reads (body and every German sentence, local in
+  `web/src/app/fonts/`, OFL). Geist Mono labels (section labels, values, keys, links).
+- light: paper `#F2F1EC`, panel `#FBFAF7`, ink `#141417`, muted `#66666C`,
+  line `#DCDBD3`, accent `#2545D3`, right `#2F7A47`, wrong `#C2431F`
+- dark: paper `#0E0F0E`, panel `#151714`, ink `#F2F4EE`, muted `#9AA294`,
+  accent `#8EA4FF`, right `#5AC8A0`, wrong `#E06A5A`
+- **One accent.** Cobalt marks focus, progress, your level and the main action, which
+  is the only accent fill on a screen. Nothing else is coloured except a right or
+  wrong answer.
+- **Corners**: 8px for slots and tags, 10px for anything you press, 16px for a card,
+  pills only for status (chips, the level badge, the navbar).
+- **Cardless pages.** Content sits on the paper with hairlines between rows. A card
+  is reserved for the one thing to act on, like the session card on Today.
+- **The logo** is the Slot mark (`web/src/components/Logo.tsx`): an ink tile with two
+  lines of text and one accent blank. `web/src/app/icon.svg` is the same mark.
 - **Every size is in rem, never px**, apart from hairlines under 4px (borders, small
   radii) which stay crisp in px. The root font size in `globals.css` is the zoom dial
   for the whole app: 17px, stepping up to 18, 19 and 21 on wider screens. Media query
   widths stay in px, since rem inside a media query means the browser default.
 - **One theme at a time.** Light by default, dark from `prefers-color-scheme`. No
   section inverts.
-- Blanks are slots with a heavier bottom edge, all one constant width, so their size
-  never leaks the answer length.
+- Blanks are slots with a heavier bottom edge. Empty ones share one minimum width, so
+  their size never leaks the answer length, and grow only to fit what is typed.
 - The sheet splits into two columns above 1180px so twenty items fit one screen.
 - Tab and Enter both move to the next blank, so 20 items need no mouse. Enter on the
   last blank arms the check and says so, and a second Enter runs it. Enter never

@@ -1,6 +1,7 @@
 /*
- * The shared controls, copied from Bauwerk's Custom* components. Every control
- * is a pill, a card or a rounded inner box, and none of them are native.
+ * The shared controls. Anything you press has the 10px control corner, status
+ * is a pill, and none of them are native. The main action is the one accent
+ * fill on a screen.
  */
 
 /* ---------------------------------------------------------------- button */
@@ -11,13 +12,13 @@
   justify-content: center;
   gap: 0.5rem;
   height: var(--control);
-  padding: 0 0.75rem;
-  border-radius: var(--radius-pill);
+  padding: 0 0.875rem;
+  border-radius: var(--radius-ctrl);
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: var(--panel);
   color: var(--ink);
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
   transition:
     background-color 0.12s,
@@ -36,15 +37,15 @@
 }
 
 .primary {
-  border-color: var(--ink);
-  background: var(--ink);
-  color: var(--paper);
+  border-color: var(--select);
+  background: var(--select);
+  color: var(--select-ink);
 }
 
 .primary:hover {
-  border-color: var(--ink);
-  background: var(--ink);
-  opacity: 0.9;
+  border-color: var(--select);
+  background: var(--select);
+  filter: brightness(1.08);
 }
 
 .quiet {
@@ -74,9 +75,11 @@
 }
 
 .large {
-  height: 3rem;
+  height: 3.25rem;
   padding: 0 1.5rem;
-  font-size: var(--text-base);
+  font-family: var(--display);
+  font-size: var(--text-lg);
+  letter-spacing: -0.01em;
 }
 
 /* ---------------------------------------------------------------- segmented */
@@ -84,10 +87,10 @@
 .segmented {
   display: flex;
   gap: 0.25rem;
-  padding: 0.25rem;
-  border-radius: var(--radius-pill);
+  padding: 0.1875rem;
+  border-radius: var(--radius-ctrl);
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: var(--panel-2);
 }
 
 .segment {
@@ -101,7 +104,7 @@
   height: 2.25rem;
   padding: 0 0.75rem;
   border: 0;
-  border-radius: var(--radius-pill);
+  border-radius: calc(var(--radius-ctrl) - 0.1875rem);
   background: transparent;
   color: var(--muted);
   font-size: var(--text-sm);
@@ -117,12 +120,13 @@
 }
 
 .segment.selected {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .segment.selected:hover {
-  background: var(--ink);
+  background: var(--panel);
 }
 
 .segment.dense {
@@ -143,7 +147,7 @@
   flex-direction: column;
   gap: 0.875rem;
   padding: 1rem 0 1.25rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--hair);
 }
 
 .section.first {
@@ -160,34 +164,42 @@
 }
 
 .sectionTitle {
-  font-family: var(--display);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
   margin: 0;
 }
 
 .sectionNote {
-  font-size: var(--text-xs);
-  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--faint);
 }
 
 /* ---------------------------------------------------------------- read only */
 
+/* A spec row: label left, value right in mono, a hairline under each. */
 .readOnly {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
+  padding: 0.5625rem 0;
+  border-bottom: 1px solid var(--hair);
 }
 
 .readOnlyLabel {
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   color: var(--muted);
 }
 
 .readOnlyValue {
+  font-family: var(--mono);
   font-size: var(--text-sm);
+  font-weight: 500;
   color: var(--ink);
   text-align: right;
 }
@@ -206,13 +218,16 @@
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  height: 1.75rem;
-  padding: 0 0.625rem;
+  height: 1.5rem;
+  padding: 0 0.5625rem;
   border-radius: var(--radius-pill);
   background: var(--select-soft);
   color: var(--select);
-  font-size: var(--text-xs);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
   font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 

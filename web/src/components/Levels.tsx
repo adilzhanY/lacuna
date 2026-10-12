@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -17,6 +18,7 @@ import styles from "./Levels.module.css";
 export default function Levels({ level }: { level: Level }) {
   const [topics, setTopics] = useState<TopicView[] | null>(null);
   const [mine, setMine] = useState<Level | null>(null);
+  const [next, setNext] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -26,6 +28,7 @@ export default function Levels({ level }: { level: Level }) {
         if (cancelled) return;
         setTopics(loaded);
         setMine(plan.level);
+        setNext(plan.new_topics[0]?.id ?? null);
       })
       .catch((e: Error) => {
         if (!cancelled) setError(e.message);
@@ -39,6 +42,7 @@ export default function Levels({ level }: { level: Level }) {
     try {
       const plan = await api.setLevel(level);
       setMine(plan.level);
+      setNext(plan.new_topics[0]?.id ?? null);
     } catch (e) {
       setError((e as Error).message);
     }
@@ -64,7 +68,7 @@ export default function Levels({ level }: { level: Level }) {
               aria-current={tab === level ? "page" : undefined}
               className={`${styles.tab} ${tab === level ? styles.active : ""}`}
             >
-              <span>{levelShort(tab)}</span>
+              {levelShort(tab)}
               <span className={styles.tabBar}>
                 <span style={{ width: `${share}%` }} />
               </span>
@@ -79,7 +83,7 @@ export default function Levels({ level }: { level: Level }) {
           <h1 className={styles.title}>{level}</h1>
           <p className={styles.intro}>
             {topics
-              ? `${inLevel.length} topics, ${started} started.`
+              ? `${inLevel.length} topics · ${started} started`
               : "Loading topics"}
           </p>
         </div>
@@ -92,7 +96,10 @@ export default function Levels({ level }: { level: Level }) {
 
       <div className={styles.rows}>
         {inLevel.map((topic) => (
-          <div key={topic.id} className={styles.row}>
+          <div
+            key={topic.id}
+            className={`${styles.row} ${topic.id === next ? styles.next : ""}`}
+          >
             <span className={styles.stage}>
               {String(topic.stage).padStart(2, "0")}
             </span>
@@ -115,17 +122,16 @@ export default function Levels({ level }: { level: Level }) {
                       className={styles.link}
                     >
                       {hostOf(topic.link)}
+                      <ArrowUpRight size={12} />
                     </a>
                   )}
                   {topic.flexible && (
-                    <span className={styles.flexible}>
-                      can come before or after this level
-                    </span>
+                    <span className={styles.flexible}>any order</span>
                   )}
                 </span>
               )}
             </span>
-            <State topic={topic} />
+            <State topic={topic} next={topic.id === next} />
           </div>
         ))}
       </div>
@@ -150,7 +156,8 @@ function hostOf(url: string): string {
   return new URL(url).hostname.replace(/^www\./, "");
 }
 
-function State({ topic }: { topic: TopicView }) {
+function State({ topic, next }: { topic: TopicView; next: boolean }) {
+  if (next) return <Chip>next</Chip>;
   if (topic.reps === 0) return <Chip tone="neutral">new</Chip>;
   if (topic.is_due) return <Chip>due</Chip>;
   return <span className={styles.date}>{topic.due ?? ""}</span>;
