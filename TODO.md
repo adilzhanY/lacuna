@@ -31,7 +31,7 @@ Ticked items are done and committed.
 - [x] A seed sheet for every one of the 43 topics, 860 sentences, 900 blanks
 - [x] Pack loader that fails to start the server on a malformed or unknown topic id
 - [x] ROADMAP:deutsch levels (A1 to Muttersprache, with the + steps) and its 75 topics, with the poster's links
-- [ ] Seed or generate sheets for the 75 `roadmap.` topics (listed in the curriculum, not drillable yet)
+- [x] Seed sheets for the 75 `roadmap.` topics
 - [ ] Re-check the 3 poster links that did not return 200 (two 404 on mein-deutschbuch.de, one 403 on berlinerdeutsch.ru)
 - [ ] Per topic: a short rule summary shown next to the sheet
 - [ ] Per topic: generation hints, the everyday German situations that fit it
@@ -89,8 +89,9 @@ Ticked items are done and committed.
 
 ## 6. Scheduler behaviour
 
-- [ ] Cap on new topics introduced per day, default 1 or 2
-      (A1 alone is 27 topics and 540 sentences, without a cap the due queue drowns you by week two)
+- [x] Cap on new topics introduced per day, one a day from your current level
+      (a topic never studied is new, not due, so day one is not 118 reviews)
+- [ ] Make the new topic cap a setting instead of the `NEW_PER_DAY` constant
 - [ ] Respect topic prerequisites when choosing what to introduce
 - [ ] Targeted sheets: generate from a weak error tag instead of a whole topic
 - [x] Statistics dashboard: accuracy, streak, level progress, 30 day activity,

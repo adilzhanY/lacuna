@@ -9,7 +9,7 @@ use std::collections::HashMap;
 use axum::extract::{Path, State};
 use axum::http::StatusCode;
 use axum::response::{IntoResponse, Response};
-use axum::routing::{get, post};
+use axum::routing::{get, post, put};
 use axum::{Json, Router};
 use chrono::{Datelike, NaiveDate, Utc, Weekday};
 use serde::{Deserialize, Serialize};
@@ -27,6 +27,8 @@ pub fn router(state: SharedState) -> Router {
         .route("/api/health", get(health))
         .route("/api/topics", get(topics))
         .route("/api/today", get(today_queue))
+        .route("/api/plan", get(plan))
+        .route("/api/level", put(set_level))
         .route("/api/weaknesses", get(weaknesses))
         .route("/api/stats", get(stats))
         .route("/api/sheet/{topic_id}", get(sheet_for_topic))
@@ -72,7 +74,7 @@ fn today() -> NaiveDate {
 
 // ---------------------------------------------------------------- topics
 
-#[derive(Debug, Serialize, TS)]
+#[derive(Debug, Clone, Serialize, TS)]
 #[ts(export, export_to = "../../web/src/lib/types/")]
 pub struct TopicView {
     pub id: String,
@@ -105,11 +107,94 @@ async fn topics(State(state): State<SharedState>) -> ApiResult<Vec<TopicView>> {
     Ok(Json(topic_views(&state).await?))
 }
 
-/// Topics that are due today, in teaching order.
+/// Today's session in the order it is studied: reviews first, then new topics.
 async fn today_queue(State(state): State<SharedState>) -> ApiResult<Vec<TopicView>> {
-    let mut views = topic_views(&state).await?;
-    views.retain(|v| v.is_due && v.has_sheet);
-    Ok(Json(views))
+    let plan = today_plan(&state).await?;
+    Ok(Json(plan.reviews.into_iter().chain(plan.new_topics).collect()))
+}
+
+// ---------------------------------------------------------------- today's plan
+
+/// New topics introduced per day. Reviews are never capped, new topics are, or
+/// the review pile grows faster than anyone can work through it.
+const NEW_PER_DAY: usize = 1;
+
+const LEVEL_SETTING: &str = "current_level";
+
+/// What today holds, for the main page.
+#[derive(Debug, Serialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct TodayPlan {
+    /// The level you are working on. New topics come from here first.
+    pub level: Level,
+    /// Studied topics whose due date has come, in teaching order.
+    pub reviews: Vec<TopicView>,
+    /// New topics to introduce today, at most one a day.
+    pub new_topics: Vec<TopicView>,
+    #[ts(type = "number")]
+    pub level_total: i64,
+    #[ts(type = "number")]
+    pub level_started: i64,
+}
+
+#[derive(Debug, Deserialize, TS)]
+#[ts(export, export_to = "../../web/src/lib/types/")]
+pub struct SetLevelRequest {
+    pub level: Level,
+}
+
+async fn plan(State(state): State<SharedState>) -> ApiResult<TodayPlan> {
+    Ok(Json(today_plan(&state).await?))
+}
+
+async fn set_level(
+    State(state): State<SharedState>,
+    Json(body): Json<SetLevelRequest>,
+) -> ApiResult<TodayPlan> {
+    db::set_setting(&state.db, LEVEL_SETTING, body.level.as_str()).await?;
+    Ok(Json(today_plan(&state).await?))
+}
+
+/// The stored level, or A1 when none has been chosen or the stored one is unknown.
+async fn current_level(state: &SharedState) -> anyhow::Result<Level> {
+    let stored = db::setting(&state.db, LEVEL_SETTING).await?;
+    Ok(stored.and_then(|s| s.parse().ok()).unwrap_or(Level::A1))
+}
+
+async fn today_plan(state: &SharedState) -> anyhow::Result<TodayPlan> {
+    let views = topic_views(state).await?;
+    let level = current_level(state).await?;
+    let today = today();
+    let introduced = db::topic_states(&state.db)
+        .await?
+        .iter()
+        .filter(|s| s.introduced_on(today))
+        .count();
+
+    let (reviews, new_topics) = session(&views, level, NEW_PER_DAY.saturating_sub(introduced));
+    let in_level = views.iter().filter(|v| v.cefr == level);
+    Ok(TodayPlan {
+        level,
+        reviews: reviews.into_iter().cloned().collect(),
+        new_topics: new_topics.into_iter().cloned().collect(),
+        level_total: in_level.clone().count() as i64,
+        level_started: in_level.filter(|v| v.reps > 0).count() as i64,
+    })
+}
+
+/// Split today's work into reviews and new topics.
+///
+/// Every due review is in, from any level. New topics come from the current
+/// level in teaching order, then from the levels after it once it is used up.
+/// Topics without a sheet are skipped, since there is nothing to study yet.
+fn session(views: &[TopicView], level: Level, new_allowance: usize) -> (Vec<&TopicView>, Vec<&TopicView>) {
+    let reviews = views.iter().filter(|v| v.is_due && v.has_sheet).collect();
+    let new_topics = views
+        .iter()
+        .filter(|v| v.is_new && v.has_sheet && v.cefr >= level)
+        .take(new_allowance)
+        .collect();
+    (reviews, new_topics)
 }
 
 async fn topic_views(state: &SharedState) -> anyhow::Result<Vec<TopicView>> {
@@ -135,7 +220,7 @@ async fn topic_views(state: &SharedState) -> anyhow::Result<Vec<TopicView>> {
             due: s.and_then(|s| s.due).map(|d| d.to_string()),
             reps: s.map(|s| s.reps).unwrap_or(0),
             lapses: s.map(|s| s.lapses).unwrap_or(0),
-            is_due: s.map(|s| s.is_due(today)).unwrap_or(true),
+            is_due: s.map(|s| s.is_due(today)).unwrap_or(false),
             is_new: s.map(|s| s.reps == 0).unwrap_or(true),
             has_sheet,
         });
@@ -682,10 +767,10 @@ pub struct FinishResponse {
     pub remaining: i64,
 }
 
-/// Pick the next due topic in teaching order and hand back its sheet.
+/// Pick the next topic of today's session and hand back its sheet.
 async fn review_next(State(state): State<SharedState>) -> ApiResult<ReviewQueue> {
-    let views = topic_views(&state).await?;
-    let due: Vec<&TopicView> = views.iter().filter(|v| v.is_due && v.has_sheet).collect();
+    let plan = today_plan(&state).await?;
+    let due: Vec<&TopicView> = plan.reviews.iter().chain(&plan.new_topics).collect();
 
     let Some(next) = due.first() else {
         return Ok(Json(ReviewQueue {
@@ -795,8 +880,8 @@ async fn review_finish(
     )
     .await?;
 
-    let views = topic_views(&state).await?;
-    let remaining = views.iter().filter(|v| v.is_due && v.has_sheet).count() as i64;
+    let plan = today_plan(&state).await?;
+    let remaining = (plan.reviews.len() + plan.new_topics.len()) as i64;
 
     Ok(Json(FinishResponse {
         topic_title: topic.title.clone(),
@@ -830,4 +915,74 @@ fn grade_one_item(
         });
     }
     (results, correct)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn view(id: &str, cefr: Level, reps: i64, is_due: bool, has_sheet: bool) -> TopicView {
+        TopicView {
+            id: id.to_string(),
+            cefr,
+            stage: 1,
+            category: "Cases".to_string(),
+            title: id.to_string(),
+            goal: String::new(),
+            link: None,
+            flexible: false,
+            due: None,
+            reps,
+            lapses: 0,
+            is_due,
+            is_new: reps == 0,
+            has_sheet,
+        }
+    }
+
+    fn ids(views: &[&TopicView]) -> Vec<String> {
+        views.iter().map(|v| v.id.clone()).collect()
+    }
+
+    #[test]
+    fn reviews_come_from_every_level_and_are_never_capped() {
+        let views = [
+            view("a1.done", Level::A1, 3, true, true),
+            view("c1.done", Level::C1, 2, true, true),
+            view("a2.later", Level::A2, 2, false, true),
+        ];
+        let (reviews, _) = session(&views, Level::B1, 1);
+        assert_eq!(ids(&reviews), ["a1.done", "c1.done"]);
+    }
+
+    #[test]
+    fn new_topics_start_at_the_current_level_in_order() {
+        let views = [
+            view("a1.new", Level::A1, 0, false, true),
+            view("a2.first", Level::A2, 0, false, true),
+            view("a2.second", Level::A2, 0, false, true),
+        ];
+        let (_, new) = session(&views, Level::A2, 1);
+        assert_eq!(ids(&new), ["a2.first"]);
+    }
+
+    #[test]
+    fn a_used_up_level_moves_on_to_the_next() {
+        let views = [
+            view("a2.started", Level::A2, 1, false, true),
+            view("a2plus.first", Level::A2Plus, 0, false, true),
+        ];
+        let (_, new) = session(&views, Level::A2, 1);
+        assert_eq!(ids(&new), ["a2plus.first"]);
+    }
+
+    #[test]
+    fn no_new_topic_once_the_daily_allowance_is_spent_or_without_a_sheet() {
+        let views = [
+            view("a1.no_sheet", Level::A1, 0, false, false),
+            view("a1.new", Level::A1, 0, false, true),
+        ];
+        assert!(session(&views, Level::A1, 0).1.is_empty());
+        assert_eq!(ids(&session(&views, Level::A1, 1).1), ["a1.new"]);
+    }
 }

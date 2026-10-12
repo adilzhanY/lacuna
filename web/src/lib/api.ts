@@ -3,15 +3,17 @@ import type { FinishResponse } from "./types/FinishResponse";
 import type { ReviewQueue } from "./types/ReviewQueue";
 import type { Stats } from "./types/Stats";
 import type { Rating } from "./types/Rating";
+import type { TodayPlan } from "./types/TodayPlan";
+import type { Level } from "./types/Level";
 import type { TopicView } from "./types/TopicView";
 
-export type { ClientSheet, Rating, TopicView };
+export type { ClientSheet, Rating, TodayPlan, TopicView };
 export type { ClientItem } from "./types/ClientItem";
 export type { ClientSegment } from "./types/ClientSegment";
 export type { DayPoint } from "./types/DayPoint";
 export type { FinishResponse } from "./types/FinishResponse";
 export type { ReviewQueue } from "./types/ReviewQueue";
-export type { Level } from "./types/Level";
+export type { Level };
 export type { LevelProgress } from "./types/LevelProgress";
 export type { Stats } from "./types/Stats";
 export type { TopicScore } from "./types/TopicScore";
@@ -83,6 +85,12 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 export const api = {
   topics: () => request<TopicView[]>("/api/topics"),
   today: () => request<TopicView[]>("/api/today"),
+  plan: () => request<TodayPlan>("/api/plan"),
+  setLevel: (level: Level) =>
+    request<TodayPlan>("/api/level", {
+      method: "PUT",
+      body: JSON.stringify({ level }),
+    }),
   sheet: (topicId: string) => request<ClientSheet>(`/api/sheet/${topicId}`),
   stats: () => request<Stats>("/api/stats"),
 

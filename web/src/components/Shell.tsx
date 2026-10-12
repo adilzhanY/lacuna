@@ -11,7 +11,7 @@ import styles from "./Shell.module.css";
 
 const LINKS: { href: string; label: string; icon: ReactNode }[] = [
   { href: "/", label: "Today", icon: <CalendarCheck size={15} /> },
-  { href: "/curriculum", label: "Curriculum", icon: <ListTree size={15} /> },
+  { href: "/levels", label: "Levels", icon: <ListTree size={15} /> },
   { href: "/stats", label: "Statistics", icon: <BarChart3 size={15} /> },
 ];
 
@@ -46,7 +46,10 @@ export default function Shell({ children }: { children: ReactNode }) {
         </Link>
         <nav aria-label="Pages" className={styles.nav}>
           {LINKS.map((link) => {
-            const active = pathname === link.href;
+            const active =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(link.href);
             return (
               <Link
                 key={link.href}
@@ -63,7 +66,7 @@ export default function Shell({ children }: { children: ReactNode }) {
         <span className={styles.spacer} />
         {due !== null && due > 0 && (
           <Chip>
-            {due} {due === 1 ? "topic" : "topics"} due
+            {due} to study today
           </Chip>
         )}
       </header>

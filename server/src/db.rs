@@ -75,12 +75,16 @@ pub struct TopicState {
 }
 
 impl TopicState {
-    /// A topic is due when it has never been studied, or its due date has come.
+    /// A topic is due when it has been studied and its due date has come. A topic
+    /// never studied has no due date: it is new, and gets introduced, not reviewed.
     pub fn is_due(&self, today: NaiveDate) -> bool {
-        match self.due {
-            None => true,
-            Some(due) => due <= today,
-        }
+        self.due.is_some_and(|due| due <= today)
+    }
+
+    /// First studied today. A topic is never reviewed twice on one day, since the
+    /// shortest interval is a day, so one rep and a review today means it is new today.
+    pub fn introduced_on(&self, today: NaiveDate) -> bool {
+        self.reps == 1 && self.last_review == Some(today)
     }
 
     pub fn days_since_review(&self, today: NaiveDate) -> u32 {
@@ -111,6 +115,26 @@ fn state_from_row(row: &sqlx::sqlite::SqliteRow) -> anyhow::Result<TopicState> {
         reps: row.try_get("reps")?,
         lapses: row.try_get("lapses")?,
     })
+}
+
+pub async fn setting(pool: &SqlitePool, key: &str) -> anyhow::Result<Option<String>> {
+    let row = sqlx::query("select value from settings where key = ?1")
+        .bind(key)
+        .fetch_optional(pool)
+        .await?;
+    Ok(row.map(|r| r.try_get("value")).transpose()?)
+}
+
+pub async fn set_setting(pool: &SqlitePool, key: &str, value: &str) -> anyhow::Result<()> {
+    sqlx::query(
+        "insert into settings (key, value) values (?1, ?2)
+         on conflict (key) do update set value = excluded.value",
+    )
+    .bind(key)
+    .bind(value)
+    .execute(pool)
+    .await?;
+    Ok(())
 }
 
 pub async fn topic_states(pool: &SqlitePool) -> anyhow::Result<Vec<TopicState>> {
@@ -469,12 +493,21 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn settings_round_trip_and_overwrite() {
+        let (pool, _) = setup().await;
+        assert_eq!(setting(&pool, "current_level").await.unwrap(), None);
+        set_setting(&pool, "current_level", "A2").await.unwrap();
+        set_setting(&pool, "current_level", "B1+").await.unwrap();
+        assert_eq!(setting(&pool, "current_level").await.unwrap().as_deref(), Some("B1+"));
+    }
+
+    #[tokio::test]
     async fn syncing_the_pack_creates_topics_and_states() {
         let (pool, pack) = setup().await;
         let states = topic_states(&pool).await.unwrap();
         assert_eq!(states.len(), pack.topics.len());
         assert!(states.iter().all(|s| s.memory.is_none()));
-        assert!(states.iter().all(|s| s.is_due(today())));
+        assert!(states.iter().all(|s| !s.is_due(today())), "a topic never studied is new, not due");
     }
 
     #[tokio::test]

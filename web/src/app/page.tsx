@@ -5,22 +5,25 @@ import { useEffect, useMemo, useState } from "react";
 
 import Shell from "@/components/Shell";
 import { LinkButton } from "@/components/ui/Button";
-import { Centered, ReadOnly, Section } from "@/components/ui/Section";
-import { api, type DayPoint, type Stats } from "@/lib/api";
+import { Centered, Chip, ReadOnly, Section } from "@/components/ui/Section";
+import { api, type DayPoint, type Stats, type TodayPlan } from "@/lib/api";
+import { levelSlug } from "@/lib/levels";
 import styles from "./page.module.css";
 
 const WEEKDAYS = ["M", "", "W", "", "F", "", "S"];
 
 export default function Today() {
   const [stats, setStats] = useState<Stats | null>(null);
+  const [plan, setPlan] = useState<TodayPlan | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-    api
-      .stats()
-      .then((loaded) => {
-        if (!cancelled) setStats(loaded);
+    Promise.all([api.stats(), api.plan()])
+      .then(([loadedStats, loadedPlan]) => {
+        if (cancelled) return;
+        setStats(loadedStats);
+        setPlan(loadedPlan);
       })
       .catch((e: Error) => {
         if (!cancelled) setError(e.message);
@@ -39,7 +42,7 @@ export default function Today() {
       </Shell>
     );
   }
-  if (!stats) {
+  if (!stats || !plan) {
     return (
       <Shell>
         <p className="label">Loading</p>
@@ -47,7 +50,11 @@ export default function Today() {
     );
   }
 
-  const due = stats.topics_due;
+  const reviews = plan.reviews.length;
+  const fresh = plan.new_topics[0];
+  const levelHref = `/levels/${levelSlug(plan.level)}`;
+  const started =
+    plan.level_total > 0 ? (plan.level_started / plan.level_total) * 100 : 0;
   const minutes = stats.today_ms / 60000;
   const perBlank =
     stats.today_blanks > 0 ? stats.today_ms / stats.today_blanks / 1000 : 0;
@@ -55,33 +62,41 @@ export default function Today() {
   return (
     <Shell>
       <div className={styles.page}>
-        <section className={styles.hero}>
-          <div className={styles.heroText}>
-            <h1 className={styles.title}>
-              {due > 0
-                ? `${due} ${due === 1 ? "topic" : "topics"} to review`
-                : "Nothing due today"}
-            </h1>
-            <p className={styles.sub}>
-              {due > 0
+        <section className={styles.focus}>
+          <Chip>Level {plan.level}</Chip>
+          <h1 className={styles.title}>{headline(reviews, fresh?.title)}</h1>
+          <p className={styles.sub}>
+            {fresh
+              ? `Next new topic: ${fresh.title}. One sentence at a time, type the missing word and press Enter.`
+              : reviews > 0
                 ? "One sentence at a time. Type the missing word and press Enter."
-                : "Everything is scheduled ahead. Come back tomorrow, or open the curriculum to start a topic early."}
-            </p>
-          </div>
-          {due > 0 ? (
+                : "Everything is scheduled ahead. Come back tomorrow, or browse your level and start a topic early."}
+          </p>
+          {reviews > 0 || fresh ? (
             <LinkButton
               href="/review"
               variant="primary"
               large
               icon={<ArrowRight size={16} />}
             >
-              Start review
+              Start session
             </LinkButton>
           ) : (
-            <LinkButton href="/curriculum" large>
-              Open the curriculum
+            <LinkButton href={levelHref} large>
+              Browse {plan.level}
             </LinkButton>
           )}
+          <a href={levelHref} className={styles.progress}>
+            <span className={styles.progressText}>
+              <span>{plan.level} progress</span>
+              <span>
+                {plan.level_started} of {plan.level_total} topics started
+              </span>
+            </span>
+            <span className={styles.progressBar}>
+              <span style={{ width: `${started}%` }} />
+            </span>
+          </a>
         </section>
 
         <div className={styles.grid}>
@@ -169,6 +184,15 @@ export default function Today() {
       </div>
     </Shell>
   );
+}
+
+/** What the session holds, said the way a person would say it. */
+function headline(reviews: number, fresh: string | undefined): string {
+  const r = `${reviews} ${reviews === 1 ? "review" : "reviews"}`;
+  if (reviews > 0 && fresh) return `${r}, then one new topic`;
+  if (reviews > 0) return `${r} today`;
+  if (fresh) return "One new topic today";
+  return "Nothing due today";
 }
 
 function chunk(days: DayPoint[], size: number): DayPoint[][] {

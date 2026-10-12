@@ -100,11 +100,18 @@ through twenty items at once.
 
 | Route | What it is |
 |---|---|
-| `/` | Today: due count, the year heatmap, and the button into review mode |
+| `/` | Today: one card with today's reviews, the next new topic, your level's progress and the button into review mode, then the year heatmap |
 | `/review` | Review mode, one sentence at a time |
-| `/curriculum` | The whole topic tree by level |
+| `/levels/<level>` | One level of the roadmap, with a tab row for all twelve. `/levels` opens your level, `/curriculum` redirects there |
 | `/stats` | Dashboard |
 | `/sheet/<topic>` | Sheet mode, twenty items at once |
+
+## Due and new
+
+A topic never studied is **new**, not due. Today's session is every due review,
+from any level, then at most one new topic a day from your current level (the
+`current_level` setting, chosen with "Make this my level" on a level page). When
+that level has nothing new left, new topics come from the levels after it.
 
 ## Language and content
 
