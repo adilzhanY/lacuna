@@ -129,6 +129,11 @@ that level has nothing new left, new topics come from the levels after it.
 - German appears only inside exercise content.
 - Sentences describe ordinary situations in Germany: bakery, Bürgeramt, train ticket,
   doctor, flat viewing, phone call. Not textbook abstractions.
+- **Hints never give the grammar away.** A hint names the word to use (the infinitive,
+  the adjective, the pronoun), never its gender, number or case. Stored hints may still
+  carry markers like `Frau, f` or `klein, f dat`; `Item::learner_hint` in
+  `server/src/sheet.rs` strips them before a sheet leaves the server, and drops a hint
+  that only repeats a word the sentence already shows.
 
 ## The topic tree
 

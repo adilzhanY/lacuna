@@ -583,7 +583,7 @@ async fn load_client_sheet(state: &SharedState, topic_id: &str) -> Result<Client
             .iter()
             .map(|item| ClientItem {
                 n: item.n,
-                hint: item.hint.clone(),
+                hint: item.learner_hint(),
                 segments: item
                     .segments
                     .iter()

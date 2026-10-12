@@ -10,6 +10,13 @@ use thiserror::Error;
 
 use crate::domain::ErrorTag;
 
+/// Words in a stored hint that name the grammar of the answer: gender, number
+/// and case. They are kept in the files and never shown, see `Item::learner_hint`.
+const GRAMMAR_MARKERS: &[&str] = &[
+    "m", "f", "n", "pl", "nom", "acc", "dat", "gen", "nominative", "accusative", "dative",
+    "genitive",
+];
+
 /// Every sheet holds exactly this many items.
 pub const ITEMS_PER_SHEET: usize = 20;
 
@@ -97,6 +104,31 @@ impl Item {
             }
         }
         false
+    }
+
+    /// The hint as the learner sees it: the cue word, never the grammar answer.
+    ///
+    /// Stored hints carry gender, number and case markers ("Frau, f",
+    /// "klein, f dat") for whoever reads the sheet file. Shown to the learner
+    /// they give the answer away, so they are dropped here. A hint left with
+    /// nothing but a word the sentence already shows says nothing, so it goes too.
+    pub fn learner_hint(&self) -> Option<String> {
+        let hint = self.hint.as_deref()?;
+        let parts: Vec<String> = hint
+            .split(',')
+            .map(|part| {
+                part.split_whitespace()
+                    .filter(|word| !GRAMMAR_MARKERS.contains(&word.to_lowercase().as_str()))
+                    .collect::<Vec<_>>()
+                    .join(" ")
+            })
+            .filter(|part| !part.is_empty())
+            .collect();
+        let visible = self.visible_text().to_lowercase();
+        if parts.is_empty() || parts.iter().all(|part| leaks(&visible, &part.to_lowercase())) {
+            return None;
+        }
+        Some(parts.join(", "))
     }
 
     /// Everything the reader can see, blanks removed.
@@ -383,6 +415,35 @@ mod tests {
             checked += 1;
         }
         assert!(checked > 0, "no seed sheets found in {}", dir.display());
+    }
+
+    fn hinted(before: &str, hint: &str, after: &str) -> Item {
+        Item {
+            n: 1,
+            segments: vec![text(before), blank("1a", &["x"]), text(after)],
+            hint: Some(hint.to_string()),
+        }
+    }
+
+    #[test]
+    fn a_gender_hint_on_a_noun_the_sentence_shows_disappears() {
+        assert_eq!(hinted("Kennst du", "Frau, f", "Frau dort?").learner_hint(), None);
+        assert_eq!(hinted("Die", "Kinder, pl", "spielen.").learner_hint().as_deref(), Some("Kinder"));
+        assert_eq!(hinted("", "Kinder, pl", "Kinder spielen.").learner_hint(), None);
+    }
+
+    #[test]
+    fn case_and_gender_markers_leave_the_word_to_decline() {
+        assert_eq!(hinted("Ein", "klein, f dat", "Wohnung.").learner_hint().as_deref(), Some("klein"));
+        assert_eq!(hinted("Mit dem", "nett, m dat", "Mann.").learner_hint().as_deref(), Some("nett"));
+        assert_eq!(hinted("Wir", "ich, Chef m", "helfen.").learner_hint().as_deref(), Some("ich, Chef"));
+    }
+
+    #[test]
+    fn cue_words_that_are_not_grammar_markers_stay() {
+        assert_eq!(hinted("Wo", "wohnen, du", "?").learner_hint().as_deref(), Some("wohnen, du"));
+        assert_eq!(hinted("", "Sie, formal", "kommen?").learner_hint().as_deref(), Some("Sie, formal"));
+        assert_eq!(hinted("Das", "Café, n", "ist neu.").learner_hint().as_deref(), Some("Café"));
     }
 
     #[test]
